@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bitcoin — Reporte Yirafa Labs</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style>
+  @font-face {
+    font-family: 'Bricolage Grotesque';
+    font-style: normal;
+    font-weight: 300 800;
+    src: url('assets/fonts/BricolageGrotesque-latin.woff2') format('woff2');
+  }
+
+  :root {
+    --bg: #F7F7FB;
+    --surface: #FFFFFF;
+    --surface-muted: #F0F0F8;
+    --ink: #0F0F1E;
+    --ink-muted: #68687F;
+    --ink-soft: #ABABBE;
+    --accent: #C87E28;
+    --accent-hover: #A86820;
+    --accent-soft: #F6ECD8;
+    --border: #DCDCE8;
+    --border-strong: #C4C4D8;
+    --font-display: 'Bricolage Grotesque', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-body: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+    --max-w: 760px;
+    --radius: 14px;
+
+    --series-1: #C87E28;
+    --series-2: #2a78d6;
+    --series-3: #1baf7a;
+    --series-4: #8f5cd1;
+    --series-5: #c0392b;
+
+    --good: #0ca30c;
+    --warning: #fab219;
+    --serious: #ec835a;
+    --critical: #d03b3b;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page { max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem 4rem; }
+
+  header.masthead {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 2rem 1.5rem; max-width: var(--max-w); margin: 0 auto;
+    border-bottom: 1px solid var(--border);
+  }
+  .brand { display: flex; align-items: center; gap: 0.6rem; font-family: var(--font-display); }
+  .brand-icon {
+    width: 28px; height: 28px; border-radius: 8px; background: var(--accent);
+    color: var(--ink); font-weight: 800; font-size: 0.95rem;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .brand-word { font-weight: 700; letter-spacing: -0.01em; font-size: 0.95rem; }
+  .report-date { color: var(--ink-muted); font-size: 0.82rem; font-family: var(--font-display); text-align: right; }
+  .report-updated { font-size: 0.72rem; color: var(--ink-soft); margin-top: 0.15rem; }
+
+  .live-tag {
+    display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.7rem; font-weight: 700;
+    color: var(--good); background: #e8f7e8; padding: 0.1rem 0.5rem; border-radius: 999px; margin-top: 0.35rem;
+  }
+  .live-tag::before {
+    content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--good); flex-shrink: 0;
+  }
+
+  .hero { padding: 2.5rem 0 0.5rem; }
+  .eyebrow {
+    font-family: var(--font-display);
+    text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.7rem;
+    font-weight: 700; color: var(--accent-hover); margin: 0 0 0.6rem;
+  }
+  h1.title {
+    font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 1.9rem);
+    font-weight: 700; letter-spacing: -0.01em; line-height: 1.25; margin: 0 0 0.9rem;
+  }
+  .summary-lead { font-size: 1.05rem; line-height: 1.6; color: var(--ink-muted); max-width: 62ch; }
+
+  section { margin-top: 2.5rem; }
+  h2.section-title {
+    font-family: var(--font-display);
+    font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 1.1rem;
+    display: flex; align-items: center; gap: 0.55rem;
+  }
+  h2.section-title::before {
+    content: ''; width: 7px; height: 7px; border-radius: 2px; background: var(--accent); flex-shrink: 0;
+  }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 1.5rem;
+  }
+  .card + .card { margin-top: 1rem; }
+
+  .toc { margin-top: 1.75rem; padding: 1.25rem 1.5rem; }
+  .toc-title {
+    font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--ink-muted); margin-bottom: 0.75rem;
+  }
+  .toc-list { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 1.5rem; }
+  .toc-list li { break-inside: avoid; margin-bottom: 0.55rem; }
+  .toc-list a {
+    display: flex; align-items: baseline; gap: 0.5rem; color: var(--ink); font-size: 0.9rem;
+    font-weight: 600; text-decoration: none;
+  }
+  .toc-list a:hover { color: var(--accent-hover); }
+  .toc-num { color: var(--accent-hover); font-weight: 700; flex-shrink: 0; }
+  @media (max-width: 480px) { .toc-list { columns: 1; } }
+
+  .context-grid { display: grid; gap: 1rem; }
+  .context-card h3 { margin: 0 0 0.4rem; font-size: 1rem; font-weight: 700; }
+  .context-card p { margin: 0; color: var(--ink-muted); }
+
+  .indicator-card { margin-bottom: 1.25rem; }
+  .indicator-head {
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+  .indicator-name { font-weight: 700; font-size: 1.05rem; }
+  .indicator-desc { color: var(--ink-muted); font-size: 0.92rem; margin-top: 0.25rem; max-width: 52ch; }
+  .indicator-value { text-align: right; }
+  .indicator-current { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.02em; }
+  .indicator-unit { font-size: 0.8rem; color: var(--ink-muted); }
+  .change-pill {
+    display: inline-block; margin-top: 0.25rem; padding: 0.15rem 0.55rem; border-radius: 999px;
+    font-size: 0.78rem; font-weight: 700;
+  }
+  .change-pill.up { background: #e8f7e8; color: var(--good); }
+  .change-pill.down { background: #fdeceb; color: var(--critical); }
+  .change-pill.flat { background: var(--surface-muted); color: var(--ink-muted); }
+
+  .chart-wrap { position: relative; height: 220px; margin-top: 1.25rem; }
+  .gauge-wrap { position: relative; height: 180px; margin-top: 1.25rem; display: flex; align-items: center; justify-content: center; }
+  .gauge-center { position: absolute; text-align: center; top: 58%; transform: translateY(-50%); }
+  .gauge-center .val { font-size: 1.6rem; font-weight: 800; }
+  .gauge-center .unit { font-size: 0.78rem; color: var(--ink-muted); }
+
+  details.disclosure { margin-top: 0.9rem; border-top: 1px dashed var(--border); padding-top: 0.75rem; }
+  details.disclosure summary {
+    cursor: pointer; font-size: 0.85rem; font-weight: 700; color: var(--accent-hover);
+    list-style: none; display: flex; align-items: center; gap: 0.35rem; user-select: none;
+  }
+  details.disclosure summary::-webkit-details-marker { display: none; }
+  details.disclosure summary::marker { content: ''; display: none; }
+  details.disclosure summary::before { content: '▸'; font-size: 0.7rem; transition: transform 0.15s var(--ease, ease); }
+  details.disclosure[open] summary::before { transform: rotate(90deg); }
+  details.disclosure .disclosure-body { padding-top: 0.6rem; }
+
+  table.data-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  table.data-table th, table.data-table td {
+    text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border);
+  }
+  table.data-table th { color: var(--ink-muted); font-weight: 600; }
+
+  .expert-card summary { display: block; }
+  .expert-card summary::before { display: none; }
+  .expert-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  .expert-id { font-weight: 700; }
+  .expert-affil { color: var(--ink-muted); font-size: 0.85rem; }
+  .stance-pill {
+    padding: 0.15rem 0.6rem; border-radius: 999px; font-size: 0.75rem; font-weight: 700; white-space: nowrap;
+  }
+  .stance-pill.bullish { background: #e8f7e8; color: var(--good); }
+  .stance-pill.bearish { background: #fdeceb; color: var(--critical); }
+  .stance-pill.neutral { background: var(--surface-muted); color: var(--ink-muted); }
+  blockquote.quote {
+    margin: 0.75rem 0 0; padding-left: 1rem; border-left: 3px solid var(--accent-soft);
+    color: var(--ink); font-style: italic;
+  }
+  .source-link { font-size: 0.82rem; margin-top: 0.5rem; display: inline-block; }
+  .source-link a { color: var(--accent-hover); }
+
+  .outlook-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .outlook-card h3 {
+    margin: 0 0 0.5rem; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--accent-hover); font-weight: 700;
+  }
+  .outlook-card p { margin: 0; color: var(--ink); font-size: 0.94rem; }
+
+  .rec-card { display: flex; gap: 1rem; align-items: flex-start; }
+  .risk-pill { padding: 0.15rem 0.6rem; border-radius: 999px; font-size: 0.72rem; font-weight: 700; flex-shrink: 0; }
+  .risk-pill.bajo { background: #e8f7e8; color: var(--good); }
+  .risk-pill.medio { background: #fff4e0; color: #9a6a00; }
+  .risk-pill.alto { background: #fdeceb; color: var(--critical); }
+  .rec-title { font-weight: 700; margin-bottom: 0.2rem; }
+  .rec-desc { color: var(--ink-muted); font-size: 0.92rem; margin: 0; }
+
+  .sources-list { list-style: none; padding: 0; margin: 0; }
+  .sources-list li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); font-size: 0.88rem; }
+  .sources-list a { color: var(--accent-hover); }
+
+  footer.brand-footer {
+    margin-top: 4rem; padding: 2rem 0; border-top: 1px solid var(--border);
+    color: var(--ink-soft); font-size: 0.8rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;
+  }
+
+  a { color: var(--accent-hover); }
+
+  /* UI chrome, labels and figures stay in the brand display font;
+     everything else (running prose) uses --font-body for readability. */
+  .context-card h3,
+  .indicator-name,
+  .indicator-current,
+  .indicator-unit,
+  .change-pill,
+  .gauge-center,
+  .expert-id,
+  .stance-pill,
+  .outlook-card h3,
+  .rec-title,
+  .risk-pill,
+  table.data-table th,
+  table.data-table td,
+  details.disclosure summary,
+  .toc-title,
+  .toc-list,
+  footer.brand-footer {
+    font-family: var(--font-display);
+  }
+
+  @media (max-width: 640px) {
+    .outlook-grid { grid-template-columns: 1fr; }
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page, header.masthead { max-width: 100%; }
+    section { margin-top: 2rem; break-inside: avoid-page; }
+    .card, .indicator-card, .expert-card { break-inside: avoid-page; }
+    details.disclosure:not([open]) > .disclosure-body { display: block !important; }
+    details.disclosure summary::before { display: none; }
+    details.disclosure summary { cursor: default; color: var(--ink); }
+    a { color: var(--ink); text-decoration: underline; }
+  }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="brand">
+    <div class="brand-icon">Y</div>
+    <div class="brand-word">Yirafa Labs</div>
+  </div>
+  <div class="report-date">
+    2026-09-06
+    <div class="report-updated">Datos actualizados: 6 de septiembre de 2026, 00:13 UTC</div>
+  </div>
+</header>
+
+<div class="page">
+  <div class="hero">
+    <p class="eyebrow">Reporte financiero</p>
+    <h1 class="title">Bitcoin</h1>
+    <p class="summary-lead">Bitcoin cotiza en la zona de USD 79.800-81.000 a comienzos de septiembre de 2026, tras un agosto marcado por el mejor mes de 2026 para los ETFs spot de Bitcoin (USD 3.520 millones en entradas netas) y una suba mensual de entre 23% y 27%. El repunte se vio interrumpido brevemente el 2 de septiembre, cuando los ataques aéreos de EE.UU. contra Irán gatillaron una liquidación masiva en cripto (~USD 1.150 millones) y un retroceso hacia los USD 76.500-77.500, pero el precio se recuperó con fuerza el 4 de septiembre (+5,1% en la apertura, por encima de USD 81.000) tras comentarios más moderados sobre tasas del gobernador de la Fed Christopher Waller y el mayor ingreso semanal a ETFs en nueve meses. El mercado ahora mira a la próxima reunión de la Fed (16 de septiembre) como el catalizador clave de corto plazo. El Fear & Greed Index se ubica en zona de 'Greed', reflejando un sentimiento optimista pero no eufórico.</p>
+  </div>
+
+  
+  <nav class="card toc" aria-label="Índice del reporte">
+    <div class="toc-title">Índice</div>
+    <ol class="toc-list">
+      
+        <li><a href="#contexto"><span class="toc-num">1</span>Qué ha pasado en las últimas semanas</a></li>
+      
+        <li><a href="#indicadores"><span class="toc-num">2</span>Indicadores clave</a></li>
+      
+        <li><a href="#cripto-sentimiento"><span class="toc-num">3</span>Indicadores de sentimiento cripto</a></li>
+      
+        <li><a href="#expertos"><span class="toc-num">4</span>Opiniones de expertos</a></li>
+      
+        <li><a href="#previsiones"><span class="toc-num">5</span>Previsiones</a></li>
+      
+        <li><a href="#recomendaciones"><span class="toc-num">6</span>Recomendaciones y estrategias</a></li>
+      
+        <li><a href="#fuentes"><span class="toc-num">7</span>Fuentes</a></li>
+      
+    </ol>
+  </nav>
+
+  
+  <section id="contexto">
+    <h2 class="section-title">Qué ha pasado en las últimas semanas</h2>
+    <div class="context-grid">
+      
+      <div class="card context-card">
+        <h3>Agosto: mejor mes del año para los ETFs de Bitcoin</h3>
+        <p>Los ETFs spot de Bitcoin en EE.UU. registraron USD 3.520 millones en entradas netas durante agosto de 2026 -su mejor mes del año-, con entradas en 16 de 21 jornadas y una racha de 9 días consecutivos entre el 17 y el 27 de agosto. Los activos netos totales del sector pasaron de USD 76.290 millones a fines de julio a USD 99.610 millones a fines de agosto (+31%), con BlackRock (IBIT) captando alrededor del 62% del flujo. En el mismo período, BTC subió cerca de 24-25%.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Ataques de EE.UU. a Irán generan una liquidación masiva</h3>
+        <p>El 2 de septiembre, ataques aéreos estadounidenses contra objetivos iraníes reavivaron el conflicto en Medio Oriente y provocaron una ola de aversión al riesgo en los mercados: Bitcoin cayó cerca de 1-1,5% hacia los USD 76.500-77.500 y se liquidaron cerca de USD 1.150 millones en posiciones largas apalancadas en cripto en aproximadamente una hora, según datos de CoinGlass. El alza de los precios del petróleo y de los rendimientos de bonos del Tesoro fue el principal canal de contagio hacia activos de riesgo.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Recuperación y comentarios más moderados de la Fed</h3>
+        <p>El 4 de septiembre, Bitcoin abrió en USD 81.271,92 (+5,1% respecto a la apertura del día anterior), apoyado por declaraciones del gobernador de la Fed Christopher Waller sobre la posibilidad de mantener las tasas sin cambios, junto con el mayor ingreso semanal a ETFs de Bitcoin en nueve meses.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Próximo catalizador: reunión de la Fed del 15-16 de septiembre</h3>
+        <p>El FOMC se reúne el 15 y 16 de septiembre de 2026, con la decisión de tasas y el 'dot plot' (proyecciones económicas) previstos para las 14:00 ET del día 16, seguidos de la conferencia de prensa del presidente de la Fed. Tras los ataques a Irán, el mercado llegó a asignar una probabilidad cercana al 66% a una suba de tasas en septiembre -un escenario inusual dado el contexto- que de confirmarse podría presionar a los activos de riesgo, incluido Bitcoin.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Señales de alerta técnicas hacia fin de agosto</h3>
+        <p>Analistas señalan que hacia el cierre de agosto se debilitaron tres indicadores que venían respaldando el rally: las reservas de Bitcoin en exchanges (con Binance en máximos de 2026, ~687.000 BTC), el flujo de ETFs (que cortó una racha de 9 días de entradas el 28 de agosto) y la demanda spot. Esto llevó a parte del mercado a advertir sobre una posible consolidación de 2 a 4 meses antes de un nuevo intento de máximos históricos.</p>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  
+  <section id="indicadores">
+    <h2 class="section-title">Indicadores clave</h2>
+    
+    <div class="card indicator-card">
+      <div class="indicator-head">
+        <div>
+          <div class="indicator-name">Precio de Bitcoin (BTC-USD)</div>
+          <div class="indicator-desc">Evolución reciente del precio de Bitcoin en dólares. Los primeros puntos corresponden a precios de apertura/mínimos intradía reportados en prensa para fechas puntuales de las últimas dos semanas; el último punto es la cotización en vivo obtenida de Yahoo Finance al momento de generar este reporte.</div>
+          <div class="live-tag">En vivo · 00:13 UTC</div>
+        </div>
+        
+        <div class="indicator-value">
+          <div class="indicator-current">79901.0 <span class="indicator-unit">USD</span></div>
+          
+          <span class="change-pill up">+0.377</span>
+          
+        </div>
+        
+      </div>
+
+      
+        
+        <div class="chart-wrap">
+          <canvas id="chart-0"></canvas>
+        </div>
+        
+        <details class="disclosure">
+          <summary>Ver datos en tabla</summary>
+          <div class="disclosure-body">
+            <table class="data-table">
+              <thead><tr><th>Periodo</th><th>Valor</th></tr></thead>
+              <tbody>
+                
+                <tr><td>27 ago (reconquista de USD 80.000)</td><td>80000</td></tr>
+                
+                <tr><td>1 sep (apertura)</td><td>78559.11</td></tr>
+                
+                <tr><td>2 sep (mínimo tras ataques a Irán)</td><td>76597.13</td></tr>
+                
+                <tr><td>4 sep (apertura, +5,1%)</td><td>81271.92</td></tr>
+                
+                <tr><td>6 sep (en vivo, 00:13 UTC)</td><td>79901.0</td></tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </details>
+      
+    </div>
+    
+    <div class="card indicator-card">
+      <div class="indicator-head">
+        <div>
+          <div class="indicator-name">Fear & Greed Index (cripto)</div>
+          <div class="indicator-desc">Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), calculado por alternative.me a partir de volatilidad, volumen, redes sociales, dominancia y tendencias de búsqueda. Consultado en vivo justo antes de generar este reporte.</div>
+          <div class="live-tag">En vivo · 00:13 UTC</div>
+        </div>
+        
+        <div class="indicator-value">
+          <div class="indicator-current">73 - Greed <span class="indicator-unit">índice (0-100)</span></div>
+          
+        </div>
+        
+      </div>
+
+      
+        
+        <div class="gauge-wrap">
+          <canvas id="chart-1" width="320" height="180"></canvas>
+          <div class="gauge-center">
+            <div class="val">73 - Greed</div>
+            <div class="unit">índice (0-100)</div>
+          </div>
+        </div>
+        
+        <details class="disclosure">
+          <summary>Ver datos en tabla</summary>
+          <div class="disclosure-body">
+            <table class="data-table">
+              <thead><tr><th>Periodo</th><th>Valor</th></tr></thead>
+              <tbody>
+                
+                <tr><td>Fear & Greed</td><td>73</td></tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </details>
+      
+    </div>
+    
+    <div class="card indicator-card">
+      <div class="indicator-head">
+        <div>
+          <div class="indicator-name">Activos netos en ETFs spot de Bitcoin (fin de mes)</div>
+          <div class="indicator-desc">Activos netos totales bajo gestión de los ETFs spot de Bitcoin en EE.UU. al cierre de cada mes, reflejo tanto de flujos de entrada/salida como de la revalorización del precio subyacente.</div>
+          
+        </div>
+        
+        <div class="indicator-value">
+          <div class="indicator-current">99.61 <span class="indicator-unit">USD miles de millones</span></div>
+          
+          <span class="change-pill up">+31%</span>
+          
+        </div>
+        
+      </div>
+
+      
+        
+        <div class="chart-wrap">
+          <canvas id="chart-2"></canvas>
+        </div>
+        
+        <details class="disclosure">
+          <summary>Ver datos en tabla</summary>
+          <div class="disclosure-body">
+            <table class="data-table">
+              <thead><tr><th>Periodo</th><th>Valor</th></tr></thead>
+              <tbody>
+                
+                <tr><td>Fin de julio 2026</td><td>76.29</td></tr>
+                
+                <tr><td>Fin de agosto 2026</td><td>99.61</td></tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </details>
+      
+    </div>
+    
+  </section>
+  
+
+  
+  <section id="cripto-sentimiento">
+    <h2 class="section-title">Indicadores de sentimiento cripto</h2>
+    <div class="context-grid">
+      
+      <div class="card indicator-card">
+        <div class="indicator-head">
+          <div>
+            <div class="indicator-name">Fear &amp; Greed Index</div>
+            <div class="indicator-desc">Índice de sentimiento de mercado cripto (0 = miedo extremo, 100 = codicia extrema). Fuente: alternative.me</div>
+          </div>
+          <div class="indicator-value">
+            <div class="indicator-current">73</div>
+          </div>
+        </div>
+        <div class="gauge-wrap">
+          <canvas id="chart-feargreed" width="320" height="180"></canvas>
+          <div class="gauge-center">
+            <div class="val">73</div>
+            <div class="unit">Greed</div>
+          </div>
+        </div>
+      </div>
+      
+
+      
+    </div>
+  </section>
+  
+
+  
+  <section id="expertos">
+    <h2 class="section-title">Opiniones de expertos</h2>
+    
+    <details class="card expert-card disclosure" open>
+      <summary>
+        <div class="expert-head">
+          <div>
+            <div class="expert-id">Robbie Mitchnick</div>
+            <div class="expert-affil">Head of Digital Assets, BlackRock</div>
+          </div>
+          <span class="stance-pill bullish">bullish</span>
+        </div>
+      </summary>
+      <div class="disclosure-body">
+        <blockquote class="quote">“Certainly in the last couple of weeks, the [risk-off] narrative has risen back to the forefront. I think in the long run, that's the narrative to bet on around bitcoin.”</blockquote>
+        
+        <div class="source-link"><a href="https://www.theblock.co/news/markets/2026-08-27-blackrocks-mitchnick-says-bitcoins-risk-off-narrative-is-the-one-to-bet-on-long-term-as-rally-consolidates-near-80000-412897" target="_blank" rel="noopener">Ver fuente</a></div>
+        
+      </div>
+    </details>
+    
+    <details class="card expert-card disclosure" open>
+      <summary>
+        <div class="expert-head">
+          <div>
+            <div class="expert-id">Dean Chen</div>
+            <div class="expert-affil">Analista de mercado, Bitunix</div>
+          </div>
+          <span class="stance-pill neutral">neutral</span>
+        </div>
+      </summary>
+      <div class="disclosure-body">
+        <blockquote class="quote">“If the cost of capital eases and ETF flows stabilize, Bitcoin can recover – but until then, macro liquidity remains the dominant constraint.”</blockquote>
+        
+        <div class="source-link"><a href="https://bitcoinethereumnews.com/bitcoin/bitcoin-price-forecast-is-the-current-btc-pullback-a-temporary-correction/" target="_blank" rel="noopener">Ver fuente</a></div>
+        
+      </div>
+    </details>
+    
+  </section>
+  
+
+  
+  <section id="previsiones">
+    <h2 class="section-title">Previsiones</h2>
+    <div class="outlook-grid">
+      <div class="card outlook-card"><h3>Corto plazo</h3><p>Alta volatilidad esperada hacia la reunión de la Fed del 15-16 de septiembre, con un rango probable entre USD 76.000 y USD 86.000. El mercado llegó a asignar ~66% de probabilidad a una suba de tasas tras los ataques a Irán, un escenario que -de concretarse- podría presionar el precio a la baja; una postura más moderada de la Fed (como sugirió Waller) tendería a favorecer nuevas subas.</p></div>
+      <div class="card outlook-card"><h3>Mediano plazo</h3><p>El sesgo de los analistas es 'cautelosamente alcista': persisten señales de advertencia técnicas (reservas en exchanges en máximos de 2026, flujos de ETF más débiles a fin de agosto), lo que lleva a varios analistas a plantear una posible consolidación de 2 a 4 meses antes de un nuevo intento de máximos históricos, sin descartar una corrección de 20-40% -algo considerado normal dentro de un mercado alcista según parte de los analistas consultados en prensa.</p></div>
+      <div class="card outlook-card"><h3>Largo plazo</h3><p>Actores institucionales como BlackRock sostienen que el resurgimiento de narrativas de aversión al riesgo fiscal y devaluación monetaria refuerza el rol de Bitcoin como diversificador de portafolio en el largo plazo. Las proyecciones de precio para 2026 publicadas por distintas casas de análisis muestran una dispersión muy amplia (desde ~USD 38.000 hasta más de USD 250.000), lo que refleja un alto grado de incertidumbre; el principal factor de riesgo estructural señalado en la prensa sigue siendo la claridad regulatoria a nivel global.</p></div>
+    </div>
+  </section>
+  
+
+  
+  <section id="recomendaciones">
+    <h2 class="section-title">Recomendaciones y estrategias</h2>
+    
+    <div class="card rec-card">
+      <span class="risk-pill bajo">riesgo bajo</span>
+      <div>
+        <div class="rec-title">Construir exposición de forma gradual (dollar-cost averaging)</div>
+        <p class="rec-desc">Dado el rango amplio de pronósticos para 2026 y la volatilidad reciente (movimientos de +5% y -1,5% en sesiones individuales), promediar el costo de entrada en varias compras reduce el riesgo de comprar justo antes de un retroceso ligado a eventos puntuales como los del 2 de septiembre.</p>
+      </div>
+    </div>
+    
+    <div class="card rec-card">
+      <span class="risk-pill medio">riesgo medio</span>
+      <div>
+        <div class="rec-title">Evitar apalancamiento alto antes del FOMC del 16 de septiembre</div>
+        <p class="rec-desc">Buena parte del movimiento reciente está ligado a expectativas sobre la tasa de la Fed. Con el mercado dividido entre una postura hawkish (probabilidad de suba tras los ataques a Irán) y una más moderada (comentarios de Waller), posiciones apalancadas quedan expuestas a liquidaciones abruptas similares a las de principios de septiembre.</p>
+      </div>
+    </div>
+    
+    <div class="card rec-card">
+      <span class="risk-pill alto">riesgo alto</span>
+      <div>
+        <div class="rec-title">Evaluar toma de utilidades parcial o cobertura tras el rally de agosto</div>
+        <p class="rec-desc">Con BTC subiendo entre 23% y 27% en el último mes y señales técnicas de advertencia (reservas en exchanges al alza, flujos de ETF más débiles hacia fin de agosto), asegurar parte de las ganancias o usar coberturas (opciones, stop-loss) puede limitar la exposición a una corrección de 20-40%, un patrón que varios analistas consideran normal dentro de un mercado alcista.</p>
+      </div>
+    </div>
+    
+  </section>
+  
+
+  
+  <section id="fuentes">
+    <h2 class="section-title">Fuentes</h2>
+    <ul class="sources-list">
+      
+      <li><a href="https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-september-4-2026-bitcoin-holding-above-81000-following-massive-etf-inflows-113751298.html" target="_blank" rel="noopener">Bitcoin and ethereum prices today, Friday, September 4, 2026: Bitcoin holding above $81,000 following massive ETF inflows</a></li>
+      
+      <li><a href="https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-tuesday-september-1-2026-crypto-prices-falling-as-inflation-concerns-persist-123554224.html" target="_blank" rel="noopener">Bitcoin and ethereum prices today, Tuesday, September 1, 2026: Crypto prices falling as inflation concerns persist</a></li>
+      
+      <li><a href="https://cointelegraph.com/markets/bitcoin-etf-best-month-2026-btc-up-25-august" target="_blank" rel="noopener">Bitcoin ETFs Post $3.52B August Inflows as BTC Jumps 25%</a></li>
+      
+      <li><a href="https://www.theblock.co/news/markets/2026-08-27-blackrocks-mitchnick-says-bitcoins-risk-off-narrative-is-the-one-to-bet-on-long-term-as-rally-consolidates-near-80000-412897" target="_blank" rel="noopener">BlackRock's Mitchnick says bitcoin's risk-off narrative is 'the one to bet on' long term as rally consolidates near $80,000</a></li>
+      
+      <li><a href="https://www.coindesk.com/markets/2026/09/02/solana-ether-xrp-lead-majors-slide-as-iran-strikes-drive-a-broad-risk-selloff" target="_blank" rel="noopener">Solana, ether, xrp lead majors slide as Iran strikes drive a broad risk selloff</a></li>
+      
+      <li><a href="https://pro.edgex.exchange/en-US/news/article/bitcoin-ethereum-prices-fall-us-iran-conflict" target="_blank" rel="noopener">Bitcoin and Ethereum Prices Tumble as U.S.-Iran Conflict Escalates, September 2, 2026</a></li>
+      
+      <li><a href="https://beincrypto.com/bitcoin-warning-signs-september-2026/" target="_blank" rel="noopener">Bitcoin Enters September With 3 Warning Signs After 24% August Rally</a></li>
+      
+      <li><a href="https://bitcoinethereumnews.com/bitcoin/bitcoin-price-forecast-is-the-current-btc-pullback-a-temporary-correction/" target="_blank" rel="noopener">Bitcoin Price Forecast: Is the current BTC pullback a temporary correction?</a></li>
+      
+      <li><a href="https://fedratecalc.com/fomc-meeting-schedule/september-2026/" target="_blank" rel="noopener">FOMC Meeting Schedule September 2026 - Dates & Time</a></li>
+      
+      <li><a href="https://www.coingecko.com/learn/bitcoin-price-predictions-expert-forecasts" target="_blank" rel="noopener">Bitcoin Price Predictions 2026: Analysts Forecast $38K to $250K | CoinGecko</a></li>
+      
+      <li><a href="https://alternative.me/crypto/fear-and-greed-index/" target="_blank" rel="noopener">Fear & Greed Index (alternative.me)</a></li>
+      
+    </ul>
+  </section>
+  
+
+  <footer class="brand-footer">
+    <span>Yirafa Labs — reporte generado el 2026-09-06</span>
+    <span>Uso informativo, no constituye asesoría financiera</span>
+  </footer>
+</div>
+
+<script src="assets/vendor/chart.umd.min.js"></script>
+<script>
+  const INDICATORS = [{"as_of": "00:13 UTC", "change": "+0.377", "chart_type": "line", "current_value": "79901.0", "data": {"labels": ["27 ago (reconquista de USD 80.000)", "1 sep (apertura)", "2 sep (m\u00ednimo tras ataques a Ir\u00e1n)", "4 sep (apertura, +5,1%)", "6 sep (en vivo, 00:13 UTC)"], "values": [80000, 78559.11, 76597.13, 81271.92, 79901.0]}, "description": "Evoluci\u00f3n reciente del precio de Bitcoin en d\u00f3lares. Los primeros puntos corresponden a precios de apertura/m\u00ednimos intrad\u00eda reportados en prensa para fechas puntuales de las \u00faltimas dos semanas; el \u00faltimo punto es la cotizaci\u00f3n en vivo obtenida de Yahoo Finance al momento de generar este reporte.", "name": "Precio de Bitcoin (BTC-USD)", "unit": "USD"}, {"as_of": "00:13 UTC", "change": "", "chart_type": "gauge", "current_value": "73 - Greed", "data": {"labels": ["Fear \u0026 Greed"], "values": [73]}, "description": "\u00cdndice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), calculado por alternative.me a partir de volatilidad, volumen, redes sociales, dominancia y tendencias de b\u00fasqueda. Consultado en vivo justo antes de generar este reporte.", "name": "Fear \u0026 Greed Index (cripto)", "unit": "\u00edndice (0-100)"}, {"change": "+31%", "chart_type": "bar", "current_value": "99.61", "data": {"labels": ["Fin de julio 2026", "Fin de agosto 2026"], "values": [76.29, 99.61]}, "description": "Activos netos totales bajo gesti\u00f3n de los ETFs spot de Bitcoin en EE.UU. al cierre de cada mes, reflejo tanto de flujos de entrada/salida como de la revalorizaci\u00f3n del precio subyacente.", "name": "Activos netos en ETFs spot de Bitcoin (fin de mes)", "unit": "USD miles de millones"}];
+  const PALETTE = ['#C87E28', '#2a78d6', '#1baf7a', '#8f5cd1', '#c0392b'];
+
+  Chart.defaults.font.family = "'Bricolage Grotesque', system-ui, sans-serif";
+  Chart.defaults.color = '#68687F';
+
+  INDICATORS.forEach((ind, i) => {
+    if (!ind.data || !ind.data.labels || !ind.data.values) return;
+    const canvas = document.getElementById('chart-' + i);
+    if (!canvas) return;
+    const color = PALETTE[i % PALETTE.length];
+
+    if (ind.chart_type === 'gauge') {
+      const max = Math.max(...ind.data.values, 100);
+      const value = ind.data.values[ind.data.values.length - 1];
+      new Chart(canvas, {
+        type: 'doughnut',
+        data: {
+          labels: [ind.name, 'resto'],
+          datasets: [{
+            data: [value, Math.max(max - value, 0)],
+            backgroundColor: [color, '#DCDCE8'],
+            borderWidth: 0,
+          }],
+        },
+        options: {
+          rotation: -90,
+          circumference: 180,
+          cutout: '75%',
+          plugins: { legend: { display: false }, tooltip: { enabled: true } },
+        },
+      });
+      return;
+    }
+
+    new Chart(canvas, {
+      type: ind.chart_type === 'bar' ? 'bar' : 'line',
+      data: {
+        labels: ind.data.labels,
+        datasets: [{
+          label: ind.name,
+          data: ind.data.values,
+          borderColor: color,
+          backgroundColor: ind.chart_type === 'bar' ? color : color + '33',
+          borderRadius: 4,
+          fill: ind.chart_type !== 'bar',
+          tension: 0.35,
+          pointRadius: 3,
+          pointHoverRadius: 5,
+          borderWidth: 2,
+        }],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: '#0F0F1E',
+            titleFont: { weight: '700' },
+            padding: 10,
+            cornerRadius: 8,
+            callbacks: {
+              label: (ctx) => ` ${ctx.formattedValue} ${ind.unit || ''}`.trim(),
+            },
+          },
+        },
+        scales: {
+          x: { grid: { display: false }, border: { color: '#DCDCE8' } },
+          y: { grid: { color: '#F0F0F8' }, border: { display: false } },
+        },
+      },
+    });
+  });
+
+  const FEAR_GREED = {"classification": "Greed", "color": "#8bc34a", "timestamp": "2026-09-06T00:00:00+00:00", "value": 73};
+  const fgCanvas = document.getElementById('chart-feargreed');
+  if (FEAR_GREED && fgCanvas) {
+    new Chart(fgCanvas, {
+      type: 'doughnut',
+      data: {
+        labels: [FEAR_GREED.classification, 'resto'],
+        datasets: [{
+          data: [FEAR_GREED.value, 100 - FEAR_GREED.value],
+          backgroundColor: [FEAR_GREED.color, '#DCDCE8'],
+          borderWidth: 0,
+        }],
+      },
+      options: {
+        rotation: -90,
+        circumference: 180,
+        cutout: '75%',
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: { label: () => ` ${FEAR_GREED.classification}: ${FEAR_GREED.value}/100` },
+          },
+        },
+      },
+    });
+  }
+</script>
+</body>
+</html>
