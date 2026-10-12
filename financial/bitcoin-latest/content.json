@@ -1,95 +1,89 @@
 {
   "topic": "Bitcoin (BTC-USD)",
-  "date": "2026-10-11",
-  "generated_at": "11 de octubre de 2026, 07:25 UTC",
-  "executive_summary": "BTC cotiza en USD 82.997,08 en vivo (07:25 UTC), +0,10% frente al cierre de ayer (USD 82.911,77) -tercer día consecutivo de estabilización en la banda USD 82.000-83.000, sin un catalizador de precio nuevo hoy-. La novedad más relevante desde el reporte de ayer no es de precio sino de flujos: se confirmó que los ETF spot de BTC tuvieron una salida neta de USD 244,1M el 8 de octubre (IBIT -USD 5,5M, FBTC -USD 197,1M, cifras de Farside que ya no quedan como 'preliminares') y que el 9 de octubre los flujos volvieron a terreno positivo con una entrada neta de USD 21,1M (IBIT +USD 22,4M, FBTC -USD 3,6M) -la primera entrada neta tras varios días de salidas, aunque de magnitud pequeña y todavía sin un segundo día de confirmación (el dato del 10 de octubre no está disponible aún)-. En el plano regulatorio hay dos desarrollos: la Comisión de Valores de Tailandia finalizó el 8-9 de octubre las reglas para ETF locales de Bitcoin y Ether en la Bolsa de Tailandia (vigentes desde el 16 de octubre, con exposición mínima de 80% a un solo activo y custodios regulados, sin margin loans) -un canal institucional nuevo pero acotado, ya que cada fondo debe aprobarse individualmente antes de listar-; y el outlook sobre la Clarity Act se deteriora más: tras el fracaso de la moción de cloture en el Senado (49-50, 15 de septiembre, ya conocido antes del reporte de ayer pero no reportado explícitamente hasta ahora), un análisis de octubre del estudio Orrick señala que la aprobación en este Congreso 'se ve ahora como poco probable' por la mayoría de los observadores, y Polymarket asigna apenas ~30-32% de probabilidad a que se firme como ley antes del 31 de diciembre de 2026 -esto debilita directamente la pata alcista del escenario de QCP Capital de la semana pasada, que condicionaba el caso sobre USD 100.000 al avance de esa ley-. En el frente Tether/reguladores, el plazo del 9 de octubre que el senador Blumenthal había fijado a el Tesoro (Bessent) y al Departamento de Justicia (Blanche) para responder sobre los vínculos de USDT con Irán venció sin una respuesta pública confirmada, y el 8 de octubre Blumenthal envió un nuevo pedido de registros al CEO de Cantor Fitzgerald sobre sus vínculos con Tether, con respuesta esperada para el 23 de octubre -una escalada, aunque todavía sin impacto de precio visible-. No hay novedades sobre la tregua Trump-Irán (sigue como la reportó ayer, sin confirmación de ruptura ni de avance) ni sobre compras de Strategy/Saylor desde la del 5 de octubre. El Fear & Greed Index bajó levemente de 64 a 61, manteniéndose en zona 'Greed' pero sin la fuerza de ayer.",
+  "date": "2026-10-12",
+  "generated_at": "12 de octubre de 2026, 07:25 UTC",
+  "executive_summary": "BTC cotiza en USD 84.018,32 en vivo (07:25 UTC), +0,41% frente al cierre de ayer (USD 83.673,01) -rompe al alza la banda de estabilización de USD 82.000-83.000 que sostenía desde el 9 de octubre y entra de lleno en la zona de resistencia USD 83.400-85.400 señalada en ediciones anteriores, sin que se haya encontrado un catalizador de precio puntual para el movimiento-. El Fear & Greed Index subió de forma notable, de 61 a 69, su salto más fuerte en varios días y acompaña la fortaleza del precio. En el frente Tether/Cantor Fitzgerald la novedad es que, tras el pedido de registros de Blumenthal del 8 de octubre (plazo 23 de octubre), Tether salió a responder públicamente: la empresa afirma haber colaborado con las autoridades y haber ayudado a congelar cerca de USD 550M en USDT vinculado a Irán durante este año -la primera respuesta pública de alguna de las dos partes desde que se conoció el pedido, aunque ni Tether ni Cantor Fitzgerald dieron todavía una respuesta sustantiva a los puntos específicos de la carta-. Esto se suma al dato ya conocido de que el informe de la subcomisión del Senado (de fines de septiembre) encontró que el 84% de 846 wallets vinculadas a Irán transaban mayormente en USDT, el sustento original de la pesquisa. No hay novedades verificables en el resto de los ejes: los flujos de ETF spot siguen sin dato público para el 10 y 11 de octubre (Farside y TFTC solo tienen confirmado el +USD 21,1M del 9 de octubre, ya reportado ayer); el outlook de la Clarity Act no tiene desarrollo nuevo desde el deterioro reportado ayer (cloture fallido de septiembre, análisis de Orrick, ~30-32% en Polymarket); las reglas de ETF locales de Bitcoin/Ether en Tailandia siguen apuntando a su entrada en vigencia el 16 de octubre sin fondos confirmados para listar todavía; y no se encontró una nueva compra de Strategy/Saylor desde la del 5 de octubre ni novedades sobre la tregua Trump-Irán. El catalizador más próximo sigue siendo el IPC de septiembre de EE.UU., ahora a solo 2 días (14 de octubre), con el consenso de ~3,6-3,7% interanual sin cambios.",
   "recent_context": [
     {
-      "heading": "Nuevo: se confirman los flujos de ETF del 8 de octubre (-USD 244,1M) y el 9 de octubre vuelve a entradas netas (+USD 21,1M)",
-      "body": "El dato preliminar de ~USD 244M de salida del 8 de octubre que quedaba sin confirmar en el reporte de ayer ya está verificado por Farside: salida neta de USD 244,1M (FBTC -USD 197,1M, IBIT -USD 5,5M, el resto repartido entre otros emisores). El 9 de octubre los flujos revirtieron a una entrada neta de USD 21,1M (IBIT +USD 22,4M, FBTC -USD 3,6M), la primera entrada positiva tras la racha de salidas reportada en ediciones anteriores. Es un solo día de magnitud modesta -no alcanza para hablar de un cambio de tendencia- y el dato del 10 de octubre todavía no está disponible en las fuentes consultadas (Farside, TFTC)."
+      "heading": "Nuevo: BTC rompe al alza la banda de estabilización y entra en la zona de resistencia USD 83.400-85.400",
+      "body": "Tras tres días de estabilización en USD 82.000-83.000 (reportados en ediciones anteriores), el precio subió a USD 84.018,32 en vivo (+0,41% frente al cierre de ayer de USD 83.673,01), dentro del rango intradía USD 83.418,74-84.230,83. Esto coloca al precio dentro de la zona de resistencia técnica de USD 83.400-85.400 señalada en reportes previos, sin que la investigación de hoy haya encontrado un catalizador de noticias específico que explique el movimiento -podría tratarse de flujo de cobertura de cortos o simplemente continuidad del alivio geopolítico del 8 de octubre, pero no hay confirmación de ninguna fuente consultada."
     },
     {
-      "heading": "Nuevo: Tailandia finaliza las reglas para ETF locales de Bitcoin y Ether, vigentes desde el 16 de octubre",
-      "body": "La Comisión de Valores de Tailandia (SEC) finalizó el 8-9 de octubre el marco regulatorio para ETF cripto listados en la Bolsa de Tailandia, limitado inicialmente a Bitcoin y Ether. Los fondos deben ser pasivos, mantener una exposición promedio de al menos 80% del NAV a un solo activo por año contable, usar custodios digitales regulados por la SEC y no pueden financiarse vía margin loans de los corredores. Los fondos mutuos y privados tailandeses ya pueden invertir en estos ETF locales (antes solo podían acceder a ETF extranjeros). La fecha del 16 de octubre es la de entrada en vigencia del marco, no una fecha de listado confirmada -cada fondo debe aprobarse individualmente antes de poder cotizar-, por lo que es un canal institucional nuevo pero todavía acotado en alcance y tamaño frente al mercado de ETF de EE.UU."
+      "heading": "Nuevo: el Fear & Greed Index salta de 61 a 69, su mayor avance en varios días",
+      "body": "El índice de sentimiento subió 8 puntos en un día, revirtiendo la pérdida de fuerza reportada ayer (de 64 a 61) y volviendo a zona 'Greed' con más convicción. El salto es consistente con la ruptura de precio hacia la zona de resistencia, aunque un solo día de alza en el índice no permite todavía hablar de un cambio de régimen de sentimiento."
     },
     {
-      "heading": "Nuevo: el outlook de la Clarity Act se deteriora más -golpea directamente la pata alcista del escenario de QCP Capital",
-      "body": "La moción de cloture sobre la Clarity Act ya había fracasado en el Senado por 49 a 50 votos el 15 de septiembre (antes del reporte de ayer, pero no se había detallado en ediciones previas) y desde entonces no hay una nueva votación programada. Un análisis de octubre del estudio legal Orrick señala que la aprobación de la ley durante este Congreso 'se ve ahora como poco probable', y Polymarket asigna actualmente ~30-32% de probabilidad a que se firme como ley antes del 31 de diciembre de 2026 (frente al 47% de hace unos meses y muy por debajo del 82% de febrero). Esto es relevante porque el outlook trimestral de QCP Capital (reportado ayer) condicionaba explícitamente su escenario alcista sobre USD 100.000 a que, entre otras cosas, 'avance la Clarity Act' -con este deterioro adicional, esa condición se ve menos probable de cumplirse en el corto plazo, sin que haya cambiado nada en el resto del escenario de QCP."
+      "heading": "Nuevo: Tether responde públicamente al escrutinio de Blumenthal sobre sus vínculos con Cantor Fitzgerald e Irán",
+      "body": "Desde que se conoció el 8 de octubre el pedido de registros del senador Blumenthal al CEO de Cantor Fitzgerald (respuesta esperada el 23 de octubre), ninguna de las dos partes había respondido públicamente -así se dejó constancia en el reporte de ayer-. La novedad de hoy es que Tether sí emitió una respuesta general: la empresa dice haber cooperado con las fuerzas del orden y haber ayudado a congelar cerca de USD 550M en USDT vinculado a transacciones con Irán durante este año. Es una respuesta de posicionamiento general, no una respuesta punto por punto a los pedidos específicos de la carta de Blumenthal, y Cantor Fitzgerald todavía no se pronunció. Esto se suma al dato de fondo ya conocido: el informe de la subcomisión del Senado de fines de septiembre encontró que el 84% de 846 wallets vinculadas a Irán transaban mayormente en USDT."
     },
     {
-      "heading": "Nuevo: vence sin respuesta pública el plazo a Tesoro/DOJ sobre Tether, y Blumenthal escala con un pedido a Cantor Fitzgerald",
-      "body": "El plazo del 9 de octubre que el senador Blumenthal había fijado (en sus cartas del 28 de septiembre) al secretario del Tesoro Bessent y al fiscal general Blanche para responder sobre los vínculos de USDT con transacciones vinculadas a Irán venció sin que se confirmara una respuesta pública de ninguna de las dos agencias. El 8 de octubre, Blumenthal envió un pedido de registros separado al CEO de Cantor Fitzgerald (firma con vínculos accionarios con Tether) con respuesta esperada para el 23 de octubre. Es una escalada en el plano regulatorio/político, pero todavía sin traducirse en una acción concreta de DOJ o Tesoro ni en un impacto visible sobre el precio."
-    },
-    {
-      "heading": "Sin cambios: tregua Trump-Irán y posición de Strategy/Saylor",
-      "body": "No se encontró ninguna novedad verificable sobre la tregua anunciada por Trump el 8 de octubre (sigue sin confirmarse ni ruptura ni avance formal) ni sobre la posición de Strategy, que mantiene su última compra confirmada del 5 de octubre. Se reportan solo para que quede explícito que se revisó, no porque haya algo nuevo que agregar."
+      "heading": "Sin cambios: flujos de ETF (sin dato nuevo para el 10-11 de octubre), Clarity Act, Tailandia, Strategy/Saylor y tregua Trump-Irán",
+      "body": "No se encontró dato público de flujos de ETF para el 10 ni el 11 de octubre en Farside ni TFTC -el último dato confirmado sigue siendo la entrada neta de USD 21,1M del 9 de octubre, ya reportada ayer-. Tampoco hay desarrollo nuevo en el outlook de la Clarity Act (sigue el deterioro ya reportado: cloture fallido de septiembre, análisis de octubre de Orrick, ~30-32% en Polymarket), en el cronograma de ETF locales de Bitcoin/Ether en Tailandia (vigencia el 16 de octubre, ningún fondo confirmado para listar todavía), en la posición de Strategy/Saylor (última compra confirmada el 5 de octubre) ni en la tregua Trump-Irán anunciada el 8 de octubre. Se reportan solo para dejar constancia de que se revisó cada eje, no porque haya novedad."
     }
   ],
   "indicators": [
     {
       "name": "Precio BTC-USD (última semana)",
-      "description": "Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (11-oct) es la cotización en vivo. Tercer día consecutivo de estabilización en la banda USD 82.000-83.000, sin un catalizador de precio nuevo hoy -el movimiento relevante de la semana sigue siendo el alivio geopolítico del 8 de octubre.",
+      "description": "Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (12-oct) es la cotización en vivo. Rompe al alza la banda de estabilización de los últimos días y entra en la zona de resistencia USD 83.400-85.400 señalada en ediciones anteriores, sin un catalizador de noticias puntual identificado hoy.",
       "chart_type": "line",
       "data": {
-        "labels": ["5 oct", "6 oct", "7 oct", "8 oct", "9 oct", "10 oct", "11 oct (en vivo)"],
-        "values": [85786.59, 85557.56, 83275.93, 81676.34, 82546.32, 82912.23, 82997.08]
+        "labels": ["6 oct", "7 oct", "8 oct", "9 oct", "10 oct", "11 oct", "12 oct (en vivo)"],
+        "values": [85557.56, 83275.93, 81676.34, 82546.32, 82912.23, 83679.47, 84018.32]
       },
       "unit": "USD",
-      "current_value": "82,997.08",
-      "change": "+0.10",
+      "current_value": "84,018.32",
+      "change": "+0.41",
       "as_of": "07:25 UTC"
     },
     {
       "name": "Fear & Greed Index",
-      "description": "Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), alternative.me. Bajó de 64 a 61 -se mantiene en zona 'Greed' pero pierde algo de la fuerza ganada ayer, consistente con un día sin catalizador nuevo de precio.",
+      "description": "Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), alternative.me. Sube de 61 a 69 -su mayor avance en varios días-, consistente con la ruptura de precio hacia la zona de resistencia.",
       "chart_type": "gauge",
       "data": {
         "labels": ["Fear & Greed"],
-        "values": [61]
+        "values": [69]
       },
       "unit": "índice (0-100)",
-      "current_value": "61 (Greed)",
-      "change": "-3",
-      "as_of": "11 oct 2026"
+      "current_value": "69 (Greed)",
+      "change": "+8",
+      "as_of": "12 oct 2026"
     }
   ],
   "outlook": {
-    "short_term": "El precio sigue contenido en la banda USD 82.000-83.000, sin un catalizador nuevo hoy; los niveles técnicos de soporte (USD 80.300-82.000) y resistencia (USD 83.400-85.400) señalados en ediciones anteriores no tienen actualización nueva (no se encontraron datos frescos de liquidaciones de CoinGlass hoy) y se mantienen como referencia. El catalizador más próximo sigue siendo el IPC de septiembre el 14 de octubre, sin cambios en el consenso (~3,6-3,7% interanual) reportado ayer. La entrada neta de ETF del 9 de octubre (+USD 21,1M) es una señal tentativamente positiva, pero un solo día no permite hablar de reversión de tendencia -falta el dato del 10 de octubre para confirmar continuidad.",
-    "medium_term": "El deterioro adicional del outlook de la Clarity Act (cloture ya fracasado desde septiembre, análisis de octubre de Orrick, Polymarket en ~30-32% de probabilidad de aprobación en 2026) debilita la pata alcista del escenario de QCP Capital hacia USD 100.000 sin cambiar su rango base de USD 80.000-90.000 para el Q4. Tailandia suma un canal institucional nuevo (ETF locales desde el 16 de octubre) pero de alcance acotado frente al mercado de ETF de EE.UU. La escalada regulatoria sobre Tether (vencimiento sin respuesta del plazo a Tesoro/DOJ, nuevo pedido a Cantor Fitzgerald) es un riesgo de cola a monitorear, sin impacto de precio confirmado todavía.",
-    "long_term": "Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup USD 113.000 -nota: otra cobertura cita un recorte previo de Citi a USD 82.000, cifra que coincide por casualidad con el precio spot actual-, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong) ni en el trasfondo regulatorio de fondo más allá de lo ya detallado arriba sobre la Clarity Act. No se encontró desarrollo nuevo y verificable en otros frentes (ICBA vs. OCC, sanciones a la red A7) hoy."
+    "short_term": "El precio rompió la banda USD 82.000-83.000 y entra en la zona de resistencia USD 83.400-85.400 señalada en ediciones anteriores -esos niveles técnicos no tienen actualización nueva hoy (no se encontraron datos frescos de liquidaciones de CoinGlass) y se mantienen como referencia para evaluar si el movimiento de hoy logra sostenerse o es rechazado-. El catalizador más próximo sigue siendo el IPC de septiembre, ahora a solo 2 días (14 de octubre), con el consenso (~3,6-3,7% interanual) sin cambios. Los flujos de ETF siguen sin dato público para el 10 y 11 de octubre, por lo que la lectura de continuidad de la entrada neta del 9 de octubre (+USD 21,1M) sigue pendiente de confirmación.",
+    "medium_term": "Sin cambios desde ayer: el deterioro del outlook de la Clarity Act (cloture fallido, análisis de Orrick, ~30-32% en Polymarket) sigue debilitando la pata alcista del escenario de QCP Capital hacia USD 100.000, sin alterar su rango base de USD 80.000-90.000 para el Q4. Tailandia mantiene su canal institucional acotado (ETF locales desde el 16 de octubre, sin fondos confirmados aún). La escalada regulatoria sobre Tether suma hoy la primera respuesta pública de la empresa (defensa general sobre congelamiento de fondos vinculados a Irán), pero sigue sin una respuesta punto por punto ni una acción concreta de DOJ/Tesoro -sigue siendo un riesgo de cola a monitorear hacia el 23 de octubre, no una señal operativa.",
+    "long_term": "Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong) ni en el trasfondo regulatorio de fondo más allá de lo ya detallado arriba. No se encontró desarrollo nuevo y verificable en otros frentes hoy."
   },
   "recommendations": [
     {
-      "title": "No sobre-interpretar un solo día de entrada neta de ETF (+USD 21,1M el 9 de octubre)",
-      "description": "Tras varios días de salidas y una salida grande confirmada el 8 de octubre (-USD 244,1M), la entrada del 9 de octubre es la primera señal positiva, pero de magnitud pequeña y sin el dato del 10 de octubre todavía disponible para confirmar continuidad. Esperar al menos 2-3 sesiones adicionales antes de asumir un cambio de tendencia en los flujos.",
+      "title": "No asumir que la ruptura hacia USD 84.000 confirma una tendencia sin un catalizador identificado",
+      "description": "El movimiento de hoy entra en la zona de resistencia USD 83.400-85.400 sin que la investigación encontrara una noticia puntual que lo explique -podría ser flujo técnico (cobertura de cortos) más que convicción de compra nueva. Esperar confirmación con los datos de ETF del 10-11 de octubre (todavía no publicados) antes de tratarlo como una señal direccional.",
       "risk_level": "bajo"
     },
     {
-      "title": "Ajustar a la baja la probabilidad del escenario alcista de QCP Capital hacia USD 100.000 en el corto plazo",
-      "description": "Ese escenario depende explícitamente de que avance la Clarity Act, y el deterioro adicional reportado hoy (cloture fracasado, análisis de Orrick, Polymarket ~30-32%) hace ese avance menos probable en el horizonte del Q4. El rango base de QCP (USD 80.000-90.000) no cambia, solo su pata más alcista.",
+      "title": "Mantener la probabilidad ajustada a la baja del escenario alcista de QCP Capital hacia USD 100.000",
+      "description": "Sin cambios desde ayer: ese escenario depende del avance de la Clarity Act, cuyo outlook sigue deteriorado (cloture fallido, análisis de Orrick, ~30-32% en Polymarket). El rango base de QCP (USD 80.000-90.000) no cambia.",
       "risk_level": "medio"
     },
     {
-      "title": "Monitorear la escalada regulatoria sobre Tether sin reaccionar todavía",
-      "description": "El vencimiento sin respuesta del plazo a Tesoro/DOJ y el nuevo pedido a Cantor Fitzgerald (respuesta esperada el 23 de octubre) son una escalada política, pero no hay todavía una acción concreta de la DOJ ni un impacto de precio confirmado. Es un riesgo de cola a vigilar de cara a esa fecha, no una señal operativa hoy.",
+      "title": "Monitorear la respuesta de Tether sin tratarla como cierre del tema regulatorio",
+      "description": "La defensa pública de Tether (congelamiento de ~USD 550M en USDT vinculado a Irán) es una respuesta de posicionamiento general, no una respuesta punto por punto a los pedidos específicos de Blumenthal a Cantor Fitzgerald, cuyo plazo vence el 23 de octubre. Es un riesgo de cola a vigilar hacia esa fecha, no una señal operativa hoy.",
       "risk_level": "bajo"
     }
   ],
   "sources": [
     {"title": "Bitcoin ETF Flow (US$m) - Farside Investors", "url": "https://farside.co.uk/btc/"},
     {"title": "Bitcoin ETF Flows Today: Net Inflows & Outflows - TFTC", "url": "https://www.tftc.io/bitcoin-etf-flows"},
-    {"title": "Thailand SEC issues bitcoin and ether ETF rules set to take effect Oct. 16 - The Block", "url": "https://theblock.co/news/regulation/2026-10-09-thailand-sec-issues-bitcoin-and-ether-etf-rules-set-to-take-effect-oct-16-418132"},
+    {"title": "Cantor Fitzgerald faces Senate Democrats probe over Tether ties - Cointelegraph", "url": "https://cointelegraph.com/news/cantor-fitzgerald-faces-senate-democrats-probe-over-tether-ties"},
+    {"title": "Blumenthal Wants Cantor Fitzgerald's Tether Files, Cites $10B Stake Estimate - Yellow.com", "url": "https://yellow.com/news/blumenthal-cantor-fitzgerald-tether-files-stake"},
+    {"title": "Blumenthal probes Tether on its role in Iranian shadow banking - Senate HSGAC/Blumenthal Press Office", "url": "https://www.blumenthal.senate.gov/newsroom/press/release/blumenthal-probes-tether-on-its-role-in-iranian-shadow-banking"},
     {"title": "Thailand finalizes rules paving way for bitcoin, ether ETFs - Cointelegraph", "url": "https://cointelegraph.com/news/thailand-finalizes-rules-paving-way-for-bitcoin-ether-etfs"},
     {"title": "The CLARITY Act Stalls in the Senate: What's Next for Digital Asset Regulation - Orrick", "url": "https://www.orrick.com/en/Insights/2026/10/The-CLARITY-Act-Stalls-in-the-Senate-Whats-Next-for-Digital-Asset-Regulation"},
-    {"title": "Senate cloture vote on Clarity Act fails, dealing regulatory blow to crypto industry - CNBC", "url": "https://www.cnbc.com/2026/09/15/senate-cloture-vote-on-clarity-act-fails-dealing-regulatory-setback-to-crypto-industry.html"},
-    {"title": "CLARITY Act: The Senate Vote Failed 49 to 50 - FinTech Weekly", "url": "https://www.fintechweekly.com/news/clarity-act-cloture-vote-fails-49-50-september-2026"},
-    {"title": "Senate Democrats put Tether's USDT under the microscope over Iran sanctions evasion - Crypto Briefing", "url": "https://cryptobriefing.com/senate-democrats-tether-usdt-iran-report/"},
-    {"title": "Letter from Sen. Blumenthal to Sec. Bessent (2026-09-28) - Senate HSGAC", "url": "https://www.hsgac.senate.gov/wp-content/uploads/2026-09-28-Letter-from-Sen-Blumenthal-to-Sec-Bessent.pdf"},
     {"title": "Fear & Greed Index - alternative.me", "url": "https://alternative.me/crypto/fear-and-greed-index/"},
     {"title": "BTC-USD - Yahoo Finance", "url": "https://finance.yahoo.com/quote/BTC-USD/"}
   ],
   "crypto_extras": {
-    "fear_greed": {"value": 61, "classification": "Greed", "color": "#8bc34a", "timestamp": "2026-10-11T00:00:00+00:00"},
-    "btc_rainbow": {"image": ".tmp/bitcoin-btc-rainbow.png", "source": "BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)", "source_url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/", "captured_at": "2026-10-11"}
+    "fear_greed": {"value": 69, "classification": "Greed", "color": "#8bc34a", "timestamp": "2026-10-12T00:00:00+00:00"},
+    "btc_rainbow": {"image": ".tmp/bitcoin-btc-rainbow.png", "source": "BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)", "source_url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/", "captured_at": "2026-10-12"}
   }
 }
