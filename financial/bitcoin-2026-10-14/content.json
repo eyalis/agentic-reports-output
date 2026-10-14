@@ -1,0 +1,117 @@
+{
+  "topic": "Bitcoin (BTC-USD)",
+  "date": "2026-10-14",
+  "generated_at": "14 de octubre de 2026, 07:22 UTC",
+  "executive_summary": "BTC cotiza en USD 83.391,93 en vivo (07:22 UTC), +0,36% frente al cierre de ayer (USD 83.092,65) -una sesión tranquila comparada con la volatilidad de ayer, cuando el precio testeó el soporte de USD 81.000 antes de rebotar-. La novedad más relevante desde el reporte de ayer es que los ETF spot de Bitcoin en EE.UU. revirtieron a entradas netas el 13 de octubre (+USD 175,7M según Farside, liderado por FBTC con USD 103,1M e IBIT con USD 65,9M), cortando la racha de salidas que había marcado la semana previa (incluida la salida semanal de -USD 680M aprox. reportada ayer) -aunque esta reversión llega después de que cerca de USD 774M en posiciones apalancadas fueran liquidadas durante el tramo bajista hacia el soporte de USD 81.000-. En el frente corporativo, Strive (respaldada por Vivek Ramaswamy) reveló la compra de 3.311 BTC adicionales (~USD 280M, precio promedio ~USD 84.500) en la semana que terminó el 9 de octubre, financiada en parte con USD 208M de ejercicio de warrants -esto lleva sus tenencias totales a 32.773 BTC, convirtiéndola en el quinto mayor tesoro corporativo público de Bitcoin, cerca de los 35.577 BTC de MARA Holdings-. No hay novedad equivalente de Strategy/Saylor desde la compra de 250 BTC reportada ayer (holdings en 848.250 BTC). Los analistas están divididos sobre si el rebote de ayer es sostenible: Delta Exchange lo describe como una 'recuperación de alivio, no una reversión confirmada', mientras BitDelta India señala que los vendedores siguen activos cerca de USD 84.000 tras la liquidación del 13 de octubre, y WazirX nota que los compradores spot absorbieron las salidas de ETF con soporte en USD 83.000-83.250. El Fear & Greed Index se mantiene estable en 62 (Greed), prácticamente sin cambios frente al cierre de ayer. El catalizador central del día sigue siendo el IPC de septiembre de EE.UU., que se publica hoy a las 8:30am ET (12:30 UTC, todavía pendiente al momento de este reporte) -el presidente de la Fed de Nueva York, John Williams, dijo que otra subida de tasas este año 'podría ser apropiada', aunque no ve necesidad de más alzas el próximo año, una señal hawkish adicional de cara al dato-. En Tether/Cantor Fitzgerald, Clarity Act y el marco de ETF de Tailandia no hay desarrollo nuevo desde el reporte de ayer.",
+  "recent_context": [
+    {
+      "heading": "Nuevo: los ETF spot de Bitcoin revierten a entradas netas (+USD 175,7M) el 13 de octubre, cortando la racha de salidas",
+      "body": "Según datos de Farside Investors, los ETF spot de Bitcoin en EE.UU. registraron entradas netas de USD 175,7M el 13 de octubre -FBTC (Fidelity) lideró con USD 103,1M e IBIT (BlackRock) aportó USD 65,9M-, revirtiendo la salida semanal de -USD 680M aprox. reportada ayer y la salida diaria de USD 65,4M de IBIT del 12 de octubre. La reversión llega después de que aproximadamente USD 774M en posiciones apalancadas fueran liquidadas durante el tramo bajista hacia el soporte de USD 81.000, lo que sugiere que buena parte de la presión vendedora de corto plazo ya se purgó antes del rebote. Aun así, los analistas consultados tratan la reversión con cautela más que como confirmación de tendencia (ver abajo)."
+    },
+    {
+      "heading": "Nuevo: Strive compra 3.311 BTC adicionales (~USD 280M), holdings en 32.773 BTC -quinto mayor tesoro corporativo público-",
+      "body": "Strive (respaldada por Vivek Ramaswamy) reveló en un filing ante la SEC la compra de 3.311 BTC en la semana que terminó el 9 de octubre, a un precio promedio de ~USD 84.500 por moneda (~USD 280M en total), financiada en parte con USD 208M de ejercicio de warrants -USD 15,3M de warrants adicionales vencían el mismo 13 de octubre a las 5pm ET-. Esto lleva las tenencias totales de Strive a 32.773 BTC, convirtiéndola en el quinto mayor tesoro corporativo público de Bitcoin según BitcoinTreasuries.Net, acercándose a los 35.577 BTC de MARA Holdings. No hay novedad equivalente de Strategy/Saylor desde la compra de 250 BTC y los 848.250 BTC reportados ayer."
+    },
+    {
+      "heading": "Nuevo: analistas divididos sobre si el rebote es sostenible de cara al IPC de hoy",
+      "body": "Con el precio cerca de USD 83.500 y resistencia inmediata en USD 84.000-84.500, las posturas de analistas consultados hoy difieren: Riya Sehgal (Delta Exchange) lo describe como una 'recuperación de alivio, no una reversión confirmada', condicionada a sostener el cluster de EMA en USD 83.200-83.400; Purvang Mashru (BitDelta India) mantiene una lectura bajista, señalando que los vendedores siguen activos cerca de USD 84.000 tras la liquidación del 13 de octubre, con soporte cercano en USD 81.951; Nischal Shetty (WazirX) es moderadamente alcista, notando que los compradores spot absorbieron las salidas de ETF con soporte en USD 83.000-83.250; y Prateek Gupta (Mudrex) se mantiene neutral, ubicando el rango entre USD 81.500 y USD 84.500."
+    },
+    {
+      "heading": "Nuevo: John Williams (Fed de Nueva York) deja abierta la puerta a una subida de tasas más este año",
+      "body": "El presidente de la Fed de Nueva York, John Williams, dijo que otra subida de tasas este año 'podría ser apropiada', aunque no ve necesidad de alzas adicionales el próximo año. Es una señal ligeramente hawkish adicional de cara al IPC de septiembre, que se publica hoy a las 8:30am ET (12:30 UTC) y todavía está pendiente al momento de este reporte -distinto del discurso del presidente Warsh del viernes 16 de octubre, ya anticipado en el reporte de ayer."
+    },
+    {
+      "heading": "Sin cambios: Tether/Cantor Fitzgerald, Clarity Act y ETF de Tailandia",
+      "body": "El plazo del senador Blumenthal para que Cantor Fitzgerald responda su carta del 8 de octubre (13 pedidos de información sobre su participación de ~USD 10.000M en Tether) sigue vigente hasta el 23 de octubre, sin pronunciamiento nuevo de la firma. Tampoco hay avance en la Clarity Act desde el cloture fallido del 15 de septiembre (49 a favor, 11 votos por debajo de los 60 necesarios) ni en el cronograma de ETF de Bitcoin/Ether en Tailandia, cuyo marco regulatorio sigue sin ningún fondo listado en la Bolsa de Tailandia."
+    }
+  ],
+  "indicators": [
+    {
+      "name": "Precio BTC-USD (última semana)",
+      "description": "Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (14-oct) es la cotización en vivo. Sesión tranquila tras el testeo del soporte de USD 81.000 de ayer, con los ETF spot revirtiendo a entradas netas y cerca de USD 774M en posiciones apalancadas ya liquidadas.",
+      "chart_type": "line",
+      "data": {
+        "labels": ["8 oct", "9 oct", "10 oct", "11 oct", "12 oct", "13 oct", "14 oct (en vivo)"],
+        "values": [81676.34, 82546.32, 82912.23, 83679.47, 81762.56, 83095.13, 83391.93]
+      },
+      "unit": "USD",
+      "current_value": "83,391.93",
+      "change": "+0.36",
+      "as_of": "07:22 UTC"
+    },
+    {
+      "name": "Fear & Greed Index",
+      "description": "Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), alternative.me. Se mantiene estable en 62 (Greed), prácticamente sin cambios frente al cierre de ayer (57), en línea con la sesión tranquila del precio.",
+      "chart_type": "gauge",
+      "data": {
+        "labels": ["Fear & Greed"],
+        "values": [62]
+      },
+      "unit": "índice (0-100)",
+      "current_value": "62 (Greed)",
+      "change": "+5",
+      "as_of": "14 oct 2026"
+    }
+  ],
+  "expert_opinions": [
+    {
+      "expert": "Riya Sehgal",
+      "affiliation": "Delta Exchange",
+      "quote": "Relief recovery, not a confirmed reversal -holding the USD 83,200-83,400 EMA cluster keeps momentum intact.",
+      "source_url": "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-holds-near-usd-83490-as-us-cpi-fed-rate-talk-test-the-rebound",
+      "stance": "neutral"
+    },
+    {
+      "expert": "Purvang Mashru",
+      "affiliation": "BitDelta India",
+      "quote": "Sellers remain active near USD 84,000 after the October 13 sell-off; support near USD 81,951.",
+      "source_url": "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-holds-near-usd-83490-as-us-cpi-fed-rate-talk-test-the-rebound",
+      "stance": "bearish"
+    },
+    {
+      "expert": "Nischal Shetty",
+      "affiliation": "WazirX",
+      "quote": "Spot buyers absorbed ETF outflows; support at USD 83,000-83,250.",
+      "source_url": "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-holds-near-usd-83490-as-us-cpi-fed-rate-talk-test-the-rebound",
+      "stance": "bullish"
+    }
+  ],
+  "outlook": {
+    "short_term": "El catalizador inmediato es el IPC de septiembre de EE.UU., que se publica hoy a las 8:30am ET (12:30 UTC) y todavía está pendiente al momento de este reporte (consenso headline ~3,6-3,7% interanual, núcleo ~2,4%): un núcleo mensual de 0,2% o menos destensaría rendimientos, mientras que 0,3% o más presionaría a la baja. El comentario de John Williams (Fed de Nueva York) sobre una posible subida de tasas adicional este año agrega un sesgo ligeramente hawkish de cara al dato. La resistencia inmediata se ubica en USD 84.000-84.500, con soporte en USD 81.500-83.250 según distintos analistas -la reversión de los ETF a entradas netas (+USD 175,7M el 13 de octubre) es constructiva pero los analistas la tratan como 'recuperación de alivio' más que como reversión confirmada.",
+    "medium_term": "Sin cambios desde ayer en el rango base de QCP Capital para el Q4 (USD 80.000-90.000) ni en el deterioro del outlook de la Clarity Act tras el cloture fallido del 15 de septiembre. Como elemento nuevo, la entrada de Strive como quinto mayor tesoro corporativo público (32.773 BTC tras sumar 3.311 BTC) refuerza la narrativa de demanda institucional vía treasuries corporativos, en paralelo a la acumulación ya conocida de Strategy (848.250 BTC) -aunque esto no cambia por sí solo el rango de precio proyectado. El plazo de Cantor Fitzgerald para responder a la carta de Blumenthal (23 de octubre) sigue siendo el próximo punto de inflexión regulatorio a vigilar.",
+    "long_term": "Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong) ni en el trasfondo regulatorio de fondo más allá de lo ya detallado arriba. La consolidación de Strive como quinto mayor tesoro corporativo público (detrás de MARA, entre otros) y la acumulación continuada de Strategy refuerzan la narrativa de demanda institucional estructural vía balance corporativo, sin que eso cambie los rangos ya proyectados."
+  },
+  "recommendations": [
+    {
+      "title": "No tratar la reversión de ETF ni el rebote como confirmación de tendencia antes del IPC de hoy",
+      "description": "Los ETF spot de Bitcoin revirtieron a entradas netas (+USD 175,7M) el 13 de octubre tras semanas de salidas, pero analistas como Delta Exchange lo describen como 'recuperación de alivio, no reversión confirmada'. El IPC de septiembre, que se publica hoy a las 8:30am ET, es el dato que puede confirmar o revertir este movimiento -un núcleo mensual de 0,3% o más introduce riesgo de nueva presión hacia el soporte de USD 81.500-83.000.",
+      "risk_level": "bajo"
+    },
+    {
+      "title": "Vigilar si la entrada de ETF del 13 de octubre se sostiene en los próximos días antes de asumir recuperación de flujo",
+      "description": "Una sola sesión de entradas netas (+USD 175,7M) no revierte por sí sola la salida semanal de -USD 680M aprox. reportada ayer. Conviene esperar confirmación de al menos 2-3 sesiones consecutivas de entradas antes de tratar el flujo de ETF como favorable de forma sostenida.",
+      "risk_level": "medio"
+    },
+    {
+      "title": "Monitorear la consolidación de Strive como tesoro corporativo, no como garantía de piso de precio",
+      "description": "La compra de 3.311 BTC (~USD 280M) que lleva a Strive a 32.773 BTC y al quinto lugar entre tesoros corporativos públicos confirma demanda institucional estructural, pero -igual que la acumulación de Strategy- no sustituye la confirmación de flujo de ETF ni el resultado del IPC de hoy como catalizadores de precio de corto plazo.",
+      "risk_level": "bajo"
+    }
+  ],
+  "sources": [
+    {"title": "Crypto Prices Today: Bitcoin Holds Near USD 83,490 as US CPI, Fed Rate Talk Test the Rebound - Analytics Insight", "url": "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-holds-near-usd-83490-as-us-cpi-fed-rate-talk-test-the-rebound"},
+    {"title": "Bitcoin ETF Flow (US$m) - Farside Investors", "url": "https://farside.co.uk/btc/"},
+    {"title": "Strive Acquires 3,311 BTC, Total Holdings Reach 32,773 BTC - KuCoin", "url": "https://www.kucoin.com/news/flash/strive-acquires-3-311-btc-total-holdings-reach-32-773-btc"},
+    {"title": "Vivek Ramaswamy's Strive Acquires 3,311 Bitcoin as Warrant Deadline Looms - Crypto Times", "url": "https://www.cryptotimes.io/2026/10/13/vivek-ramaswamys-strive-acquires-3311-bitcoin-as-warrant-deadline-looms/"},
+    {"title": "Strive Buys 3,311 Bitcoin, Writes $100 SATA Floor Into Governing Docs - Cryptopolitan", "url": "https://cryptopolitan.com/strive-buys-3311-btc-writes-sata-floor"},
+    {"title": "Blumenthal Wants Cantor Fitzgerald's Tether Files, Cites $10B Stake Estimate - Yellow.com", "url": "https://yellow.com/news/blumenthal-cantor-fitzgerald-tether-files-stake"},
+    {"title": "Clarity Act Stalls in Senate as Crypto Bill Fails to Clear Key Vote - Decrypt", "url": "https://decrypt.co/378283/clarity-act-fails-senate-hurdle"},
+    {"title": "US CPI Preview: September 2026 Forecasts and the Core CPI Outlook - Admiral Markets", "url": "https://admiralmarkets.com/analytics/traders-blog/us-cpi-preview-september-2026-forecasts-and-the-core-cpi-outlook"},
+    {"title": "Fear & Greed Index - alternative.me", "url": "https://alternative.me/crypto/fear-and-greed-index/"},
+    {"title": "BTC-USD - Yahoo Finance", "url": "https://finance.yahoo.com/quote/BTC-USD/"}
+  ],
+  "crypto_extras": {
+    "fear_greed": {"value": 62, "classification": "Greed", "color": "#8bc34a", "timestamp": "2026-10-14T00:00:00+00:00"},
+    "btc_rainbow": {"image": ".tmp/bitcoin-btc-rainbow.png", "source": "BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)", "source_url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/", "captured_at": "2026-10-14"}
+  }
+}
