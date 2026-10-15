@@ -1,0 +1,107 @@
+{
+  "topic": "Bitcoin (BTC-USD)",
+  "date": "2026-10-15",
+  "generated_at": "15 de octubre de 2026, 07:24 UTC",
+  "executive_summary": "BTC cotiza en USD 80.984,75 en vivo (07:24 UTC), -0,72% frente al cierre de ayer (USD 81.573,10) y ha caído por debajo de USD 81.000 -más de 3% en las últimas 24 horas según datos de mercado durante la sesión asiática, tocando mínimos cercanos a USD 80.474-. El catalizador que ayer quedaba pendiente ya se resolvió: el IPC de septiembre de EE.UU., publicado el 14 de octubre, salió más caliente de lo esperado en ambos frentes -headline en 3,7% interanual (vs. 3,6% esperado, arriba del 3,4% de agosto) y núcleo en 2,6% interanual (vs. 2,5% esperado, arriba del 2,4% previo), con el componente mensual de núcleo en 0,3% (vs. 0,2% esperado) y la gasolina subiendo 9,1% en el mes-. Este dato caliente, sumado a un derrumbe en las bolsas asiáticas (Kospi surcoreano cayendo cerca de 8% en la sesión de la mañana, con Samsung Electronics y SK Hynix bajando más de 9%; Nikkei japonés cayendo cerca de 5%) y arrastre desde Wall Street (Nasdaq -1,88% y S&P 500 -1,11% el miércoles), empujó a todo el mercado cripto a la baja -Ethereum cayó cerca de 6,4% a USD 2.356 aproximadamente, Solana cerca de 5,5%, XRP cerca de 5% y Dogecoin cerca de 6%-, con aproximadamente USD 483M en liquidaciones de futuros cripto en 24 horas (BTC ~USD 197M, ETH ~USD 286M, según CoinGlass). El Fear & Greed Index refleja este giro, cayendo de 62 (Greed) a 53 (Neutral) -nueve puntos en un día-. El analista 'Crypto Patel' señala USD 80.108 como soporte clave, advirtiendo que una ruptura confirmada por debajo de ese nivel con cierre de vela de temporalidad alta podría abrir la puerta a una zona bajista de USD 70.000-65.000 -aclarando que es una proyección condicional, no un hecho confirmado-; otro analista más bajista ('Crypto Lens') llega a mencionar objetivos de USD 75.000, 70.000 y hasta 57.000, aunque esas cifras son más especulativas y no están corroboradas por múltiples fuentes. Sobre los flujos de ETF spot del 13-14 de octubre, las fuentes públicas consultadas hoy dan cifras contradictorias entre sí (desde salidas netas de ~USD 327M hasta inflows aislados de IBIT) sin que ninguna pueda confirmarse con un dato primario accesible hoy (Farside Investors devolvió error 403 al intentar consultarlo directamente) -por lo tanto este reporte no fija una cifra de flujo de ETF para evitar inventar un dato no verificado, a diferencia de los días anteriores-. No hay novedad nueva de Strive ni de Strategy/Saylor desde las compras reportadas ayer y anteayer (32.773 BTC y 848.250 BTC respectivamente). Tampoco hay desarrollo nuevo en Tether/Cantor Fitzgerald, Clarity Act o el marco de ETF de Tailandia. De cara a la reunión de la Fed del 27-28 de octubre, las probabilidades de una subida de tasas ya eran materia de debate activo antes de este IPC (estimaciones públicas dispersas entre ~17% y ~50% según la fuente y la fecha de corte); no se encontró una cifra de consenso actualizada específicamente post-dato de hoy en fuentes confiables, por lo que este reporte no asigna una probabilidad puntual nueva.",
+  "recent_context": [
+    {
+      "heading": "Nuevo: el IPC de septiembre sale más caliente de lo esperado (headline 3,7%, núcleo 2,6%), el catalizador que ayer quedaba pendiente",
+      "body": "El IPC de septiembre de EE.UU., publicado el 14 de octubre, superó las expectativas en ambos frentes: headline en 3,7% interanual (consenso 3,6%, arriba del 3,4% de agosto) con un alza mensual de 0,6%; núcleo en 2,6% interanual (consenso 2,5%, arriba del 2,4% previo) con un alza mensual de 0,3% (consenso 0,2%). La gasolina subió 9,1% en el mes y explicó buena parte del alza mensual. Es el dato que el reporte de ayer señalaba como catalizador pendiente -la señal hawkish de John Williams (Fed de Nueva York) sobre una posible subida adicional este año, reportada ayer, se ve ahora reforzada por un IPC que corrobora presión inflacionaria."
+    },
+    {
+      "heading": "Nuevo: BTC cae bajo USD 81.000 (-3% aprox. en 24h) arrastrado por el IPC caliente y un derrumbe en bolsas asiáticas",
+      "body": "Bitcoin perdió el soporte de USD 81.000 durante la sesión asiática de hoy, tocando mínimos cercanos a USD 80.474, en una caída de más de 3% en 24 horas. El movimiento coincide con un derrumbe en las bolsas de Asia -el Kospi surcoreano cayó cerca de 8% en la mañana, con Samsung Electronics y SK Hynix bajando más de 9%, y el Nikkei japonés cayó cerca de 5%- además del arrastre de Wall Street del miércoles (Nasdaq -1,88%, S&P 500 -1,11%). El resto del mercado cripto cayó con más fuerza relativa que BTC: Ethereum ~-6,4% (USD 2.356 aprox.), Solana ~-5,5%, XRP ~-5%, Dogecoin ~-6%, con aproximadamente USD 483M en liquidaciones de futuros en 24h (BTC ~USD 197M, ETH ~USD 286M según CoinGlass)."
+    },
+    {
+      "heading": "Nuevo: Fear & Greed Index cae de 62 (Greed) a 53 (Neutral) en un día",
+      "body": "El giro de sentimiento es la contraparte directa del movimiento de precio: el índice pasó de 62 (Greed) ayer a 53 (Neutral) hoy, una caída de 9 puntos en 24 horas -el mayor movimiento diario de este indicador reportado en esta serie de informes hasta ahora."
+    },
+    {
+      "heading": "Dato no confirmado: flujos de ETF spot del 13-14 de octubre, fuentes contradictorias",
+      "body": "A diferencia de reportes anteriores, hoy no fue posible confirmar con una fuente primaria la cifra de flujo neto de los ETF spot de Bitcoin en EE.UU. para el 13 o 14 de octubre -Farside Investors (la fuente usada en reportes previos) devolvió error 403 al consultarla directamente, y las fuentes secundarias encontradas se contradicen entre sí (desde salidas netas agregadas de ~USD 327M hasta reportes aislados de inflows de IBIT, con cifras acumuladas de IBIT que no coinciden entre artículos). Este reporte omite deliberadamente una cifra de flujo de ETF para el día de hoy en vez de citar un número no verificado; se intentará de nuevo en el próximo ciclo."
+    },
+    {
+      "heading": "Sin cambios: Strive, Strategy/Saylor, Tether/Cantor Fitzgerald, Clarity Act y ETF de Tailandia",
+      "body": "No se encontró novedad nueva sobre las tenencias de Strive (32.773 BTC, reportado ayer) ni de Strategy/Saylor (848.250 BTC, compra de 250 BTC reportada anteayer). El plazo de Cantor Fitzgerald para responder a la carta del senador Blumenthal sigue vigente hasta el 23 de octubre sin pronunciamiento nuevo; tampoco hay avance en la Clarity Act desde el cloture fallido del 15 de septiembre, ni en el cronograma de ETF de Bitcoin/Ether en Tailandia."
+    }
+  ],
+  "indicators": [
+    {
+      "name": "Precio BTC-USD (última semana)",
+      "description": "Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (15-oct) es la cotización en vivo. Caída marcada hoy, perdiendo el soporte de USD 81.000 tras el IPC de septiembre más caliente de lo esperado y un derrumbe en bolsas asiáticas.",
+      "chart_type": "line",
+      "data": {
+        "labels": ["9 oct", "10 oct", "11 oct", "12 oct", "13 oct", "14 oct", "15 oct (en vivo)"],
+        "values": [82546.32, 82912.23, 83679.47, 81762.56, 83095.13, 81562.49, 80984.75]
+      },
+      "unit": "USD",
+      "current_value": "80,984.75",
+      "change": "-0.72",
+      "as_of": "07:24 UTC"
+    },
+    {
+      "name": "Fear & Greed Index",
+      "description": "Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), alternative.me. Cae de 62 (Greed) a 53 (Neutral), reflejando el giro de aversión al riesgo tras el IPC caliente y la caída de precio de hoy.",
+      "chart_type": "gauge",
+      "data": {
+        "labels": ["Fear & Greed"],
+        "values": [53]
+      },
+      "unit": "índice (0-100)",
+      "current_value": "53 (Neutral)",
+      "change": "-9",
+      "as_of": "15 oct 2026"
+    }
+  ],
+  "expert_opinions": [
+    {
+      "expert": "Crypto Patel",
+      "affiliation": "Analista independiente",
+      "quote": "A clean breakdown below $80,108 followed by a confirmed HTF candle close could open the door to the 70K-65K downside zone.",
+      "source_url": "https://crypto.news/bitcoin-price-drops-below-81k",
+      "stance": "bearish"
+    },
+    {
+      "expert": "Crypto Lens",
+      "affiliation": "Analista independiente",
+      "quote": "Advierte objetivos a la baja en USD 75.000, 70.000 e incluso USD 57.000 si el mercado amplio (con pérdidas de más de USD 140.000M citadas) continúa deteriorándose -proyección más especulativa, no corroborada por otras fuentes.",
+      "source_url": "https://crypto.news/bitcoin-price-drops-below-81k",
+      "stance": "bearish"
+    }
+  ],
+  "outlook": {
+    "short_term": "El catalizador que ayer estaba pendiente (IPC de septiembre) ya se resolvió caliente (3,7% headline, 2,6% núcleo), y el mercado lo está digerendo con una caída que llevó a BTC bajo USD 81.000. El nivel a vigilar en el muy corto plazo es el soporte de USD 80.108 señalado por Crypto Patel -una ruptura confirmada abriría camino hacia la zona de USD 70.000-65.000 (conditional, no confirmado); una recuperación necesitaría reconquistar la zona de USD 83.000-85.000 que fue soporte/resistencia los últimos días. La correlación con el riesgo bursátil (Nasdaq, S&P 500, Kospi, Nikkei) parece haber sido un driver tan relevante hoy como el dato de inflación en sí.",
+    "medium_term": "El rango base de QCP Capital para el Q4 (USD 80.000-90.000), citado en reportes anteriores, está siendo testeado directamente desde su borde inferior por primera vez en esta serie de reportes -sin que esto invalide el rango todavía, pero sí reduce el margen antes de que quede en entredicho. La reunión de la Fed del 27-28 de octubre es el próximo catalizador macro relevante: las probabilidades de una subida de tasas ya eran objeto de debate antes del IPC de hoy (estimaciones dispersas entre ~17% y ~50% según la fuente), y es razonable esperar que suban tras un dato más caliente de lo esperado, aunque no se encontró una cifra de consenso actualizada confiable para asignar aquí. La consolidación de Strive y Strategy como grandes tenedores corporativos (32.773 BTC y 848.250 BTC respectivamente, sin cambios desde ayer) sigue como narrativa de demanda estructural de fondo.",
+    "long_term": "Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong) ni en el trasfondo regulatorio de fondo (Clarity Act, Tether/Cantor Fitzgerald, ETF de Tailandia). La corrección de hoy no cambia por sí sola estos marcos de largo plazo, aunque refuerza la relevancia de vigilar la correlación de BTC con activos de riesgo tradicionales en el corto plazo."
+  },
+  "recommendations": [
+    {
+      "title": "No asumir que la ruptura de USD 81.000 confirma una tendencia bajista mayor sin ver qué pasa en USD 80.108",
+      "description": "El nivel señalado por el analista Crypto Patel (USD 80.108) es el soporte técnico inmediato más citado hoy. Una ruptura confirmada con cierre de vela de temporalidad alta por debajo de ese nivel sería la señal técnica a vigilar antes de asumir una continuación hacia USD 70.000-65.000 -hasta entonces, se trata de una proyección condicional, no un hecho.",
+      "risk_level": "medio"
+    },
+    {
+      "title": "Vigilar la correlación con mercados de renta variable antes de operar solo sobre el IPC",
+      "description": "El derrumbe de hoy combina el IPC caliente con una caída marcada en bolsas asiáticas (Kospi, Nikkei) y el arrastre de Wall Street del miércoles. Tratar el movimiento como una historia puramente cripto/macro-inflación ignora que el apetito de riesgo global se deterioró en simultáneo -relevante para calibrar si un rebote en renta variable podría acompañar una recuperación de BTC.",
+      "risk_level": "medio"
+    },
+    {
+      "title": "No tomar como dato confirmado ninguna cifra de flujo de ETF de los últimos dos días hasta verificar con fuente primaria",
+      "description": "Las fuentes secundarias consultadas hoy sobre los flujos de ETF del 13-14 de octubre se contradicen entre sí y no pudieron verificarse contra Farside Investors (bloqueado con error 403 en el intento de hoy). Cualquier decisión que dependa de la dirección del flujo de ETF debería esperar a una fuente primaria confiable en los próximos reportes.",
+      "risk_level": "bajo"
+    }
+  ],
+  "sources": [
+    {"title": "Bitcoin price drops below $81K as analyst warns of fall to $65K - crypto.news", "url": "https://crypto.news/bitcoin-price-drops-below-81k"},
+    {"title": "Consumer Price Index: Inflation at 3.7% in September - Advisor Perspectives", "url": "https://www.advisorperspectives.com/dshort/updates/2026/10/14/cpi-consumer-price-index-inflation-september-2026"},
+    {"title": "Here's the inflation breakdown for September 2026 — in one chart - CNBC", "url": "https://www.cnbc.com/2026/10/14/cpi-inflation-breakdown-september-2026.html"},
+    {"title": "Inflation sizzled in September — and Social Security benefits will get a boost - NPR", "url": "https://npr.org/2026/10/14/nx-s1-6000593/inflation-consumer-prices-cpi-social-security-benefits"},
+    {"title": "Consumer Price Index: Inflation At 3.7% In September - Seeking Alpha", "url": "https://seekingalpha.com/article/4954267-consumer-price-index-inflation-at-3-7-percent-in-september"},
+    {"title": "Fear & Greed Index - alternative.me", "url": "https://alternative.me/crypto/fear-and-greed-index/"},
+    {"title": "BTC-USD - Yahoo Finance", "url": "https://finance.yahoo.com/quote/BTC-USD/"}
+  ],
+  "crypto_extras": {
+    "fear_greed": {"value": 53, "classification": "Neutral", "color": "#fab219", "timestamp": "2026-10-15T00:00:00+00:00"},
+    "btc_rainbow": {"image": ".tmp/bitcoin-btc-rainbow.png", "source": "BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)", "source_url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/", "captured_at": "2026-10-15"}
+  }
+}
