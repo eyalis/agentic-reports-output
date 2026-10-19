@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bitcoin (BTC-USD) — Reporte Yirafa Labs</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style>
+  @font-face {
+    font-family: 'Bricolage Grotesque';
+    font-style: normal;
+    font-weight: 300 800;
+    src: url('assets/fonts/BricolageGrotesque-latin.woff2') format('woff2');
+  }
+
+  :root {
+    --bg: #F7F7FB;
+    --surface: #FFFFFF;
+    --surface-muted: #F0F0F8;
+    --ink: #0F0F1E;
+    --ink-muted: #68687F;
+    --ink-soft: #ABABBE;
+    --accent: #C87E28;
+    --accent-hover: #A86820;
+    --accent-soft: #F6ECD8;
+    --border: #DCDCE8;
+    --border-strong: #C4C4D8;
+    --font-display: 'Bricolage Grotesque', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-body: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+    --max-w: 760px;
+    --radius: 14px;
+
+    --series-1: #C87E28;
+    --series-2: #2a78d6;
+    --series-3: #1baf7a;
+    --series-4: #8f5cd1;
+    --series-5: #c0392b;
+
+    --good: #0ca30c;
+    --warning: #fab219;
+    --serious: #ec835a;
+    --critical: #d03b3b;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page { max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem 4rem; }
+
+  header.masthead {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 2rem 1.5rem; max-width: var(--max-w); margin: 0 auto;
+    border-bottom: 1px solid var(--border);
+  }
+  .brand { display: flex; align-items: center; gap: 0.6rem; font-family: var(--font-display); }
+  .brand-icon {
+    width: 28px; height: 28px; border-radius: 8px; background: var(--accent);
+    color: var(--ink); font-weight: 800; font-size: 0.95rem;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .brand-word { font-weight: 700; letter-spacing: -0.01em; font-size: 0.95rem; }
+  .report-date { color: var(--ink-muted); font-size: 0.82rem; font-family: var(--font-display); text-align: right; }
+  .report-updated { font-size: 0.72rem; color: var(--ink-soft); margin-top: 0.15rem; }
+
+  .live-tag {
+    display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.7rem; font-weight: 700;
+    color: var(--good); background: #e8f7e8; padding: 0.1rem 0.5rem; border-radius: 999px; margin-top: 0.35rem;
+  }
+  .live-tag::before {
+    content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--good); flex-shrink: 0;
+  }
+
+  .hero { padding: 2.5rem 0 0.5rem; }
+  .eyebrow {
+    font-family: var(--font-display);
+    text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.7rem;
+    font-weight: 700; color: var(--accent-hover); margin: 0 0 0.6rem;
+  }
+  h1.title {
+    font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 1.9rem);
+    font-weight: 700; letter-spacing: -0.01em; line-height: 1.25; margin: 0 0 0.9rem;
+  }
+  .summary-lead { font-size: 1.05rem; line-height: 1.6; color: var(--ink-muted); max-width: 62ch; }
+
+  section { margin-top: 2.5rem; }
+  h2.section-title {
+    font-family: var(--font-display);
+    font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 1.1rem;
+    display: flex; align-items: center; gap: 0.55rem;
+  }
+  h2.section-title::before {
+    content: ''; width: 7px; height: 7px; border-radius: 2px; background: var(--accent); flex-shrink: 0;
+  }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 1.5rem;
+  }
+  .card + .card { margin-top: 1rem; }
+
+  .toc { margin-top: 1.75rem; padding: 1.25rem 1.5rem; }
+  .toc-title {
+    font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--ink-muted); margin-bottom: 0.75rem;
+  }
+  .toc-list { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 1.5rem; }
+  .toc-list li { break-inside: avoid; margin-bottom: 0.55rem; }
+  .toc-list a {
+    display: flex; align-items: baseline; gap: 0.5rem; color: var(--ink); font-size: 0.9rem;
+    font-weight: 600; text-decoration: none;
+  }
+  .toc-list a:hover { color: var(--accent-hover); }
+  .toc-num { color: var(--accent-hover); font-weight: 700; flex-shrink: 0; }
+  @media (max-width: 480px) { .toc-list { columns: 1; } }
+
+  .context-grid { display: grid; gap: 1rem; }
+  .context-card h3 { margin: 0 0 0.4rem; font-size: 1rem; font-weight: 700; }
+  .context-card p { margin: 0; color: var(--ink-muted); }
+
+  .indicator-card { margin-bottom: 1.25rem; }
+  .indicator-head {
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+  .indicator-name { font-weight: 700; font-size: 1.05rem; }
+  .indicator-desc { color: var(--ink-muted); font-size: 0.92rem; margin-top: 0.25rem; max-width: 52ch; }
+  .indicator-value { text-align: right; }
+  .indicator-current { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.02em; }
+  .indicator-unit { font-size: 0.8rem; color: var(--ink-muted); }
+  .change-pill {
+    display: inline-block; margin-top: 0.25rem; padding: 0.15rem 0.55rem; border-radius: 999px;
+    font-size: 0.78rem; font-weight: 700;
+  }
+  .change-pill.up { background: #e8f7e8; color: var(--good); }
+  .change-pill.down { background: #fdeceb; color: var(--critical); }
+  .change-pill.flat { background: var(--surface-muted); color: var(--ink-muted); }
+
+  .chart-wrap { position: relative; height: 220px; margin-top: 1.25rem; }
+  .gauge-wrap { position: relative; height: 180px; margin-top: 1.25rem; display: flex; align-items: center; justify-content: center; }
+  .gauge-center { position: absolute; text-align: center; top: 58%; transform: translateY(-50%); }
+  .gauge-center .val { font-size: 1.6rem; font-weight: 800; }
+  .gauge-center .unit { font-size: 0.78rem; color: var(--ink-muted); }
+
+  details.disclosure { margin-top: 0.9rem; border-top: 1px dashed var(--border); padding-top: 0.75rem; }
+  details.disclosure summary {
+    cursor: pointer; font-size: 0.85rem; font-weight: 700; color: var(--accent-hover);
+    list-style: none; display: flex; align-items: center; gap: 0.35rem; user-select: none;
+  }
+  details.disclosure summary::-webkit-details-marker { display: none; }
+  details.disclosure summary::marker { content: ''; display: none; }
+  details.disclosure summary::before { content: '▸'; font-size: 0.7rem; transition: transform 0.15s var(--ease, ease); }
+  details.disclosure[open] summary::before { transform: rotate(90deg); }
+  details.disclosure .disclosure-body { padding-top: 0.6rem; }
+
+  table.data-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  table.data-table th, table.data-table td {
+    text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border);
+  }
+  table.data-table th { color: var(--ink-muted); font-weight: 600; }
+
+  .expert-card summary { display: block; }
+  .expert-card summary::before { display: none; }
+  .expert-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  .expert-id { font-weight: 700; }
+  .expert-affil { color: var(--ink-muted); font-size: 0.85rem; }
+  .stance-pill {
+    padding: 0.15rem 0.6rem; border-radius: 999px; font-size: 0.75rem; font-weight: 700; white-space: nowrap;
+  }
+  .stance-pill.bullish { background: #e8f7e8; color: var(--good); }
+  .stance-pill.bearish { background: #fdeceb; color: var(--critical); }
+  .stance-pill.neutral { background: var(--surface-muted); color: var(--ink-muted); }
+  blockquote.quote {
+    margin: 0.75rem 0 0; padding-left: 1rem; border-left: 3px solid var(--accent-soft);
+    color: var(--ink); font-style: italic;
+  }
+  .source-link { font-size: 0.82rem; margin-top: 0.5rem; display: inline-block; }
+  .source-link a { color: var(--accent-hover); }
+
+  .outlook-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .outlook-card h3 {
+    margin: 0 0 0.5rem; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--accent-hover); font-weight: 700;
+  }
+  .outlook-card p { margin: 0; color: var(--ink); font-size: 0.94rem; }
+
+  .rec-card { display: flex; gap: 1rem; align-items: flex-start; }
+  .risk-pill { padding: 0.15rem 0.6rem; border-radius: 999px; font-size: 0.72rem; font-weight: 700; flex-shrink: 0; }
+  .risk-pill.bajo { background: #e8f7e8; color: var(--good); }
+  .risk-pill.medio { background: #fff4e0; color: #9a6a00; }
+  .risk-pill.alto { background: #fdeceb; color: var(--critical); }
+  .rec-title { font-weight: 700; margin-bottom: 0.2rem; }
+  .rec-desc { color: var(--ink-muted); font-size: 0.92rem; margin: 0; }
+
+  .sources-list { list-style: none; padding: 0; margin: 0; }
+  .sources-list li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); font-size: 0.88rem; }
+  .sources-list a { color: var(--accent-hover); }
+
+  footer.brand-footer {
+    margin-top: 4rem; padding: 2rem 0; border-top: 1px solid var(--border);
+    color: var(--ink-soft); font-size: 0.8rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;
+  }
+
+  a { color: var(--accent-hover); }
+
+  /* UI chrome, labels and figures stay in the brand display font;
+     everything else (running prose) uses --font-body for readability. */
+  .context-card h3,
+  .indicator-name,
+  .indicator-current,
+  .indicator-unit,
+  .change-pill,
+  .gauge-center,
+  .expert-id,
+  .stance-pill,
+  .outlook-card h3,
+  .rec-title,
+  .risk-pill,
+  table.data-table th,
+  table.data-table td,
+  details.disclosure summary,
+  .toc-title,
+  .toc-list,
+  footer.brand-footer {
+    font-family: var(--font-display);
+  }
+
+  @media (max-width: 640px) {
+    .outlook-grid { grid-template-columns: 1fr; }
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page, header.masthead { max-width: 100%; }
+    section { margin-top: 2rem; break-inside: avoid-page; }
+    .card, .indicator-card, .expert-card { break-inside: avoid-page; }
+    details.disclosure:not([open]) > .disclosure-body { display: block !important; }
+    details.disclosure summary::before { display: none; }
+    details.disclosure summary { cursor: default; color: var(--ink); }
+    a { color: var(--ink); text-decoration: underline; }
+  }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="brand">
+    <div class="brand-icon">Y</div>
+    <div class="brand-word">Yirafa Labs</div>
+  </div>
+  <div class="report-date">
+    2026-10-19
+    <div class="report-updated">Datos actualizados: 19 de octubre de 2026, 07:16 UTC</div>
+  </div>
+</header>
+
+<div class="page">
+  <div class="hero">
+    <p class="eyebrow">Reporte financiero</p>
+    <h1 class="title">Bitcoin (BTC-USD)</h1>
+    <p class="summary-lead">BTC cotiza en USD 82.784,94 en vivo (07:16 UTC), +0,94% frente al cierre anterior (USD 82.012,34) y rompe por fin la lateralización de USD 81.400-81.900 que venía reportándose desde hace tres días -el precio subió durante el fin de semana desde un mínimo de USD 80.700 el sábado por la noche hasta los niveles actuales, el tramo más alto desde el 13 de octubre-. El Fear & Greed Index acompaña el movimiento: salta de 53 (Neutral) a 59, cruzando de vuelta a 'Greed' por primera vez en cuatro días. No hay flujo de ETF nuevo que reportar -el viernes 16 de octubre sigue siendo la última rueda (los mercados de EE.UU. no operan en fin de semana), con el acumulado de octubre en aproximadamente USD -617M en salidas netas, prácticamente sin cambios respecto a lo reportado ayer-. Lo más nuevo desde el reporte de ayer es el contexto detrás del rebote: el viernes 16 hubo una ola de liquidaciones de derivados (USD 315,2M en 24 horas, 66,3% posiciones largas) en medio de una caída más amplia de activos de riesgo ligados a IA -el Nasdaq cedió 2,14%, CoreWeave se desplomó 12% por dudas sobre su deuda, y mineras de Bitcoin que alquilan capacidad a IA (Hut 8, IREN, Cipher Mining) cayeron ~6%-, pero BTC cayó menos que el Nasdaq y ya recuperó el terreno perdido. Binance describió la caída como 'un shock de sentimiento, no una ruptura estructural'. También es nuevo: la Corte Suprema del Reino Unido (High Court) falló el 12 de octubre que la ley china rige los reclamos de propiedad sobre los 61.000 BTC (~USD 5.000M) incautados en 2021 al esquema Ponzi de Zhimin Qian -una resolución que favorece al gobierno británico sobre las víctimas chinas del fraude, aunque los abogados de las víctimas están apelando y la corte todavía no decidió quién se queda con los fondos-. El resto de los ejes no tiene novedad relevante: Strategy/Saylor sigue en 848.250 BTC sin compra nueva; el plazo de Blumenthal a Cantor Fitzgerald por su vínculo con Tether vence en 4 días (23 de octubre), sin respuesta pública todavía; y la Clarity Act sigue estancada desde el fracaso de cloture del 15 de septiembre, con un analista de Charles Schwab advirtiendo que el proceso legislativo cripto podría demorarse aún más si las elecciones de medio término cambian el equilibrio del Senado.</p>
+  </div>
+
+  
+  <nav class="card toc" aria-label="Índice del reporte">
+    <div class="toc-title">Índice</div>
+    <ol class="toc-list">
+      
+        <li><a href="#contexto"><span class="toc-num">1</span>Qué ha pasado en las últimas semanas</a></li>
+      
+        <li><a href="#indicadores"><span class="toc-num">2</span>Indicadores clave</a></li>
+      
+        <li><a href="#cripto-sentimiento"><span class="toc-num">3</span>Indicadores de sentimiento cripto</a></li>
+      
+        <li><a href="#expertos"><span class="toc-num">4</span>Opiniones de expertos</a></li>
+      
+        <li><a href="#previsiones"><span class="toc-num">5</span>Previsiones</a></li>
+      
+        <li><a href="#recomendaciones"><span class="toc-num">6</span>Recomendaciones y estrategias</a></li>
+      
+        <li><a href="#fuentes"><span class="toc-num">7</span>Fuentes</a></li>
+      
+    </ol>
+  </nav>
+
+  
+  <section id="contexto">
+    <h2 class="section-title">Qué ha pasado en las últimas semanas</h2>
+    <div class="context-grid">
+      
+      <div class="card context-card">
+        <h3>BTC rompe la lateralización de tres días y vuelve a Greed (59) tras un fin de semana volátil</h3>
+        <p>El precio tocó un mínimo de USD 80.700 el sábado por la noche sin un catalizador claro, rebotó a USD 82.184 el domingo temprano y sigue subiendo hasta los USD 82.784,94 actuales (07:16 UTC, +0,94% vs. cierre anterior) -el nivel más alto desde el 13 de octubre, rompiendo la banda de USD 81.400-81.900 que había contenido el precio los tres días previos-. El Fear & Greed Index subió de 53 a 59, cruzando de 'Neutral' de vuelta a 'Greed' por primera vez en cuatro reportes.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Nuevo: el rebote llega tras una purga de derivados y una caída de activos ligados a IA, pero BTC resistió mejor que el Nasdaq</h3>
+        <p>El viernes 16 de octubre, CoinGlass registró USD 315,2M en liquidaciones de derivados en 24 horas (66,3% posiciones largas), coincidiendo con una caída más amplia de acciones tecnológicas: el Nasdaq Composite cedió 2,14%, CoreWeave se desplomó 12% por dudas sobre su deuda, y mineras de Bitcoin con negocio de hosting para IA (Hut 8, IREN, Cipher Mining) cayeron alrededor de 6%. BTC cayó menos que el Nasdaq en la misma sesión, y CoinDesk midió una correlación de 20 semanas de apenas -0,41 con el Kospi -un vínculo débil, no prueba de causalidad directa-. Catherine Chen, de Binance, calificó la caída inducida por inflación como 'un shock de sentimiento, no una ruptura estructural'. Glassnode mantiene su lectura de que la venta por pérdidas del jueves 15 cerca de USD 80.000 'puede marcar un piso local', citando el True Market Mean (costo base promedio del mercado) en la zona de USD 77.500-78.000 como soporte de referencia.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Nuevo: corte británica falla que la ley china rige el destino de 61.000 BTC incautados (~USD 5.000M)</h3>
+        <p>El juez Mark Turner de la High Court de Inglaterra falló el 12 de octubre que la ley china -no la inglesa- debe regir los reclamos de propiedad de las víctimas sobre los más de 61.000 BTC (entre GBP 3.800M y 5.000M) incautados por la Policía Metropolitana de Londres a Zhimin Qian, responsable de esquemas Ponzi en China entre 2014 y 2017. La diferencia es relevante: la ley inglesa habría permitido a los ~16.000 inversores chinos defraudados reclamar derechos de propiedad sobre el Bitcoin en sí -y su revalorización de la última década-, mientras que la ley china limita su recuperación al capital original más intereses, lo que en la práctica fortalece la posición del gobierno británico para quedarse con una porción significativa. La corte todavía no decidió la titularidad final; los abogados de las víctimas están apelando el fallo.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Sin novedad en flujos de ETF: el fin de semana no opera, acumulado de octubre se mantiene en ~USD -617M</h3>
+        <p>Al ser sábado y domingo, los ETF spot de BTC en EE.UU. no tuvieron sesión el 17 ni el 18 de octubre -la última rueda sigue siendo el viernes 16 (USD -82,4M, 87% concentrado en IBIT). El acumulado de octubre en las 12 ruedas transcurridas se mantiene en aproximadamente USD -617M en salidas netas (vs. los USD -614,7M reportados ayer, diferencia menor de redondeo entre proveedores de datos), sin que haya una nueva cifra que cambie la lectura: octubre sigue siendo, por ahora, un mes de salida neta de capital institucional.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Niveles técnicos actualizados y agenda de catalizadores de la semana</h3>
+        <p>Bitcoin.com News actualizó los niveles técnicos el 18 de octubre: soporte en la zona USD 80.000-81.000, resistencia en USD 83.000-84.000, con el RSI diario en 48-49 (sin control claro de compradores ni vendedores) -reemplazando los niveles de Decrypt citados en reportes anteriores-. La agenda de la semana trae varios catalizadores macro: PBI del tercer trimestre de China (19 de octubre, pendiente de publicación al momento de este reporte), permisos de construcción en EE.UU. (20 de octubre), solicitudes semanales de desempleo (22 de octubre) y PMIs preliminares (23 de octubre), todo antes del 'apagón de comunicaciones' de la Fed previo a la reunión del 27-28 de octubre. La inflación de septiembre (CPI) se confirmó en 3,7% interanual, el dato que sostiene la postura hawkish de la Fed ya reportada.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Sin cambios: Strategy/Saylor, Tether/Cantor Fitzgerald y Clarity Act</h3>
+        <p>Strategy permanece en 848.250 BTC, sin compra nueva confirmada desde el filing del 12 de octubre. El plazo del senador Blumenthal para que Cantor Fitzgerald responda sobre su participación en Tether vence en 4 días (23 de octubre), sin pronunciamiento público de ninguna de las dos partes. La Clarity Act sigue estancada desde el fracaso de cloture del 15 de septiembre, sin fecha de un nuevo intento -Adam Lynch, de Charles Schwab, advirtió este fin de semana que el avance legislativo cripto en Washington podría demorarse más todavía si las elecciones de medio término cambian el equilibrio de poder en el Senado.</p>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  
+  <section id="indicadores">
+    <h2 class="section-title">Indicadores clave</h2>
+    
+    <div class="card indicator-card">
+      <div class="indicator-head">
+        <div>
+          <div class="indicator-name">Precio BTC-USD (última semana)</div>
+          <div class="indicator-desc">Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (19-oct) es la cotización en vivo. Rompe la lateralización de USD 81.400-81.900 de los tres días previos, tras un mínimo de fin de semana en USD 80.700.</div>
+          <div class="live-tag">En vivo · 07:16 UTC</div>
+        </div>
+        
+        <div class="indicator-value">
+          <div class="indicator-current">82,784.94 <span class="indicator-unit">USD</span></div>
+          
+          <span class="change-pill up">+0.942</span>
+          
+        </div>
+        
+      </div>
+
+      
+        
+        <div class="chart-wrap">
+          <canvas id="chart-0"></canvas>
+        </div>
+        
+        <details class="disclosure">
+          <summary>Ver datos en tabla</summary>
+          <div class="disclosure-body">
+            <table class="data-table">
+              <thead><tr><th>Periodo</th><th>Valor</th></tr></thead>
+              <tbody>
+                
+                <tr><td>13 oct</td><td>83095.13</td></tr>
+                
+                <tr><td>14 oct</td><td>81562.49</td></tr>
+                
+                <tr><td>15 oct</td><td>82141.46</td></tr>
+                
+                <tr><td>16 oct</td><td>81500.8</td></tr>
+                
+                <tr><td>17 oct</td><td>81382.15</td></tr>
+                
+                <tr><td>18 oct</td><td>82017.6</td></tr>
+                
+                <tr><td>19 oct (en vivo)</td><td>82784.94</td></tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </details>
+      
+    </div>
+    
+    <div class="card indicator-card">
+      <div class="indicator-head">
+        <div>
+          <div class="indicator-name">Fear & Greed Index</div>
+          <div class="indicator-desc">Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), alternative.me. Sube de 53 (Neutral) a 59, cruzando de vuelta a 'Greed' por primera vez en cuatro días, en línea con la ruptura de la lateralización del precio.</div>
+          <div class="live-tag">En vivo · 19 oct 2026</div>
+        </div>
+        
+        <div class="indicator-value">
+          <div class="indicator-current">59 (Greed) <span class="indicator-unit">índice (0-100)</span></div>
+          
+          <span class="change-pill up">+6</span>
+          
+        </div>
+        
+      </div>
+
+      
+        
+        <div class="gauge-wrap">
+          <canvas id="chart-1" width="320" height="180"></canvas>
+          <div class="gauge-center">
+            <div class="val">59 (Greed)</div>
+            <div class="unit">índice (0-100)</div>
+          </div>
+        </div>
+        
+        <details class="disclosure">
+          <summary>Ver datos en tabla</summary>
+          <div class="disclosure-body">
+            <table class="data-table">
+              <thead><tr><th>Periodo</th><th>Valor</th></tr></thead>
+              <tbody>
+                
+                <tr><td>Fear & Greed</td><td>59</td></tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </details>
+      
+    </div>
+    
+  </section>
+  
+
+  
+  <section id="cripto-sentimiento">
+    <h2 class="section-title">Indicadores de sentimiento cripto</h2>
+    <div class="context-grid">
+      
+      <div class="card indicator-card">
+        <div class="indicator-head">
+          <div>
+            <div class="indicator-name">Fear &amp; Greed Index</div>
+            <div class="indicator-desc">Índice de sentimiento de mercado cripto (0 = miedo extremo, 100 = codicia extrema). Fuente: alternative.me</div>
+          </div>
+          <div class="indicator-value">
+            <div class="indicator-current">59</div>
+          </div>
+        </div>
+        <div class="gauge-wrap">
+          <canvas id="chart-feargreed" width="320" height="180"></canvas>
+          <div class="gauge-center">
+            <div class="val">59</div>
+            <div class="unit">Greed</div>
+          </div>
+        </div>
+      </div>
+      
+
+      
+      <div class="card indicator-card">
+        <div class="indicator-name">Bitcoin Rainbow Chart</div>
+        <div class="indicator-desc">Bandas de regresión logarítmica sobre el precio histórico de BTC — la referencia más citada de este tipo de gráfico.</div>
+        <img src="assets/btc-rainbow.png" alt="Bitcoin Rainbow Chart" style="width:100%; border-radius:10px; margin-top:1.25rem; border:1px solid var(--border); display:block;">
+        <div class="source-link">Fuente: <a href="https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/" target="_blank" rel="noopener">BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)</a> — capturado el 2026-10-19</div>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  
+  <section id="expertos">
+    <h2 class="section-title">Opiniones de expertos</h2>
+    
+    <details class="card expert-card disclosure" open>
+      <summary>
+        <div class="expert-head">
+          <div>
+            <div class="expert-id">Glassnode</div>
+            <div class="expert-affil">Firma de análisis on-chain</div>
+          </div>
+          <span class="stance-pill neutral">neutral</span>
+        </div>
+      </summary>
+      <div class="disclosure-body">
+        <blockquote class="quote">“La venta por pérdidas del jueves 15 de octubre cerca de USD 80.000 puede marcar un piso local; el True Market Mean (costo base promedio del mercado) en la zona de USD 77.500-78.000 sigue siendo el soporte de referencia si la debilidad continúa.”</blockquote>
+        
+        <div class="source-link"><a href="https://bitcoinnewsdigest.substack.com/p/bitcoin-news-digest-october-18-2026" target="_blank" rel="noopener">Ver fuente</a></div>
+        
+      </div>
+    </details>
+    
+    <details class="card expert-card disclosure" open>
+      <summary>
+        <div class="expert-head">
+          <div>
+            <div class="expert-id">Catherine Chen</div>
+            <div class="expert-affil">Binance</div>
+          </div>
+          <span class="stance-pill neutral">neutral</span>
+        </div>
+      </summary>
+      <div class="disclosure-body">
+        <blockquote class="quote">“La caída inducida por los datos de inflación fue un shock de sentimiento, no una ruptura estructural.”</blockquote>
+        
+        <div class="source-link"><a href="https://bitcoinnewsdigest.substack.com/p/bitcoin-news-digest-october-18-2026" target="_blank" rel="noopener">Ver fuente</a></div>
+        
+      </div>
+    </details>
+    
+  </section>
+  
+
+  
+  <section id="previsiones">
+    <h2 class="section-title">Previsiones</h2>
+    <div class="outlook-grid">
+      <div class="card outlook-card"><h3>Corto plazo</h3><p>El precio rompió la lateralización de tres días (USD 81.400-81.900) y recuperó los USD 82.700+, con el Fear & Greed volviendo a 'Greed' (59). Los niveles técnicos actualizados de Bitcoin.com News ubican el soporte en USD 80.000-81.000 y la resistencia en USD 83.000-84.000, con RSI diario en 48-49 -sin control claro de ningún lado-. La semana trae una agenda macro cargada (PBI de China, permisos de construcción en EE.UU., desempleo semanal, PMIs preliminares) antes del apagón de comunicaciones de la Fed previo a la reunión del 27-28 de octubre, lo que puede generar volatilidad de corto plazo en cualquier dirección.</p></div>
+      <div class="card outlook-card"><h3>Mediano plazo</h3><p>El rango de QCP Capital para el Q4 (USD 80.000-90.000) sigue vigente, y el rebote del fin de semana acerca el precio al punto medio de esa banda. El CPI de septiembre se confirmó en 3,7% interanual, consistente con la postura hawkish ya reportada de la Fed (16 de 18 miembros del FOMC esperando otra suba antes de fin de año). Las salidas acumuladas de ETF en octubre (~USD 617M) siguen siendo la señal de demanda institucional más débil del mes, sin que el rebote de precio se haya visto acompañado todavía de un cambio a entradas netas.</p></div>
+      <div class="card outlook-card"><h3>Largo plazo</h3><p>Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong). En el frente regulatorio/legal, el fallo de la High Court británica sobre los 61.000 BTC incautados (ley china aplica, apelación en curso) es un precedente a seguir por su tamaño (~USD 5.000M, ~0,3% del supply circulante) aunque no mueve el mercado de inmediato dado que la titularidad final sigue sin resolverse. La Clarity Act en EE.UU. sigue sin fecha de reintento, con el riesgo adicional -señalado por Charles Schwab- de que las elecciones de medio término compliquen aún más su aprobación. El plazo del 23 de octubre para la respuesta de Cantor Fitzgerald a Blumenthal sigue siendo el próximo hito concreto a vigilar en el eje Tether.</p></div>
+    </div>
+  </section>
+  
+
+  
+  <section id="recomendaciones">
+    <h2 class="section-title">Recomendaciones y estrategias</h2>
+    
+    <div class="card rec-card">
+      <span class="risk-pill medio">riesgo medio</span>
+      <div>
+        <div class="rec-title">Confirmar la ruptura con un cierre diario por encima de USD 83.000 antes de asumir una tendencia alcista</div>
+        <p class="rec-desc">El precio rompió la banda de USD 81.400-81.900 pero todavía está dentro de la nueva zona de resistencia (USD 83.000-84.000) que identificó Bitcoin.com News. Con el RSI en territorio neutral (48-49) y sin entradas de ETF que confirmen demanda institucional, es prematuro tratar el rebote de fin de semana como una ruptura alcista consolidada.</p>
+      </div>
+    </div>
+    
+    <div class="card rec-card">
+      <span class="risk-pill medio">riesgo medio</span>
+      <div>
+        <div class="rec-title">No tratar la correlación con acciones de IA como mecánica, pero sí vigilarla como fuente de volatilidad</div>
+        <p class="rec-desc">La correlación de 20 semanas entre BTC y el Kospi medida por CoinDesk (-0,41) es débil, y BTC cayó menos que el Nasdaq durante la purga del 16 de octubre -pero la coincidencia temporal con la caída de CoreWeave y las mineras ligadas a IA muestra que los activos de riesgo siguen moviéndose en bloque ante shocks de sentimiento. Vigilar la deuda de CoreWeave y el gasto en IA como fuente de volatilidad cruzada, no como tesis de inversión en BTC.</p>
+      </div>
+    </div>
+    
+    <div class="card rec-card">
+      <span class="risk-pill alto">riesgo alto</span>
+      <div>
+        <div class="rec-title">Dimensionar el riesgo macro asumiendo una Fed hawkish, no una Fed lista para recortar</div>
+        <p class="rec-desc">Con el CPI de septiembre confirmado en 3,7% y la Fed habiendo subido tasas en septiembre con sesgo hawkish, posicionarse para un recorte sorpresa en la reunión del 27-28 de octubre como escenario base no está respaldado por la evidencia actual. El apagón de comunicaciones de la Fed esta semana reduce además la probabilidad de señales nuevas antes de la reunión.</p>
+      </div>
+    </div>
+    
+  </section>
+  
+
+  
+  <section id="fuentes">
+    <h2 class="section-title">Fuentes</h2>
+    <ul class="sources-list">
+      
+      <li><a href="https://finance.yahoo.com/quote/BTC-USD" target="_blank" rel="noopener">fetch_market_price.py (Yahoo Finance, en vivo)</a></li>
+      
+      <li><a href="https://alternative.me/crypto/fear-and-greed-index/" target="_blank" rel="noopener">Fear & Greed Index (alternative.me, en vivo)</a></li>
+      
+      <li><a href="https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/" target="_blank" rel="noopener">Bitcoin Rainbow Chart (BlockchainCenter.net)</a></li>
+      
+      <li><a href="https://bitcoinnewsdigest.substack.com/p/bitcoin-news-digest-october-18-2026" target="_blank" rel="noopener">Bitcoin News Digest, October 18, 2026 (incluye datos de fin de semana, Glassnode, CoinGlass, Binance)</a></li>
+      
+      <li><a href="https://www.tftc.io/bitcoin-etf-flows/october-2026" target="_blank" rel="noopener">Bitcoin ETF Flows — October 2026 (TFTC, datos diarios Farside)</a></li>
+      
+      <li><a href="https://news.bitcoin.com/market-updates/bitcoin-price-faces-10-big-tests-as-5-catalysts-keep-100k-alive/" target="_blank" rel="noopener">Bitcoin Price Faces 10 Big Tests as 5 Catalysts Keep $100K Alive (Bitcoin.com News, niveles técnicos y agenda macro)</a></li>
+      
+      <li><a href="https://theblock.co/news/regulation/2026-10-13-uk-high-court-rules-chinese-law-governs-claims-over-5-billion-in-seized-bitcoin-418409" target="_blank" rel="noopener">UK High Court rules Chinese law governs claims over $5 billion in seized bitcoin (The Block)</a></li>
+      
+      <li><a href="https://cryptobriefing.com/uk-court-ruling-seized-bitcoin-qian/" target="_blank" rel="noopener">UK court ruling strengthens government's claim to $5B in seized Bitcoin (Crypto Briefing)</a></li>
+      
+      <li><a href="https://decrypt.co/380619/senate-democrat-cantor-fitzgerald-tether-lutnick" target="_blank" rel="noopener">Senate Democrat presses Cantor Fitzgerald on Tether stake (Decrypt)</a></li>
+      
+      <li><a href="https://decrypt.co/378283/clarity-act-fails-senate-hurdle" target="_blank" rel="noopener">Clarity Act Stalls in Senate as Crypto Bill Fails to Clear Key Vote (Decrypt)</a></li>
+      
+      <li><a href="https://bitcointreasuries.net/news/strategys-buying-spree-can-saylor-sustain-the-record-pace" target="_blank" rel="noopener">Strategy's 2026 Buying Spree: Can Saylor Sustain the Record Pace? (Bitcoin Treasuries)</a></li>
+      
+      <li><a href="https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html" target="_blank" rel="noopener">Fed rate decision September 2026: Rates rise to 3.75%-4% (CNBC)</a></li>
+      
+    </ul>
+  </section>
+  
+
+  <footer class="brand-footer">
+    <span>Yirafa Labs — reporte generado el 2026-10-19</span>
+    <span>Uso informativo, no constituye asesoría financiera</span>
+  </footer>
+</div>
+
+<script src="assets/vendor/chart.umd.min.js"></script>
+<script>
+  const INDICATORS = [{"as_of": "07:16 UTC", "change": "+0.942", "chart_type": "line", "current_value": "82,784.94", "data": {"labels": ["13 oct", "14 oct", "15 oct", "16 oct", "17 oct", "18 oct", "19 oct (en vivo)"], "values": [83095.13, 81562.49, 82141.46, 81500.8, 81382.15, 82017.6, 82784.94]}, "description": "Precio spot de Bitcoin en d\u00f3lares, \u00faltimos cierres diarios de Yahoo Finance. El \u00faltimo punto (19-oct) es la cotizaci\u00f3n en vivo. Rompe la lateralizaci\u00f3n de USD 81.400-81.900 de los tres d\u00edas previos, tras un m\u00ednimo de fin de semana en USD 80.700.", "name": "Precio BTC-USD (\u00faltima semana)", "unit": "USD"}, {"as_of": "19 oct 2026", "change": "+6", "chart_type": "gauge", "current_value": "59 (Greed)", "data": {"labels": ["Fear \u0026 Greed"], "values": [59]}, "description": "\u00cdndice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), alternative.me. Sube de 53 (Neutral) a 59, cruzando de vuelta a \u0027Greed\u0027 por primera vez en cuatro d\u00edas, en l\u00ednea con la ruptura de la lateralizaci\u00f3n del precio.", "name": "Fear \u0026 Greed Index", "unit": "\u00edndice (0-100)"}];
+  const PALETTE = ['#C87E28', '#2a78d6', '#1baf7a', '#8f5cd1', '#c0392b'];
+
+  Chart.defaults.font.family = "'Bricolage Grotesque', system-ui, sans-serif";
+  Chart.defaults.color = '#68687F';
+
+  INDICATORS.forEach((ind, i) => {
+    if (!ind.data || !ind.data.labels || !ind.data.values) return;
+    const canvas = document.getElementById('chart-' + i);
+    if (!canvas) return;
+    const color = PALETTE[i % PALETTE.length];
+
+    if (ind.chart_type === 'gauge') {
+      const max = Math.max(...ind.data.values, 100);
+      const value = ind.data.values[ind.data.values.length - 1];
+      new Chart(canvas, {
+        type: 'doughnut',
+        data: {
+          labels: [ind.name, 'resto'],
+          datasets: [{
+            data: [value, Math.max(max - value, 0)],
+            backgroundColor: [color, '#DCDCE8'],
+            borderWidth: 0,
+          }],
+        },
+        options: {
+          rotation: -90,
+          circumference: 180,
+          cutout: '75%',
+          plugins: { legend: { display: false }, tooltip: { enabled: true } },
+        },
+      });
+      return;
+    }
+
+    new Chart(canvas, {
+      type: ind.chart_type === 'bar' ? 'bar' : 'line',
+      data: {
+        labels: ind.data.labels,
+        datasets: [{
+          label: ind.name,
+          data: ind.data.values,
+          borderColor: color,
+          backgroundColor: ind.chart_type === 'bar' ? color : color + '33',
+          borderRadius: 4,
+          fill: ind.chart_type !== 'bar',
+          tension: 0.35,
+          pointRadius: 3,
+          pointHoverRadius: 5,
+          borderWidth: 2,
+        }],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: '#0F0F1E',
+            titleFont: { weight: '700' },
+            padding: 10,
+            cornerRadius: 8,
+            callbacks: {
+              label: (ctx) => ` ${ctx.formattedValue} ${ind.unit || ''}`.trim(),
+            },
+          },
+        },
+        scales: {
+          x: { grid: { display: false }, border: { color: '#DCDCE8' } },
+          y: { grid: { color: '#F0F0F8' }, border: { display: false } },
+        },
+      },
+    });
+  });
+
+  const FEAR_GREED = {"classification": "Greed", "color": "#8bc34a", "timestamp": "2026-10-19T00:00:00+00:00", "value": 59};
+  const fgCanvas = document.getElementById('chart-feargreed');
+  if (FEAR_GREED && fgCanvas) {
+    new Chart(fgCanvas, {
+      type: 'doughnut',
+      data: {
+        labels: [FEAR_GREED.classification, 'resto'],
+        datasets: [{
+          data: [FEAR_GREED.value, 100 - FEAR_GREED.value],
+          backgroundColor: [FEAR_GREED.color, '#DCDCE8'],
+          borderWidth: 0,
+        }],
+      },
+      options: {
+        rotation: -90,
+        circumference: 180,
+        cutout: '75%',
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: { label: () => ` ${FEAR_GREED.classification}: ${FEAR_GREED.value}/100` },
+          },
+        },
+      },
+    });
+  }
+</script>
+</body>
+</html>
