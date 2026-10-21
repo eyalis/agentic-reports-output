@@ -1,0 +1,98 @@
+{
+  "topic": "Bitcoin (BTC-USD)",
+  "date": "2026-10-21",
+  "generated_at": "21 de octubre de 2026, 07:18 UTC",
+  "executive_summary": "BTC cotiza en USD 82.699,03 en vivo (07:18 UTC), -0,29% frente al cierre anterior (USD 82.940,14), tras un salto significativo el martes 20: el precio cerró ayer en USD 82.941,00, rompiendo al alza la banda de USD 81.400-81.900 en la que había quedado contenido el lunes, y hoy se mantiene en ese nuevo rango (USD 82.600-83.100) en vez de retroceder a la zona anterior. El catalizador más claro de ese movimiento, confirmado hoy por primera vez, es el dato de flujos de ETF de Bitcoin del lunes 19 de octubre: entradas netas de USD 526,6M, el mejor día desde el 22 de septiembre, liderado casi en su totalidad por IBIT de BlackRock (+USD 665,2M), con salidas de FBTC (-USD 83,6M) y GBTC (-USD 54,9M). Ese dato reduce el déficit acumulado de octubre de unos USD -617M (hasta el 16 de octubre) a USD -90,6M -una mejora sustancial que el reporte de ayer dejó como pendiente de confirmar-. El Fear & Greed Index saltó de 55 a 63, el salto diario más grande reportado en esta serie de informes, reflejando ese combo de precio + flujos. También se confirmó hoy el PBI del tercer trimestre de China -pendiente desde el reporte de ayer-: creció 4,5% interanual (vs. consenso de 4,4% y el 4,3% del segundo trimestre), con el agregado de los primeros nueve meses en 4,6%, dentro de la meta oficial de 4,5%-5,0%. El detalle sectorial confirma la lectura de 'crecimiento desbalanceado' que ya se anticipaba: exportaciones e importaciones subieron 18,8% interanual y la manufactura de alta tecnología 14,3%, pero la demanda doméstica sigue débil (ventas minoristas +2,6%, inversión en activos fijos -7,2%, inversión inmobiliaria -20,6%). No se encontró comentario de analistas específicamente nuevo sobre el movimiento de precio de ayer -se deja constancia de ese vacío en vez de reciclar las citas de Glassnode/Binance del reporte anterior como si fueran nuevas-. El resto de los ejes no tiene novedad: Strategy/Saylor sigue en 848.250 BTC sin compra nueva confirmada; el plazo de Blumenthal a Cantor Fitzgerald por su vínculo con Tether vence en 2 días (23 de octubre), sin respuesta pública; la apelación del fallo sobre los 61.000 BTC incautados en el Reino Unido sigue con resolución esperada en 2027; y la Clarity Act sigue estancada desde el fracaso de cloture del 15 de septiembre, sin fecha de nuevo intento.",
+  "recent_context": [
+    {
+      "heading": "Nuevo: el precio rompe al alza la banda de resistencia de ayer tras confirmarse el mejor día de flujos de ETF desde septiembre",
+      "body": "BTC cerró el martes 20 de octubre en USD 82.941,00, superando con claridad la banda de USD 81.400-81.900 en la que había quedado contenido el lunes, y hoy se mantiene en el nuevo rango de USD 82.600-83.100 (precio en vivo: USD 82.699,03, 07:18 UTC, -0,29% vs. cierre anterior de USD 82.940,14 -una variación intradía menor, no un retroceso hacia la banda previa-). El Fear & Greed Index acompañó el movimiento con el salto más grande visto en esta serie diaria: de 55 a 63 puntos, sin salir de la zona 'Greed' pero acercándose a su límite superior habitual."
+    },
+    {
+      "heading": "Nuevo: se confirma el flujo de ETF del lunes 19 -el dato que el reporte de ayer dejó pendiente- y es el mejor día desde el 22 de septiembre",
+      "body": "Los ETFs de Bitcoin al contado en EE.UU. registraron entradas netas de USD 526,6M el lunes 19 de octubre, el mayor flujo diario desde el 22 de septiembre (USD 714,75M). El dato fue liderado casi en su totalidad por IBIT de BlackRock (+USD 665,2M), mientras que FBTC (Fidelity) y GBTC (Grayscale) registraron salidas de USD 83,6M y USD 54,9M respectivamente -el resto de los emisores no tuvo movimiento-. Esto reduce el déficit acumulado de octubre de aproximadamente USD -617M (hasta el 16 de octubre) a USD -90,6M, revirtiendo gran parte de la señal de demanda institucional débil que venía marcando el mes. El dato del martes 20 todavía no está publicado por las fuentes habituales (Farside/TFTC) al momento de este reporte."
+    },
+    {
+      "heading": "Nuevo: el PBI del tercer trimestre de China se confirma en 4,5%, por encima del consenso pero con demanda doméstica débil",
+      "body": "La Oficina Nacional de Estadísticas de China publicó el PBI del tercer trimestre -pendiente de confirmación desde el reporte de ayer- en 4,5% interanual (vs. 4,4% de consenso y 4,3% en el segundo trimestre), con un acumulado de 4,6% en los primeros nueve meses de 2026, dentro del rango objetivo oficial de 4,5%-5,0% (crecimiento intertrimestral: 1,2%, vs. 1,1% esperado). El detalle del reporte muestra un patrón desbalanceado: exportaciones e importaciones crecieron 18,8% interanual y la manufactura de alta tecnología 14,3%, pero las ventas minoristas subieron solo 2,6%, la inversión en activos fijos cayó 7,2% y la inversión inmobiliaria se desplomó 20,6% en lo que va del año. Es un dato relevante para el apetito por riesgo global -y por extensión para activos como Bitcoin- aunque su impacto directo en el precio de hoy no es claramente distinguible del efecto de los flujos de ETF."
+    },
+    {
+      "heading": "Sin comentario nuevo de analistas sobre el movimiento de ayer",
+      "body": "No se encontraron declaraciones o análisis específicamente nuevos sobre el salto de precio y de Fear & Greed del martes 20 -se deja constancia de este vacío en vez de reciclar citas de reportes anteriores (Glassnode, Binance) presentándolas como comentario fresco. Se debe revisar nuevamente en el próximo reporte, especialmente si el movimiento se sostiene."
+    },
+    {
+      "heading": "Sin cambios: Strategy/Saylor, Tether/Cantor Fitzgerald, apelación del fallo del Reino Unido y Clarity Act",
+      "body": "Strategy permanece en 848.250 BTC, sin compra nueva confirmada desde el filing del 12 de octubre. El plazo del senador Blumenthal para que Cantor Fitzgerald responda sobre su participación en Tether vence en 2 días (23 de octubre), sin pronunciamiento público de ninguna de las dos partes. La apelación del fallo de la High Court británica sobre los 61.000 BTC incautados a Zhimin Qian sigue con resolución esperada recién en 2027, según lo confirmado ayer por Fieldfisher. La Clarity Act sigue estancada desde el fracaso de cloture del 15 de septiembre (49-50 votos, no alcanzó los 60 necesarios), sin fecha de un nuevo intento de voto en el Senado."
+    }
+  ],
+  "indicators": [
+    {
+      "name": "Precio BTC-USD (última semana)",
+      "description": "Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (21-oct) es la cotización en vivo. El cierre del martes 20 (USD 82.941,00) rompió al alza la banda de USD 81.400-81.900 de los días previos, y el precio en vivo de hoy se mantiene en el nuevo rango superior.",
+      "chart_type": "line",
+      "data": {
+        "labels": ["15 oct", "16 oct", "17 oct", "18 oct", "19 oct", "20 oct", "21 oct (en vivo)"],
+        "values": [82141.46, 81500.80, 81382.15, 82017.60, 81853.54, 82941.00, 82699.03]
+      },
+      "unit": "USD",
+      "current_value": "82,699.03",
+      "change": "-0.291",
+      "as_of": "07:18 UTC"
+    },
+    {
+      "name": "Fear & Greed Index",
+      "description": "Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), alternative.me. Sube de 55 a 63 -el salto diario más grande de esta serie de reportes-, reflejando el combo de ruptura de precio y flujos de ETF confirmados hoy. Se mantiene en zona 'Greed'.",
+      "chart_type": "gauge",
+      "data": {
+        "labels": ["Fear & Greed"],
+        "values": [63]
+      },
+      "unit": "índice (0-100)",
+      "current_value": "63 (Greed)",
+      "change": "+8",
+      "as_of": "21 oct 2026"
+    }
+  ],
+  "outlook": {
+    "short_term": "El precio rompió la banda de USD 81.400-81.900 que había contenido el movimiento los días previos y cerró ayer en USD 82.941,00, manteniéndose hoy en el rango de USD 82.600-83.100. El nivel de resistencia de USD 83.000-84.000 identificado por Bitcoin.com News en reportes anteriores sigue siendo la referencia técnica clave a vigilar -el precio de hoy ya toca el borde inferior de esa banda-. La agenda macro de la semana (PMIs preliminares el 23 de octubre) y el apagón de comunicaciones de la Fed previo a la reunión del 27-28 de octubre pueden definir si el movimiento se sostiene o si vuelve a ser un repunte no confirmado, como pasó con el del fin de semana pasado.",
+      "medium_term": "El dato de flujos de ETF del lunes (+USD 526,6M) revierte gran parte de la señal de demanda institucional débil que marcó la primera mitad de octubre, llevando el déficit mensual de USD -617M a USD -90,6M en una sola sesión. Si el flujo del martes 20 (todavía no publicado) confirma esta tendencia, el rango de QCP Capital para el Q4 (USD 80.000-90.000) ganaría un soporte de demanda más sólido que el que tenía ayer. El PBI chino del Q3, confirmado en 4,5% pero con demanda doméstica débil (ventas minoristas +2,6%, inversión inmobiliaria -20,6%), es un dato mixto para el apetito por riesgo global: el titular supera el consenso, pero la composición interna no despeja dudas sobre la demanda china de aquí a fin de año.",
+      "long_term": "Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong). En el frente regulatorio/legal, sin novedades: la apelación del fallo de la High Court británica (61.000 BTC, ~USD 5.000M) sigue con resolución esperada en 2027, y la Clarity Act sigue sin fecha de reintento en el Senado. El plazo del 23 de octubre para la respuesta de Cantor Fitzgerald a Blumenthal sigue siendo el próximo hito concreto a vigilar en el eje Tether."
+  },
+  "recommendations": [
+    {
+      "title": "Diferenciar esta ruptura de la del fin de semana pasado, que no se sostuvo",
+      "description": "A diferencia del repunte a USD 82.784 del domingo (que retrocedió al día siguiente), el cierre de ayer en USD 82.941,00 vino acompañado de un catalizador concreto y confirmado (flujo de ETF de +USD 526,6M) y el precio se mantiene hoy en el nuevo rango en vez de retroceder. Aun así, mientras no haya un cierre claro por encima de USD 83.000-84.000 (la resistencia identificada por Bitcoin.com News) ni un segundo día consecutivo de flujos de ETF positivos, conviene tratar el movimiento como 'en confirmación', no como tendencia alcista consolidada.",
+      "risk_level": "medio"
+    },
+    {
+      "title": "Vigilar el flujo de ETF del martes 20 antes de ajustar exposición",
+      "description": "El dato de flujo neto de ETF del martes 20 de octubre todavía no estaba publicado al momento de este reporte. Un segundo día de entradas netas confirmaría la lectura de demanda institucional en recuperación; una reversión a salidas, en cambio, debilitaría la lectura de que el salto de precio de ayer tiene un sustento de flujos sólido.",
+      "risk_level": "bajo"
+    },
+    {
+      "title": "No sobre-interpretar el PBI chino como catalizador directo del movimiento de BTC",
+      "description": "El PBI del Q3 de China (4,5%, por encima del consenso pero con demanda doméstica débil) se publicó el mismo día que empezó el repunte de ETFs, pero no hay evidencia de un vínculo causal directo entre ambos eventos. Conviene tratarlos como catalizadores independientes hasta que haya más datos (ej. flujos de ETF del martes, reacción de otros activos de riesgo) que permitan aislar el efecto de cada uno.",
+      "risk_level": "bajo"
+    }
+  ],
+  "sources": [
+    {"title": "fetch_market_price.py (Yahoo Finance, en vivo)", "url": "https://finance.yahoo.com/quote/BTC-USD"},
+    {"title": "Fear & Greed Index (alternative.me, en vivo)", "url": "https://alternative.me/crypto/fear-and-greed-index/"},
+    {"title": "Bitcoin Rainbow Chart (BlockchainCenter.net)", "url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/"},
+    {"title": "Bitcoin ETF Flows — October 2026 (TFTC, datos diarios Farside)", "url": "https://www.tftc.io/bitcoin-etf-flows/october-2026"},
+    {"title": "Bitcoin ETFs Pull $526.6 Million, Their Biggest Day Since September 22 (Yahoo Finance)", "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-etfs-pull-526-6-061819056.html"},
+    {"title": "Bitcoin ETFs See $527M Inflows, Biggest Since September (Cointelegraph)", "url": "https://cointelegraph.com/markets/bitcoin-etfs-527m-inflows-biggest-since-september"},
+    {"title": "China's GDP grows 4.5% in Q3 (CGTN, 19 oct 2026)", "url": "https://news.cgtn.com/news/2026-10-19/China-s-GDP-grows-4-5-in-Q3-1RmtO3rD0EU/share_amp.html"},
+    {"title": "Headline: China meets growth target but domestic demand remains weak (Babypips, 19 oct 2026)", "url": "https://www.babypips.com/news/headline-china-meets-growth-target-but-domestic-demand-remains-weak-2026-10-19"},
+    {"title": "Cantor Fitzgerald questioned over Tether ties (crypto.news)", "url": "https://crypto.news/cantor-fitzgerald-questioned-over-tether-ties/"},
+    {"title": "Senate Democrat presses Cantor Fitzgerald on Tether stake (Decrypt)", "url": "https://decrypt.co/380619/senate-democrat-cantor-fitzgerald-tether-lutnick"},
+    {"title": "UK court ruling strengthens government's claim to $5B in seized Bitcoin (Crypto Briefing)", "url": "https://cryptobriefing.com/uk-court-ruling-seized-bitcoin-qian/"},
+    {"title": "Clarity Act Stalls in Senate as Crypto Bill Fails to Clear Key Vote (Decrypt)", "url": "https://decrypt.co/378283/clarity-act-fails-senate-hurdle"},
+    {"title": "Michael Saylor-Backed Strategy Buys Just 250 Bitcoin, Its Smallest Purchase Of 2026 (Stocktwits)", "url": "https://stocktwits.com/news-articles/Markets/Equity/michael-saylor-backed-strategy-smallest-bitcoin-purchase-of-2026/cZxIau8RB8P"},
+    {"title": "Bitcoin News Digest, October 18, 2026 (Glassnode, CoinGlass, Binance) — citado en reporte anterior, sin actualización hoy", "url": "https://bitcoinnewsdigest.substack.com/p/bitcoin-news-digest-october-18-2026"}
+  ],
+  "crypto_extras": {
+    "fear_greed": {"value": 63, "classification": "Greed", "color": "#8bc34a", "timestamp": "2026-10-21T00:00:00+00:00"},
+    "btc_rainbow": {"image": ".tmp/bitcoin-btc-rainbow.png", "source": "BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)", "source_url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/", "captured_at": "2026-10-21"}
+  }
+}
