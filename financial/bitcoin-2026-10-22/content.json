@@ -1,0 +1,95 @@
+{
+  "topic": "Bitcoin (BTC-USD)",
+  "date": "2026-10-22",
+  "generated_at": "22 de octubre de 2026, 07:24 UTC",
+  "executive_summary": "BTC cotiza en USD 82.223,63 en vivo (07:24 UTC), -2,14% frente al cierre anterior (USD 84.024,44), tras una madrugada de mucha volatilidad: el precio llegó a un máximo intradía de USD 84.808 -superando por primera vez la banda de resistencia de USD 83.000-84.000 que venía marcando el reporte de ayer- pero revirtió con fuerza hasta un mínimo de USD 82.567-82.603, y ahora opera cerca de ese piso. No se identificó un catalizador de noticias único para la reversión; la lectura más consistente entre fuentes es un rechazo técnico en la nueva zona de resistencia (USD 84.000-84.850) combinado con un contexto de riesgo más débil: futuros de Nasdaq 100 -1,1%, Tesla -3% tras-hora por su guidance de capex, Lam Research -7%, tensión renovada en Medio Oriente empujando el petróleo al alza, y posicionamiento cauteloso de cara a la reunión de la Fed del 27-28 de octubre. La dominancia de Bitcoin subió a 59,53%, señal de que las altcoins (Hyperliquid, Dogecoin) sufrieron más que BTC en la corrección. En flujos de ETF, se confirma hoy el dato del martes 20 que el reporte de ayer dejó pendiente: entrada neta modesta de solo USD 23,2M (muy por debajo del salto de USD 526,6M del lunes 19), liderada por IBIT (+USD 29,9M) y FBTC (+USD 3,6M), con BITB en -USD 10,3M y GBTC sin movimiento -lo que reduce el déficit acumulado de octubre de USD -90,6M a USD -67,4M, una mejora marginal, no una repetición del salto del lunes-. El dato del miércoles 21 todavía no está publicado por Farside/SoSoValue al momento de este reporte. No se encontró comentario de analistas específicamente nuevo sobre el salto a USD 84.808 ni sobre la reversión posterior. El resto de los ejes no tiene novedad sustancial: Strategy/Saylor sigue en ~848.250 BTC sin compra nueva, aunque se conoció hoy una declaración del CEO Phong Le de que la empresa espera retomar una acumulación más activa una vez que la acción preferente STRC vuelva a cotizar a la par; el plazo de Blumenthal a Cantor Fitzgerald por su vínculo con Tether vence mañana (23 de octubre) sin respuesta pública de ninguna de las dos partes; la apelación del fallo sobre los 61.000 BTC incautados en el Reino Unido sigue sin novedad; y la Clarity Act sigue estancada desde el fracaso de cloture del 15 de septiembre.",
+  "recent_context": [
+    {
+      "heading": "Nuevo: BTC rompe por primera vez los USD 84.000 intradía pero revierte con fuerza, sin catalizador de noticias identificado",
+      "body": "Durante la madrugada del 21 al 22 de octubre, BTC alcanzó un máximo intradía de USD 84.808 -superando la banda de resistencia de USD 83.000-84.000 señalada en reportes anteriores-, pero revirtió hasta un mínimo de USD 82.567-82.603 y ahora cotiza en vivo en USD 82.223,63 (07:24 UTC, -2,14% vs. cierre anterior de USD 84.024,44). No se encontró una noticia puntual que explique la reversión; las fuentes consultadas la atribuyen a un rechazo técnico en la nueva zona de resistencia (USD 84.000-84.850) combinado con un deterioro del apetito por riesgo global: futuros del Nasdaq 100 cayendo 1,1%, Tesla -3% tras-hora (guidance de capex), Lam Research -7%, tensión renovada en Medio Oriente presionando el petróleo al alza, y cautela de mercado antes de la reunión de la Fed del 27-28 de octubre. La dominancia de Bitcoin subió a 59,53%, ya que altcoins como Hyperliquid y Dogecoin cayeron más que BTC durante la corrección."
+    },
+    {
+      "heading": "Nuevo: se confirma el flujo de ETF del martes 20 -pendiente desde el reporte de ayer- y es mucho más modesto que el salto del lunes",
+      "body": "Los ETFs de Bitcoin al contado en EE.UU. registraron una entrada neta de solo USD 23,2M el martes 20 de octubre, muy por debajo de los USD 526,6M del lunes 19. El detalle por fondo: IBIT +USD 29,9M, FBTC +USD 3,6M, GBTC sin movimiento (USD 0,0M) y BITB -USD 10,3M. Esto reduce el déficit acumulado de octubre de USD -90,6M (tras el dato del lunes) a USD -67,4M -una mejora marginal, no una confirmación de que la demanda institucional se sostiene al ritmo del lunes-. El dato del miércoles 21 de octubre todavía no está publicado por las fuentes habituales (Farside, SoSoValue, TFTC) al momento de este reporte; una nota secundaria (Analytics Insight) menciona que los ETFs spot acumularon 'más de USD 1.080M en tres días' hacia el 22 de octubre, pero sin desglose diario verificable, por lo que no se usa como cifra confirmada."
+    },
+    {
+      "heading": "Sin comentario nuevo de analistas sobre el movimiento de las últimas 24 horas",
+      "body": "No se encontraron declaraciones o análisis específicamente nuevos sobre el salto a USD 84.808 ni sobre la reversión posterior a USD 82.600 -se deja constancia de este vacío en vez de reciclar citas de reportes anteriores. Se debe revisar nuevamente en el próximo reporte."
+    },
+    {
+      "heading": "Novedad menor: comentario del CEO de Strategy sobre futuras compras, sin cambio en las tenencias",
+      "body": "Strategy permanece en aproximadamente 848.250 BTC, sin compra nueva confirmada desde el filing del 12 de octubre. Sí se conoció hoy una declaración del CEO Phong Le indicando que la empresa espera retomar una acumulación más activa de Bitcoin una vez que su acción preferente STRC vuelva a cotizar a la par -un condicionante financiero, no un anuncio de compra inmediata."
+    },
+    {
+      "heading": "Sin cambios: Tether/Cantor Fitzgerald, apelación del fallo del Reino Unido y Clarity Act",
+      "body": "El plazo del senador Blumenthal para que Cantor Fitzgerald responda sobre su participación en Tether vence mañana, 23 de octubre, sin pronunciamiento público de ninguna de las dos partes hasta el momento. La apelación del fallo de la High Court británica sobre los 61.000 BTC incautados a Zhimin Qian (la Corte determinó que rige la ley china, no la inglesa, sobre la disputa de propiedad) sigue sin novedad, con Fieldfisher manteniendo su intención de apelar. La Clarity Act sigue estancada desde el fracaso de cloture del 15 de septiembre (49-50 votos), sin fecha de un nuevo intento de voto en el Senado."
+    }
+  ],
+  "indicators": [
+    {
+      "name": "Precio BTC-USD (última semana)",
+      "description": "Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (22-oct) es la cotización en vivo. El cierre del martes 21 (USD 84.011,97) marcó un máximo intradía de USD 84.808 que superó por primera vez la banda de USD 83.000-84.000, pero el precio revirtió con fuerza y hoy cotiza en vivo en USD 82.223,63, cerca del mínimo de la corrección.",
+      "chart_type": "line",
+      "data": {
+        "labels": ["16 oct", "17 oct", "18 oct", "19 oct", "20 oct", "21 oct", "22 oct (en vivo)"],
+        "values": [81500.80, 81382.15, 82017.60, 81853.54, 82941.00, 84011.97, 82223.63]
+      },
+      "unit": "USD",
+      "current_value": "82,223.63",
+      "change": "-2.143",
+      "as_of": "07:24 UTC"
+    },
+    {
+      "name": "Fear & Greed Index",
+      "description": "Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), alternative.me. Sube de 63 a 68 -nuevo máximo de esta serie de reportes- a pesar de la reversión de precio de la madrugada, lo que sugiere que el sentimiento todavía no refleja completamente la corrección reciente. Se mantiene en zona 'Greed'.",
+      "chart_type": "gauge",
+      "data": {
+        "labels": ["Fear & Greed"],
+        "values": [68]
+      },
+      "unit": "índice (0-100)",
+      "current_value": "68 (Greed)",
+      "change": "+5",
+      "as_of": "22 oct 2026"
+    }
+  ],
+  "outlook": {
+    "short_term": "El rechazo en la zona de USD 84.000-84.850 confirma esa banda como resistencia técnica clave -tal como se anticipaba en reportes anteriores-, mientras que el soporte inmediato pasa a ser la zona de USD 82.500. Sin un catalizador de noticias claro detrás de la reversión, el movimiento de las próximas 24-48 horas dependerá en gran medida de si el apetito por riesgo global (afectado hoy por equities tecnológicas débiles y tensión en Medio Oriente) se estabiliza antes del apagón de comunicaciones de la Fed previo a la reunión del 27-28 de octubre.",
+    "medium_term": "El flujo de ETF del martes 20 (+USD 23,2M) fue muy inferior al salto del lunes, lo que templa la lectura optimista de ayer sobre una recuperación sostenida de la demanda institucional -el déficit mensual solo mejoró marginalmente, de USD -90,6M a USD -67,4M. El dato del miércoles 21, todavía no publicado, será clave para saber si la demanda de ETFs acompaña o no la volatilidad de precio de las últimas horas. El rango de QCP Capital para el Q4 (USD 80.000-90.000) sigue siendo la referencia de consenso, y el movimiento de hoy (tocar casi USD 85.000 y luego caer a USD 82.200) cabe dentro de ese rango sin alterar la tesis de fondo.",
+      "long_term": "Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong). En el frente regulatorio/legal, sin novedades sustanciales: el plazo del 23 de octubre para la respuesta de Cantor Fitzgerald a Blumenthal es el próximo hito concreto a vigilar en el eje Tether; la apelación del fallo británico sigue con resolución esperada en 2027; y la Clarity Act sigue sin fecha de reintento en el Senado. El comentario del CEO de Strategy sobre retomar compras una vez que STRC cotice a la par es un condicionante a monitorear para la demanda corporativa."
+  },
+  "recommendations": [
+    {
+      "title": "Tratar el pico de USD 84.808 como un rechazo técnico, no como ruptura confirmada",
+      "description": "El precio superó brevemente la resistencia de USD 83.000-84.000 pero no logró sostenerse por encima de ella, revirtiendo con fuerza hasta cerca de USD 82.200. Sin un catalizador de noticias identificado, conviene esperar un cierre sostenido por encima de USD 84.000-84.850 -no solo un máximo intradía- antes de tratar la zona como superada.",
+      "risk_level": "medio"
+    },
+    {
+      "title": "Vigilar el flujo de ETF del miércoles 21 antes de interpretar la tendencia de octubre",
+      "description": "El salto de flujos del lunes 19 (+USD 526,6M) no se repitió el martes 20 (+USD 23,2M apenas). El dato del miércoles 21, aún no publicado, ayudará a determinar si la mejora de mediados de semana fue un evento puntual o el inicio de una recuperación más sostenida de la demanda institucional.",
+      "risk_level": "bajo"
+    },
+    {
+      "title": "Monitorear el apetito por riesgo global, no solo noticias específicas de cripto",
+      "description": "La reversión de precio de hoy coincide con debilidad en equities tecnológicas (Nasdaq 100 futuros, Tesla, Lam Research) y tensión geopolítica en Medio Oriente, no con una noticia propia de Bitcoin. Conviene seguir la correlación de BTC con activos de riesgo tradicionales en el corto plazo, especialmente de cara al apagón de comunicaciones de la Fed antes de la reunión del 27-28 de octubre.",
+      "risk_level": "bajo"
+    }
+  ],
+  "sources": [
+    {"title": "fetch_market_price.py (Yahoo Finance, en vivo)", "url": "https://finance.yahoo.com/quote/BTC-USD"},
+    {"title": "Fear & Greed Index (alternative.me, en vivo)", "url": "https://alternative.me/crypto/fear-and-greed-index/"},
+    {"title": "Bitcoin Rainbow Chart (BlockchainCenter.net)", "url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/"},
+    {"title": "Bitcoin ETF Flows — October 2026 (TFTC, datos diarios Farside)", "url": "https://www.tftc.io/bitcoin-etf-flows/october-2026"},
+    {"title": "Bitcoin price reversal from $84.8K high — overnight volatility analysis (CryptoTicker, 22 oct 2026)", "url": "https://cryptoticker.io/"},
+    {"title": "Bitcoin dominance rises as altcoins lead selloff (Analytics Insight, 22 oct 2026)", "url": "https://www.analyticsinsight.net/"},
+    {"title": "Cantor Fitzgerald questioned over Tether ties (crypto.news)", "url": "https://crypto.news/cantor-fitzgerald-questioned-over-tether-ties/"},
+    {"title": "Senate Democrat presses Cantor Fitzgerald on Tether stake (Decrypt)", "url": "https://decrypt.co/380619/senate-democrat-cantor-fitzgerald-tether-lutnick"},
+    {"title": "UK court ruling strengthens government's claim to $5B in seized Bitcoin (Crypto Briefing)", "url": "https://cryptobriefing.com/uk-court-ruling-seized-bitcoin-qian/"},
+    {"title": "Clarity Act Stalls in Senate as Crypto Bill Fails to Clear Key Vote (Decrypt)", "url": "https://decrypt.co/378283/clarity-act-fails-senate-hurdle"},
+    {"title": "Strategy CEO Phong Le on resuming BTC accumulation once STRC trades at par (CoinAlertNews, 12 oct 2026)", "url": "https://coinalertnews.com/"}
+  ],
+  "crypto_extras": {
+    "fear_greed": {"value": 68, "classification": "Greed", "color": "#8bc34a", "timestamp": "2026-10-22T00:00:00+00:00"},
+    "btc_rainbow": {"image": ".tmp/bitcoin-btc-rainbow.png", "source": "BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)", "source_url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/", "captured_at": "2026-10-22"}
+  }
+}
