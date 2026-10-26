@@ -1,81 +1,81 @@
 {
   "topic": "Bitcoin (BTC-USD)",
-  "date": "2026-10-25",
-  "generated_at": "25 de octubre de 2026, 07:15 UTC",
-  "executive_summary": "BTC cotiza en USD 80.517,59 en vivo (07:15 UTC), -0,31% intradía, prácticamente plano frente al cierre del viernes 23 (USD 81.074,19) y del sábado 24 (USD 80.790,84 según Yahoo Finance) -sin la aceleración de la caída que el reporte de ayer dejaba como escenario posible si se perdía el rango de USD 81.000-82.000-. El precio se mantiene dentro de la zona de soporte de USD 80.000-80.700 que ya señalaban analistas técnicos, sin romperla a la baja ni recuperar los USD 82.000. Pese a una búsqueda activa en múltiples fuentes, no fue posible confirmar con un dato fiable y fechado el flujo neto de ETFs spot de Bitcoin en EE.UU. para el viernes 23 ni el sábado 24 de octubre -que el reporte de ayer dejó pendiente tras la salida de USD 635,49M del jueves 22-, por lo que ese dato queda sin confirmar en esta edición en vez de inventar una cifra. Tampoco se encontró un nuevo filing de Strategy posterior al del 19 de octubre, ni ninguna respuesta pública o escalamiento en el intercambio entre el senador Blumenthal y Cantor Fitzgerald sobre Tether desde que venció el plazo del 23 de octubre. El Fear & Greed Index subió levemente de 51 a 54, manteniéndose en 'Neutral' pero con un repunte modesto de sentimiento tras la fuerte caída de ayer. El dato más relevante de cara a los próximos días es la proximidad de la reunión de la Fed del 27-28 de octubre (en 2-3 días): los mercados de predicción consultados (Manifold, páginas derivadas de Polymarket) muestran probabilidades de recorte de tasas muy dispersas entre sí (de ~15% a ~22% en algunas, con una lectura aislada que apunta a ~78% de probabilidad de 'no recorte' en otra), por lo que se reporta con reserva y no como un consenso confiable -el mercado parece estar en modo de espera de cara a ese evento. No se encontraron declaraciones nuevas y verificables de analistas cripto desde el reporte de ayer; se mantiene vigente el marco técnico ya descrito (soporte USD 80.000-82.000, resistencia USD 82.000-84.850). Sin cambios en la apelación del fallo del Reino Unido sobre los 61.000 BTC incautados ni en la Clarity Act.",
+  "date": "2026-10-26",
+  "generated_at": "26 de octubre de 2026, 07:20 UTC",
+  "executive_summary": "BTC cotiza en USD 79.961,27 en vivo (07:20 UTC), -0,10% intradía. Lo nuevo y más relevante desde el reporte de ayer: el precio perforó por primera vez la zona de soporte de USD 80.000-80.700 que se mantenía intacta desde el 21 de octubre -el mínimo intradía de hoy tocó USD 79.343,66 antes de recuperar parcialmente hacia los USD 79.961,27 actuales, quedando igualmente por debajo de los USD 80.000-. El cierre del 25 de octubre ya había sido ajustado (USD 80.024,01), y hoy se confirma la ruptura, aunque sin una caída adicional pronunciada tras el mínimo intradía. Pese a una nueva búsqueda activa, sigue sin poder confirmarse con un dato fiable y fechado el flujo neto de ETFs spot de Bitcoin en EE.UU. para el 23, 24 y 25 de octubre -mismo punto pendiente que ya señalaba el reporte de ayer, ahora extendido un día más sin resolverse-. Tampoco se encontró un nuevo filing de Strategy posterior al del 19 de octubre, ni ninguna respuesta pública de Cantor Fitzgerald al senador Blumenthal sobre Tether. La reunión de la Fed del 27-28 de octubre queda ya a 1-2 días: las fuentes de mercados de predicción consultadas hoy no solo mantienen probabilidades de recorte dispersas, sino que algunas llegan a discrepar sobre cuál es la tasa de referencia vigente en este momento -una inconsistencia mayor a la de ayer que obliga a tomar cualquier cifra de probabilidad con máxima reserva hasta la decisión oficial-. El Fear & Greed Index retrocede levemente de 54 a 50, volviendo al punto medio de 'Neutral'. Sin cambios en la apelación del fallo del Reino Unido sobre los 61.000 BTC incautados ni en la Clarity Act, y sin declaraciones nuevas y verificables de analistas cripto desde el reporte de ayer.",
   "recent_context": [
     {
-      "heading": "Nuevo: el precio se estabiliza en la zona de soporte de USD 80.000-80.700, sin profundizar la caída",
-      "body": "Tras perder el rango de USD 81.000-82.000 el 22 y 23 de octubre, el precio cerró el sábado 24 en USD 80.790,84 y cotiza en vivo en USD 80.517,59 (07:15 UTC del 25 de octubre, -0,31% intradía) -un movimiento marginal comparado con la caída brusca de los días previos. El precio se mantiene dentro de la banda de soporte de USD 80.000-80.700 que analistas técnicos venían señalando desde el 21 de octubre, sin romperla a la baja (lo que abriría la puerta a USD 75.000-79.700) ni recuperar la resistencia de USD 82.000-84.200."
+      "heading": "Nuevo: el precio perfora por primera vez la zona de soporte de USD 80.000-80.700",
+      "body": "Desde que se formó la zona de soporte de USD 80.000-80.700 el 21 de octubre, el precio nunca había cerrado ni cotizado por debajo de USD 80.000 -hasta hoy. El cierre del 25 de octubre ya fue de USD 80.024,01 (al borde del rango), y en la sesión de hoy el mínimo intradía llegó a USD 79.343,66, perforando claramente el soporte, antes de recuperar parcialmente hacia los USD 79.961,27 actuales (07:20 UTC), que de todos modos siguen por debajo de los USD 80.000. No hay, por ahora, una caída adicional pronunciada tras el mínimo intradía, pero el nivel psicológico de USD 80.000 ya no actúa como piso firme. Una ruptura sostenida abriría el camino hacia la banda de USD 75.000-79.700 que los analistas técnicos venían señalando como escenario alternativo desde el 21 de octubre."
     },
     {
-      "heading": "Sin confirmar: el flujo de ETF del 23 y 24 de octubre, pese a búsqueda activa",
-      "body": "El reporte de ayer dejó pendiente el dato del viernes 23 de octubre tras la salida neta de USD 635,49M del jueves 22 (SoSoValue). Se realizó una búsqueda específica en múltiples fuentes (SoSoValue, Farside, The Block, agregadores) para los días 23 y 24, pero los resultados disponibles mezclan cifras de otras fechas y periodos sin un dato fehaciente y fechado para esos dos días. Se deja constancia explícita en vez de inventar una cifra: este dato queda pendiente de confirmar en el próximo reporte."
+      "heading": "Sin confirmar, ya por tercer día: el flujo de ETF del 23, 24 y 25 de octubre",
+      "body": "El reporte de ayer dejó pendiente el dato de los días 23 y 24 de octubre tras la última cifra confirmada (salida neta de USD 635,49M el 22 de octubre, SoSoValue). Una nueva búsqueda activa en SoSoValue, Farside Investors, The Block y agregadores no encontró cifras fehacientes y fechadas para el 23, 24 ni 25 de octubre -se extiende por tercer día consecutivo el vacío de este dato, que sigue siendo el punto más importante a cerrar en próximos reportes en vez de inventar una cifra."
     },
     {
       "heading": "Sin novedades: ni nuevo filing de Strategy ni respuesta de Cantor Fitzgerald a Blumenthal",
-      "body": "No se encontró ningún filing o anuncio de Strategy posterior al del 19 de octubre (compra de 267 BTC, tenencias en 848.517 BTC) ya reportado hace dos días. Tampoco se encontró ninguna respuesta pública, extensión de plazo o escalamiento en el pedido del senador Blumenthal a Cantor Fitzgerald sobre su vínculo con Tether desde que venció el plazo del 23 de octubre -se mantiene el mismo silencio ya señalado ayer, sin novedad adicional."
+      "body": "No se encontró ningún filing o anuncio de Strategy posterior al del 19 de octubre (compra de 267 BTC, tenencias en 848.517 BTC). Tampoco hay respuesta pública, extensión de plazo o escalamiento conocido en el pedido del senador Blumenthal a Cantor Fitzgerald sobre su vínculo con Tether -mismo silencio que ya señalaba el reporte de ayer, sin novedad adicional."
     },
     {
-      "heading": "Nuevo: se acerca la reunión de la Fed del 27-28 de octubre, con probabilidades de recorte muy dispersas entre fuentes",
-      "body": "La reunión de la Fed queda a solo 2-3 días. Las probabilidades de recorte de tasas implícitas en mercados de predicción consultados son inconsistentes entre sí -entre ~15% y ~22% según distintos snapshots de Manifold Markets, frente a una lectura aislada de otra página que sugiere ~78% de probabilidad de que la Fed mantenga la tasa sin cambios-, por lo que no hay una cifra de consenso confiable para reportar; se señala como el catalizador dominante de los próximos días más que como un pronóstico numérico."
+      "heading": "Nuevo: a 1-2 días de la Fed, las fuentes consultadas ahora discrepan incluso sobre la tasa vigente",
+      "body": "La reunión de la Fed del 27-28 de octubre queda ya a 1-2 días. Además de la dispersión de probabilidades de recorte ya señalada ayer, las fuentes de mercados de predicción consultadas hoy muestran una inconsistencia mayor: alguna sitúa la probabilidad de una subida de tasas (no un recorte) en torno al 36%, mientras otras mantienen probabilidades de recorte de apenas 4%-22% -y hay desacuerdo incluso sobre cuál es la tasa de referencia vigente en este momento. Dada esta dispersión creciente, no se reporta ninguna cifra como consenso fiable; se señala únicamente que la incertidumbre de cara al evento aumentó, no disminuyó, respecto a ayer."
     },
     {
-      "heading": "Nuevo: el Fear & Greed Index repunta levemente de 51 a 54",
-      "body": "Tras la fuerte caída de ayer (de 68 a 51), el índice sube a 54, un repunte modesto que coincide con la estabilización del precio en la zona de soporte, pero se mantiene dentro de la clasificación 'Neutral', sin señal de un giro de sentimiento marcado."
+      "heading": "Nuevo: el Fear & Greed Index retrocede levemente de 54 a 50",
+      "body": "Tras el repunte modesto de ayer (de 51 a 54), el índice retrocede a 50 -el punto medio exacto de la escala-, coincidiendo con la ruptura del soporte de USD 80.000. Se mantiene en la clasificación 'Neutral', sin señal de pánico ni de euforia."
     },
     {
       "heading": "Sin cambios: apelación del fallo del Reino Unido sobre los 61.000 BTC incautados y Clarity Act",
-      "body": "No se encontraron novedades sobre la apelación de Fieldfisher al fallo de la High Court británica, ni sobre la Clarity Act, que sigue estancada desde el fracaso de cloture del 15 de septiembre sin fecha de un nuevo intento de voto en el Senado."
+      "body": "No se encontraron novedades sobre la apelación de Fieldfisher al fallo de la High Court británica (resolución esperada en 2027), ni sobre la Clarity Act, que sigue estancada desde el fracaso de cloture del 15 de septiembre sin fecha de un nuevo intento de voto en el Senado."
     }
   ],
   "indicators": [
     {
       "name": "Precio BTC-USD (última semana)",
-      "description": "Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (25-oct) es la cotización en vivo. Tras la caída marcada de los días previos, el precio se estabiliza dentro de la zona de soporte de USD 80.000-80.700, sin romperla a la baja.",
+      "description": "Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (26-oct) es la cotización en vivo. Hoy el precio perforó por primera vez la zona de soporte de USD 80.000-80.700 vigente desde el 21 de octubre (mínimo intradía USD 79.343,66), recuperando parcialmente pero sin volver a superar los USD 80.000.",
       "chart_type": "line",
       "data": {
-        "labels": ["19 oct", "20 oct", "21 oct", "22 oct", "23 oct", "24 oct", "25 oct (en vivo)"],
-        "values": [81853.54, 82941.00, 84011.97, 81311.89, 81074.19, 80790.84, 80517.59]
+        "labels": ["20 oct", "21 oct", "22 oct", "23 oct", "24 oct", "25 oct", "26 oct (en vivo)"],
+        "values": [82941.00, 84011.97, 81311.89, 81074.19, 80790.84, 80024.01, 79961.27]
       },
       "unit": "USD",
-      "current_value": "80,517.59",
-      "change": "-0.313",
-      "as_of": "07:15 UTC"
+      "current_value": "79,961.27",
+      "change": "-0.098",
+      "as_of": "07:20 UTC"
     },
     {
       "name": "Fear & Greed Index",
-      "description": "Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), alternative.me. Repunta levemente de 51 a 54 tras la fuerte caída de ayer, manteniéndose en 'Neutral'.",
+      "description": "Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), alternative.me. Retrocede de 54 a 50, volviendo al punto medio exacto de la escala, dentro de la clasificación 'Neutral'.",
       "chart_type": "gauge",
       "data": {
         "labels": ["Fear & Greed"],
-        "values": [54]
+        "values": [50]
       },
       "unit": "índice (0-100)",
-      "current_value": "54 (Neutral)",
-      "change": "+3",
-      "as_of": "25 oct 2026"
+      "current_value": "50 (Neutral)",
+      "change": "-4",
+      "as_of": "26 oct 2026"
     }
   ],
   "outlook": {
-    "short_term": "El precio se mantiene dentro del rango de soporte de USD 80.000-82.000 señalado por analistas técnicos (Blockonomi, Zhang) desde el 21 de octubre, sin la aceleración bajista hacia USD 75.000-79.700 que se advertía como escenario si se perdía ese nivel, pero tampoco recupera la resistencia de USD 82.000-84.200. El catalizador dominante de los próximos 2-3 días es la reunión de la Fed del 27-28 de octubre; las probabilidades de recorte de tasas implícitas en mercados de predicción son inconsistentes entre fuentes (15%-22% según distintos snapshots de Manifold, con una lectura aislada que las contradice), por lo que se recomienda tomarlas con reserva hasta la decisión oficial.",
-    "medium_term": "El dato de flujo de ETF del 23 y 24 de octubre sigue sin confirmarse pese a la búsqueda activa -es el punto más importante a cerrar en el próximo reporte, junto con la reacción del mercado a la decisión de la Fed del 27-28 de octubre. El rango de consenso de QCP Capital para el Q4 (USD 80.000-90.000) sigue vigente, con el precio actual (USD 80.517) en el extremo inferior de ese rango, igual que ayer.",
-    "long_term": "Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong) ni en la tesis de acumulación de Strategy, de la que no se encontró un nuevo filing desde el del 19 de octubre. En el frente regulatorio/legal: el plazo del 23 de octubre para Cantor Fitzgerald sigue sin respuesta pública conocida y sin escalamiento confirmado por parte del senador Blumenthal; la apelación del fallo británico sigue con resolución esperada en 2027; y la Clarity Act continúa sin fecha de reintento en el Senado."
+    "short_term": "El precio perforó hoy por primera vez la zona de soporte de USD 80.000-80.700 que se mantenía intacta desde el 21 de octubre, con un mínimo intradía de USD 79.343,66 antes de recuperar parcialmente hacia los USD 79.961,27 actuales -sin, por ahora, una caída adicional pronunciada, pero sin recuperar tampoco los USD 80.000. Una ruptura sostenida abriría el camino hacia la banda de USD 75.000-79.700 ya señalada como escenario alternativo en reportes anteriores. El catalizador dominante de los próximos 1-2 días sigue siendo la reunión de la Fed del 27-28 de octubre; la dispersión de probabilidades entre fuentes de mercados de predicción aumentó respecto a ayer en vez de reducirse, por lo que se recomienda máxima reserva hasta la decisión oficial.",
+    "medium_term": "El dato de flujo de ETF del 23, 24 y 25 de octubre sigue sin confirmarse pese a una tercera búsqueda activa consecutiva -sigue siendo el punto más importante a cerrar en el próximo reporte, junto con si el precio reclama o no los USD 80.000 tras la decisión de la Fed. El rango de consenso de QCP Capital para el Q4 (USD 80.000-90.000) ahora está siendo puesto a prueba desde su propio límite inferior, con el precio actual (USD 79.961) ya por debajo de ese rango.",
+    "long_term": "Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong) ni en la tesis de acumulación de Strategy, de la que no se encontró un nuevo filing desde el del 19 de octubre. En el frente regulatorio/legal: el plazo del 23 de octubre para Cantor Fitzgerald sigue sin respuesta pública conocida; la apelación del fallo británico sigue con resolución esperada en 2027; y la Clarity Act continúa sin fecha de reintento en el Senado."
   },
   "recommendations": [
     {
-      "title": "Esperar la decisión de la Fed del 27-28 de octubre antes de operar direccionalmente",
-      "description": "El mercado parece estar en modo de espera de cara a la reunión de la Fed; las probabilidades de recorte de tasas implícitas en mercados de predicción consultados son inconsistentes entre fuentes, por lo que no hay una lectura confiable del consenso del mercado hasta la decisión oficial. Movimientos bruscos de precio en ambas direcciones son probables alrededor de ese evento.",
+      "title": "Tratar la ruptura de USD 80.000 como una señal real, no como una reversión confirmada",
+      "description": "El precio perforó hoy por primera vez el soporte de USD 80.000-80.700 vigente desde el 21 de octubre, aunque sin acelerar la caída tras el mínimo intradía de USD 79.343,66. Vigilar si recupera los USD 80.000-80.700 en los próximos días o si, en cambio, confirma la ruptura hacia la banda de USD 75.000-79.700.",
       "risk_level": "medio"
     },
     {
-      "title": "Tratar la zona de USD 80.000-80.700 como soporte activo, no como piso confirmado",
-      "description": "El precio se estabilizó dentro de ese rango sin profundizar la caída de los días previos, pero tampoco mostró una recuperación clara. Una ruptura por debajo de USD 80.000 reabriría el escenario de caída hacia USD 75.000-79.700 que ya señalaban los analistas citados en reportes anteriores.",
+      "title": "Esperar la decisión de la Fed del 27-28 de octubre antes de operar direccionalmente",
+      "description": "La dispersión entre fuentes sobre la probabilidad de recorte -e incluso sobre la tasa de referencia vigente- aumentó respecto a ayer, por lo que no hay ninguna lectura de consenso fiable del mercado hasta la decisión oficial. Movimientos bruscos de precio en ambas direcciones son probables alrededor de ese evento, justo cuando el soporte técnico ya se perforó.",
       "risk_level": "medio"
     },
     {
       "title": "No asumir el dato de flujo de ETF del 22 de octubre (-USD 635,49M) como tendencia sin el dato de los días siguientes",
-      "description": "El flujo del 23 y 24 de octubre no pudo confirmarse con una fuente fiable pese a la búsqueda activa. Hasta que se confirme, tratar la salida del jueves 22 como un evento puntual no corroborado por datos más recientes, no como el inicio de una tendencia de salida sostenida.",
+      "description": "El flujo del 23, 24 y 25 de octubre sigue sin poder confirmarse con una fuente fiable, ya por tercer día. Hasta que se confirme, tratar la salida del jueves 22 como un evento puntual no corroborado por datos más recientes, no como el inicio de una tendencia de salida sostenida.",
       "risk_level": "bajo"
     }
   ],
@@ -83,12 +83,10 @@
     {"title": "fetch_market_price.py (Yahoo Finance, en vivo)", "url": "https://finance.yahoo.com/quote/BTC-USD"},
     {"title": "Fear & Greed Index (alternative.me, en vivo)", "url": "https://alternative.me/crypto/fear-and-greed-index/"},
     {"title": "Bitcoin Rainbow Chart (BlockchainCenter.net)", "url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/"},
-    {"title": "Bitcoin (BTC) Price: Analysts Watch $82,000 Support and $84,200 Resistance (Blockonomi, 21 oct 2026)", "url": "https://blockonomi.com/bitcoin-btc-price-analysts-watch-82000-support-and-84200-resistance"},
-    {"title": "Will the Fed cut rates by at least 25bps at the Oct. 28, 2026 FOMC meeting? (Manifold Markets)", "url": "https://manifold.markets/CalibratedGhosts/will-the-fed-cut-rates-by-at-least-gsyCdSpcsg"},
-    {"title": "Fed rate cut by October 2026 meeting? (Orrery)", "url": "https://www.orrery.me/markets/fed-rate-cut-by-october-2026-meeting-199-747"}
+    {"title": "Bitcoin (BTC) Price: Analysts Watch $82,000 Support and $84,200 Resistance (Blockonomi, 21 oct 2026)", "url": "https://blockonomi.com/bitcoin-btc-price-analysts-watch-82000-support-and-84200-resistance"}
   ],
   "crypto_extras": {
-    "fear_greed": {"value": 54, "classification": "Neutral", "color": "#fab219", "timestamp": "2026-10-25T00:00:00+00:00"},
-    "btc_rainbow": {"image": ".tmp/bitcoin-btc-rainbow.png", "source": "BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)", "source_url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/", "captured_at": "2026-10-25"}
+    "fear_greed": {"value": 50, "classification": "Neutral", "color": "#fab219", "timestamp": "2026-10-26T00:00:00+00:00"},
+    "btc_rainbow": {"image": ".tmp/bitcoin-btc-rainbow.png", "source": "BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)", "source_url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/", "captured_at": "2026-10-26"}
   }
 }
