@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bitcoin (BTC-USD) — Reporte Yirafa Labs</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style>
+  @font-face {
+    font-family: 'Bricolage Grotesque';
+    font-style: normal;
+    font-weight: 300 800;
+    src: url('assets/fonts/BricolageGrotesque-latin.woff2') format('woff2');
+  }
+
+  :root {
+    --bg: #F7F7FB;
+    --surface: #FFFFFF;
+    --surface-muted: #F0F0F8;
+    --ink: #0F0F1E;
+    --ink-muted: #68687F;
+    --ink-soft: #ABABBE;
+    --accent: #C87E28;
+    --accent-hover: #A86820;
+    --accent-soft: #F6ECD8;
+    --border: #DCDCE8;
+    --border-strong: #C4C4D8;
+    --font-display: 'Bricolage Grotesque', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-body: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+    --max-w: 760px;
+    --radius: 14px;
+
+    --series-1: #C87E28;
+    --series-2: #2a78d6;
+    --series-3: #1baf7a;
+    --series-4: #8f5cd1;
+    --series-5: #c0392b;
+
+    --good: #0ca30c;
+    --warning: #fab219;
+    --serious: #ec835a;
+    --critical: #d03b3b;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page { max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem 4rem; }
+
+  header.masthead {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 2rem 1.5rem; max-width: var(--max-w); margin: 0 auto;
+    border-bottom: 1px solid var(--border);
+  }
+  .brand { display: flex; align-items: center; gap: 0.6rem; font-family: var(--font-display); }
+  .brand-icon {
+    width: 28px; height: 28px; border-radius: 8px; background: var(--accent);
+    color: var(--ink); font-weight: 800; font-size: 0.95rem;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .brand-word { font-weight: 700; letter-spacing: -0.01em; font-size: 0.95rem; }
+  .report-date { color: var(--ink-muted); font-size: 0.82rem; font-family: var(--font-display); text-align: right; }
+  .report-updated { font-size: 0.72rem; color: var(--ink-soft); margin-top: 0.15rem; }
+
+  .live-tag {
+    display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.7rem; font-weight: 700;
+    color: var(--good); background: #e8f7e8; padding: 0.1rem 0.5rem; border-radius: 999px; margin-top: 0.35rem;
+  }
+  .live-tag::before {
+    content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--good); flex-shrink: 0;
+  }
+
+  .hero { padding: 2.5rem 0 0.5rem; }
+  .eyebrow {
+    font-family: var(--font-display);
+    text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.7rem;
+    font-weight: 700; color: var(--accent-hover); margin: 0 0 0.6rem;
+  }
+  h1.title {
+    font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 1.9rem);
+    font-weight: 700; letter-spacing: -0.01em; line-height: 1.25; margin: 0 0 0.9rem;
+  }
+  .summary-lead { font-size: 1.05rem; line-height: 1.6; color: var(--ink-muted); max-width: 62ch; }
+
+  section { margin-top: 2.5rem; }
+  h2.section-title {
+    font-family: var(--font-display);
+    font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 1.1rem;
+    display: flex; align-items: center; gap: 0.55rem;
+  }
+  h2.section-title::before {
+    content: ''; width: 7px; height: 7px; border-radius: 2px; background: var(--accent); flex-shrink: 0;
+  }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 1.5rem;
+  }
+  .card + .card { margin-top: 1rem; }
+
+  .toc { margin-top: 1.75rem; padding: 1.25rem 1.5rem; }
+  .toc-title {
+    font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--ink-muted); margin-bottom: 0.75rem;
+  }
+  .toc-list { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 1.5rem; }
+  .toc-list li { break-inside: avoid; margin-bottom: 0.55rem; }
+  .toc-list a {
+    display: flex; align-items: baseline; gap: 0.5rem; color: var(--ink); font-size: 0.9rem;
+    font-weight: 600; text-decoration: none;
+  }
+  .toc-list a:hover { color: var(--accent-hover); }
+  .toc-num { color: var(--accent-hover); font-weight: 700; flex-shrink: 0; }
+  @media (max-width: 480px) { .toc-list { columns: 1; } }
+
+  .context-grid { display: grid; gap: 1rem; }
+  .context-card h3 { margin: 0 0 0.4rem; font-size: 1rem; font-weight: 700; }
+  .context-card p { margin: 0; color: var(--ink-muted); }
+
+  .indicator-card { margin-bottom: 1.25rem; }
+  .indicator-head {
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+  .indicator-name { font-weight: 700; font-size: 1.05rem; }
+  .indicator-desc { color: var(--ink-muted); font-size: 0.92rem; margin-top: 0.25rem; max-width: 52ch; }
+  .indicator-value { text-align: right; }
+  .indicator-current { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.02em; }
+  .indicator-unit { font-size: 0.8rem; color: var(--ink-muted); }
+  .change-pill {
+    display: inline-block; margin-top: 0.25rem; padding: 0.15rem 0.55rem; border-radius: 999px;
+    font-size: 0.78rem; font-weight: 700;
+  }
+  .change-pill.up { background: #e8f7e8; color: var(--good); }
+  .change-pill.down { background: #fdeceb; color: var(--critical); }
+  .change-pill.flat { background: var(--surface-muted); color: var(--ink-muted); }
+
+  .chart-wrap { position: relative; height: 220px; margin-top: 1.25rem; }
+  .gauge-wrap { position: relative; height: 180px; margin-top: 1.25rem; display: flex; align-items: center; justify-content: center; }
+  .gauge-center { position: absolute; text-align: center; top: 58%; transform: translateY(-50%); }
+  .gauge-center .val { font-size: 1.6rem; font-weight: 800; }
+  .gauge-center .unit { font-size: 0.78rem; color: var(--ink-muted); }
+
+  details.disclosure { margin-top: 0.9rem; border-top: 1px dashed var(--border); padding-top: 0.75rem; }
+  details.disclosure summary {
+    cursor: pointer; font-size: 0.85rem; font-weight: 700; color: var(--accent-hover);
+    list-style: none; display: flex; align-items: center; gap: 0.35rem; user-select: none;
+  }
+  details.disclosure summary::-webkit-details-marker { display: none; }
+  details.disclosure summary::marker { content: ''; display: none; }
+  details.disclosure summary::before { content: '▸'; font-size: 0.7rem; transition: transform 0.15s var(--ease, ease); }
+  details.disclosure[open] summary::before { transform: rotate(90deg); }
+  details.disclosure .disclosure-body { padding-top: 0.6rem; }
+
+  table.data-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  table.data-table th, table.data-table td {
+    text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border);
+  }
+  table.data-table th { color: var(--ink-muted); font-weight: 600; }
+
+  .expert-card summary { display: block; }
+  .expert-card summary::before { display: none; }
+  .expert-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  .expert-id { font-weight: 700; }
+  .expert-affil { color: var(--ink-muted); font-size: 0.85rem; }
+  .stance-pill {
+    padding: 0.15rem 0.6rem; border-radius: 999px; font-size: 0.75rem; font-weight: 700; white-space: nowrap;
+  }
+  .stance-pill.bullish { background: #e8f7e8; color: var(--good); }
+  .stance-pill.bearish { background: #fdeceb; color: var(--critical); }
+  .stance-pill.neutral { background: var(--surface-muted); color: var(--ink-muted); }
+  blockquote.quote {
+    margin: 0.75rem 0 0; padding-left: 1rem; border-left: 3px solid var(--accent-soft);
+    color: var(--ink); font-style: italic;
+  }
+  .source-link { font-size: 0.82rem; margin-top: 0.5rem; display: inline-block; }
+  .source-link a { color: var(--accent-hover); }
+
+  .outlook-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .outlook-card h3 {
+    margin: 0 0 0.5rem; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--accent-hover); font-weight: 700;
+  }
+  .outlook-card p { margin: 0; color: var(--ink); font-size: 0.94rem; }
+
+  .rec-card { display: flex; gap: 1rem; align-items: flex-start; }
+  .risk-pill { padding: 0.15rem 0.6rem; border-radius: 999px; font-size: 0.72rem; font-weight: 700; flex-shrink: 0; }
+  .risk-pill.bajo { background: #e8f7e8; color: var(--good); }
+  .risk-pill.medio { background: #fff4e0; color: #9a6a00; }
+  .risk-pill.alto { background: #fdeceb; color: var(--critical); }
+  .rec-title { font-weight: 700; margin-bottom: 0.2rem; }
+  .rec-desc { color: var(--ink-muted); font-size: 0.92rem; margin: 0; }
+
+  .sources-list { list-style: none; padding: 0; margin: 0; }
+  .sources-list li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); font-size: 0.88rem; }
+  .sources-list a { color: var(--accent-hover); }
+
+  footer.brand-footer {
+    margin-top: 4rem; padding: 2rem 0; border-top: 1px solid var(--border);
+    color: var(--ink-soft); font-size: 0.8rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;
+  }
+
+  a { color: var(--accent-hover); }
+
+  /* UI chrome, labels and figures stay in the brand display font;
+     everything else (running prose) uses --font-body for readability. */
+  .context-card h3,
+  .indicator-name,
+  .indicator-current,
+  .indicator-unit,
+  .change-pill,
+  .gauge-center,
+  .expert-id,
+  .stance-pill,
+  .outlook-card h3,
+  .rec-title,
+  .risk-pill,
+  table.data-table th,
+  table.data-table td,
+  details.disclosure summary,
+  .toc-title,
+  .toc-list,
+  footer.brand-footer {
+    font-family: var(--font-display);
+  }
+
+  @media (max-width: 640px) {
+    .outlook-grid { grid-template-columns: 1fr; }
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page, header.masthead { max-width: 100%; }
+    section { margin-top: 2rem; break-inside: avoid-page; }
+    .card, .indicator-card, .expert-card { break-inside: avoid-page; }
+    details.disclosure:not([open]) > .disclosure-body { display: block !important; }
+    details.disclosure summary::before { display: none; }
+    details.disclosure summary { cursor: default; color: var(--ink); }
+    a { color: var(--ink); text-decoration: underline; }
+  }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="brand">
+    <div class="brand-icon">Y</div>
+    <div class="brand-word">Yirafa Labs</div>
+  </div>
+  <div class="report-date">
+    2026-10-29
+    <div class="report-updated">Datos actualizados: 29 de octubre de 2026, 07:24 UTC</div>
+  </div>
+</header>
+
+<div class="page">
+  <div class="hero">
+    <p class="eyebrow">Reporte financiero</p>
+    <h1 class="title">Bitcoin (BTC-USD)</h1>
+    <p class="summary-lead">BTC cotiza en USD 79.787,49 en vivo (07:24 UTC), -1,82% intradía y -3,3% en 7 días, tras la decisión de la Fed de ayer 28 de octubre: mantuvo la tasa en el rango 3,75%-4% con una votación dividida 10-2 (las gobernadoras Lisa Cook y Beth Hammack disintieron a favor de una subida de 25pb). Lo nuevo desde el reporte de ayer: el mercado lee la decisión como un 'hawkish hold' -el presidente Kevin Warsh reconoció que 'no se ha logrado la estabilidad de precios' aunque dijo que 'estamos trabajando en ello', y evitó dar guía hacia adelante ('no creo en la guía hacia adelante, salvo circunstancias excepcionales o una crisis'). El foco cambió de inmediato hacia la reunión del 9 de diciembre: CME FedWatch pasó a asignarle a una subida de 25pb una probabilidad de 78,4% (Cointelegraph) a 86-90% según otras fuentes (Yahoo Finance, Bloomberg vía Analytics Insight) -un giro notable frente al relato de meses previos, donde el mercado todavía discutía recortes. Iggy Ioppe (CIO de Theo) resumió el impacto en BTC: 'el mercado ya tenía el mantenimiento de tasa descontado, pero no el tono hawkish', señalando que Bitcoin ahora compite con una tasa libre de riesgo cercana al 4%. En buena noticia, el problema de datos poco confiables en los flujos de ETF que se venía reportando desde el 23 de octubre parece resuelto: los días 26, 27 y 28 de octubre registraron tres jornadas consecutivas de entradas netas, con SoSoValue y Farside ahora coincidiendo en la cifra del 28 de octubre (USD 137,33M, liderada por IBIT con USD 136,01M). Nuevo catalizador de hoy: Strategy reporta resultados del Q3 2026 a las 17:00 ET, con una ganancia contable ya preanunciada de USD 20.910M por la revaluación de sus BTC y una votación de accionistas el 28 de octubre sobre dividendos diarios de su acción preferente STRC -señal de que la compañía está reasignando capital hacia recompras de preferentes en lugar de nuevas compras de BTC. Sin novedades en la apelación del fallo del Reino Unido sobre los 61.000 BTC, en la Clarity Act, ni en el plazo vencido de Blumenthal a Cantor Fitzgerald. El Fear & Greed Index se mantiene sin cambios en 51 (Neutral).</p>
+  </div>
+
+  
+  <nav class="card toc" aria-label="Índice del reporte">
+    <div class="toc-title">Índice</div>
+    <ol class="toc-list">
+      
+        <li><a href="#contexto"><span class="toc-num">1</span>Qué ha pasado en las últimas semanas</a></li>
+      
+        <li><a href="#indicadores"><span class="toc-num">2</span>Indicadores clave</a></li>
+      
+        <li><a href="#cripto-sentimiento"><span class="toc-num">3</span>Indicadores de sentimiento cripto</a></li>
+      
+        <li><a href="#expertos"><span class="toc-num">4</span>Opiniones de expertos</a></li>
+      
+        <li><a href="#previsiones"><span class="toc-num">5</span>Previsiones</a></li>
+      
+        <li><a href="#recomendaciones"><span class="toc-num">6</span>Recomendaciones y estrategias</a></li>
+      
+        <li><a href="#fuentes"><span class="toc-num">7</span>Fuentes</a></li>
+      
+    </ol>
+  </nav>
+
+  
+  <section id="contexto">
+    <h2 class="section-title">Qué ha pasado en las últimas semanas</h2>
+    <div class="context-grid">
+      
+      <div class="card context-card">
+        <h3>Nuevo: la Fed mantuvo la tasa en 3,75%-4% con una votación dividida 10-2 -un 'hawkish hold', no una señal dovish</h3>
+        <p>La decisión, anunciada ayer 28 de octubre a las 14:00 ET, mantuvo el rango de 3,75%-4% tal como esperaba el mercado (CME FedWatch marcaba 90,6% de probabilidad de mantener la noche anterior), pero con una votación dividida 10-2: las gobernadoras Lisa Cook y Beth Hammack disintieron a favor de una subida de 25 puntos básicos. En la conferencia de prensa, el presidente Kevin Warsh reconoció que 'no se ha logrado la estabilidad de precios' aunque agregó 'pero estamos trabajando en ello', calificó las medidas actuales como que 'están empezando a funcionar algo, pero sin conclusiones firmes', evitó comprometerse con una guía hacia adelante ('no creo en la guía hacia adelante, salvo circunstancias excepcionales, salvo una crisis') y afirmó que 'la política no tuvo ningún rol en la decisión'. El comunicado oficial de la Fed señaló que 'la acumulación de más información ayudará al Comité a determinar la postura de política'. El mercado leyó el conjunto -mantenimiento más dos disidencias hawkish- como un 'hawkish hold', no como alivio para activos de riesgo.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Nuevo: el foco del mercado gira hacia diciembre -la probabilidad de una subida de tasa en la próxima reunión sube marcadamente</h3>
+        <p>Con la decisión de octubre ya resuelta, la atención pasa a la reunión del 9 de diciembre. CME FedWatch le asigna ahora 78,4% de probabilidad a una subida de 25pb en esa fecha (Cointelegraph, 29 oct) y 67,3% de probabilidad de al menos una subida hacia marzo 2027. Otras fuentes citan cifras aún más altas para diciembre: 86% (Yahoo Finance) y ~90% según datos de bonos del Tesoro citados por Bloomberg (vía Analytics Insight). Aunque las cifras exactas varían por fuente y metodología, todas convergen en la misma dirección: el mercado pasó de discutir recortes hace unos meses a priced-in de una probable subida en diciembre -un cambio de régimen relevante para cualquier lectura de mediano plazo sobre BTC, que ahora compite con una tasa libre de riesgo cercana al 4% y en ascenso.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Nuevo: BTC cae por debajo de los USD 80.000 tras el tono hawkish, sin que la decisión en sí sea la sorpresa</h3>
+        <p>BTC cotiza en USD 79.787,49 en vivo (07:24 UTC), -1,82% intradía y -3,3% en los últimos 7 días (CoinGecko), tras haber retrocedido brevemente por debajo de USD 80.000 luego del tono de Warsh. Iggy Ioppe, CIO de la plataforma de tokenización Theo, lo resumió a Cointelegraph: 'el mercado ya tenía el mantenimiento de tasa descontado, pero no el tono hawkish' -y señaló que Bitcoin ahora compite con una tasa libre de riesgo cercana al 4%. Lewis Huang, analista de Bitget, matizó que con poca dirección nueva desde la Fed, el desempeño de corto plazo de Bitcoin podría depender más de los rendimientos del Tesoro, el dólar y el sentimiento de riesgo general que de la decisión en sí. CryptoQuant añade contexto de fondo: BTC cae 4,2% en octubre, la demanda spot viene negativa a diario desde el 14 de octubre, y el margen de ganancia promedio de los holders cayó de 33% a 8% -con un costo base promedio de los tenedores de ETF cerca de USD 81.500, por encima del precio actual.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Nuevo (buena noticia): el problema de datos poco confiables en los flujos de ETF parece resuelto -tres días consecutivos de entradas confirmadas</h3>
+        <p>A diferencia de los reportes de los últimos nueve días, donde las cifras de flujos de ETF de BTC venían disputadas o sin publicar entre distintas fuentes, los datos del 26, 27 y 28 de octubre muestran tres jornadas consecutivas de entradas netas, con SoSoValue y Farside coincidiendo en la cifra del 28 de octubre: USD 137,33M de entrada neta (tercer día consecutivo), liderada por IBIT de BlackRock (USD 136,01M) y BITB de Bitwise (USD 1,32M), sobre un volumen total de USD 1.260M. Las entradas netas acumuladas llegan a USD 57.610M, con activos netos totales de USD 104.880M (6,41% de la capitalización de mercado de BTC). No se encontró ninguna disputa de cifras para estos tres días, a diferencia de lo reportado para el 20, 23, 24 y 25 de octubre en ediciones anteriores.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Nuevo: Strategy reporta resultados del Q3 2026 hoy a las 17:00 ET -con una ganancia contable de USD 20.910M ya preanunciada y un giro de capital hacia recompra de preferentes</h3>
+        <p>Strategy presenta sus resultados del tercer trimestre hoy 29 de octubre a las 17:00 ET, con una sesión de preguntas y respuestas en vivo con tres analistas especializados en Bitcoin (de Citi, Barclays y BTIG). La compañía ya había estimado el 5 de octubre una ganancia contable de USD 20.910M por la revaluación a valor de mercado de sus tenencias de BTC durante el trimestre -bajo contabilidad a valor justo, por lo que el resultado reportado dependerá en gran medida de dónde cerró el precio de BTC en el trimestre. Las estimaciones de EPS de los analistas varían enormemente entre fuentes (de -USD 0,99 a USD 52,82), reflejando esa sensibilidad. Dato relevante de cara al reporte: los accionistas votaron ayer 28 de octubre sobre dividendos diarios para su acción preferente STRC, lo que confirma un giro de la compañía hacia recompras de acciones preferentes en lugar de nuevas compras de BTC con el capital disponible -un cambio de estrategia de asignación de capital a vigilar en el reporte de mañana.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Sin novedades: apelación del Reino Unido, Clarity Act y plazo de Blumenthal a Cantor Fitzgerald</h3>
+        <p>No se encontraron novedades en la apelación de Fieldfisher al fallo de la High Court británica sobre los 61.000 BTC (resolución esperada en 2027), en la Clarity Act, ni respuesta pública de Cantor Fitzgerald o Tether al plazo vencido el 23 de octubre que les dio el senador Blumenthal -la búsqueda de hoy no encontró cobertura adicional sobre ninguno de estos tres puntos desde el reporte de ayer.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Sin cambios: el Fear & Greed Index se mantiene en 51 (Neutral)</h3>
+        <p>El índice no se movió respecto a ayer, permaneciendo en 51 dentro de la clasificación 'Neutral' -sin reflejar todavía, al momento de esta consulta, el retroceso del precio tras el tono hawkish de la Fed.</p>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  
+  <section id="indicadores">
+    <h2 class="section-title">Indicadores clave</h2>
+    
+    <div class="card indicator-card">
+      <div class="indicator-head">
+        <div>
+          <div class="indicator-name">Precio BTC-USD (última semana)</div>
+          <div class="indicator-desc">Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (29-oct) es la cotización en vivo. BTC retrocedió por debajo de los USD 80.000 tras el tono hawkish de la Fed en su decisión del 28 de octubre.</div>
+          <div class="live-tag">En vivo · 07:24 UTC</div>
+        </div>
+        
+        <div class="indicator-value">
+          <div class="indicator-current">79,787.49 <span class="indicator-unit">USD</span></div>
+          
+          <span class="change-pill down">-1.82</span>
+          
+        </div>
+        
+      </div>
+
+      
+        
+        <div class="chart-wrap">
+          <canvas id="chart-0"></canvas>
+        </div>
+        
+        <details class="disclosure">
+          <summary>Ver datos en tabla</summary>
+          <div class="disclosure-body">
+            <table class="data-table">
+              <thead><tr><th>Periodo</th><th>Valor</th></tr></thead>
+              <tbody>
+                
+                <tr><td>23 oct</td><td>81074.19</td></tr>
+                
+                <tr><td>24 oct</td><td>80790.84</td></tr>
+                
+                <tr><td>25 oct</td><td>80024.01</td></tr>
+                
+                <tr><td>26 oct</td><td>80006.66</td></tr>
+                
+                <tr><td>27 oct</td><td>80805.08</td></tr>
+                
+                <tr><td>28 oct</td><td>81267.59</td></tr>
+                
+                <tr><td>29 oct (en vivo)</td><td>79787.49</td></tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </details>
+      
+    </div>
+    
+    <div class="card indicator-card">
+      <div class="indicator-head">
+        <div>
+          <div class="indicator-name">Fear & Greed Index</div>
+          <div class="indicator-desc">Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), alternative.me. Se mantiene sin cambios en 51, dentro de la clasificación 'Neutral'.</div>
+          <div class="live-tag">En vivo · 29 oct 2026</div>
+        </div>
+        
+        <div class="indicator-value">
+          <div class="indicator-current">51 (Neutral) <span class="indicator-unit">índice (0-100)</span></div>
+          
+          <span class="change-pill flat">0</span>
+          
+        </div>
+        
+      </div>
+
+      
+        
+        <div class="gauge-wrap">
+          <canvas id="chart-1" width="320" height="180"></canvas>
+          <div class="gauge-center">
+            <div class="val">51 (Neutral)</div>
+            <div class="unit">índice (0-100)</div>
+          </div>
+        </div>
+        
+        <details class="disclosure">
+          <summary>Ver datos en tabla</summary>
+          <div class="disclosure-body">
+            <table class="data-table">
+              <thead><tr><th>Periodo</th><th>Valor</th></tr></thead>
+              <tbody>
+                
+                <tr><td>Fear & Greed</td><td>51</td></tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </details>
+      
+    </div>
+    
+  </section>
+  
+
+  
+  <section id="cripto-sentimiento">
+    <h2 class="section-title">Indicadores de sentimiento cripto</h2>
+    <div class="context-grid">
+      
+      <div class="card indicator-card">
+        <div class="indicator-head">
+          <div>
+            <div class="indicator-name">Fear &amp; Greed Index</div>
+            <div class="indicator-desc">Índice de sentimiento de mercado cripto (0 = miedo extremo, 100 = codicia extrema). Fuente: alternative.me</div>
+          </div>
+          <div class="indicator-value">
+            <div class="indicator-current">51</div>
+          </div>
+        </div>
+        <div class="gauge-wrap">
+          <canvas id="chart-feargreed" width="320" height="180"></canvas>
+          <div class="gauge-center">
+            <div class="val">51</div>
+            <div class="unit">Neutral</div>
+          </div>
+        </div>
+      </div>
+      
+
+      
+      <div class="card indicator-card">
+        <div class="indicator-name">Bitcoin Rainbow Chart</div>
+        <div class="indicator-desc">Bandas de regresión logarítmica sobre el precio histórico de BTC — la referencia más citada de este tipo de gráfico.</div>
+        <img src="assets/btc-rainbow.png" alt="Bitcoin Rainbow Chart" style="width:100%; border-radius:10px; margin-top:1.25rem; border:1px solid var(--border); display:block;">
+        <div class="source-link">Fuente: <a href="https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/" target="_blank" rel="noopener">BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)</a> — capturado el 2026-10-29</div>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  
+  <section id="expertos">
+    <h2 class="section-title">Opiniones de expertos</h2>
+    
+    <details class="card expert-card disclosure" open>
+      <summary>
+        <div class="expert-head">
+          <div>
+            <div class="expert-id">Iggy Ioppe</div>
+            <div class="expert-affil">Chief Investment Officer, Theo (plataforma de tokenización)</div>
+          </div>
+          <span class="stance-pill bearish">bearish</span>
+        </div>
+      </summary>
+      <div class="disclosure-body">
+        <blockquote class="quote">“El mercado ya tenía el mantenimiento de tasa descontado, pero no el tono hawkish.”</blockquote>
+        
+        <div class="source-link"><a href="https://cointelegraph.com/markets/bitcoin-faces-fresh-pressure-after-feds-hawkish-rate-hold-analysts" target="_blank" rel="noopener">Ver fuente</a></div>
+        
+      </div>
+    </details>
+    
+    <details class="card expert-card disclosure" open>
+      <summary>
+        <div class="expert-head">
+          <div>
+            <div class="expert-id">Lewis Huang</div>
+            <div class="expert-affil">Analista, Bitget</div>
+          </div>
+          <span class="stance-pill neutral">neutral</span>
+        </div>
+      </summary>
+      <div class="disclosure-body">
+        <blockquote class="quote">“Con poca dirección nueva desde la Fed, el desempeño de corto plazo de Bitcoin puede depender más de los rendimientos del Tesoro, el dólar y el sentimiento de riesgo que de la decisión en sí.”</blockquote>
+        
+        <div class="source-link"><a href="https://cointelegraph.com/markets/bitcoin-faces-fresh-pressure-after-feds-hawkish-rate-hold-analysts" target="_blank" rel="noopener">Ver fuente</a></div>
+        
+      </div>
+    </details>
+    
+  </section>
+  
+
+  
+  <section id="previsiones">
+    <h2 class="section-title">Previsiones</h2>
+    <div class="outlook-grid">
+      <div class="card outlook-card"><h3>Corto plazo</h3><p>El catalizador inmediato es el reporte de resultados del Q3 2026 de Strategy hoy a las 17:00 ET, con una ganancia contable ya preanunciada de USD 20.910M y una sesión de Q&A en vivo con analistas de Citi, Barclays y BTIG -un evento que puede mover el sentimiento en empresas de tesorería cripto comparables. En el frente macro, Lewis Huang (Bitget) señala que, con poca dirección nueva desde la Fed, el precio puede depender más de los rendimientos del Tesoro, el dólar y el apetito de riesgo general que de la decisión del FOMC en sí misma -con el nivel de USD 80.000 como referencia técnica clave a vigilar en ambas direcciones.</p></div>
+      <div class="card outlook-card"><h3>Mediano plazo</h3><p>El giro más relevante de las últimas 24 horas es que el mercado pasó a asignar una probabilidad alta (78,4%-90% según la fuente) a una subida de tasa en la reunión del 9 de diciembre, revirtiendo el relato de recortes que predominaba meses atrás. Iggy Ioppe (Theo) enmarca el impacto directo en BTC: el activo ahora compite con una tasa libre de riesgo cercana al 4% y potencialmente en ascenso. CryptoQuant aporta una lectura on-chain consistente con esa presión: demanda spot negativa a diario desde el 14 de octubre y margen de ganancia promedio de los tenedores cayendo de 33% a 8%. En contraste, el frente de flujos de ETF mejoró de forma concreta: tres días consecutivos de entradas netas (26-28 de octubre) con datos ahora consistentes entre SoSoValue y Farside, revirtiendo el problema de confiabilidad de los reportes anteriores.</p></div>
+      <div class="card outlook-card"><h3>Largo plazo</h3><p>Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong) ni en la tesis de acumulación de Strategy, aunque el reporte de resultados de hoy (17:00 ET) puede traer la primera actualización formal de tenencias de BTC desde mediados de octubre, junto con más claridad sobre el giro de la compañía hacia recompras de su acción preferente STRC en lugar de nuevas compras de BTC. En el frente regulatorio/legal, sin novedades: la apelación del fallo británico sigue con resolución esperada en 2027, la Clarity Act continúa sin fecha de reintento en el Senado, y el plazo vencido de Blumenthal a Cantor Fitzgerald sigue sin respuesta pública conocida.</p></div>
+    </div>
+  </section>
+  
+
+  
+  <section id="recomendaciones">
+    <h2 class="section-title">Recomendaciones y estrategias</h2>
+    
+    <div class="card rec-card">
+      <span class="risk-pill medio">riesgo medio</span>
+      <div>
+        <div class="rec-title">Reconocer que el régimen de tasas cambió de signo -de 'posible recorte' a 'probable subida' en diciembre</div>
+        <p class="rec-desc">Con CME FedWatch asignando entre 78,4% y ~90% de probabilidad a una subida de 25pb el 9 de diciembre según la fuente, cualquier estrategia que todavía asuma un entorno de tasas a la baja para fin de año debería revisarse. Iggy Ioppe (Theo) enmarca el efecto directo: Bitcoin compite ahora con una tasa libre de riesgo cercana al 4%.</p>
+      </div>
+    </div>
+    
+    <div class="card rec-card">
+      <span class="risk-pill medio">riesgo medio</span>
+      <div>
+        <div class="rec-title">Vigilar el reporte de Strategy del Q3 2026 hoy (17:00 ET) como catalizador de sentimiento sectorial</div>
+        <p class="rec-desc">Más allá de la ganancia contable ya preanunciada (USD 20.910M), la señal a seguir es el giro de capital hacia recompras de la acción preferente STRC en lugar de nuevas compras de BTC -un cambio de estrategia de asignación de capital que puede repetirse en otras empresas de tesorería cripto si se confirma.</p>
+      </div>
+    </div>
+    
+    <div class="card rec-card">
+      <span class="risk-pill bajo">riesgo bajo</span>
+      <div>
+        <div class="rec-title">Los flujos de ETF volvieron a ser una fuente confiable -usarlos de nuevo como referencia de demanda institucional</div>
+        <p class="rec-desc">Tras nueve días de datos disputados o sin publicar, las cifras del 26-28 de octubre (tres días consecutivos de entradas, con SoSoValue y Farside coincidiendo) restauran la confiabilidad de este indicador. Volver a tratarlo como señal de demanda institucional en vez de descartarlo por las inconsistencias recientes.</p>
+      </div>
+    </div>
+    
+  </section>
+  
+
+  
+  <section id="fuentes">
+    <h2 class="section-title">Fuentes</h2>
+    <ul class="sources-list">
+      
+      <li><a href="https://finance.yahoo.com/quote/BTC-USD" target="_blank" rel="noopener">fetch_market_price.py (Yahoo Finance, en vivo)</a></li>
+      
+      <li><a href="https://alternative.me/crypto/fear-and-greed-index/" target="_blank" rel="noopener">Fear & Greed Index (alternative.me, en vivo)</a></li>
+      
+      <li><a href="https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/" target="_blank" rel="noopener">Bitcoin Rainbow Chart (BlockchainCenter.net)</a></li>
+      
+      <li><a href="https://cointelegraph.com/markets/bitcoin-faces-fresh-pressure-after-feds-hawkish-rate-hold-analysts" target="_blank" rel="noopener">Fed's hawkish rate hold keeps pressure on Bitcoin: Analysts (Cointelegraph, 29 oct 2026)</a></li>
+      
+      <li><a href="https://finance.yahoo.com/economy/policy/article/the-fed-is-expected-to-hold-rates-steady-how-will-warsh-justify-that-in-the-face-of-higher-inflation-122025078.html" target="_blank" rel="noopener">The Fed is expected to hold rates steady - how will Warsh justify that? (Yahoo Finance, 28 oct 2026)</a></li>
+      
+      <li><a href="https://www.tokenpost.com/news/investing/43260" target="_blank" rel="noopener">US Bitcoin spot ETFs attract $137.33M in third straight session of inflows (TokenPost, 29 oct 2026)</a></li>
+      
+      <li><a href="https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-slips-near-usd-80361-as-fed-hold-keeps-hike-fears-alive" target="_blank" rel="noopener">Crypto Prices Today: Bitcoin slips near USD 80,361 as Fed hold keeps hike fears alive (Analytics Insight, 29 oct 2026)</a></li>
+      
+      <li><a href="https://cryptobriefing.com/strategy-q3-2026-earnings-call-bitcoin-analysts/" target="_blank" rel="noopener">Strategy hosts three Bitcoin analysts for live Q3 2026 earnings call Q&A (CryptoBriefing)</a></li>
+      
+      <li><a href="https://cryptobriefing.com/us-bitcoin-etfs-137m-inflows-ether-outflows/" target="_blank" rel="noopener">US Bitcoin ETFs attract $137M, Ether funds see $21M outflows (CryptoBriefing)</a></li>
+      
+    </ul>
+  </section>
+  
+
+  <footer class="brand-footer">
+    <span>Yirafa Labs — reporte generado el 2026-10-29</span>
+    <span>Uso informativo, no constituye asesoría financiera</span>
+  </footer>
+</div>
+
+<script src="assets/vendor/chart.umd.min.js"></script>
+<script>
+  const INDICATORS = [{"as_of": "07:24 UTC", "change": "-1.82", "chart_type": "line", "current_value": "79,787.49", "data": {"labels": ["23 oct", "24 oct", "25 oct", "26 oct", "27 oct", "28 oct", "29 oct (en vivo)"], "values": [81074.19, 80790.84, 80024.01, 80006.66, 80805.08, 81267.59, 79787.49]}, "description": "Precio spot de Bitcoin en d\u00f3lares, \u00faltimos cierres diarios de Yahoo Finance. El \u00faltimo punto (29-oct) es la cotizaci\u00f3n en vivo. BTC retrocedi\u00f3 por debajo de los USD 80.000 tras el tono hawkish de la Fed en su decisi\u00f3n del 28 de octubre.", "name": "Precio BTC-USD (\u00faltima semana)", "unit": "USD"}, {"as_of": "29 oct 2026", "change": "0", "chart_type": "gauge", "current_value": "51 (Neutral)", "data": {"labels": ["Fear \u0026 Greed"], "values": [51]}, "description": "\u00cdndice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), alternative.me. Se mantiene sin cambios en 51, dentro de la clasificaci\u00f3n \u0027Neutral\u0027.", "name": "Fear \u0026 Greed Index", "unit": "\u00edndice (0-100)"}];
+  const PALETTE = ['#C87E28', '#2a78d6', '#1baf7a', '#8f5cd1', '#c0392b'];
+
+  Chart.defaults.font.family = "'Bricolage Grotesque', system-ui, sans-serif";
+  Chart.defaults.color = '#68687F';
+
+  INDICATORS.forEach((ind, i) => {
+    if (!ind.data || !ind.data.labels || !ind.data.values) return;
+    const canvas = document.getElementById('chart-' + i);
+    if (!canvas) return;
+    const color = PALETTE[i % PALETTE.length];
+
+    if (ind.chart_type === 'gauge') {
+      const max = Math.max(...ind.data.values, 100);
+      const value = ind.data.values[ind.data.values.length - 1];
+      new Chart(canvas, {
+        type: 'doughnut',
+        data: {
+          labels: [ind.name, 'resto'],
+          datasets: [{
+            data: [value, Math.max(max - value, 0)],
+            backgroundColor: [color, '#DCDCE8'],
+            borderWidth: 0,
+          }],
+        },
+        options: {
+          rotation: -90,
+          circumference: 180,
+          cutout: '75%',
+          plugins: { legend: { display: false }, tooltip: { enabled: true } },
+        },
+      });
+      return;
+    }
+
+    new Chart(canvas, {
+      type: ind.chart_type === 'bar' ? 'bar' : 'line',
+      data: {
+        labels: ind.data.labels,
+        datasets: [{
+          label: ind.name,
+          data: ind.data.values,
+          borderColor: color,
+          backgroundColor: ind.chart_type === 'bar' ? color : color + '33',
+          borderRadius: 4,
+          fill: ind.chart_type !== 'bar',
+          tension: 0.35,
+          pointRadius: 3,
+          pointHoverRadius: 5,
+          borderWidth: 2,
+        }],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: '#0F0F1E',
+            titleFont: { weight: '700' },
+            padding: 10,
+            cornerRadius: 8,
+            callbacks: {
+              label: (ctx) => ` ${ctx.formattedValue} ${ind.unit || ''}`.trim(),
+            },
+          },
+        },
+        scales: {
+          x: { grid: { display: false }, border: { color: '#DCDCE8' } },
+          y: { grid: { color: '#F0F0F8' }, border: { display: false } },
+        },
+      },
+    });
+  });
+
+  const FEAR_GREED = {"classification": "Neutral", "color": "#fab219", "timestamp": "2026-10-29T00:00:00+00:00", "value": 51};
+  const fgCanvas = document.getElementById('chart-feargreed');
+  if (FEAR_GREED && fgCanvas) {
+    new Chart(fgCanvas, {
+      type: 'doughnut',
+      data: {
+        labels: [FEAR_GREED.classification, 'resto'],
+        datasets: [{
+          data: [FEAR_GREED.value, 100 - FEAR_GREED.value],
+          backgroundColor: [FEAR_GREED.color, '#DCDCE8'],
+          borderWidth: 0,
+        }],
+      },
+      options: {
+        rotation: -90,
+        circumference: 180,
+        cutout: '75%',
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: { label: () => ` ${FEAR_GREED.classification}: ${FEAR_GREED.value}/100` },
+          },
+        },
+      },
+    });
+  }
+</script>
+</body>
+</html>
