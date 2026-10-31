@@ -1,90 +1,91 @@
 {
   "topic": "Bitcoin (BTC-USD)",
-  "date": "2026-10-30",
-  "generated_at": "30 de octubre de 2026, 07:33 UTC",
-  "executive_summary": "BTC cotiza en USD 78.345,14 en vivo (07:33 UTC), +0,71% intradía pero retrocediendo frente a los USD 79.787,49 de ayer (-1,8% día a día). Lo nuevo desde el reporte de ayer: Strategy publicó anoche (29 de octubre, tras el cierre) sus resultados reales del Q3 2026 -ya no la mera estimación que se reportó ayer- con una ganancia neta de USD 19.530M (vs. USD 2.790M un año antes) y un ingreso operativo de USD 21.000M, el mayor de su historia, impulsado por la revaluación de USD 20.910M en sus BTC. La compañía reporta 848.517 BTC en tenencia al 25 de octubre (+26% en lo que va del año) tras comprar 7.218 BTC (~USD 588,1M) y vender 5.552 BTC (~USD 348,6M) durante el trimestre -confirma que sigue siendo compradora neta, pero con ventas activas para financiar su nueva política. Los accionistas de las acciones preferentes (STRC, STRF, STRK, STRD) aprobaron con el 99,3% de los votos que los dividendos se acumulen a diario en vez de con calendario fijo (STRC paga por primera vez el 2 de noviembre); además, el CFO Andrew Kang deja el cargo el 5 de noviembre y será reemplazado por el actual COO, Reza Virasteh, en enero de 2027. El presidente ejecutivo Michael Saylor declaró: 'estamos en el comienzo del próximo mercado alcista de Bitcoin', mientras el CEO Phong Le calificó los dividendos diarios como 'un paso natural hacia el sistema financiero tokenizado 24/7/365'. En paralelo, el Fear & Greed Index cayó con fuerza de 51 (Neutral) a 30 (Fear) en 24 horas -el mayor movimiento diario de este indicador en las últimas semanas de reportes-, aunque no se encontró en fuentes verificables un catalizador único y confirmado para la caída (no se trata necesariamente de las ventas de BTC de Strategy, que son recurrentes desde mediados de año). Sin datos nuevos verificados de flujos de ETF para el 29 de octubre más allá de lo ya reportado ayer (26-28 de octubre), ni novedades en la apelación del fallo del Reino Unido, la Clarity Act, o el plazo de Blumenthal a Cantor Fitzgerald.",
+  "date": "2026-10-31",
+  "generated_at": "31 de octubre de 2026, 07:14 UTC",
+  "executive_summary": "BTC cotiza en USD 77.267,29 en vivo (07:14 UTC), prácticamente plano intradía (+0,08%) tras el desplome de los últimos dos días, y todavía por debajo de los USD 78.345 de ayer y muy por debajo de los USD 81.267 del 28 de octubre. Lo nuevo desde el reporte de ayer -y el catalizador que ayer no se pudo confirmar para la caída del Fear & Greed Index de 51 a 30-: Binance sufrió el 29 de octubre el mayor robo de criptomonedas de la historia, con estimaciones de entre USD 2.000M (reporte inicial) y USD 6.300-6.430M (cifra de Binance y del analista on-chain Elliptic, la más citada) drenados de sus hot wallets mediante una firma de transacciones comprometida mediante una delegación EIP-7702 en Ethereum -no un hackeo de claves privadas ni una falla de contrato inteligente, según Binance-. El robo se extendió unas tres horas (20:05-23:56 UTC) a través de unas diez-once blockchains. Binance suspendió retiros en múltiples redes como medida de precaución, su cofundador Changpeng Zhao reconoció en X que 'parece ser un hackeo a Binance', y la empresa afirmó que los fondos de los usuarios están 'completamente seguros' y que cubrirá las pérdidas con su fondo SAFU y fondos propios. Tether y Circle congelaron en conjunto más de USD 2.600-3.000M de lo robado en stablecoins. Elliptic considera 'muy probable' la atribución a actores vinculados a Corea del Norte (mismo patrón que el hackeo a Bybit de 2025), aunque sin confirmación oficial de un gobierno o agencia policial. El shock desató liquidaciones por cerca de USD 1.000-1.500M en 24 horas (CoinGlass) y llevó a BTC a un mínimo intradía de ~USD 76.460-78.300 el 29 de octubre, antes de estabilizarse en el rango actual. En paralelo, Strategy (MSTR) cayó casi 10% el viernes 30 (parte del selloff cripto más amplio por el hackeo) pese a que analistas de StoneX (PT USD 435) y TD Cowen (PT USD 260) mantuvieron recomendación de compra, destacando que la recompra de ~USD 2.000M en acciones preferentes STRC y el nuevo esquema de dividendos diarios (vigente desde el 1 de noviembre) deja a la compañía mejor posicionada para retomar las compras netas de BTC. El Fear & Greed Index se mantiene sin cambios en 30 (Fear) -mismo valor que ayer-, señal de que el sentimiento ya había capturado la mayor parte del shock del hackeo en la lectura de ayer y hoy se mantiene estable en zona de miedo. Sin novedades verificadas desde ayer en la apelación del fallo del Reino Unido sobre los 61.000 BTC, en la Clarity Act (sin votación de piso confirmada en octubre; la ventana más probable sigue siendo la sesión de lame-duck tras las elecciones del 8 de noviembre), ni una respuesta reportada de Cantor Fitzgerald al plazo del 23 de octubre que le fijó el senador Blumenthal sobre sus vínculos con Tether.",
   "recent_context": [
     {
-      "heading": "Nuevo: Strategy confirma resultados reales del Q3 2026 -ganancia neta de USD 19.530M- y cambia la política de dividendos de sus preferentes",
-      "body": "Tras el cierre del mercado del 29 de octubre, Strategy presentó sus resultados trimestrales reales (el reporte de ayer solo tenía la ganancia contable preanunciada de USD 20.910M por revaluación de BTC). La utilidad neta fue de USD 19.530M (USD 44,75 por acción diluida), frente a USD 2.790M un año antes; la utilidad neta atribuible a accionistas comunes fue de USD 19.120M tras restar USD 419,6M en dividendos preferentes. El ingreso operativo de USD 21.000M es el mayor de la historia de la compañía. Las tenencias de BTC llegaron a 848.517 al 25 de octubre (+26% en el año), tras comprar 7.218 BTC (~USD 588,1M) y vender 5.552 BTC (~USD 348,6M) en el trimestre -siguen siendo compradores netos, pero las ventas activas confirman el giro hacia financiar la operación de las preferentes con parte del balance en BTC, tendencia que ya se venía observando desde reportes anteriores. Los tenedores de las acciones preferentes STRC, STRF, STRK y STRD aprobaron (99,3% de los votos) que los dividendos se devenguen a diario en vez de con calendario trimestral/mensual fijo: STRC tiene su primera fecha de registro diaria el 1 de noviembre con pago el 2; las otras tres pasan a esquema diario a partir de enero de 2027 (fecha de registro inicial 1 de enero, pago 4 de enero). También se confirmó que el CFO Andrew Kang deja el cargo el 5 de noviembre, y que el actual COO, Reza Virasteh, asumirá como CFO en enero de 2027. El presidente ejecutivo Michael Saylor dijo en la llamada de resultados: 'estamos en el comienzo del próximo mercado alcista de Bitcoin', citando la adopción institucional y bancaria creciente y el halving esperado de 2028; también señaló que 'los mercados de capital de EE.UU. todavía no han convergido en un estándar de tokenización y un conjunto de normas', esperando que eso evolucione en los próximos 12 meses. El CEO Phong Le añadió que los dividendos diarios son 'un paso natural hacia el sistema financiero tokenizado 24/7/365' y reiteró el objetivo de duplicar el BTC por acción en siete años, financiando futuras compras principalmente mediante instrumentos de crédito digital en vez de nuevas emisiones de acciones comunes."
+      "heading": "Nuevo: Binance sufre el mayor robo de criptomonedas de la historia (~USD 6.300-6.430M), catalizador real detrás del derrumbe del Fear & Greed Index",
+      "body": "El 29 de octubre, atacantes drenaron hot wallets de Binance a través de aproximadamente diez-once blockchains en una ventana de unas tres horas (20:05-23:56 UTC), usando una delegación EIP-7702 en Ethereum para lograr que los propios sistemas de firma de Binance autorizaran transacciones fraudulentas -Binance aclaró que no fue un robo de llaves privadas ni una falla de contrato inteligente, sino un compromiso en el proceso de firma (la primera explicación apuntó a la laptop comprometida de un ingeniero de DevOps, aunque investigaciones posteriores hallaron puntos de brecha adicionales). Las primeras estimaciones hablaban de USD 2.000M; Binance luego estimó el impacto en ~USD 6.300M y el analista on-chain Elliptic calculó USD 6.430M, calificándolo como muy probablemente el mayor robo de la historia (superando el hackeo a Bybit de 2025, USD 1.400M). Binance suspendió retiros en múltiples redes 'como medida de precaución' (según su vocero Ross O'Leary), y su cofundador Changpeng Zhao -ya no director ejecutivo- escribió en X que 'parece ser un hackeo a Binance' y que espera que los fondos de los usuarios queden 'totalmente cubiertos'. El co-CEO actual, Richard Teng, declaró que el ataque 'no fue ejecutado por una sola persona' y que el uso de la delegación EIP-7702 'no pasó por nuestros controles de aprobación normales'. Binance afirma que cubrirá la pérdida con su fondo SAFU y fondos propios -un cofundador de DefiLlama (0xngmi) señaló que la cifra representa menos del 1% de los USD 144.000M en activos bajo custodia de Binance, por lo que sería absorbible-. Tether congeló ~USD 1.560-1.800M y Circle ~USD 800M en stablecoins ligadas al robo (Elliptic verificó USD 2.840M congelados en total, ~44% del monto). Elliptic considera 'muy probable' que el ataque sea de actores vinculados a Corea del Norte, citando el lavado de fondos en paralelo con los del hackeo a Bitget, el patrón de preparación y targeting similar a Bybit, y la dificultad de coordinar un ataque a 11 blockchains en tres horas -pero aclara que no hay confirmación de un gobierno o del FBI (que sí atribuyó Bybit en cinco días, algo que no ha ocurrido aquí). El shock provocó liquidaciones por ~USD 1.000-1.500M en 24 horas según CoinGlass (más del 82% en posiciones largas), y BTC tocó un mínimo intradía de entre USD 76.460 y 78.300 el 29 de octubre antes de estabilizarse cerca de los USD 77.000-78.000 actuales."
     },
     {
-      "heading": "Nuevo: el Fear & Greed Index cae de 51 (Neutral) a 30 (Fear) en 24 horas, sin catalizador único confirmado",
-      "body": "El indicador de sentimiento de alternative.me pasó de 51 puntos (Neutral) el 29 de octubre a 30 puntos (Fear) hoy -una caída marcada en un solo día, coincidiendo con el retroceso del precio de BTC de USD 79.787 a USD 78.314 (-1,8%). No se encontró en fuentes de prensa verificables un evento puntual que explique el movimiento de forma concluyente: pudo influir la combinación del tono hawkish de la Fed conocido ayer, la confirmación de ventas de BTC por parte de Strategy en su reporte de resultados, o simple toma de utilidades tras varios días de estabilidad -pero ninguna de estas hipótesis está confirmada por una fuente que las vincule explícitamente al movimiento de hoy, por lo que se reporta el dato sin atribuirle una causa específica."
+      "heading": "Nuevo: Strategy (MSTR) cae casi 10% en el selloff cripto por el hackeo, pero analistas ven el camino despejado para retomar compras de BTC",
+      "body": "El 30 de octubre, la acción de Strategy cayó 8,7% hasta USD 129,90 (~-27% en el año), en línea con el desplome generalizado de nombres ligados a cripto tras el hackeo de Binance -no por una noticia propia de la compañía-. Strategy cerró el trimestre con USD 5.070M en activos en dólares, incluyendo una reserva de caja de USD 4.830M que, según StoneX y TD Cowen, cubre entre 3,2 y 3,4 años de dividendos preferentes e intereses de deuda. La compañía gastó ~USD 2.000M recomprando su acción preferente STRC para acercarla a su valor par de USD 100, y los accionistas de STRC/STRF/STRK/STRD ya aprobados para devengo diario de dividendos (vigente desde el 1 de noviembre para STRC, enero de 2027 para el resto -ver reporte de ayer-). El BTC por acción cayó 3,7% en el año, reflejo de que la compañía priorizó caja y soporte a las preferentes sobre nuevas compras de BTC. Mark Palmer (StoneX) reiteró recomendación de compra con precio objetivo de USD 435, señalando que el objetivo de la reestructuración es 'reducir la volatilidad, mejorar la liquidez, ampliar la demanda' de los instrumentos preferentes; TD Cowen mantuvo compra con precio objetivo de USD 260, escribiendo que la conexión real para los accionistas comunes de MSTR es la estructura de liquidez de la compañía, 'no el precio de STRC de forma aislada'. Ambas casas coinciden en que la estructura preferente más estable y la liquidez mejorada dejan a Strategy mejor posicionada para retomar la acumulación neta de BTC y el crecimiento de BTC por acción, aunque el costo de corto plazo fue precisamente ese crecimiento más lento."
     },
     {
-      "heading": "Sin cambios: regulación, litigios y flujos de ETF",
-      "body": "No se encontraron novedades verificables desde el reporte de ayer en la apelación del fallo del Reino Unido sobre los 61.000 BTC, en la Clarity Act, ni en el plazo vencido de Blumenthal a Cantor Fitzgerald. Tampoco se pudo confirmar con fuentes fiables la cifra de flujos de ETF del 29 de octubre específicamente -los rastreadores consultados (SoSoValue, Farside) no devolvieron un dato fechado ese día en esta investigación-, por lo que se omite para no reportar una cifra sin verificar; el panorama más reciente verificado sigue siendo el de tres días consecutivos de entradas netas (26-28 de octubre) ya cubierto ayer."
+      "heading": "Sin cambios: Fear & Greed Index estable en 30 (Fear), regulación, litigios y Cantor Fitzgerald",
+      "body": "El Fear & Greed Index se mantiene en 30 puntos (Fear), idéntico al valor de ayer -la fuerte caída de 51 a 30 ya reportada ayer capturó la mayor parte del impacto del hackeo de Binance en el sentimiento; hoy no hay deterioro adicional. No se encontraron novedades verificables desde el reporte de ayer en la apelación del fallo del Reino Unido sobre los 61.000 BTC, ni en el avance de la Clarity Act en el Senado -no hay evidencia de una votación de piso programada para octubre; el mercado de predicción y los analistas (Galaxy Research) siguen viendo la sesión de lame-duck post-elecciones del 8 de noviembre como la ventana más probable para 2026-. Tampoco se encontró una respuesta reportada de Cantor Fitzgerald al plazo del 23 de octubre fijado por el senador Blumenthal para entregar documentación sobre sus vínculos con Tether; no hay confirmación de que la empresa haya respondido ni de que el Tesoro o el Departamento de Justicia hayan abierto una investigación formal a partir de ese plazo vencido."
     }
   ],
   "indicators": [
     {
       "name": "Precio BTC-USD (última semana)",
-      "description": "Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (30-oct) es la cotización en vivo. BTC rebota levemente hoy (+0,71% intradía) tras el retroceso de ayer, pero sigue por debajo de los USD 80.000 desde la decisión de la Fed del 28 de octubre.",
+      "description": "Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (31-oct) es la cotización en vivo. El quiebre entre el 28 y el 29 de octubre (de USD 81.268 a USD 77.775) coincide con el hackeo a Binance; el precio se mantiene estable desde entonces, prácticamente plano hoy (+0,08% intradía).",
       "chart_type": "line",
       "data": {
-        "labels": ["24 oct", "25 oct", "26 oct", "27 oct", "28 oct", "29 oct", "30 oct (en vivo)"],
-        "values": [80790.84, 80024.01, 80006.66, 80805.08, 81267.59, 77775.11, 78345.14]
+        "labels": ["25 oct", "26 oct", "27 oct", "28 oct", "29 oct", "30 oct", "31 oct (en vivo)"],
+        "values": [80024.01, 80006.66, 80805.08, 81267.59, 77775.11, 77198.21, 77267.29]
       },
       "unit": "USD",
-      "current_value": "78,345.14",
-      "change": "+0.71",
-      "as_of": "07:33 UTC"
+      "current_value": "77,267.29",
+      "change": "+0.08",
+      "as_of": "07:14 UTC"
     },
     {
       "name": "Fear & Greed Index",
-      "description": "Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), fuente alternative.me.",
+      "description": "Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), fuente alternative.me. Sin cambios desde ayer -el shock del hackeo de Binance ya se reflejó en la caída de 51 a 30 reportada el 30 de octubre.",
       "chart_type": "gauge",
       "data": {"labels": ["Hoy"], "values": [30]},
       "unit": "índice (0-100)",
       "current_value": "30 (Fear)",
-      "change": "-21 vs. 51 de ayer",
-      "as_of": "30 oct 2026"
+      "change": "0 vs. 30 de ayer",
+      "as_of": "31 oct 2026"
     }
   ],
   "expert_opinions": [
     {
-      "expert": "Michael Saylor",
-      "affiliation": "Presidente Ejecutivo, Strategy",
-      "quote": "We're at the beginning of the next bitcoin bull market.",
-      "source_url": "https://finance.yahoo.com/markets/crypto/articles/strategy-mstr-said-q3-earnings-011405245.html",
-      "stance": "bullish"
+      "expert": "Richard Teng",
+      "affiliation": "Co-CEO, Binance",
+      "quote": "[The attack] was not carried out by one person... [the use of EIP-7702 delegation] did not pass through our normal approval controls.",
+      "source_url": "https://www.elliptic.co/insights/binance-largest-hack-in-history/",
+      "stance": "neutral"
     },
     {
-      "expert": "Phong Le",
-      "affiliation": "CEO, Strategy",
-      "quote": "Daily dividends are a natural step toward the tokenized, 24/7/365 financial system.",
-      "source_url": "https://www.theblock.co/news/business/2026-10-29-strategy-q3-net-income-preferred-daily-dividends-432141",
+      "expert": "Mark Palmer",
+      "affiliation": "Analista, StoneX (sobre Strategy/MSTR)",
+      "quote": "Reduce volatility, improve liquidity, broaden demand [for the preferred instruments].",
+      "source_url": "https://www.theblock.co/news/business/2026-10-30-strategy-mstr-preferred-stock-bitcoin-buying-analysts-432214",
       "stance": "bullish"
     }
   ],
   "outlook": {
-    "short_term": "El catalizador inmediato ya quedó atrás (resultados de Strategy, publicados anoche) y el mercado lo está digiriendo con una caída notable del Fear & Greed Index (51 a 30) sin que se haya identificado una causa puntual y confirmada -vigilar si el sentimiento se estabiliza o si continúa deteriorándose en los próximos días. El nivel de USD 78.000-80.000 sigue siendo la referencia técnica inmediata.",
-    "medium_term": "Sin cambios confirmados desde ayer en el frente de tasas: el mercado seguía asignando una probabilidad alta a una subida de 25pb en la reunión del 9 de diciembre según lo reportado ayer, pero no se encontró una actualización verificada de esa cifra específica para hoy, por lo que no se repite el número para evitar citar un dato no corroborado en esta fecha. Strategy confirma que sigue comprando BTC de forma neta (7.218 comprados vs. 5.552 vendidos en el trimestre) pese a financiar parte de sus obligaciones de preferentes con ventas parciales -una señal mixta que merece seguimiento en los próximos reportes trimestrales.",
-    "long_term": "Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong). Strategy reafirmó su tesis de acumulación (+26% de BTC en tenencia en el año) y anunció un cambio estructural en cómo retribuye a sus accionistas preferentes (dividendos diarios desde noviembre/enero), además de una transición de CFO ya confirmada para enero de 2027 -cambios corporativos que no alteran la tesis cripto de fondo pero sí el perfil de ejecución de la compañía hacia 2027."
+    "short_term": "El mercado ya absorbió el grueso del shock del hackeo de Binance (precio estable cerca de USD 77.000-78.000, Fear & Greed sin cambios en 30) pero persiste incertidumbre sobre el monto final de pérdidas (rango USD 2.000M-6.430M según la fuente) y si Binance reabre retiros en todas las redes sin incidentes adicionales -un nuevo deterioro en esa resolución podría presionar el sentimiento nuevamente a la baja.",
+    "medium_term": "Dos riesgos no resueltos conviven: el costo de financiamiento (la Fed sostuvo tasas en 3,75-4% el 28 de octubre con dos disidencias a favor de subir, lo que mantiene presión sobre activos de riesgo) y la confianza en la infraestructura de exchanges tras el mayor robo cripto de la historia -ninguno de los dos frentes se resuelve con la pausa de la Fed ni con la promesa de reembolso de Binance. Strategy, por su parte, queda en mejor posición de liquidez tras su reestructuración de preferentes para retomar compras netas de BTC, según StoneX y TD Cowen.",
+    "long_term": "Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong). El hackeo de Binance reabre el debate de fondo sobre riesgo de custodia centralizada -un tema recurrente en la tesis de autocustodia- pero no altera los catalizadores estructurales ya identificados (adopción institucional, halving de 2028, marco regulatorio pendiente vía Clarity Act)."
   },
   "recommendations": [
     {
-      "title": "No sobre-interpretar la caída del Fear & Greed Index sin una causa confirmada",
-      "description": "El salto de 51 a 30 en un día es inusual, pero ninguna fuente consultada lo vincula de forma concluyente a un evento específico (ni la Fed, ni Strategy, ni un evento macro puntual). Tratarlo como señal de cautela táctica, no como confirmación de un cambio de tendencia de fondo.",
+      "title": "Monitorear la resolución completa del hackeo de Binance antes de asumir que el shock ya pasó",
+      "description": "El monto final de pérdidas sigue sin confirmarse (estimaciones entre USD 2.000M y 6.430M según la fuente) y la atribución a Corea del Norte no tiene confirmación oficial. Una reapertura de retiros sin incidentes sería una señal de estabilización; nueva información sobre el alcance del compromiso de los sistemas de firma de Binance podría reabrir la volatilidad.",
       "risk_level": "medio"
     },
     {
-      "title": "Seguir la ejecución de Strategy en los próximos trimestres, no solo el titular de ganancias",
-      "description": "La compañía combina compras netas de BTC con ventas activas para financiar dividendos de sus preferentes -vigilar si esa proporción se mantiene favorable a la acumulación neta o si las ventas ganan peso relativo.",
-      "risk_level": "bajo"
+      "title": "Diversificar el riesgo de custodia tras el mayor robo cripto de la historia",
+      "description": "El incidente reafirma el riesgo de concentrar activos en hot wallets de exchanges centralizados, incluso en el mayor exchange del mercado. Considerar autocustodia o cold storage para tenencias de largo plazo, independientemente de si Binance cumple su promesa de cubrir las pérdidas.",
+      "risk_level": "medio"
     },
     {
-      "title": "Evitar operar sobre cifras de ETF o de probabilidad de la Fed no verificadas para esta fecha específica",
-      "description": "Esta edición no pudo confirmar datos nuevos y fechados al 29-30 de octubre para flujos de ETF ni para las probabilidades exactas de FedWatch; usar como referencia los últimos datos confirmados (reportes anteriores) hasta que aparezca una fuente fechada y verificable.",
+      "title": "Seguir la ejecución de Strategy en el retorno a compras netas de BTC",
+      "description": "Con la reestructuración de preferentes completada y la caída de MSTR del 30 de octubre atribuible al contagio del sector más que a fundamentos propios, analistas ven margen para que la compañía retome la acumulación -vigilar si el BTC por acción vuelve a crecer en el próximo reporte trimestral.",
       "risk_level": "bajo"
     }
   ],
   "sources": [
-    {"title": "Strategy reports $19.5 billion in Q3 net income as preferred shareholders approve daily dividends (The Block)", "url": "https://www.theblock.co/news/business/2026-10-29-strategy-q3-net-income-preferred-daily-dividends-432141"},
-    {"title": "What Strategy (MSTR) Said on Its Q3 Earnings Call (Yahoo Finance)", "url": "https://finance.yahoo.com/markets/crypto/articles/strategy-mstr-said-q3-earnings-011405245.html"},
-    {"title": "Strategy Reports Record $20.91B Operating Profit, Coinbase Posts $719M Net Profit in Q3 2026 (KuCoin)", "url": "https://www.kucoin.com/news/flash/strategy-reports-record-20-91b-operating-profit-coinbase-posts-719m-net-profit-in-q3-2026"},
-    {"title": "Strategy Reports Record $21 Billion Q3 Operating Income as CFO Steps Down (Bitcoin Treasuries)", "url": "https://bitcointreasuries.net/news/strategy-reports-record-dollar21-billion-q3-operating-income-as-cfo-steps-down"},
+    {"title": "Binance pauses withdrawals as hackers suspected of stealing billions in crypto (TechCrunch)", "url": "https://techcrunch.com/2026/10/29/binance-pauses-withdrawals-as-hackers-suspected-of-stealing-billions-in-crypto/"},
+    {"title": "The largest theft in history: North Korea likely behind the $6.4 billion Binance hack (Elliptic)", "url": "https://www.elliptic.co/insights/binance-largest-hack-in-history/"},
+    {"title": "Bitcoin dives below $79,000 as Binance hot wallet drained by Tornado Cash-linked wallet (CryptoSlate)", "url": "https://cryptoslate.com/bitcoin-whipsaws-below-79000-as-binance-hot-wallet-reportedly-drained-by-tornado-cash-linked-wallet/"},
+    {"title": "Bitcoin fell after the Fed's pause, but blaming interest rates misses the Binance shock (CryptoSlate)", "url": "https://cryptoslate.com/bitcoin-fell-after-the-feds-pause-but-blaming-interest-rates-misses-the-binance-shock/"},
+    {"title": "Strategy's preferred-stock fix sets up renewed bitcoin buying, analysts say (The Block)", "url": "https://www.theblock.co/news/business/2026-10-30-strategy-mstr-preferred-stock-bitcoin-buying-analysts-432214"},
     {"title": "Crypto Fear & Greed Index (alternative.me, consulta en vivo)", "url": "https://alternative.me/crypto/fear-and-greed-index/"},
     {"title": "Precio en vivo BTC-USD (Yahoo Finance, vía tools/fetch_market_price.py)", "url": "https://finance.yahoo.com/quote/BTC-USD"}
   ],
@@ -93,13 +94,13 @@
       "value": 30,
       "classification": "Fear",
       "color": "#ec835a",
-      "timestamp": "2026-10-30T00:00:00+00:00"
+      "timestamp": "2026-10-31T00:00:00+00:00"
     },
     "btc_rainbow": {
       "image": ".tmp/bitcoin-btc-rainbow.png",
       "source": "BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)",
       "source_url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/",
-      "captured_at": "2026-10-30"
+      "captured_at": "2026-10-31"
     }
   }
 }
