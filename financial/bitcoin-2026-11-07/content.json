@@ -1,0 +1,150 @@
+{
+  "topic": "Bitcoin (BTC-USD)",
+  "date": "2026-11-07",
+  "generated_at": "7 de noviembre de 2026, 07:15 UTC",
+  "executive_summary": "BTC cotiza en vivo a USD 75.905,61 (07:15 UTC, +0,22% intradía vs. cierre previo de USD 75.741,02) -prácticamente sin cambios frente al cierre de ayer (USD 75.746,93) y apenas por encima del cierre del jueves (USD 75.942,13)-, en un fin de semana tranquilo en precio tras dos días de desplome. Lo nuevo y clave: mientras BTC se estabilizó, Wall Street sí rebotó con fuerza el viernes 6 de noviembre -el día posterior al crac del jueves que ya se cubrió ayer-: el Nasdaq Composite cerró en 24.579,42 (+1,09%), el Nasdaq-100 en 26.989,99 (+1,35%) y el S&P 500 en 7.376,86 (+0,31%), recortando la pérdida semanal del S&P a ~2,7%; el Dow fue la excepción, con -0,46% (51.285,73, -237,33 puntos). Nvidia subió 2,78% a ~USD 186,64, recuperando cerca de un 27% de la caída del 9,26% del jueves. Pero Bitcoin no participó del rebote -una divergencia que es el dato más relevante del día-: según el newsletter Closing Look (vía Substack, 6 nov), el detonante del repunte bursátil fue un reporte de nóminas no agrícolas de octubre muy por encima de lo esperado (+165.000 vs. +59.000 esperados, desempleo cayendo a 4,1% desde 4,2%), que according to ese mismo reporte elevó a ~78% (estilo Polymarket) la probabilidad de que la Fed suba tasas 25 puntos base en diciembre en lugar de recortarlas -una lectura que, de confirmarse con más fuentes, sería un cambio de régimen macro relevante para activos de riesgo, pero que por ahora solo tiene esta fuente y debe tomarse con cautela-. En simultáneo, los ETFs spot de Bitcoin tuvieron su segundo día consecutivo de salidas netas el 6 de noviembre: -USD 411,92M (SoSoValue), con el IBIT de BlackRock aportando -USD 403M y el FBTC de Fidelity como el único fondo con entradas (+USD 42,82M); el streak de salidas del IBIT llegó a cinco sesiones consecutivas y más de USD 1.000M retirados desde el 30 de octubre (Cointelegraph). El acumulado de dos días (5-6 nov) asciende a -USD 842,12M. El Fear & Greed Index siguió cayendo -de 28 (Fear) ayer a 25 (Extreme Fear) hoy-, cruzando a la categoría más baja de la escala mientras el precio se mantenía estable: la fe cripto se deteriora más rápido que el precio, una divergencia sentimiento-precio digna de seguimiento. Técnicamente, BTC sigue pegado a su media móvil de 50 semanas (~USD 75.733, cifra de ayer) -el cierre semanal de la vela cripto (domingo 00:00 UTC) es inminente y es el punto de observación técnico más importante del fin de semana: un cierre por encima confirmaría que el soporte se sostiene, uno por debajo reforzaría la señal de debilidad estructural que ya señalaba el reporte de ayer-. Sin novedades verificadas desde ayer en: la decisión de MSCI sobre Strategy (pendiente para el 11 de noviembre), el estado de la Clarity Act (sigue estancada desde el impasse demócrata de septiembre, sin desarrollos de noviembre encontrados), la vulnerabilidad de BTCPay Server, el lavado de los fondos del hackeo de Binance (Chainalysis reportó a inicios de noviembre que el flujo se desplazó de Tron a Solana, sin actualización nueva hoy), la apelación del Reino Unido sobre los 61.000 BTC y la respuesta de Cantor Fitzgerald al senador Blumenthal.",
+  "recent_context": [
+    {
+      "heading": "Nuevo: Wall Street rebota con fuerza el viernes, pero Bitcoin no lo sigue -una divergencia que es la noticia del día",
+      "body": "El 6 de noviembre, un día después del crac del jueves (ya cubierto en el reporte de ayer), el Nasdaq Composite cerró en 24.579,42 (+1,09%), el Nasdaq-100 en 26.989,99 (+1,35%) y el S&P 500 en 7.376,86 (+0,31%), recortando la pérdida semanal del S&P a ~2,7% (Closing Look, vía Substack, 6 nov). El Dow fue la excepción y cerró en rojo: 51.285,73 (-0,46%, -237,33 puntos). Nvidia subió 2,78% a ~USD 186,64, recuperando cerca de un 27% de su caída del 9,26% del jueves (StockTitan/MarketAlleys, 6 nov). Pese a este rebote generalizado en activos de riesgo, BTC cerró el viernes prácticamente plano en USD 75.746,93 y cotiza hoy en vivo a USD 75.905,61 (+0,22% intradía) -sin participar del repunte bursátil-, rompiendo (al menos por un día) la correlación BTC-Nasdaq de 0,41 que Foundry Labs había medido y que se citó en el reporte de ayer como explicación del desplome conjunto."
+    },
+    {
+      "heading": "Nuevo (con cautela, una sola fuente): reporte de empleo de octubre muy fuerte eleva las apuestas de una suba de tasas de la Fed en diciembre, no un recorte",
+      "body": "Según el newsletter Closing Look (vía Substack, 6 nov), las nóminas no agrícolas de octubre subieron 165.000 puestos frente a 59.000 esperados, y el desempleo cayó a 4,1% desde 4,2%. Esa misma fuente reporta que mercados de pronóstico estilo Polymarket movieron a ~78% la probabilidad de una suba de 25 puntos base de la Fed en diciembre -en lugar de un recorte-. Esta cifra concreta de probabilidad no pudo corroborarse con una segunda fuente independiente en esta investigación, por lo que se reporta aquí con esa salvedad explícita: de confirmarse en los próximos días con fuentes como CME FedWatch, sería un cambio de régimen macro relevante (tasas más altas por más tiempo) para todos los activos de riesgo, Bitcoin incluido, y debería re-evaluarse en el próximo reporte."
+    },
+    {
+      "heading": "Nuevo: los ETFs spot de Bitcoin acumulan un segundo día de salidas netas y el streak del IBIT llega a cinco sesiones",
+      "body": "El 6 de noviembre los ETFs spot de Bitcoin registraron -USD 411,92M en salidas netas (SoSoValue/TokenPost), el segundo día consecutivo de salidas tras los -USD 430,2M del 5 de noviembre (total de dos días: -USD 842,12M). El IBIT de BlackRock lideró con -USD 403M, mientras que el FBTC de Fidelity fue el único fondo con entradas (+USD 42,82M); BITB (Bitwise) y ARKB (ARK 21Shares) restaron -USD 20,55M y -USD 20,09M respectivamente, y el GBTC de Grayscale -USD 11,11M. Cointelegraph señala que el streak de salidas del IBIT alcanzó cinco sesiones consecutivas, con más de USD 1.000M retirados desde el 30 de octubre. El acumulado histórico de los ETFs spot de BTC se mantiene en ~USD 55.700M de entradas netas, con activos totales de ~USD 95.900M (~6,28% de la capitalización de mercado de Bitcoin)."
+    },
+    {
+      "heading": "Nuevo: el Fear & Greed Index cae a 'Extreme Fear' (25) mientras el precio se mantiene estable -el sentimiento se desacopla del precio",
+      "body": "El índice de sentimiento cripto (alternative.me) bajó de 28 (Fear) ayer a 25 (Extreme Fear) hoy, cruzando a la categoría más baja de la escala justo cuando el precio dejó de caer y se mantuvo prácticamente plano frente al cierre de ayer. Esta desconexión entre sentimiento (cada vez más temeroso) y precio (estable) sugiere que el miedo acumulado de los dos días previos de desplome todavía no se revierte, aunque el detonante original (el selloff de Wall Street centrado en IA) ya empezó a corregirse en las acciones. Técnicamente, BTC sigue pegado a su media móvil de 50 semanas (~USD 75.733, cifra de ayer) justo cuando se acerca el cierre de la vela semanal cripto (domingo 00:00 UTC) -el punto de observación técnico más importante del fin de semana."
+    },
+    {
+      "heading": "Sin cambios desde ayer: MSCI/Strategy, Clarity Act, BTCPay Server, hackeo de Binance, apelación del Reino Unido y Cantor Fitzgerald",
+      "body": "La decisión de MSCI sobre si excluir a Strategy de sus índices sigue pendiente para el 11 de noviembre, sin novedades encontradas hoy. La Clarity Act permanece estancada desde el impasse de un grupo de senadores demócratas en septiembre (centrado en objeciones éticas sobre los intereses cripto de la familia Trump); no se hallaron desarrollos legislativos de noviembre. Tampoco hay actualizaciones nuevas sobre la vulnerabilidad de BTCPay Server, sobre el lavado de los fondos del hackeo de Binance (Chainalysis reportó a inicios de noviembre que la actividad se desplazó de Tron hacia Solana, sin novedad adicional hoy), sobre la apelación del Reino Unido respecto a los 61.000 BTC (sigue proyectada para 2027) ni sobre la respuesta de Cantor Fitzgerald al requerimiento del senador Blumenthal -todos temas ya cubiertos en reportes anteriores."
+    }
+  ],
+  "indicators": [
+    {
+      "name": "Precio BTC-USD (última semana)",
+      "description": "Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (7-nov) es la cotización en vivo. La serie muestra el pico del rally post-electoral el 4 de noviembre (USD 80.405,29), la reversión abrupta de los dos días siguientes hasta USD 75.746,93 el 6 de noviembre, y una estabilización de fin de semana con el precio en vivo de hoy prácticamente plano (USD 75.905,61) -mientras Wall Street sí rebotó con fuerza el viernes, una divergencia que marca el día.",
+      "chart_type": "line",
+      "data": {
+        "labels": ["1 nov", "2 nov", "3 nov", "4 nov", "5 nov", "6 nov", "7 nov (en vivo)"],
+        "values": [78248.45, 76677.30, 77345.05, 80405.29, 75942.13, 75746.93, 75905.61]
+      },
+      "unit": "USD",
+      "current_value": "75,905.61",
+      "change": "+0.22",
+      "as_of": "07:15 UTC"
+    },
+    {
+      "name": "Fear & Greed Index",
+      "description": "Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), fuente alternative.me. Cayó de 28 (Fear) a 25 (Extreme Fear), cruzando a la categoría más baja de la escala mientras el precio de BTC se mantenía estable -el sentimiento se desacopla del precio tras dos días de desplome.",
+      "chart_type": "gauge",
+      "data": {
+        "labels": ["Hoy"],
+        "values": [25]
+      },
+      "unit": "índice (0-100)",
+      "current_value": "25 (Extreme Fear)",
+      "change": "-3 vs. 28 de ayer",
+      "as_of": "7 nov 2026"
+    }
+  ],
+  "expert_opinions": [
+    {
+      "expert": "Michaël van de Poppe",
+      "affiliation": "Analista cripto",
+      "quote": "I expect Nasdaq to bottom tomorrow. The same for Bitcoin, potentially after sweeping $75,000.",
+      "source_url": "https://cointelegraph.com/markets/bitcoin-ether-etfs-lose-post-election-gains-erased",
+      "stance": "bullish"
+    },
+    {
+      "expert": "Dean Lyulkin",
+      "affiliation": "CEO de Cardiff, fundador de The Dean's List",
+      "quote": "The global financial crisis wasn't caused by Democrats taking Congress.",
+      "source_url": "https://cointelegraph.com/markets/bitcoin-ether-etfs-lose-post-election-gains-erased",
+      "stance": "neutral"
+    }
+  ],
+  "outlook": {
+    "short_term": "El punto de observación inmediato es el cierre de la vela semanal cripto (domingo 00:00 UTC), con BTC pegado a su media móvil de 50 semanas (~USD 75.733). Un cierre por encima preservaría la lectura de soporte técnico; uno por debajo confirmaría la señal de debilidad estructural que ya se señaló ayer. En paralelo, la divergencia de hoy -Wall Street rebotando con fuerza mientras BTC se mantiene plano- es la variable a vigilar el lunes: si la correlación BTC-Nasdaq (0,41 a 63 días, Foundry Labs) se reafirma, un lunes alcista en acciones podría finalmente arrastrar a BTC al alza; si la divergencia persiste, sugeriría que el mercado cripto está digiriendo su propio problema de sentimiento (Extreme Fear) independientemente de las acciones.",
+    "medium_term": "La cifra de probabilidad de una suba de tasas de la Fed en diciembre (~78% según una sola fuente, Closing Look) es, de confirmarse, el nuevo frente de riesgo macro más relevante a vigilar en los próximos reportes -un giro hacia tasas más altas golpearía tanto a acciones de IA como a Bitcoin, revirtiendo el supuesto de fondo de varios de los objetivos de precio de largo plazo ya reportados. Sigue sin resolverse la pausa en inversión de infraestructura de IA que describió J.P. Morgan (reportada ayer), la decisión de MSCI sobre Strategy (11 de noviembre) y el estancamiento de la Clarity Act desde septiembre. El streak de cinco sesiones de salidas del IBIT (>USD 1.000M desde el 30 de octubre) es una señal de desinversión institucional sostenida que contrasta con la narrativa de 'un solo día de salida/entrada' que se señaló ayer -vale la pena seguir monitoreando si se revierte o se profundiza.",
+    "long_term": "Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong, piso de costo de producción de JPMorgan en USD 94.000). BTC sigue muy por debajo de su máximo de 52 semanas de USD 107.428. El paralelismo de Rekt Capital con mayo-junio de 2026 (reportado ayer) sigue vigente como recordatorio de que las reversiones post-rally pueden ser rápidas y profundas en este ciclo."
+  },
+  "recommendations": [
+    {
+      "title": "Vigilar el cierre de la vela semanal de BTC (domingo 00:00 UTC) contra la media móvil de 50 semanas antes de sacar conclusiones direccionales",
+      "description": "Con el precio pegado a ~USD 75.733-75.900, el cierre semanal es la confirmación técnica más próxima: por encima sostiene la lectura de soporte, por debajo refuerza la señal de debilidad estructural señalada ayer. Actuar antes de ese cierre expone a quedar atrapado en cualquiera de los dos sentidos de un movimiento todavía no resuelto.",
+      "risk_level": "medio"
+    },
+    {
+      "title": "No interpretar el rebote de Wall Street del viernes como una señal automáticamente alcista para Bitcoin",
+      "description": "Nasdaq y S&P 500 cerraron al alza el 6 de noviembre, pero BTC se mantuvo plano y los ETFs spot tuvieron su segundo día consecutivo de salidas netas (con el streak del IBIT llegando a cinco sesiones). Esta divergencia sugiere que, al menos por ahora, el mercado cripto no está validando el optimismo bursátil -extrapolar una correlación mecánica BTC-Nasdaq en este momento específico sería prematuro.",
+      "risk_level": "medio"
+    },
+    {
+      "title": "Tratar con cautela la cifra de ~78% de probabilidad de suba de tasas de la Fed en diciembre hasta verla corroborada por una segunda fuente",
+      "description": "Esta cifra proviene de un solo newsletter (Closing Look, vía Substack) y no pudo confirmarse de forma independiente con CME FedWatch ni con otra fuente en esta investigación. Si se confirma en los próximos días, sería un cambio de régimen macro de alto impacto para todos los activos de riesgo; si no se confirma, podría tratarse de una cifra de un mercado de pronóstico de baja liquidez no representativa del consenso. Monitorear fuentes primarias (CME FedWatch, actas de la Fed) antes de actuar sobre esta base.",
+      "risk_level": "alto"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Closing Look — Friday, November 6, 2026 (cappnotes, Substack)",
+      "url": "https://cappnotes.substack.com/p/closing-look-friday-november-6-2026"
+    },
+    {
+      "title": "Chip Stocks Bounced Back in the Stock Market Today, November 6, 2026 (StockTitan)",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-6-2026"
+    },
+    {
+      "title": "Closing Tape, Friday November 6, 2026: SPY ETF $735.36 at close (MarketAlleys)",
+      "url": "https://www.marketalleys.com/post/marketalleys-closing-tape-2026-11-06"
+    },
+    {
+      "title": "Bitcoin spot ETFs shed $411.92 million in second straight session of outflows (TokenPost, 7 nov 2026)",
+      "url": "https://www.tokenpost.com/news/investing/50601"
+    },
+    {
+      "title": "Bitcoin ETF Rebound Masks BlackRock's Persistent Withdrawals (CoinCentral)",
+      "url": "https://coincentral.com/blackrock-bitcoin-etf-outflows-november-2026"
+    },
+    {
+      "title": "Bitcoin Ether ETFs lose post-election gains erased (Cointelegraph, 6 nov 2026)",
+      "url": "https://cointelegraph.com/markets/bitcoin-ether-etfs-lose-post-election-gains-erased"
+    },
+    {
+      "title": "Bitcoin Price Today: BTC Holds $76K as ETFs Shed $411.9M (CryptoTimes, 7 nov 2026)",
+      "url": "https://cryptotimes.io/2026/11/07/bitcoin-price-today-btc-holds-near-76000-as-spot-etfs-shed-411-9-million"
+    },
+    {
+      "title": "Crypto Fear & Greed Index (alternative.me, consulta en vivo)",
+      "url": "https://alternative.me/crypto/fear-and-greed-index/"
+    },
+    {
+      "title": "Precio en vivo BTC-USD (Yahoo Finance, vía tools/fetch_market_price.py)",
+      "url": "https://finance.yahoo.com/quote/BTC-USD"
+    },
+    {
+      "title": "Bitcoin Rainbow Chart (BlockchainCenter.net)",
+      "url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/"
+    }
+  ],
+  "crypto_extras": {
+    "fear_greed": {
+      "value": 25,
+      "classification": "Extreme Fear",
+      "color": "#d03b3b",
+      "timestamp": "2026-11-07T00:00:00+00:00"
+    },
+    "btc_rainbow": {
+      "image": ".tmp/bitcoin-btc-rainbow.png",
+      "source": "BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)",
+      "source_url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/",
+      "captured_at": "2026-11-07"
+    }
+  }
+}
