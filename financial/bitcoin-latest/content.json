@@ -1,142 +1,116 @@
 {
   "topic": "Bitcoin (BTC-USD)",
-  "date": "2026-11-10",
-  "generated_at": "10 de noviembre de 2026, 07:27 UTC",
-  "executive_summary": "BTC cotiza en vivo a USD 74.708,66 (07:27 UTC, -0,72% intradía vs. cierre previo de USD 75.253,86), rebotando de un mínimo aún más bajo que el reportado ayer: en la noche del domingo tocó USD 73.761 (el nivel más bajo desde agosto, según CoinDesk), recuperó brevemente los USD 75.000 y cerró el domingo en USD 75.223,15, antes de volver a ceder terreno hoy. El precio sigue sin reconquistar el costo base de los tenedores de corto plazo (~USD 75.700, Glassnode, señalado ayer como el nivel clave a vigilar) y ahora cotiza en una franja técnica entre el soporte de la media móvil de 200 días (~USD 73.150) y la resistencia de la media de 100 días (~USD 77.430). Lo más relevante que cambió desde el reporte de ayer: (1) estalla un escándalo en Nvidia -el directorio abrió una investigación independiente tras reportes de que el CEO Jensen Huang tuvo una relación con la ejecutiva Alice Huang, a quien agencias de inteligencia de EE.UU. creen vinculada a transferencia de información a Beijing; Huang reconoció la infidelidad pero Nvidia dice no tener indicios de que se haya comprometido información confidencial o de seguridad nacional- esto se suma a una semana ya negativa para el Nasdaq (-5% en la semana previa al viernes 6 de noviembre, cuarta semana consecutiva a la baja) por dudas sobre la narrativa de IA; (2) el Secretario de Estado Marco Rubio calificó de 'outrageous' (escandalosas) las exigencias de Irán y confirmó que las negociaciones no avanzaron, reavivando el patrón ya observado de que BTC cae más seguido durante repuntes del petróleo desde que comenzó la guerra con Irán en marzo; (3) liquidaciones de posiciones apalancadas superaron los USD 1.000M en 24 horas hacia la medianoche del domingo (CoinGlass), con USD 913M concentrados en posiciones largas -el mercado volvió a castigar a los que apostaban al alza-, y Ethereum sufrió proporcionalmente más (USD 448M liquidados) que Bitcoin (USD 272M); (4) el minero MARA vendió 13.597 BTC (40% de su tenencia de fin de septiembre) por ~USD 1.100M en seis semanas, a un precio promedio de ~USD 81.039 -muy por encima del precio spot actual-, usando lo recaudado para pagar USD 750M de deuda respaldada en bitcoin y financiar infraestructura de IA, y anunció que seguirá vendiendo, revirtiendo su política de 2024 de no vender nada de lo minado. El catalizador inmediato pendiente de hoy es el IPC de octubre de EE.UU. (8:30am hora del Este / 13:30 UTC, más tarde de lo que cubre este reporte): se espera +0,3% mensual en el índice general y +0,2% en el núcleo, sin comparación interanual publicada por el vacío de datos del cierre de gobierno de octubre. No pudimos confirmar con fuentes verificadas el cierre exacto de Wall Street del lunes 9 de noviembre (la pregunta pendiente de ayer sobre si la correlación BTC-Nasdaq se reafirmaba), por lo que se deja constancia de que ese dato no está disponible en este reporte en vez de inventarlo. Sin cambios verificados desde ayer en: la revisión de MSCI sobre Strategy (ahora a solo 1 día, el 11 de noviembre), la probabilidad de movimiento de tasas de la Fed en diciembre (76,8-78% citado ayer, sin actualización encontrada hoy), los flujos de ETFs (el tracker público más reciente solo llega al 6 de noviembre, con -USD 411,9M ese día; no hay datos aún de la sesión del lunes 9), la Clarity Act, la vulnerabilidad de BTCPay Server, la apelación del Reino Unido sobre los 61.000 BTC y Cantor Fitzgerald. El Fear & Greed Index subió de 29 a 32 (sigue en 'Fear'), un repunte modesto que acompaña el rebote parcial del precio desde el mínimo del domingo.",
+  "date": "2026-11-11",
+  "generated_at": "11 de noviembre de 2026, 07:21 UTC",
+  "executive_summary": "BTC cotiza en vivo a USD 73.675,33 (07:21 UTC, -0,05% intradía vs. cierre previo de USD 73.708,88), prácticamente plano hoy pero tras una caída marcada ayer: el IPC de octubre de EE.UU., publicado a las 13:30 UTC del 10-nov, salió más caliente de lo esperado (general +0,4% mensual vs. +0,3% esperado; núcleo +0,3% vs. +0,2% esperado -sin comparación interanual por el vacío de datos del cierre de gobierno-), lo que gatilló una segunda ola de ventas: BTC cayó cerca de un 2% tras el dato (de ~75.223 el domingo a ~73.600-73.900) y liquidaciones adicionales de posiciones apalancadas por USD 632-724M en las horas siguientes (Cryptotimes/Crypto Briefing), sumándose a los más de USD 1.000M ya liquidados el fin de semana. El mercado de tasas reaccionó de forma hawkish: CME FedWatch pasó a tratar una subida de 25pb de la Fed en diciembre como prácticamente segura, y la probabilidad de un movimiento mayor (50pb) subió a ~15% según analistas de Reuters -el gobernador de la Fed Christopher Waller declaró que 'a 50 basis point hike in the policy rate should be considered at the December meeting' y que apoyaría igualmente un alza de 25pb aunque la inflación mejore-. Esto aclara y corrige la cifra de '76,8-78%' citada en reportes anteriores: es la probabilidad de una subida de tasas en diciembre, no de un recorte (la Fed viene de pausar en octubre en 3,75-4,00% tras subir en septiembre). Los flujos de ETFs de bitcoin confirman el deterioro: el 9 de noviembre salieron USD 201,1M netos (IBIT -213,2M, ARKB -9,9M, parcialmente compensados por MSBT +22,1M), cerrando una semana con -USD 1.280M en salidas -la peor semana desde fines de junio-, sexta sesión consecutiva de salidas y ~USD 1.440M retirados desde el 30 de octubre. El evento binario que estaba a '1 día' en el reporte de ayer ya es hoy: MSCI debía publicar su lista final de empresas potencialmente excluidas de sus índices (incluye a Strategy/MSTR) el 11 de noviembre -al momento de este reporte (07:21 UTC) esa lista todavía no se había publicado ni encontrado en fuentes verificadas-; los cambios, de confirmarse, entrarían en vigor al cierre del 30 de noviembre. Michael Saylor ya había restado importancia al riesgo antes de esta fecha ('Not that important to us... They're imposing prejudicial values on digital assets'). El Fear & Greed Index volvió a caer, de 32 ayer a 29 hoy, revirtiendo el repunte modesto del domingo. Sin novedades verificadas desde ayer en: el escándalo de Nvidia/Jensen Huang (el Congreso pidió una fecha de briefing antes de hoy, sin confirmación de si se realizará; próximo evento público es el earnings call del 17-nov), las negociaciones con Irán, la Clarity Act, BTCPay Server, la apelación del Reino Unido sobre los 61.000 BTC y Cantor Fitzgerald.",
   "recent_context": [
     {
-      "heading": "Nuevo: BTC toca USD 73.761 el domingo por la noche -mínimo desde agosto, más bajo que el reportado ayer- y rebota sin reconquistar el costo base de corto plazo (~USD 75.700)",
-      "body": "Según datos de CoinDesk, el precio cayó a USD 73.761 en la noche del domingo (nivel más bajo desde agosto, por debajo incluso del mínimo intradía de USD 73.869 reportado ayer), recuperó brevemente los USD 75.000 y cerró el domingo 9 de noviembre en USD 75.223,15 -una recuperación parcial no reflejada en el reporte de ayer, que solo alcanzaba a capturar la cotización en vivo de las 07:27 UTC de esa mañana (USD 73.901,99)-. Hoy el rebote se estancó: BTC cotiza en vivo a USD 74.708,66 (07:27 UTC, -0,72% vs. cierre previo), operando entre el soporte técnico de la media móvil de 200 días (~USD 73.150) y la resistencia de la media de 100 días (~USD 77.430). El precio todavía no reconquista el costo base de los tenedores de corto plazo (~USD 75.700, Glassnode) señalado ayer como el nivel clave a vigilar en las próximas 24-48 horas -sigue sin reconquistarse, aunque el mínimo de ayer no escaló hacia USD 70.000."
+      "heading": "Nuevo: IPC de octubre sale más caliente de lo esperado y gatilla una segunda ola de ventas y liquidaciones",
+      "body": "El IPC de octubre de EE.UU., publicado el 10 de noviembre a las 13:30 UTC, mostró +0,4% mensual en el índice general (vs. +0,3% esperado) y +0,3% en el núcleo (vs. +0,2% esperado) -sin cifra interanual publicada por el vacío de datos del cierre de gobierno de octubre-. La reacción fue inmediata: BTC cayó cerca de un 2% en la hora siguiente al dato (un reporte cita USD 73.612 a las 14:27 GMT), rompiendo brevemente el mínimo del lunes (USD 73.636) antes de estabilizarse cerca del soporte del mínimo del domingo (USD 73.477) y de la media móvil de 200 días (~USD 73.170). Crypto Briefing registró ~USD 178M en liquidaciones de posiciones largas en la primera hora; recuentos más amplios de las horas siguientes (Cryptotimes) hablan de USD 632-724M adicionales -una segunda ola, distinta de los más de USD 1.000M ya liquidados el fin de semana y reportados ayer-. Ethereum también cayó (~USD 2.070, -2,9% diario) de forma proporcional similar a la de BTC en este episodio.",
+      "source_url": "https://decrypt.co/382950/bitcoin-falls-hot-us-inflation-fears-bigger-fed-rate-hike"
     },
     {
-      "heading": "Nuevo: escándalo en Nvidia -affaire del CEO Jensen Huang con ejecutiva vinculada a inteligencia china- se suma a una semana ya negativa para el Nasdaq y pesa sobre el sentimiento de riesgo",
-      "body": "El directorio de Nvidia abrió una investigación independiente, con asesoría legal externa, tras reportes de que Jensen Huang mantuvo una relación con Alice Huang, ejecutiva de negocios a quien agencias de inteligencia de EE.UU. creen que pasó información a Beijing; Alice Huang está vinculada a Megaspeed, firma acusada de ayudar a empresas chinas restringidas a obtener los chips de IA más avanzados de Nvidia, cuya exportación a China está limitada por Washington. Jensen Huang reconoció ante empleados haber 'sido infiel a su esposa' y se disculpó por el daño causado; Nvidia dijo no tener indicios de que se haya comprometido seguridad nacional o secretos de la empresa, pero la revisión evaluará toda la información disponible. El hecho se conoce en medio de una semana ya débil para el Nasdaq (-5% en la semana previa al viernes 6 de noviembre, cuarta semana consecutiva a la baja) por dudas sobre la durabilidad de la narrativa de IA -la acción tokenizada de Nvidia (NVDAX en xStock) cayó 3,55% en 24 horas hasta USD 180,42 el domingo, con un descuento frente al cierre de Nvidia en Nasdaq el viernes (USD 186,64) que sugiere que los traders de cripto esperaban una caída adicional al abrir Wall Street el lunes. No pudimos confirmar con una fuente verificada el cierre real del Nasdaq del lunes 9 de noviembre, por lo que ese dato queda pendiente en vez de inventarlo."
+      "heading": "Nuevo: la Fed se vuelve más hawkish -CME FedWatch da por hecha una subida de tasas en diciembre- y se aclara una cifra ambigua de reportes anteriores",
+      "body": "Tras el IPC caliente, CME FedWatch pasó a describir una subida de 25 puntos básicos en la reunión de diciembre como prácticamente segura, y analistas de Reuters elevaron la probabilidad de un movimiento mayor (50pb) a ~15% (desde ~25pb como escenario favorito). El gobernador de la Fed Christopher Waller declaró textualmente: 'I believe a 50 basis point hike in the policy rate should be considered at the December meeting', y agregó que respaldaría un alza de 25pb en diciembre incluso si la inflación mejora, dejando abierta la puerta a un movimiento mayor si otra lectura del núcleo del IPC vuelve a dar 0,3%. Esto aclara la cifra de '76,8-78%' citada en reportes de días anteriores sin especificar dirección: corresponde a la probabilidad de una subida de tasas en diciembre (no de un recorte) -la Fed viene de pausar en octubre en el rango 3,75%-4,00% tras una subida en septiembre, con sesgo hacia un ajuste adicional al alza, no a la baja como podría sugerir el término genérico 'movimiento de tasas' usado antes.",
+      "source_url": "https://cryptoticker.io/en/us-cpi-october-bitcoin-fed-december-hike/"
     },
     {
-      "heading": "Nuevo: fracasan las negociaciones con Irán -Rubio califica de 'escandalosas' las exigencias iraníes- y reaviva el patrón de caída de BTC ante tensión geopolítica/petróleo",
-      "body": "El Secretario de Estado Marco Rubio dijo que las exigencias de Irán fueron 'outrageous' (escandalosas) y que las negociaciones no lograron avanzar. Según CoinDesk, el aumento de tensiones en Medio Oriente suele presionar al alza el precio del petróleo e impulsar aversión al riesgo, y Bitcoin ha caído con más frecuencia durante repuntes petroleros desde que comenzó la guerra con Irán en marzo de 2026. Es un desarrollo nuevo desde el reporte de ayer, que no mencionaba el estado de estas negociaciones."
+      "heading": "Nuevo: los flujos de ETFs de bitcoin empeoran -peor semana desde fines de junio, sexta sesión consecutiva de salidas-",
+      "body": "El 9 de noviembre (último dato disponible de tftc.io) los ETFs de bitcoin al contado registraron -USD 201,1M netos: IBIT lideró con -USD 213,2M, ARKB con -USD 9,9M, parcialmente compensados por +USD 22,1M de entradas en MSBT. En la semana completa que cerró el 9 de noviembre las salidas netas totalizaron -USD 1.280M -la peor semana desde fines de junio-, con IBIT solo aportando -USD 1.210M, marcando la sexta sesión consecutiva de salidas y ~USD 1.440M retirados desde el 30 de octubre. El acumulado del año (YTD) se sitúa en torno a -USD 919M según SoSoValue. Esto actualiza y empeora el dato de ayer, que solo llegaba hasta el 6 de noviembre (-USD 411,9M ese día).",
+      "source_url": "https://www.tftc.io/bitcoin-etf-flows/november-2026"
     },
     {
-      "heading": "Nuevo: liquidaciones superan los USD 1.000M en 24 horas, concentradas en largos; Ethereum proporcionalmente más golpeado que Bitcoin",
-      "body": "CoinGlass registró más de USD 1.000M en liquidaciones de posiciones apalancadas en 24 horas hacia la medianoche del domingo, con USD 913M concentrados en posiciones largas -el mercado volvió a castigar a quienes apostaban a una recuperación-. Ethereum sufrió el golpe proporcionalmente mayor: USD 448M liquidados frente a USD 272M en Bitcoin, con la liquidación individual más grande (USD 48M) también en ETH. Esto continúa la dinámica ya señalada ayer (liquidaciones elevadas de fin de semana con 90%+ en largos), pero con una cifra agregada más alta y el detalle nuevo de que ETH se vio más afectado relativamente que BTC."
+      "heading": "Hoy es el día: MSCI debía publicar su lista final de exclusión de índices (incluye a Strategy/MSTR) el 11 de noviembre -aún sin publicarse al momento de este reporte-",
+      "body": "El evento que el reporte de ayer señalaba 'a 1 día' se cumple hoy: MSCI debía dar a conocer el 11 de noviembre de 2026 la lista final de compañías potencialmente afectadas por su nuevo filtro de elegibilidad para empresas 'no operativas' (adoptado el 15 de octubre), que podría excluir a Strategy (MSTR) y Metaplanet de sus índices globales. Los cambios, de confirmarse, entrarían en vigor al cierre del 30 de noviembre. Al momento de este reporte (07:21 UTC del 11-nov) no se encontró en fuentes verificadas la lista final ya publicada -queda pendiente y no se debe asumir un resultado-. Antes de esta fecha, el fundador de Strategy, Michael Saylor, ya había restado importancia al riesgo: 'Not that important to us... They're imposing prejudicial values on digital assets.' JPMorgan estima hasta USD 2.800M en salidas pasivas de MSTR si solo MSCI excluye a la empresa (hasta USD 11.600M si otros proveedores de índices siguen el mismo camino); fondos ligados a MSCI tienen ~13M de acciones de Strategy (~3,1% de las acciones básicas en circulación).",
+      "source_url": "https://www.dlnews.com/articles/markets/strategy-msci-index-exclusion-risk/"
     },
     {
-      "heading": "Nuevo: minero MARA vende 13.597 BTC (40% de su tenencia) por USD 1.100M en seis semanas y anuncia que seguirá vendiendo",
-      "body": "MARA Holdings vendió 13.597 BTC desde fines de septiembre -40% de las 34.012 BTC que tenía a esa fecha- por aproximadamente USD 1.100M, a un precio promedio de ~USD 81.039 por moneda, muy por encima del precio spot actual. Usó USD 750M para pagar deuda respaldada en bitcoin (liberando 17.477 BTC pignorados, bajando la porción de sus tenencias prestadas/pignoradas de 57% a menos de 5%) y destina el resto a financiar infraestructura de IA -incluyendo el cierre próximo de la planta de gas natural Long Ridge y el desarrollo de un sitio en Texas con capacidad de hasta 2 GW-, además de un programa de recompra de acciones autorizado por hasta USD 500M. La empresa confirmó que seguirá vendiendo bitcoin, revirtiendo su política de 2024 de no vender nada de lo minado -las ventas totales de 2026 ya superan las 40.000 BTC-."
-    },
-    {
-      "heading": "Sin cambios verificados desde ayer: MSCI (ahora a 1 día), probabilidad de tasas de la Fed, flujos de ETFs, Clarity Act, BTCPay Server, apelación del Reino Unido y Cantor Fitzgerald",
-      "body": "La revisión de MSCI sobre la elegibilidad de Strategy sigue fijada para el 11 de noviembre -ahora a solo 1 día-, sin información adicional a la ya reportada. La probabilidad de movimiento de tasas de la Fed en diciembre se mantiene en 76,8-78% (CME FedWatch/Reuters, cifra de ayer), sin una actualización verificada hoy. El tracker público de flujos de ETFs (tftc.io) solo tiene datos confirmados hasta el 6 de noviembre (-USD 411,9M ese día, impulsado por salidas de IBIT), sin cifras todavía de la sesión del lunes 9 de noviembre -el acumulado de noviembre permanece en ~-USD 1.280M en 5 sesiones hasta el 6 de noviembre-. Tampoco hay desarrollos nuevos verificados en la Clarity Act, la vulnerabilidad de BTCPay Server, la apelación del Reino Unido sobre los 61.000 BTC, ni Cantor Fitzgerald."
+      "heading": "Sin cambios verificados desde ayer: Nvidia/Jensen Huang, Irán, Clarity Act, BTCPay Server, apelación del Reino Unido y Cantor Fitzgerald",
+      "body": "Sobre el escándalo de Nvidia, lo único nuevo es que legisladores del Congreso de EE.UU. pidieron a Jensen Huang aceptar una fecha de briefing (o proponer una alternativa) antes de hoy, 11 de noviembre -no se pudo confirmar si el briefing se realizó-; el próximo evento público conocido sigue siendo el earnings call del 17 de noviembre, y no hay resultados de la investigación independiente del directorio. No se encontró cobertura verificada fechada en las últimas 24-48 horas sobre el estado de las negociaciones con Irán, por lo que se deja constancia de que no hay actualización en vez de asumir continuidad o cambio. Tampoco hay desarrollos nuevos verificados en la Clarity Act, la vulnerabilidad de BTCPay Server, la apelación del Reino Unido sobre los 61.000 BTC, ni Cantor Fitzgerald.",
+      "source_url": "https://www.theblock.co/post/384556/strategy-stock-rallies-msci-says-will-not-bar-dats-for-time-being"
     }
   ],
   "indicators": [
     {
       "name": "Precio BTC-USD (última semana)",
-      "description": "Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (10-nov) es la cotización en vivo. La serie muestra el máximo local del 4 de noviembre (USD 80.405), la caída hasta el mínimo del fin de semana (USD 74.584 el 8-nov, con un mínimo intradía aún menor de USD 73.761 no capturado en el cierre diario) y la recuperación parcial del domingo (USD 75.223 el 9-nov) antes de ceder terreno hoy a USD 74.708,66.",
+      "description": "Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (11-nov) es la cotización en vivo. La serie muestra la caída sostenida desde el cierre del 7-nov (USD 75.747,58) hasta el mínimo de ayer tras el IPC caliente (USD 73.720,12 el 10-nov), seguida de una apertura hoy prácticamente plana en USD 73.675,33.",
       "chart_type": "line",
       "data": {
-        "labels": ["4 nov", "5 nov", "6 nov", "7 nov", "8 nov", "9 nov", "10 nov (en vivo)"],
-        "values": [80405.29, 75942.13, 75746.93, 75747.58, 74584.65, 75223.15, 74708.66]
+        "labels": ["5 nov", "6 nov", "7 nov", "8 nov", "9 nov", "10 nov", "11 nov (en vivo)"],
+        "values": [75942.13, 75746.93, 75747.58, 74584.65, 75223.15, 73720.12, 73675.33]
       },
       "unit": "USD",
-      "current_value": "74,708.66",
-      "change": "-0.72",
-      "as_of": "07:27 UTC"
+      "current_value": "73,675.33",
+      "change": "-0.05",
+      "as_of": "07:21 UTC"
     },
     {
       "name": "Fear & Greed Index",
-      "description": "Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), fuente alternative.me. Subió de 29 a 32 (sigue en 'Fear'), un repunte modesto que acompaña el rebote parcial del precio desde el mínimo del domingo.",
+      "description": "Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), fuente alternative.me. Volvió a caer de 32 ayer a 29 hoy, revirtiendo el repunte modesto del domingo y reflejando la segunda ola de ventas tras el IPC caliente.",
       "chart_type": "gauge",
       "data": {
         "labels": ["Hoy"],
-        "values": [32]
+        "values": [29]
       },
       "unit": "índice (0-100)",
-      "current_value": "32 (Fear)",
-      "change": "+3 vs. 29 de ayer",
-      "as_of": "10 nov 2026"
+      "current_value": "29 (Fear)",
+      "change": "-3 vs. 32 de ayer",
+      "as_of": "11 nov 2026"
     }
   ],
   "expert_opinions": [
     {
-      "expert": "Analista de BRN",
-      "affiliation": "BRN (firma de investigación cripto)",
-      "quote": "Until ETF flows turn positive and the Fed turns dovish, the path of least resistance remains lower.",
-      "source_url": "https://www.coindesk.com/markets/2026/11/10/bitcoin-faces-u-s-cpi-test-as-analysts-warn-inflation-relief-may-not-be-enough",
+      "expert": "Christopher Waller",
+      "affiliation": "Gobernador de la Reserva Federal de EE.UU.",
+      "quote": "I believe a 50 basis point hike in the policy rate should be considered at the December meeting.",
+      "source_url": "https://decrypt.co/382950/bitcoin-falls-hot-us-inflation-fears-bigger-fed-rate-hike",
       "stance": "bearish"
     },
     {
-      "expert": "Analistas de Bitget Wallet",
-      "affiliation": "Bitget Wallet",
-      "quote": "A durable Bitcoin recovery will depend on improving liquidity and spot demand, not macro relief alone.",
-      "source_url": "https://www.coindesk.com/markets/2026/11/10/bitcoin-faces-u-s-cpi-test-as-analysts-warn-inflation-relief-may-not-be-enough",
-      "stance": "neutral"
+      "expert": "Michael Saylor",
+      "affiliation": "Fundador y Presidente Ejecutivo, Strategy (MSTR)",
+      "quote": "Not that important to us... They're imposing prejudicial values on digital assets.",
+      "source_url": "https://ambcrypto.com/not-that-important-to-us-saylor-downplays-mscis-plan-to-drop-strategy/",
+      "stance": "bullish"
     }
   ],
   "outlook": {
-    "short_term": "El catalizador inmediato es el IPC de octubre de EE.UU. (8:30am ET / 13:30 UTC, posterior al horario de este reporte): se espera +0,3% mensual en el índice general y +0,2% en el núcleo. Según BRN, una lectura más fría ayudaría a los activos de riesgo, pero Bitcoin necesita 'compra real, no un golpe de suerte'; según Bitget Wallet, una lectura más caliente reforzaría las expectativas de un movimiento de tasas hawkish en diciembre, mientras que una más fría podría gatillar un rally de alivio. El nivel técnico a vigilar sigue siendo el costo base de corto plazo (~USD 75.700, aún no reconquistado) y, a la baja, USD 73.000 (BRN advierte que un cierre diario UTC por debajo podría abrir la puerta a USD 70.000, y Bitget Wallet señala USD 68.000 como el siguiente nivel si se pierden los USD 73.000 de forma decisiva).",
-    "medium_term": "La revisión de MSCI sobre Strategy (11 de noviembre, a 1 día) y la probabilidad de movimiento de tasas de la Fed en diciembre (76,8-78%, sin actualización hoy) siguen siendo los riesgos macro/estructurales más próximos. Se suma el escándalo de Nvidia -con su investigación independiente en curso por el vínculo de la pareja del CEO con inteligencia china- como un nuevo factor de incertidumbre para la narrativa de IA que ha pesado sobre el Nasdaq (-5% en la última semana reportada) y, por correlación, sobre el apetito de riesgo cripto. El fracaso de las negociaciones con Irán reaviva el patrón de presión sobre BTC ante repuntes del petróleo. La venta continua de BTC por parte de MARA (ya supera 40.000 BTC en 2026) añade presión de oferta marginal desde el lado de los mineros.",
-    "long_term": "Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong, piso de costo de producción de JPMorgan en USD 94.000 -muy por encima del precio spot actual-). BTC sigue muy por debajo de su máximo de 52 semanas de USD 107.428. La combinación de venta de mineros, riesgo de contraparte en exchanges (MEXC/FinCEN, Binance) y ahora riesgo reputacional en Nvidia -ligado a la narrativa de IA que ha correlacionado con cripto en 2026- añade capas de incertidumbre que no estaban presentes hace una semana."
+    "short_term": "El evento binario inmediato es la lista final de MSCI sobre exclusión de índices (debía publicarse hoy, 11-nov, aún no verificada al cierre de este reporte) -de confirmarse la exclusión de Strategy, JPMorgan estima hasta USD 2.800M en salidas pasivas de MSTR (hasta USD 11.600M si otros proveedores de índices siguen el mismo camino), con potencial impacto indirecto en el sentimiento cripto más amplio-. En el plano técnico, el soporte más cercano sigue siendo la media móvil de 200 días (~USD 73.150-73.170) y el mínimo del domingo (~USD 73.477); al alza, el nivel a reconquistar sigue siendo el costo base de los tenedores de corto plazo (~USD 75.700, Glassnode, sin cambios desde hace dos reportes).",
+    "medium_term": "El giro hawkish de la Fed tras el IPC caliente -con CME FedWatch tratando una subida de 25pb en diciembre como casi segura y ~15% de probabilidad de un movimiento de 50pb según Reuters- es el principal viento en contra nuevo: tasas más altas presionan a los activos sin rendimiento como bitcoin. Se suma el deterioro de los flujos de ETFs (peor semana desde fines de junio, sexta sesión consecutiva de salidas) como señal de demanda institucional debilitada. El escándalo de Nvidia y las tensiones con Irán, sin desarrollos nuevos hoy, siguen como telón de fondo de sentimiento de riesgo general más que como catalizadores directos.",
+    "long_term": "Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong, piso de costo de producción de JPMorgan en USD 94.000 -muy por encima del precio spot actual-). BTC sigue muy por debajo de su máximo de 52 semanas de USD 107.428. El giro hawkish de la Fed, el deterioro de los flujos de ETFs y el riesgo binario de MSCI sobre las tesorerías corporativas de bitcoin (Strategy, Metaplanet y otras en lista de observación como SharpLink) se suman como capas de incertidumbre estructural nuevas desde hace una semana."
   },
   "recommendations": [
     {
-      "title": "Vigilar el IPC de octubre (13:30 UTC, posterior a este reporte) como catalizador inmediato del día",
-      "description": "Es el dato duro más próximo: una sorpresa a la baja podría gatillar el rally de alivio que BRN y Bitget Wallet condicionan a una mejora de flujos de ETF y un giro dovish de la Fed; una sorpresa al alza reforzaría las expectativas de un movimiento de tasas hawkish en diciembre y probablemente presione el precio hacia el soporte de USD 73.000.",
+      "title": "Vigilar la publicación de la lista final de MSCI (hoy, 11 de noviembre) y la reacción de MSTR",
+      "description": "Es el evento binario más próximo con potencial de afectar directamente a Strategy y, por contagio de sentimiento, a otras tesorerías corporativas de bitcoin en lista de observación (Metaplanet, SharpLink, Ton Strategy Company, Solana Company, DeFi Development Corp.). No asumir un resultado antes de que se confirme con una fuente verificada.",
       "risk_level": "alto"
     },
     {
-      "title": "No tratar el escándalo de Nvidia ni el fracaso de las negociaciones con Irán como catalizadores directos de oferta/demanda de Bitcoin",
-      "description": "Ambos son factores de sentimiento de riesgo general (vía correlación con Nasdaq/IA y vía petróleo/geopolítica, respectivamente), no eventos que afecten la oferta o demanda de BTC en sí. Tratarlos como la causa principal del movimiento de precio sería una lectura apresurada; son telón de fondo, no el detonante.",
+      "title": "Incorporar el giro hawkish de la Fed como factor de presión de mediano plazo, no solo un evento de un día",
+      "description": "Con una subida de 25pb en diciembre ya tratada como casi segura por CME FedWatch y voces como la del gobernador Waller abriendo la puerta a 50pb, el costo de oportunidad de mantener bitcoin frente a activos con rendimiento sube de forma sostenida, no solo como reacción puntual al IPC de ayer.",
       "risk_level": "medio"
     },
     {
-      "title": "Monitorear la decisión de MSCI sobre Strategy (11 de noviembre, a 1 día)",
-      "description": "Con el mecanismo de exclusión gradual ya conocido y hasta USD 2.800M en salidas pasivas estimadas por JPMorgan si se confirma la exclusión, es el evento binario más próximo con potencial de afectar tanto a MSTR como, indirectamente, al sentimiento cripto.",
+      "title": "Monitorear los flujos diarios de ETFs como termómetro de demanda institucional",
+      "description": "La aceleración de salidas (sexta sesión consecutiva, peor semana desde fines de junio) es una señal más confiable de debilidad de demanda que el ruido de precio intradía -si la racha de salidas se revierte, sería una señal temprana de estabilización antes de que se refleje en el precio spot.",
       "risk_level": "medio"
     }
   ],
   "sources": [
-    {
-      "title": "Bitcoin Drops Then Pops as Nvidia Cheating Scandal and Failed Iran Talks Trigger Volatility (CoinDesk, 9 nov 2026)",
-      "url": "https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility"
-    },
-    {
-      "title": "Bitcoin Faces U.S. CPI Test as Analysts Warn Inflation Relief May Not Be Enough (CoinDesk, 10 nov 2026)",
-      "url": "https://www.coindesk.com/markets/2026/11/10/bitcoin-faces-u-s-cpi-test-as-analysts-warn-inflation-relief-may-not-be-enough"
-    },
-    {
-      "title": "Bitcoin Miner MARA Sold 13,597 BTC for $1.1 Billion in Six Weeks, Plans to Sell More (CoinDesk, 10 nov 2026)",
-      "url": "https://www.coindesk.com/markets/2026/11/10/bitcoin-miner-mara-sold-13-597-btc-for-usd1-1-billion-in-six-weeks-plans-to-sell-more"
-    },
-    {
-      "title": "Bitcoin ETF Flows — Live Month, November 2026 (TFTC.io)",
-      "url": "https://www.tftc.io/bitcoin-etf-flows/november-2026"
-    },
-    {
-      "title": "Crypto Fear & Greed Index (alternative.me, consulta en vivo)",
-      "url": "https://alternative.me/crypto/fear-and-greed-index/"
-    },
-    {
-      "title": "Precio en vivo BTC-USD (Yahoo Finance, vía tools/fetch_market_price.py)",
-      "url": "https://finance.yahoo.com/quote/BTC-USD"
-    },
-    {
-      "title": "Bitcoin Rainbow Chart (BlockchainCenter.net)",
-      "url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/"
-    }
+    {"title": "Bitcoin Falls on Hot US Inflation Fears of Bigger Fed Rate Hike (Decrypt, 10 nov 2026)", "url": "https://decrypt.co/382950/bitcoin-falls-hot-us-inflation-fears-bigger-fed-rate-hike"},
+    {"title": "US CPI October, Fed December Rate Hike Odds and Bitcoin (CryptoTicker, 10-11 nov 2026)", "url": "https://cryptoticker.io/en/us-cpi-october-bitcoin-fed-december-hike/"},
+    {"title": "Crypto Market Down Today: BTC, ETH, XRP Prices Fall After CPI, $724M Longs Liquidated (CryptoTimes, 11 nov 2026)", "url": "https://www.cryptotimes.io/2026/11/11/crypto-market-down-today-btc-eth-xrp-prices-fall-after-cpi-724m-longs-liquidated/"},
+    {"title": "Crypto Longs Liquidated After October CPI (Crypto Briefing)", "url": "https://cryptobriefing.com/crypto-longs-liquidated-october-cpi/"},
+    {"title": "Bitcoin ETF Flows, November 2026 (tftc.io)", "url": "https://www.tftc.io/bitcoin-etf-flows/november-2026"},
+    {"title": "Strategy's MSCI risk: what to watch before November 11 (DL News)", "url": "https://www.dlnews.com/articles/markets/strategy-msci-index-exclusion-risk/"},
+    {"title": "MSCI Rules Could Remove Strategy (MSTR) From Global Indexes, November 11 (CoinOtag)", "url": "https://en.coinotag.com/msci-rules-could-remove-strategy-mstr-global-indexes-november-11"},
+    {"title": "'Not that important to us' - Saylor downplays MSCI's plan to drop Strategy (AMBCrypto)", "url": "https://ambcrypto.com/not-that-important-to-us-saylor-downplays-mscis-plan-to-drop-strategy/"},
+    {"title": "Strategy's stock rallies 5% after MSCI says will not bar DATs 'for the time being' (The Block)", "url": "https://www.theblock.co/post/384556/strategy-stock-rallies-msci-says-will-not-bar-dats-for-time-being"},
+    {"title": "Fear & Greed Index (alternative.me, consultado en vivo)", "url": "https://alternative.me/crypto/fear-and-greed-index/"},
+    {"title": "Precio BTC-USD en vivo (Yahoo Finance, consultado en vivo)", "url": "https://finance.yahoo.com/quote/BTC-USD"}
   ],
   "crypto_extras": {
-    "fear_greed": {
-      "value": 32,
-      "classification": "Fear",
-      "color": "#ec835a",
-      "timestamp": "2026-11-10T00:00:00+00:00"
-    },
-    "btc_rainbow": {
-      "image": ".tmp/bitcoin-btc-rainbow.png",
-      "source": "BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)",
-      "source_url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/",
-      "captured_at": "2026-11-10"
-    }
+    "fear_greed": {"value": 29, "classification": "Fear", "color": "#ec835a", "timestamp": "2026-11-11T00:00:00+00:00"},
+    "btc_rainbow": {"image": ".tmp/bitcoin-btc-rainbow.png", "source": "BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)", "source_url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/", "captured_at": "2026-11-11"}
   }
 }
