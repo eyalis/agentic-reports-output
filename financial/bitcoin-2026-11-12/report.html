@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bitcoin (BTC-USD) — Reporte Yirafa Labs</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style>
+  @font-face {
+    font-family: 'Bricolage Grotesque';
+    font-style: normal;
+    font-weight: 300 800;
+    src: url('assets/fonts/BricolageGrotesque-latin.woff2') format('woff2');
+  }
+
+  :root {
+    --bg: #F7F7FB;
+    --surface: #FFFFFF;
+    --surface-muted: #F0F0F8;
+    --ink: #0F0F1E;
+    --ink-muted: #68687F;
+    --ink-soft: #ABABBE;
+    --accent: #C87E28;
+    --accent-hover: #A86820;
+    --accent-soft: #F6ECD8;
+    --border: #DCDCE8;
+    --border-strong: #C4C4D8;
+    --font-display: 'Bricolage Grotesque', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-body: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+    --max-w: 760px;
+    --radius: 14px;
+
+    --series-1: #C87E28;
+    --series-2: #2a78d6;
+    --series-3: #1baf7a;
+    --series-4: #8f5cd1;
+    --series-5: #c0392b;
+
+    --good: #0ca30c;
+    --warning: #fab219;
+    --serious: #ec835a;
+    --critical: #d03b3b;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page { max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem 4rem; }
+
+  header.masthead {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 2rem 1.5rem; max-width: var(--max-w); margin: 0 auto;
+    border-bottom: 1px solid var(--border);
+  }
+  .brand { display: flex; align-items: center; gap: 0.6rem; font-family: var(--font-display); }
+  .brand-icon {
+    width: 28px; height: 28px; border-radius: 8px; background: var(--accent);
+    color: var(--ink); font-weight: 800; font-size: 0.95rem;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .brand-word { font-weight: 700; letter-spacing: -0.01em; font-size: 0.95rem; }
+  .report-date { color: var(--ink-muted); font-size: 0.82rem; font-family: var(--font-display); text-align: right; }
+  .report-updated { font-size: 0.72rem; color: var(--ink-soft); margin-top: 0.15rem; }
+
+  .live-tag {
+    display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.7rem; font-weight: 700;
+    color: var(--good); background: #e8f7e8; padding: 0.1rem 0.5rem; border-radius: 999px; margin-top: 0.35rem;
+  }
+  .live-tag::before {
+    content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--good); flex-shrink: 0;
+  }
+
+  .hero { padding: 2.5rem 0 0.5rem; }
+  .eyebrow {
+    font-family: var(--font-display);
+    text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.7rem;
+    font-weight: 700; color: var(--accent-hover); margin: 0 0 0.6rem;
+  }
+  h1.title {
+    font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 1.9rem);
+    font-weight: 700; letter-spacing: -0.01em; line-height: 1.25; margin: 0 0 0.9rem;
+  }
+  .summary-lead { font-size: 1.05rem; line-height: 1.6; color: var(--ink-muted); max-width: 62ch; }
+
+  section { margin-top: 2.5rem; }
+  h2.section-title {
+    font-family: var(--font-display);
+    font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 1.1rem;
+    display: flex; align-items: center; gap: 0.55rem;
+  }
+  h2.section-title::before {
+    content: ''; width: 7px; height: 7px; border-radius: 2px; background: var(--accent); flex-shrink: 0;
+  }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 1.5rem;
+  }
+  .card + .card { margin-top: 1rem; }
+
+  .toc { margin-top: 1.75rem; padding: 1.25rem 1.5rem; }
+  .toc-title {
+    font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--ink-muted); margin-bottom: 0.75rem;
+  }
+  .toc-list { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 1.5rem; }
+  .toc-list li { break-inside: avoid; margin-bottom: 0.55rem; }
+  .toc-list a {
+    display: flex; align-items: baseline; gap: 0.5rem; color: var(--ink); font-size: 0.9rem;
+    font-weight: 600; text-decoration: none;
+  }
+  .toc-list a:hover { color: var(--accent-hover); }
+  .toc-num { color: var(--accent-hover); font-weight: 700; flex-shrink: 0; }
+  @media (max-width: 480px) { .toc-list { columns: 1; } }
+
+  .context-grid { display: grid; gap: 1rem; }
+  .context-card h3 { margin: 0 0 0.4rem; font-size: 1rem; font-weight: 700; }
+  .context-card p { margin: 0; color: var(--ink-muted); }
+
+  .indicator-card { margin-bottom: 1.25rem; }
+  .indicator-head {
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+  .indicator-name { font-weight: 700; font-size: 1.05rem; }
+  .indicator-desc { color: var(--ink-muted); font-size: 0.92rem; margin-top: 0.25rem; max-width: 52ch; }
+  .indicator-value { text-align: right; }
+  .indicator-current { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.02em; }
+  .indicator-unit { font-size: 0.8rem; color: var(--ink-muted); }
+  .change-pill {
+    display: inline-block; margin-top: 0.25rem; padding: 0.15rem 0.55rem; border-radius: 999px;
+    font-size: 0.78rem; font-weight: 700;
+  }
+  .change-pill.up { background: #e8f7e8; color: var(--good); }
+  .change-pill.down { background: #fdeceb; color: var(--critical); }
+  .change-pill.flat { background: var(--surface-muted); color: var(--ink-muted); }
+
+  .chart-wrap { position: relative; height: 220px; margin-top: 1.25rem; }
+  .gauge-wrap { position: relative; height: 180px; margin-top: 1.25rem; display: flex; align-items: center; justify-content: center; }
+  .gauge-center { position: absolute; text-align: center; top: 58%; transform: translateY(-50%); }
+  .gauge-center .val { font-size: 1.6rem; font-weight: 800; }
+  .gauge-center .unit { font-size: 0.78rem; color: var(--ink-muted); }
+
+  details.disclosure { margin-top: 0.9rem; border-top: 1px dashed var(--border); padding-top: 0.75rem; }
+  details.disclosure summary {
+    cursor: pointer; font-size: 0.85rem; font-weight: 700; color: var(--accent-hover);
+    list-style: none; display: flex; align-items: center; gap: 0.35rem; user-select: none;
+  }
+  details.disclosure summary::-webkit-details-marker { display: none; }
+  details.disclosure summary::marker { content: ''; display: none; }
+  details.disclosure summary::before { content: '▸'; font-size: 0.7rem; transition: transform 0.15s var(--ease, ease); }
+  details.disclosure[open] summary::before { transform: rotate(90deg); }
+  details.disclosure .disclosure-body { padding-top: 0.6rem; }
+
+  table.data-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  table.data-table th, table.data-table td {
+    text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border);
+  }
+  table.data-table th { color: var(--ink-muted); font-weight: 600; }
+
+  .expert-card summary { display: block; }
+  .expert-card summary::before { display: none; }
+  .expert-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  .expert-id { font-weight: 700; }
+  .expert-affil { color: var(--ink-muted); font-size: 0.85rem; }
+  .stance-pill {
+    padding: 0.15rem 0.6rem; border-radius: 999px; font-size: 0.75rem; font-weight: 700; white-space: nowrap;
+  }
+  .stance-pill.bullish { background: #e8f7e8; color: var(--good); }
+  .stance-pill.bearish { background: #fdeceb; color: var(--critical); }
+  .stance-pill.neutral { background: var(--surface-muted); color: var(--ink-muted); }
+  blockquote.quote {
+    margin: 0.75rem 0 0; padding-left: 1rem; border-left: 3px solid var(--accent-soft);
+    color: var(--ink); font-style: italic;
+  }
+  .source-link { font-size: 0.82rem; margin-top: 0.5rem; display: inline-block; }
+  .source-link a { color: var(--accent-hover); }
+
+  .outlook-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .outlook-card h3 {
+    margin: 0 0 0.5rem; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--accent-hover); font-weight: 700;
+  }
+  .outlook-card p { margin: 0; color: var(--ink); font-size: 0.94rem; }
+
+  .rec-card { display: flex; gap: 1rem; align-items: flex-start; }
+  .risk-pill { padding: 0.15rem 0.6rem; border-radius: 999px; font-size: 0.72rem; font-weight: 700; flex-shrink: 0; }
+  .risk-pill.bajo { background: #e8f7e8; color: var(--good); }
+  .risk-pill.medio { background: #fff4e0; color: #9a6a00; }
+  .risk-pill.alto { background: #fdeceb; color: var(--critical); }
+  .rec-title { font-weight: 700; margin-bottom: 0.2rem; }
+  .rec-desc { color: var(--ink-muted); font-size: 0.92rem; margin: 0; }
+
+  .sources-list { list-style: none; padding: 0; margin: 0; }
+  .sources-list li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); font-size: 0.88rem; }
+  .sources-list a { color: var(--accent-hover); }
+
+  footer.brand-footer {
+    margin-top: 4rem; padding: 2rem 0; border-top: 1px solid var(--border);
+    color: var(--ink-soft); font-size: 0.8rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;
+  }
+
+  a { color: var(--accent-hover); }
+
+  /* UI chrome, labels and figures stay in the brand display font;
+     everything else (running prose) uses --font-body for readability. */
+  .context-card h3,
+  .indicator-name,
+  .indicator-current,
+  .indicator-unit,
+  .change-pill,
+  .gauge-center,
+  .expert-id,
+  .stance-pill,
+  .outlook-card h3,
+  .rec-title,
+  .risk-pill,
+  table.data-table th,
+  table.data-table td,
+  details.disclosure summary,
+  .toc-title,
+  .toc-list,
+  footer.brand-footer {
+    font-family: var(--font-display);
+  }
+
+  @media (max-width: 640px) {
+    .outlook-grid { grid-template-columns: 1fr; }
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page, header.masthead { max-width: 100%; }
+    section { margin-top: 2rem; break-inside: avoid-page; }
+    .card, .indicator-card, .expert-card { break-inside: avoid-page; }
+    details.disclosure:not([open]) > .disclosure-body { display: block !important; }
+    details.disclosure summary::before { display: none; }
+    details.disclosure summary { cursor: default; color: var(--ink); }
+    a { color: var(--ink); text-decoration: underline; }
+  }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="brand">
+    <div class="brand-icon">Y</div>
+    <div class="brand-word">Yirafa Labs</div>
+  </div>
+  <div class="report-date">
+    2026-11-12
+    <div class="report-updated">Datos actualizados: 12 de noviembre de 2026, 07:25 UTC</div>
+  </div>
+</header>
+
+<div class="page">
+  <div class="hero">
+    <p class="eyebrow">Reporte financiero</p>
+    <h1 class="title">Bitcoin (BTC-USD)</h1>
+    <p class="summary-lead">BTC cotiza en vivo a USD 73.450,45 (07:25 UTC, -0,64% intradía vs. cierre previo de USD 73.925,19), extendiendo la lenta caída de los últimos días dentro del rango USD 73.000-74.000 que sostiene desde el IPC caliente del 10-nov. La novedad principal desde el reporte de ayer es que el evento binario que estaba pendiente ya se resolvió: MSCI confirmó el 11 de noviembre (publicado poco después de las 17:00 ET) la eliminación de Strategy (MSTR) de su índice MSCI USA -lo que también la saca de MSCI World y ACWI-, además de Metaplanet (MSCI Japan Small Cap), Upexi (MSCI USA Micro Cap), Yellow Cake (MSCI United Kingdom Small Cap) y Skel Fjárfestingafélag de Islandia (MSCI Iceland Frontier Markets Small Cap). Los cambios entran en vigor al cierre del 30 de noviembre. SharpLink (tesorería de Ethereum) queda en lista de observación, sin exclusión inmediata. Strategy había argumentado en una carta previa que la exclusión 'no tendría un impacto significativo' en su negocio -los fondos ligados a MSCI poseen ~13 millones de acciones, 3,1% de las acciones básicas en circulación-, pero JPMorgan estima hasta USD 2.800M en ventas pasivas forzadas (hasta USD 8.800M si otros proveedores de índices siguen el mismo camino, aunque esa cifra data de la propuesta original de MSCI, no del filtro de octubre). La reacción de MSTR fue moderada: cerró en USD 122,35 (+1,06%) y luego cayó entre 1,5% y 2,5% en el after-hours según la fuente. Los flujos de ETFs de bitcoin siguen deteriorándose: el 10 de noviembre (último dato de tftc.io) salieron USD 95,0M netos (IBIT -78,2M, Fidelity FBTC -36,8M, parcialmente compensados por MSBT +20,0M), séptima sesión consecutiva de salidas -extendiendo la racha de seis sesiones reportada ayer- y ~USD 1.600M en salidas netas en lo que va de noviembre (7 sesiones). El Fear & Greed Index se mantiene prácticamente plano, de 29 ayer a 28 hoy ("Fear" en ambos casos). CryptoQuant reportó que su 'Bull Score' cayó a 0 el 11 de noviembre -"lo más bajista que puede estar", según el analista Julio Moreno-, aunque otro analista (Daan Crypto Trades) matiza que el posicionamiento apalancado elevado no dice nada sobre la dirección de un eventual squeeze. Sobre la Fed, no hay un dato puntual nuevo verificado desde ayer: los mercados siguen tratando una subida de 25pb en diciembre como muy probable (en el rango de ~80% según distintas fuentes, con cifras dispersas entre 67% y 97% según la fecha y el proveedor consultado, por lo que no se fija un número único). Sobre Nvidia/Jensen Huang: el plazo del 11 de noviembre para que Huang aceptara o propusiera una fecha alternativa a la reunión a puertas cerradas del 18 de noviembre con los presidentes de tres comités de la Cámara (Mast, Moolenaar, Crawford) ya venció sin que se encontrara confirmación pública de su respuesta; el próximo evento verificable es el reporte de resultados de Nvidia el 17 de noviembre, un día antes de la reunión propuesta. Sin novedades verificadas desde el reporte de ayer en: negociaciones con Irán (último dato confirmado es del 7-nov, sin acuerdo en Doha), Clarity Act, BTCPay Server, la apelación del Reino Unido sobre los 61.000 BTC y Cantor Fitzgerald.</p>
+  </div>
+
+  
+  <nav class="card toc" aria-label="Índice del reporte">
+    <div class="toc-title">Índice</div>
+    <ol class="toc-list">
+      
+        <li><a href="#contexto"><span class="toc-num">1</span>Qué ha pasado en las últimas semanas</a></li>
+      
+        <li><a href="#indicadores"><span class="toc-num">2</span>Indicadores clave</a></li>
+      
+        <li><a href="#cripto-sentimiento"><span class="toc-num">3</span>Indicadores de sentimiento cripto</a></li>
+      
+        <li><a href="#expertos"><span class="toc-num">4</span>Opiniones de expertos</a></li>
+      
+        <li><a href="#previsiones"><span class="toc-num">5</span>Previsiones</a></li>
+      
+        <li><a href="#recomendaciones"><span class="toc-num">6</span>Recomendaciones y estrategias</a></li>
+      
+        <li><a href="#fuentes"><span class="toc-num">7</span>Fuentes</a></li>
+      
+    </ol>
+  </nav>
+
+  
+  <section id="contexto">
+    <h2 class="section-title">Qué ha pasado en las últimas semanas</h2>
+    <div class="context-grid">
+      
+      <div class="card context-card">
+        <h3>Nuevo: MSCI confirma la exclusión de Strategy (MSTR), Metaplanet y otras tres compañías de sus índices -el evento binario de ayer ya se resolvió</h3>
+        <p>MSCI publicó su revisión de índices de noviembre de 2026 el 11 de noviembre, poco después de las 17:00 ET, confirmando lo que el reporte de ayer dejaba pendiente: Strategy (MSTR) sale del MSCI USA Index (y por extensión de MSCI World y ACWI) tras ser reclasificada como emisor 'no operativo' bajo el nuevo filtro adoptado en octubre. También se excluyen Metaplanet (MSCI Japan Small Cap), Upexi (MSCI USA Micro Cap), Yellow Cake (MSCI United Kingdom Small Cap) y Skel Fjárfestingafélag de Islandia (MSCI Iceland Frontier Markets Small Cap). SharpLink (tesorería de Ethereum), TON Strategy Company y Solana Company -mencionadas en listas de observación previas- no aparecen entre las exclusiones confirmadas; SharpLink queda en observación. Los cambios entran en vigor al cierre del 30 de noviembre. Strategy había argumentado en una carta de agosto que la medida 'no tendría un impacto significativo' en su negocio y que los fondos ligados a los índices globales de MSCI poseen cerca de 13 millones de sus acciones (3,1% de las acciones básicas en circulación) -menos que el volumen de un día de operaciones, según la compañía-. JPMorgan había estimado hasta USD 2.800M en ventas forzadas de fondos pasivos solo por Strategy (hasta USD 8.800M si otros proveedores de índices siguieran el mismo criterio), aunque esa cifra corresponde a la propuesta original de MSCI de noviembre del año pasado, no específicamente al filtro de no-operativos adoptado en octubre. La reacción inmediata en MSTR fue moderada y mixta entre fuentes: cerró la sesión regular en USD 122,35 (+1,06%) y luego cayó entre 1,5% (Bitcoin Magazine) y 2,5% (Reuters, vía FXStreet) en operaciones extendidas -la exclusión de un índice no implica deslistado ni obliga a Strategy a vender sus bitcoins.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Nuevo: los flujos de ETFs de bitcoin extienden la racha negativa a siete sesiones consecutivas</h3>
+        <p>El 10 de noviembre (último dato disponible de tftc.io) los ETFs de bitcoin al contado registraron -USD 95,0M netos: IBIT (BlackRock) lideró con -USD 78,2M, Fidelity (FBTC) con -USD 36,8M, parcialmente compensados por +USD 20,0M de entradas en MSBT (Morgan Stanley). Esto extiende a siete la racha de sesiones consecutivas con salidas netas (el reporte de ayer registraba seis, hasta el 9 de noviembre), y acumula -USD 1.600M en lo que va de noviembre (7 sesiones hábiles de dato), con un único día de entradas netas en todo el mes (+USD 74,6M el 4 de noviembre). Por fondo en lo que va del mes, IBIT lidera las salidas con aproximadamente -USD 1.500M, mientras Fidelity (FBTC, +USD 56,3M) y Morgan Stanley (MSBT, +USD 45,4M) son los únicos con flujo neto positivo relevante.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Nuevo: el 'Bull Score' de CryptoQuant cae a 0 -la lectura más bajista posible-, aunque un analista matiza la señal</h3>
+        <p>El analista de CryptoQuant Julio Moreno reportó el 11 de noviembre que el 'Bitcoin Bull Score' del proveedor cayó a 0, calificándolo como 'lo más bajista que puede estar'. En paralelo, el analista independiente Daan Crypto Trades señaló que el interés abierto de bitcoin medido en BTC está de nuevo en su nivel más alto desde 2021-2023, pero advirtió que 'eso no dice nada sobre en qué dirección debería ir ese squeeze' -es decir, el apalancamiento elevado por sí solo no anticipa la dirección del próximo movimiento brusco. Datos de CryptoQuant (vía el mismo analista) muestran que el interés abierto de BTC-USDT en Binance cayó de USD 9.400M a USD 7.200M desde mediados de octubre, pero solo ~12% de las posiciones se cerraron en términos de BTC -sin un evento de liquidación masiva en un solo día, a diferencia de la caída de febrero (de USD 87.000 a USD 67.000, ~20% de posiciones cerradas en días) o la de junio-. Las tasas de financiamiento siguen positivas, lo que sugiere que los traders siguen abriendo posiciones largas apalancadas incluso con el precio cayendo. Las reservas de los mineros bajaron a ~1,19M BTC, su nivel más bajo desde 2009, y los flujos hacia exchanges alcanzaron un máximo de nueve meses (Binance recibió ~2.000 BTC en un día) -aunque el movimiento de monedas a un exchange no prueba que se hayan vendido.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Sin cambios verificados desde ayer: Fed/CME FedWatch, Nvidia/Jensen Huang, Irán, Clarity Act, BTCPay Server, apelación del Reino Unido y Cantor Fitzgerald</h3>
+        <p>Sobre la Fed, no se encontró un dato puntual nuevo y verificado desde el reporte de ayer -las fuentes disponibles para la probabilidad de una subida de 25pb en diciembre vía CME FedWatch son inconsistentes entre sí (cifras dispersas entre ~67% y ~97% según la fecha y el proveedor), por lo que se prefiere no fijar un número nuevo y mantener la lectura cualitativa de 'alza considerada muy probable' ya reportada. Sobre Nvidia, el plazo del 11 de noviembre para que Jensen Huang aceptara la reunión a puertas cerradas del 18 de noviembre (o propusiera una fecha alternativa) con los presidentes de los comités de la Cámara Brian Mast, John Moolenaar y Rick Crawford -sobre sus contactos con la ejecutiva de Megaspeed Alice Huang y las salvaguardas antiespionaje de Nvidia- ya venció; no se halló confirmación pública de si Huang aceptó, propuso otra fecha o rechazó la solicitud. El próximo evento verificable es el reporte de resultados de Nvidia el 17 de noviembre, un día antes de la fecha propuesta para el briefing. En Irán, el último dato confirmado (7 de noviembre) sigue siendo que los negociadores salieron de Doha sin acuerdo tras tres días de conversaciones mediadas por Qatar, con una propuesta en borrador circulando pero los mismos puntos de fricción (Irán exige fin del bloqueo a sus puertos, sanciones y fondos congelados liberados antes de negociar el programa nuclear; EE.UU. exige concesiones nucleares primero). No se encontró cobertura verificada más reciente. Tampoco hay desarrollos nuevos verificados en la Clarity Act, la vulnerabilidad de BTCPay Server, la apelación del Reino Unido sobre los 61.000 BTC, ni Cantor Fitzgerald.</p>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  
+  <section id="indicadores">
+    <h2 class="section-title">Indicadores clave</h2>
+    
+    <div class="card indicator-card">
+      <div class="indicator-head">
+        <div>
+          <div class="indicator-name">Precio BTC-USD (última semana)</div>
+          <div class="indicator-desc">Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (12-nov) es la cotización en vivo. Nota de calidad de datos: Yahoo Finance no registró un cierre propio para el 11-nov (hueco en la fuente, sin relación con feriados o fines de semana); para ese punto se usa el precio en vivo capturado en el reporte de esa fecha (USD 73.675,33 a las 07:21 UTC) en lugar de inventar o repetir el cierre del día anterior. La serie muestra la caída sostenida desde el cierre del 6-nov (USD 75.746,93) hasta el entorno de USD 73.700-73.900 desde el 10-nov, con una apertura hoy levemente más baja en USD 73.450,45.</div>
+          <div class="live-tag">En vivo · 07:25 UTC</div>
+        </div>
+        
+        <div class="indicator-value">
+          <div class="indicator-current">73,450.45 <span class="indicator-unit">USD</span></div>
+          
+          <span class="change-pill down">-0.64</span>
+          
+        </div>
+        
+      </div>
+
+      
+        
+        <div class="chart-wrap">
+          <canvas id="chart-0"></canvas>
+        </div>
+        
+        <details class="disclosure">
+          <summary>Ver datos en tabla</summary>
+          <div class="disclosure-body">
+            <table class="data-table">
+              <thead><tr><th>Periodo</th><th>Valor</th></tr></thead>
+              <tbody>
+                
+                <tr><td>6 nov</td><td>75746.93</td></tr>
+                
+                <tr><td>7 nov</td><td>75747.58</td></tr>
+                
+                <tr><td>8 nov</td><td>74584.65</td></tr>
+                
+                <tr><td>9 nov</td><td>75223.15</td></tr>
+                
+                <tr><td>10 nov</td><td>73720.12</td></tr>
+                
+                <tr><td>11 nov</td><td>73675.33</td></tr>
+                
+                <tr><td>12 nov (en vivo)</td><td>73450.45</td></tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </details>
+      
+    </div>
+    
+    <div class="card indicator-card">
+      <div class="indicator-head">
+        <div>
+          <div class="indicator-name">Fear & Greed Index</div>
+          <div class="indicator-desc">Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), fuente alternative.me. Se mantiene prácticamente plano en 28, desde 29 ayer -sigue en zona de "Fear" sin un cambio brusco, pese al deterioro de los flujos de ETFs y la caída del Bull Score de CryptoQuant a 0.</div>
+          <div class="live-tag">En vivo · 12 nov 2026</div>
+        </div>
+        
+        <div class="indicator-value">
+          <div class="indicator-current">28 (Fear) <span class="indicator-unit">índice (0-100)</span></div>
+          
+          <span class="change-pill down">-1 vs. 29 de ayer</span>
+          
+        </div>
+        
+      </div>
+
+      
+        
+        <div class="gauge-wrap">
+          <canvas id="chart-1" width="320" height="180"></canvas>
+          <div class="gauge-center">
+            <div class="val">28 (Fear)</div>
+            <div class="unit">índice (0-100)</div>
+          </div>
+        </div>
+        
+        <details class="disclosure">
+          <summary>Ver datos en tabla</summary>
+          <div class="disclosure-body">
+            <table class="data-table">
+              <thead><tr><th>Periodo</th><th>Valor</th></tr></thead>
+              <tbody>
+                
+                <tr><td>Hoy</td><td>28</td></tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </details>
+      
+    </div>
+    
+  </section>
+  
+
+  
+  <section id="cripto-sentimiento">
+    <h2 class="section-title">Indicadores de sentimiento cripto</h2>
+    <div class="context-grid">
+      
+      <div class="card indicator-card">
+        <div class="indicator-head">
+          <div>
+            <div class="indicator-name">Fear &amp; Greed Index</div>
+            <div class="indicator-desc">Índice de sentimiento de mercado cripto (0 = miedo extremo, 100 = codicia extrema). Fuente: alternative.me</div>
+          </div>
+          <div class="indicator-value">
+            <div class="indicator-current">28</div>
+          </div>
+        </div>
+        <div class="gauge-wrap">
+          <canvas id="chart-feargreed" width="320" height="180"></canvas>
+          <div class="gauge-center">
+            <div class="val">28</div>
+            <div class="unit">Fear</div>
+          </div>
+        </div>
+      </div>
+      
+
+      
+      <div class="card indicator-card">
+        <div class="indicator-name">Bitcoin Rainbow Chart</div>
+        <div class="indicator-desc">Bandas de regresión logarítmica sobre el precio histórico de BTC — la referencia más citada de este tipo de gráfico.</div>
+        <img src="assets/btc-rainbow.png" alt="Bitcoin Rainbow Chart" style="width:100%; border-radius:10px; margin-top:1.25rem; border:1px solid var(--border); display:block;">
+        <div class="source-link">Fuente: <a href="https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/" target="_blank" rel="noopener">BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)</a> — capturado el 2026-11-12</div>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  
+  <section id="expertos">
+    <h2 class="section-title">Opiniones de expertos</h2>
+    
+    <details class="card expert-card disclosure" open>
+      <summary>
+        <div class="expert-head">
+          <div>
+            <div class="expert-id">Julio Moreno</div>
+            <div class="expert-affil">Jefe de Investigación, CryptoQuant</div>
+          </div>
+          <span class="stance-pill bearish">bearish</span>
+        </div>
+      </summary>
+      <div class="disclosure-body">
+        <blockquote class="quote">“Our Bitcoin Bull Score is at 0, the most bearish it can be.”</blockquote>
+        
+        <div class="source-link"><a href="https://crypto.news/bitcoin-price-stuck-73700-leverage-etf-outflows/" target="_blank" rel="noopener">Ver fuente</a></div>
+        
+      </div>
+    </details>
+    
+    <details class="card expert-card disclosure" open>
+      <summary>
+        <div class="expert-head">
+          <div>
+            <div class="expert-id">Daan Crypto Trades</div>
+            <div class="expert-affil">Analista independiente de mercados cripto</div>
+          </div>
+          <span class="stance-pill neutral">neutral</span>
+        </div>
+      </summary>
+      <div class="disclosure-body">
+        <blockquote class="quote">“Keep in mind, this says nothing about which direction that squeeze should be in.”</blockquote>
+        
+        <div class="source-link"><a href="https://crypto.news/bitcoin-price-stuck-73700-leverage-etf-outflows/" target="_blank" rel="noopener">Ver fuente</a></div>
+        
+      </div>
+    </details>
+    
+  </section>
+  
+
+  
+  <section id="previsiones">
+    <h2 class="section-title">Previsiones</h2>
+    <div class="outlook-grid">
+      <div class="card outlook-card"><h3>Corto plazo</h3><p>El evento binario de MSCI ya se resolvió: Strategy, Metaplanet, Upexi, Yellow Cake y Skel Fjárfestingafélag quedan fuera de sus respectivos índices MSCI al cierre del 30 de noviembre, con SharpLink en observación pero sin exclusión inmediata. El foco de corto plazo pasa a vigilar si los fondos indexados ejecutan las ventas forzadas antes de esa fecha y cómo reacciona MSTR en las próximas sesiones (la reacción inicial fue moderada, -1,5% a -2,5% en after-hours). En el plano técnico del propio BTC, el soporte más cercano sigue en el entorno de USD 73.500, con el siguiente nivel relevante en USD 72.000 (una ruptura sostenida podría exponer USD 70.000); al alza, las referencias son la media móvil de 9 días (~USD 75.565) y la de 21 días (~USD 77.633) -ambas por encima del costo base de los tenedores de corto plazo (~USD 75.700, sin cambios desde hace varios reportes).</p></div>
+      <div class="card outlook-card"><h3>Mediano plazo</h3><p>La racha de salidas de ETFs se extiende a siete sesiones consecutivas (~USD 1.600M en lo que va de noviembre) y el 'Bull Score' de CryptoQuant cayó a su mínimo posible (0) el 11 de noviembre, dos señales que apuntan a demanda institucional y posicionamiento débiles -aunque un analista independiente matiza que el alto interés abierto apalancado no anticipa por sí solo la dirección del próximo movimiento. El giro hawkish de la Fed hacia una probable subida de 25pb en diciembre sigue como viento en contra de fondo, sin un dato puntual nuevo hoy que lo confirme o lo matice. El escándalo de Nvidia (con el plazo del 11-nov ya vencido sin respuesta pública de Huang) y las negociaciones con Irán (sin acuerdo desde el 7-nov) siguen como telón de fondo de sentimiento de riesgo general, no como catalizadores directos de bitcoin.</p></div>
+      <div class="card outlook-card"><h3>Largo plazo</h3><p>Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong, piso de costo de producción de JPMorgan en USD 94.000 -muy por encima del precio spot actual-). BTC sigue muy por debajo de su máximo de 52 semanas de USD 107.428. A diferencia de reportes anteriores, el riesgo de exclusión de índices para las tesorerías corporativas de bitcoin ya no es hipotético: con la confirmación de MSCI, el precedente queda sentado para otros proveedores de índices y para otras tesorerías en lista de observación (SharpLink, TON Strategy Company, Solana Company, DeFi Development Corp.), lo que JPMorgan había cuantificado en hasta USD 8.800M de salidas pasivas si el criterio se generaliza.</p></div>
+    </div>
+  </section>
+  
+
+  
+  <section id="recomendaciones">
+    <h2 class="section-title">Recomendaciones y estrategias</h2>
+    
+    <div class="card rec-card">
+      <span class="risk-pill alto">riesgo alto</span>
+      <div>
+        <div class="rec-title">Vigilar la ejecución de ventas pasivas en MSTR antes del cierre del 30 de noviembre</div>
+        <p class="rec-desc">Con la exclusión de MSCI ya confirmada (no especulativa), el riesgo pasa de 'si ocurrirá' a 'cómo se ejecuta': los fondos indexados deben vender sus ~13 millones de acciones de Strategy antes de esa fecha. Vigilar volumen y precio de MSTR en las próximas sesiones, y si otras tesorerías en lista de observación (SharpLink, TON Strategy Company, Solana Company) reciben tratamiento similar en futuras revisiones.</p>
+      </div>
+    </div>
+    
+    <div class="card rec-card">
+      <span class="risk-pill medio">riesgo medio</span>
+      <div>
+        <div class="rec-title">Monitorear la racha de salidas de ETFs como termómetro de demanda institucional</div>
+        <p class="rec-desc">Siete sesiones consecutivas de salidas y ~USD 1.600M en noviembre son una señal más persistente que el ruido de precio intradía. Combinado con el Bull Score de CryptoQuant en 0, el cuadro de demanda institucional se ve débil, aunque no hay un evento de liquidación masiva como en episodios previos (caída de febrero o junio) que sugiera capitulación forzada.</p>
+      </div>
+    </div>
+    
+    <div class="card rec-card">
+      <span class="risk-pill bajo">riesgo bajo</span>
+      <div>
+        <div class="rec-title">No asumir un resultado sobre Jensen Huang/Nvidia antes de confirmación pública</div>
+        <p class="rec-desc">El plazo del 11 de noviembre para que Huang respondiera a la solicitud de los tres comités de la Cámara ya pasó sin confirmación pública disponible. El próximo punto de referencia verificable es el reporte de resultados de Nvidia el 17 de noviembre. Tratar este eje como telón de fondo de sentimiento de riesgo general, no como catalizador directo de bitcoin, hasta que haya más claridad.</p>
+      </div>
+    </div>
+    
+  </section>
+  
+
+  
+  <section id="fuentes">
+    <h2 class="section-title">Fuentes</h2>
+    <ul class="sources-list">
+      
+      <li><a href="https://cointelegraph.com/news/msci-confirms-strategys-removal-from-indexes-end-november" target="_blank" rel="noopener">MSCI confirms Strategy's removal from indexes, effective end of November (Cointelegraph, 11-12 nov 2026)</a></li>
+      
+      <li><a href="https://bitcoinmagazine.com/markets/msci-removes-strategy-mstr-usa-index" target="_blank" rel="noopener">MSCI Removes Strategy (MSTR) From Its Index (Bitcoin Magazine, 11-12 nov 2026)</a></li>
+      
+      <li><a href="https://www.cryptometer.io/news/msci-confirms-strategy-metaplanet-and-upexi-index-removals-effective-november-30/" target="_blank" rel="noopener">MSCI Confirms Strategy, Metaplanet and Upexi Index Removals Effective November 30 (Cryptometer, 12 nov 2026)</a></li>
+      
+      <li><a href="https://www.fxstreet.com/cryptocurrencies/news/msci-drops-strategy-from-indexes-what-it-means-for-bitcoin-202611120409" target="_blank" rel="noopener">MSCI drops Strategy from indexes: What it means for Bitcoin (FXStreet, 12 nov 2026)</a></li>
+      
+      <li><a href="https://crypto.news/bitcoin-price-stuck-73700-leverage-etf-outflows/" target="_blank" rel="noopener">Bitcoin price stuck near $73,700 as leverage and ETF outflows weigh (crypto.news, 11-12 nov 2026)</a></li>
+      
+      <li><a href="https://www.tftc.io/bitcoin-etf-flows/november-2026" target="_blank" rel="noopener">Bitcoin ETF Flows, November 2026 (tftc.io, consultado en vivo)</a></li>
+      
+      <li><a href="https://al-monitor.com/originals/2026/11/iran-says-contacts-over-ending-war-continue-after-talks-finish-no-breakthrough" target="_blank" rel="noopener">Iran says contacts over ending war continue after talks finish with no breakthrough (Al-Monitor, 7 nov 2026)</a></li>
+      
+      <li><a href="https://fourweekmba.com/?p=293275" target="_blank" rel="noopener">House Chairs Ask Huang to Brief Day After Nvidia Earnings (FourWeekMBA, nov 2026)</a></li>
+      
+      <li><a href="https://alternative.me/crypto/fear-and-greed-index/" target="_blank" rel="noopener">Fear & Greed Index (alternative.me, consultado en vivo)</a></li>
+      
+      <li><a href="https://finance.yahoo.com/quote/BTC-USD" target="_blank" rel="noopener">Precio BTC-USD en vivo (Yahoo Finance, consultado en vivo)</a></li>
+      
+    </ul>
+  </section>
+  
+
+  <footer class="brand-footer">
+    <span>Yirafa Labs — reporte generado el 2026-11-12</span>
+    <span>Uso informativo, no constituye asesoría financiera</span>
+  </footer>
+</div>
+
+<script src="assets/vendor/chart.umd.min.js"></script>
+<script>
+  const INDICATORS = [{"as_of": "07:25 UTC", "change": "-0.64", "chart_type": "line", "current_value": "73,450.45", "data": {"labels": ["6 nov", "7 nov", "8 nov", "9 nov", "10 nov", "11 nov", "12 nov (en vivo)"], "values": [75746.93, 75747.58, 74584.65, 75223.15, 73720.12, 73675.33, 73450.45]}, "description": "Precio spot de Bitcoin en d\u00f3lares, \u00faltimos cierres diarios de Yahoo Finance. El \u00faltimo punto (12-nov) es la cotizaci\u00f3n en vivo. Nota de calidad de datos: Yahoo Finance no registr\u00f3 un cierre propio para el 11-nov (hueco en la fuente, sin relaci\u00f3n con feriados o fines de semana); para ese punto se usa el precio en vivo capturado en el reporte de esa fecha (USD 73.675,33 a las 07:21 UTC) en lugar de inventar o repetir el cierre del d\u00eda anterior. La serie muestra la ca\u00edda sostenida desde el cierre del 6-nov (USD 75.746,93) hasta el entorno de USD 73.700-73.900 desde el 10-nov, con una apertura hoy levemente m\u00e1s baja en USD 73.450,45.", "name": "Precio BTC-USD (\u00faltima semana)", "unit": "USD"}, {"as_of": "12 nov 2026", "change": "-1 vs. 29 de ayer", "chart_type": "gauge", "current_value": "28 (Fear)", "data": {"labels": ["Hoy"], "values": [28]}, "description": "\u00cdndice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), fuente alternative.me. Se mantiene pr\u00e1cticamente plano en 28, desde 29 ayer -sigue en zona de \"Fear\" sin un cambio brusco, pese al deterioro de los flujos de ETFs y la ca\u00edda del Bull Score de CryptoQuant a 0.", "name": "Fear \u0026 Greed Index", "unit": "\u00edndice (0-100)"}];
+  const PALETTE = ['#C87E28', '#2a78d6', '#1baf7a', '#8f5cd1', '#c0392b'];
+
+  Chart.defaults.font.family = "'Bricolage Grotesque', system-ui, sans-serif";
+  Chart.defaults.color = '#68687F';
+
+  INDICATORS.forEach((ind, i) => {
+    if (!ind.data || !ind.data.labels || !ind.data.values) return;
+    const canvas = document.getElementById('chart-' + i);
+    if (!canvas) return;
+    const color = PALETTE[i % PALETTE.length];
+
+    if (ind.chart_type === 'gauge') {
+      const max = Math.max(...ind.data.values, 100);
+      const value = ind.data.values[ind.data.values.length - 1];
+      new Chart(canvas, {
+        type: 'doughnut',
+        data: {
+          labels: [ind.name, 'resto'],
+          datasets: [{
+            data: [value, Math.max(max - value, 0)],
+            backgroundColor: [color, '#DCDCE8'],
+            borderWidth: 0,
+          }],
+        },
+        options: {
+          rotation: -90,
+          circumference: 180,
+          cutout: '75%',
+          plugins: { legend: { display: false }, tooltip: { enabled: true } },
+        },
+      });
+      return;
+    }
+
+    new Chart(canvas, {
+      type: ind.chart_type === 'bar' ? 'bar' : 'line',
+      data: {
+        labels: ind.data.labels,
+        datasets: [{
+          label: ind.name,
+          data: ind.data.values,
+          borderColor: color,
+          backgroundColor: ind.chart_type === 'bar' ? color : color + '33',
+          borderRadius: 4,
+          fill: ind.chart_type !== 'bar',
+          tension: 0.35,
+          pointRadius: 3,
+          pointHoverRadius: 5,
+          borderWidth: 2,
+        }],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: '#0F0F1E',
+            titleFont: { weight: '700' },
+            padding: 10,
+            cornerRadius: 8,
+            callbacks: {
+              label: (ctx) => ` ${ctx.formattedValue} ${ind.unit || ''}`.trim(),
+            },
+          },
+        },
+        scales: {
+          x: { grid: { display: false }, border: { color: '#DCDCE8' } },
+          y: { grid: { color: '#F0F0F8' }, border: { display: false } },
+        },
+      },
+    });
+  });
+
+  const FEAR_GREED = {"classification": "Fear", "color": "#ec835a", "timestamp": "2026-11-12T00:00:00+00:00", "value": 28};
+  const fgCanvas = document.getElementById('chart-feargreed');
+  if (FEAR_GREED && fgCanvas) {
+    new Chart(fgCanvas, {
+      type: 'doughnut',
+      data: {
+        labels: [FEAR_GREED.classification, 'resto'],
+        datasets: [{
+          data: [FEAR_GREED.value, 100 - FEAR_GREED.value],
+          backgroundColor: [FEAR_GREED.color, '#DCDCE8'],
+          borderWidth: 0,
+        }],
+      },
+      options: {
+        rotation: -90,
+        circumference: 180,
+        cutout: '75%',
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: { label: () => ` ${FEAR_GREED.classification}: ${FEAR_GREED.value}/100` },
+          },
+        },
+      },
+    });
+  }
+</script>
+</body>
+</html>
