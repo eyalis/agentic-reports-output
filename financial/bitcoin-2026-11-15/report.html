@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bitcoin (BTC-USD) — Reporte Yirafa Labs</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style>
+  @font-face {
+    font-family: 'Bricolage Grotesque';
+    font-style: normal;
+    font-weight: 300 800;
+    src: url('assets/fonts/BricolageGrotesque-latin.woff2') format('woff2');
+  }
+
+  :root {
+    --bg: #F7F7FB;
+    --surface: #FFFFFF;
+    --surface-muted: #F0F0F8;
+    --ink: #0F0F1E;
+    --ink-muted: #68687F;
+    --ink-soft: #ABABBE;
+    --accent: #C87E28;
+    --accent-hover: #A86820;
+    --accent-soft: #F6ECD8;
+    --border: #DCDCE8;
+    --border-strong: #C4C4D8;
+    --font-display: 'Bricolage Grotesque', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-body: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+    --max-w: 760px;
+    --radius: 14px;
+
+    --series-1: #C87E28;
+    --series-2: #2a78d6;
+    --series-3: #1baf7a;
+    --series-4: #8f5cd1;
+    --series-5: #c0392b;
+
+    --good: #0ca30c;
+    --warning: #fab219;
+    --serious: #ec835a;
+    --critical: #d03b3b;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page { max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem 4rem; }
+
+  header.masthead {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 2rem 1.5rem; max-width: var(--max-w); margin: 0 auto;
+    border-bottom: 1px solid var(--border);
+  }
+  .brand { display: flex; align-items: center; gap: 0.6rem; font-family: var(--font-display); }
+  .brand-icon {
+    width: 28px; height: 28px; border-radius: 8px; background: var(--accent);
+    color: var(--ink); font-weight: 800; font-size: 0.95rem;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .brand-word { font-weight: 700; letter-spacing: -0.01em; font-size: 0.95rem; }
+  .report-date { color: var(--ink-muted); font-size: 0.82rem; font-family: var(--font-display); text-align: right; }
+  .report-updated { font-size: 0.72rem; color: var(--ink-soft); margin-top: 0.15rem; }
+
+  .live-tag {
+    display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.7rem; font-weight: 700;
+    color: var(--good); background: #e8f7e8; padding: 0.1rem 0.5rem; border-radius: 999px; margin-top: 0.35rem;
+  }
+  .live-tag::before {
+    content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--good); flex-shrink: 0;
+  }
+
+  .hero { padding: 2.5rem 0 0.5rem; }
+  .eyebrow {
+    font-family: var(--font-display);
+    text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.7rem;
+    font-weight: 700; color: var(--accent-hover); margin: 0 0 0.6rem;
+  }
+  h1.title {
+    font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 1.9rem);
+    font-weight: 700; letter-spacing: -0.01em; line-height: 1.25; margin: 0 0 0.9rem;
+  }
+  .summary-lead { font-size: 1.05rem; line-height: 1.6; color: var(--ink-muted); max-width: 62ch; }
+
+  section { margin-top: 2.5rem; }
+  h2.section-title {
+    font-family: var(--font-display);
+    font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 1.1rem;
+    display: flex; align-items: center; gap: 0.55rem;
+  }
+  h2.section-title::before {
+    content: ''; width: 7px; height: 7px; border-radius: 2px; background: var(--accent); flex-shrink: 0;
+  }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 1.5rem;
+  }
+  .card + .card { margin-top: 1rem; }
+
+  .toc { margin-top: 1.75rem; padding: 1.25rem 1.5rem; }
+  .toc-title {
+    font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--ink-muted); margin-bottom: 0.75rem;
+  }
+  .toc-list { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 1.5rem; }
+  .toc-list li { break-inside: avoid; margin-bottom: 0.55rem; }
+  .toc-list a {
+    display: flex; align-items: baseline; gap: 0.5rem; color: var(--ink); font-size: 0.9rem;
+    font-weight: 600; text-decoration: none;
+  }
+  .toc-list a:hover { color: var(--accent-hover); }
+  .toc-num { color: var(--accent-hover); font-weight: 700; flex-shrink: 0; }
+  @media (max-width: 480px) { .toc-list { columns: 1; } }
+
+  .context-grid { display: grid; gap: 1rem; }
+  .context-card h3 { margin: 0 0 0.4rem; font-size: 1rem; font-weight: 700; }
+  .context-card p { margin: 0; color: var(--ink-muted); }
+
+  .indicator-card { margin-bottom: 1.25rem; }
+  .indicator-head {
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+  .indicator-name { font-weight: 700; font-size: 1.05rem; }
+  .indicator-desc { color: var(--ink-muted); font-size: 0.92rem; margin-top: 0.25rem; max-width: 52ch; }
+  .indicator-value { text-align: right; }
+  .indicator-current { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.02em; }
+  .indicator-unit { font-size: 0.8rem; color: var(--ink-muted); }
+  .change-pill {
+    display: inline-block; margin-top: 0.25rem; padding: 0.15rem 0.55rem; border-radius: 999px;
+    font-size: 0.78rem; font-weight: 700;
+  }
+  .change-pill.up { background: #e8f7e8; color: var(--good); }
+  .change-pill.down { background: #fdeceb; color: var(--critical); }
+  .change-pill.flat { background: var(--surface-muted); color: var(--ink-muted); }
+
+  .chart-wrap { position: relative; height: 220px; margin-top: 1.25rem; }
+  .gauge-wrap { position: relative; height: 180px; margin-top: 1.25rem; display: flex; align-items: center; justify-content: center; }
+  .gauge-center { position: absolute; text-align: center; top: 58%; transform: translateY(-50%); }
+  .gauge-center .val { font-size: 1.6rem; font-weight: 800; }
+  .gauge-center .unit { font-size: 0.78rem; color: var(--ink-muted); }
+
+  details.disclosure { margin-top: 0.9rem; border-top: 1px dashed var(--border); padding-top: 0.75rem; }
+  details.disclosure summary {
+    cursor: pointer; font-size: 0.85rem; font-weight: 700; color: var(--accent-hover);
+    list-style: none; display: flex; align-items: center; gap: 0.35rem; user-select: none;
+  }
+  details.disclosure summary::-webkit-details-marker { display: none; }
+  details.disclosure summary::marker { content: ''; display: none; }
+  details.disclosure summary::before { content: '▸'; font-size: 0.7rem; transition: transform 0.15s var(--ease, ease); }
+  details.disclosure[open] summary::before { transform: rotate(90deg); }
+  details.disclosure .disclosure-body { padding-top: 0.6rem; }
+
+  table.data-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  table.data-table th, table.data-table td {
+    text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border);
+  }
+  table.data-table th { color: var(--ink-muted); font-weight: 600; }
+
+  .expert-card summary { display: block; }
+  .expert-card summary::before { display: none; }
+  .expert-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  .expert-id { font-weight: 700; }
+  .expert-affil { color: var(--ink-muted); font-size: 0.85rem; }
+  .stance-pill {
+    padding: 0.15rem 0.6rem; border-radius: 999px; font-size: 0.75rem; font-weight: 700; white-space: nowrap;
+  }
+  .stance-pill.bullish { background: #e8f7e8; color: var(--good); }
+  .stance-pill.bearish { background: #fdeceb; color: var(--critical); }
+  .stance-pill.neutral { background: var(--surface-muted); color: var(--ink-muted); }
+  blockquote.quote {
+    margin: 0.75rem 0 0; padding-left: 1rem; border-left: 3px solid var(--accent-soft);
+    color: var(--ink); font-style: italic;
+  }
+  .source-link { font-size: 0.82rem; margin-top: 0.5rem; display: inline-block; }
+  .source-link a { color: var(--accent-hover); }
+
+  .outlook-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .outlook-card h3 {
+    margin: 0 0 0.5rem; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--accent-hover); font-weight: 700;
+  }
+  .outlook-card p { margin: 0; color: var(--ink); font-size: 0.94rem; }
+
+  .rec-card { display: flex; gap: 1rem; align-items: flex-start; }
+  .risk-pill { padding: 0.15rem 0.6rem; border-radius: 999px; font-size: 0.72rem; font-weight: 700; flex-shrink: 0; }
+  .risk-pill.bajo { background: #e8f7e8; color: var(--good); }
+  .risk-pill.medio { background: #fff4e0; color: #9a6a00; }
+  .risk-pill.alto { background: #fdeceb; color: var(--critical); }
+  .rec-title { font-weight: 700; margin-bottom: 0.2rem; }
+  .rec-desc { color: var(--ink-muted); font-size: 0.92rem; margin: 0; }
+
+  .sources-list { list-style: none; padding: 0; margin: 0; }
+  .sources-list li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); font-size: 0.88rem; }
+  .sources-list a { color: var(--accent-hover); }
+
+  footer.brand-footer {
+    margin-top: 4rem; padding: 2rem 0; border-top: 1px solid var(--border);
+    color: var(--ink-soft); font-size: 0.8rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;
+  }
+
+  a { color: var(--accent-hover); }
+
+  /* UI chrome, labels and figures stay in the brand display font;
+     everything else (running prose) uses --font-body for readability. */
+  .context-card h3,
+  .indicator-name,
+  .indicator-current,
+  .indicator-unit,
+  .change-pill,
+  .gauge-center,
+  .expert-id,
+  .stance-pill,
+  .outlook-card h3,
+  .rec-title,
+  .risk-pill,
+  table.data-table th,
+  table.data-table td,
+  details.disclosure summary,
+  .toc-title,
+  .toc-list,
+  footer.brand-footer {
+    font-family: var(--font-display);
+  }
+
+  @media (max-width: 640px) {
+    .outlook-grid { grid-template-columns: 1fr; }
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page, header.masthead { max-width: 100%; }
+    section { margin-top: 2rem; break-inside: avoid-page; }
+    .card, .indicator-card, .expert-card { break-inside: avoid-page; }
+    details.disclosure:not([open]) > .disclosure-body { display: block !important; }
+    details.disclosure summary::before { display: none; }
+    details.disclosure summary { cursor: default; color: var(--ink); }
+    a { color: var(--ink); text-decoration: underline; }
+  }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="brand">
+    <div class="brand-icon">Y</div>
+    <div class="brand-word">Yirafa Labs</div>
+  </div>
+  <div class="report-date">
+    2026-11-15
+    <div class="report-updated">Datos actualizados: 15 de noviembre de 2026, 07:14 UTC</div>
+  </div>
+</header>
+
+<div class="page">
+  <div class="hero">
+    <p class="eyebrow">Reporte financiero</p>
+    <h1 class="title">Bitcoin (BTC-USD)</h1>
+    <p class="summary-lead">BTC cotiza en vivo a USD 64.436,59 (07:14 UTC), +0,49% vs. el cierre previo de USD 64.119,78 -un rebote intradía leve, pero que no revierte la tendencia semanal: desde el precio en vivo de ayer (USD 67.338,10) el precio cayó otro ~4,3% antes de estabilizarse, y en la semana acumula una caída de USD 75.223,15 (9-nov) a USD 64.436,59 hoy, un -14,3%, más pronunciada que el -9,7% ya reportado ayer. El Fear & Greed Index marcó un nuevo mínimo de esta serie de seguimiento diario: 10 ('Extreme Fear'), bajando de 13 ayer. La novedad verificada principal desde el reporte de ayer es la confirmación de los flujos de ETFs de bitcoin que quedaban pendientes: tftc.io ya publicó los datos del 12 de noviembre (-USD 284,0M netos, liderado por IBIT con -USD 203,8M) y del 13 de noviembre (-USD 185,5M netos, IBIT -USD 143,5M), extendiendo la racha de salidas ya reportada hasta el 11-nov (-USD 299,9M) a al menos diez sesiones consecutivas -no hay dato del 14 de noviembre porque ese día es sábado y los ETFs estadounidenses no cotizan, no por un rezago de la fuente como se reportó ayer y antier-. Sobre Nvidia/Jensen Huang: no se encontró ninguna novedad verificable desde el reporte de ayer. Más aún, las búsquedas de hoy devolvieron resultados contradictorios entre sí sobre el estado de la situación -algunos coinciden con lo ya reportado (renuncia de Huang, Kress como interina), pero otros describen una narrativa distinta y no corroborada (una investigación del directorio por un presunto caso de espionaje chino, con Huang todavía como CEO y una presentación de resultados programada para el 17-nov y una sesión informativa al Congreso el 18-nov), sin que ninguna fuente primaria con fecha verificable confirme una u otra versión para el 14 o 15 de noviembre. Siguiendo la regla de no inventar ni mezclar datos no verificados, este reporte no incorpora ninguna actualización sobre Nvidia/Huang hoy y trata ese hilo como congelado en lo ya publicado ayer hasta poder confirmarlo con una fuente primaria confiable. Tampoco se encontraron novedades verificadas sobre el dato de PPI/expectativa de la Fed (se mantiene el último dato verificado del 13-nov: 89,7% de probabilidad de alza de 25pb el 9 de diciembre según CME FedWatch), ni sobre MSCI/Strategy (MSTR), Clarity Act, BTCPay Server, la apelación del Reino Unido sobre los 61.000 BTC, Cantor Fitzgerald, ni el reclamo no verificado sobre Irán mencionado ayer.</p>
+  </div>
+
+  
+  <nav class="card toc" aria-label="Índice del reporte">
+    <div class="toc-title">Índice</div>
+    <ol class="toc-list">
+      
+        <li><a href="#contexto"><span class="toc-num">1</span>Qué ha pasado en las últimas semanas</a></li>
+      
+        <li><a href="#indicadores"><span class="toc-num">2</span>Indicadores clave</a></li>
+      
+        <li><a href="#cripto-sentimiento"><span class="toc-num">3</span>Indicadores de sentimiento cripto</a></li>
+      
+        <li><a href="#previsiones"><span class="toc-num">4</span>Previsiones</a></li>
+      
+        <li><a href="#recomendaciones"><span class="toc-num">5</span>Recomendaciones y estrategias</a></li>
+      
+        <li><a href="#fuentes"><span class="toc-num">6</span>Fuentes</a></li>
+      
+    </ol>
+  </nav>
+
+  
+  <section id="contexto">
+    <h2 class="section-title">Qué ha pasado en las últimas semanas</h2>
+    <div class="context-grid">
+      
+      <div class="card context-card">
+        <h3>Nuevo: se confirman las salidas de ETFs del 12 y 13 de noviembre -la racha de salidas llega a al menos diez sesiones consecutivas-, resolviendo el dato pendiente de ayer</h3>
+        <p>tftc.io publicó los datos de flujos netos de ETFs de bitcoin al contado para el 12 de noviembre (-USD 284,0M: IBIT -USD 203,8M, FBTC -USD 32,6M, BITB -USD 26,4M, ARKB -USD 18,5M, HODL -USD 6,1M, MSBT +USD 3,3M) y el 13 de noviembre (-USD 185,5M: IBIT -USD 143,5M, FBTC -USD 41,9M, el resto en cero). Esto extiende la racha de salidas netas ya reportada hasta el 11-nov (-USD 299,9M) a al menos diez sesiones consecutivas. No hay dato para el 14 de noviembre, pero a diferencia del rezago de fuente reportado en las dos ediciones anteriores, la explicación aquí es simple: el 14 de noviembre de 2026 es sábado y los ETFs estadounidenses no cotizan ese día -tftc.io confirma que su última revisión de datos fue el 14-nov a las 9:00pm ET, sin que eso implique una sesión de trading nueva-.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>BTC profundiza la caída semanal a -14,3% tras otro tramo de baja desde el precio en vivo de ayer, aunque hoy rebota levemente intradía</h3>
+        <p>El precio en vivo de BTC-USD (Yahoo Finance, 07:14 UTC) es de USD 64.436,59, +0,49% vs. el cierre previo de USD 64.119,78 -un rebote leve intradía (rango del día: USD 62.093,52 a USD 65.289,01)-, pero que llega después de que el precio cayera otro ~4,3% desde el nivel en vivo de ayer (USD 67.338,10). En la semana, el precio bajó de USD 75.223,15 (9-nov) a USD 64.436,59 hoy, una caída acumulada de ~14,3% -más profunda que el -9,7% ya reportado en la edición de ayer-, con la mayor parte de la aceleración concentrada en la sesión del 13 al 14 de noviembre (cierre de USD 68.249,27 a USD 64.128,05, -6,0% en un día).</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>El Fear & Greed Index marca un nuevo mínimo de esta serie: 10 (Extreme Fear), bajando de 13 ayer</h3>
+        <p>El índice de alternative.me cayó a 10 hoy, desde 13 ayer -un nuevo mínimo en este seguimiento diario del proyecto, que ya había marcado mínimos sucesivos en cada una de las últimas tres ediciones (20, luego 13, ahora 10)-.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Sin novedad verificable sobre Nvidia/Jensen Huang -resultados de búsqueda contradictorios, se omite para no mezclar versiones no corroboradas</h3>
+        <p>No se encontró ninguna fuente primaria con fecha verificable del 14 o 15 de noviembre que confirme el estado actual de la situación de Nvidia/Jensen Huang. Las búsquedas de hoy devolvieron una mezcla de resultados: algunos consistentes con lo ya reportado ayer (renuncia de Huang, Colette Kress como CEO interina), pero otros describen una narrativa distinta y no corroborada -una investigación del directorio por un presunto caso de espionaje/inteligencia chino ligado a una ejecutiva de otra compañía, con Huang todavía en el cargo de CEO, resultados del tercer trimestre programados para el 17 de noviembre y una sesión informativa al Congreso el 18 de noviembre-, sin que ninguna de las dos versiones pueda confirmarse con una fuente primaria fechada de forma confiable. Siguiendo la regla de este workflow de no inventar ni mezclar datos no verificados, este reporte no incorpora ninguna actualización sobre Nvidia/Huang hoy -se deja constancia de la contradicción encontrada en vez de elegir una versión sin poder corroborarla-.</p>
+      </div>
+      
+      <div class="card context-card">
+        <h3>Sin cambios verificados desde ayer en: PPI/expectativa de la Fed, MSCI/Strategy (MSTR), Clarity Act, BTCPay Server, apelación del Reino Unido, Cantor Fitzgerald, reclamo sobre Irán</h3>
+        <p>No se encontró información nueva y verificada desde el reporte de ayer sobre la expectativa de alza de tasas de la Fed (último dato verificado: 89,7% de probabilidad de alza de 25pb el 9 de diciembre según CME FedWatch, del 13-nov), MSTR/MSCI, la Clarity Act, BTCPay Server, la apelación del Reino Unido sobre los 61.000 BTC, Cantor Fitzgerald, ni el reclamo no verificado sobre un ataque a un radar en Baréin mencionado en la edición de ayer -que sigue sin poder corroborarse de forma independiente-.</p>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  
+  <section id="indicadores">
+    <h2 class="section-title">Indicadores clave</h2>
+    
+    <div class="card indicator-card">
+      <div class="indicator-head">
+        <div>
+          <div class="indicator-name">Precio BTC-USD (última semana)</div>
+          <div class="indicator-desc">Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (15-nov) es la cotización en vivo. La serie muestra una caída semanal que se profundizó respecto a la edición de ayer: de USD 75.223,15 (9-nov) a USD 64.436,59 en vivo hoy (15-nov), una baja acumulada de ~14,3% en la semana, con la mayor parte de la aceleración entre el 13-nov y el 14-nov (-6,0% en un día).</div>
+          <div class="live-tag">En vivo · 07:14 UTC</div>
+        </div>
+        
+        <div class="indicator-value">
+          <div class="indicator-current">64,436.59 <span class="indicator-unit">USD</span></div>
+          
+          <span class="change-pill up">+0.49</span>
+          
+        </div>
+        
+      </div>
+
+      
+        
+        <div class="chart-wrap">
+          <canvas id="chart-0"></canvas>
+        </div>
+        
+        <details class="disclosure">
+          <summary>Ver datos en tabla</summary>
+          <div class="disclosure-body">
+            <table class="data-table">
+              <thead><tr><th>Periodo</th><th>Valor</th></tr></thead>
+              <tbody>
+                
+                <tr><td>9 nov</td><td>75223.15</td></tr>
+                
+                <tr><td>10 nov</td><td>73720.12</td></tr>
+                
+                <tr><td>11 nov</td><td>73964.47</td></tr>
+                
+                <tr><td>12 nov</td><td>71342.97</td></tr>
+                
+                <tr><td>13 nov</td><td>68249.27</td></tr>
+                
+                <tr><td>14 nov</td><td>64128.05</td></tr>
+                
+                <tr><td>15 nov (en vivo)</td><td>64436.59</td></tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </details>
+      
+    </div>
+    
+    <div class="card indicator-card">
+      <div class="indicator-head">
+        <div>
+          <div class="indicator-name">Fear & Greed Index</div>
+          <div class="indicator-desc">Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), fuente alternative.me. Cayó a 10 ('Extreme Fear'), desde 13 ayer -un nuevo mínimo en este seguimiento diario, que ya venía de marcar mínimos sucesivos en las dos ediciones anteriores-.</div>
+          <div class="live-tag">En vivo · 15 nov 2026</div>
+        </div>
+        
+        <div class="indicator-value">
+          <div class="indicator-current">10 (Extreme Fear) <span class="indicator-unit">índice (0-100)</span></div>
+          
+          <span class="change-pill down">-3 vs. 13 de ayer</span>
+          
+        </div>
+        
+      </div>
+
+      
+        
+        <div class="gauge-wrap">
+          <canvas id="chart-1" width="320" height="180"></canvas>
+          <div class="gauge-center">
+            <div class="val">10 (Extreme Fear)</div>
+            <div class="unit">índice (0-100)</div>
+          </div>
+        </div>
+        
+        <details class="disclosure">
+          <summary>Ver datos en tabla</summary>
+          <div class="disclosure-body">
+            <table class="data-table">
+              <thead><tr><th>Periodo</th><th>Valor</th></tr></thead>
+              <tbody>
+                
+                <tr><td>Hoy</td><td>10</td></tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </details>
+      
+    </div>
+    
+  </section>
+  
+
+  
+  <section id="cripto-sentimiento">
+    <h2 class="section-title">Indicadores de sentimiento cripto</h2>
+    <div class="context-grid">
+      
+      <div class="card indicator-card">
+        <div class="indicator-head">
+          <div>
+            <div class="indicator-name">Fear &amp; Greed Index</div>
+            <div class="indicator-desc">Índice de sentimiento de mercado cripto (0 = miedo extremo, 100 = codicia extrema). Fuente: alternative.me</div>
+          </div>
+          <div class="indicator-value">
+            <div class="indicator-current">10</div>
+          </div>
+        </div>
+        <div class="gauge-wrap">
+          <canvas id="chart-feargreed" width="320" height="180"></canvas>
+          <div class="gauge-center">
+            <div class="val">10</div>
+            <div class="unit">Extreme Fear</div>
+          </div>
+        </div>
+      </div>
+      
+
+      
+      <div class="card indicator-card">
+        <div class="indicator-name">Bitcoin Rainbow Chart</div>
+        <div class="indicator-desc">Bandas de regresión logarítmica sobre el precio histórico de BTC — la referencia más citada de este tipo de gráfico.</div>
+        <img src="assets/btc-rainbow.png" alt="Bitcoin Rainbow Chart" style="width:100%; border-radius:10px; margin-top:1.25rem; border:1px solid var(--border); display:block;">
+        <div class="source-link">Fuente: <a href="https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/" target="_blank" rel="noopener">BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)</a> — capturado el 2026-11-15</div>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  
+
+  
+  <section id="previsiones">
+    <h2 class="section-title">Previsiones</h2>
+    <div class="outlook-grid">
+      <div class="card outlook-card"><h3>Corto plazo</h3><p>El rebote intradía de hoy (+0,49% vs. cierre previo) es menor comparado con la magnitud de la caída semanal (-14,3%), por lo que no alcanza para hablar de un cambio de tendencia -el nuevo mínimo del Fear & Greed Index (10) refuerza que el mercado sigue en una zona de miedo extremo, sin que esto garantice un rebote de corto plazo. El hilo de Nvidia/Huang queda en pausa en este reporte por falta de una fuente verificable, lo que deja esa variable de contagio como una incógnita abierta, no resuelta a favor ni en contra.</p></div>
+      <div class="card outlook-card"><h3>Mediano plazo</h3><p>La racha de salidas de ETFs de bitcoin se confirma extendida a al menos diez sesiones consecutivas (hasta el 13-nov), sin señal de reversión en el dato verificado más reciente. La expectativa de un alza de tasas de la Fed en diciembre (89,7% según el último dato verificado del 13-nov) sigue sin un dato más nuevo que la actualice, por lo que se mantiene como el mismo factor de presión ya descrito en ediciones anteriores.</p></div>
+      <div class="card outlook-card"><h3>Largo plazo</h3><p>Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong, piso de costo de producción de JPMorgan en USD 94.000). Con el precio spot actual en USD 64.436,59, BTC se aleja todavía más de ese piso de costo de producción que en la edición de ayer, ampliando la brecha que cualquier tesis alcista de largo plazo debe explicar.</p></div>
+    </div>
+  </section>
+  
+
+  
+  <section id="recomendaciones">
+    <h2 class="section-title">Recomendaciones y estrategias</h2>
+    
+    <div class="card rec-card">
+      <span class="risk-pill medio">riesgo medio</span>
+      <div>
+        <div class="rec-title">No asumir que el nuevo mínimo del Fear & Greed Index (10) garantiza un rebote de corto plazo</div>
+        <p class="rec-desc">Un índice de 10 marca un nuevo mínimo en este seguimiento diario -y zonas de miedo extremo similares han coincidido históricamente, en otros ciclos, con capitulaciones que luego revierten- pero también con más caídas antes de estabilizarse. El rebote intradía de hoy (+0,49%) es demasiado pequeño frente a la caída semanal (-14,3%) para concluir que ya ocurrió el punto de giro.</p>
+      </div>
+    </div>
+    
+    <div class="card rec-card">
+      <span class="risk-pill bajo">riesgo bajo</span>
+      <div>
+        <div class="rec-title">Tratar la racha de diez sesiones de salidas de ETFs como la señal más confiable de posicionamiento institucional, por encima del ruido de precio diario</div>
+        <p class="rec-desc">Con los datos del 12 y 13 de noviembre ya confirmados (-USD 284,0M y -USD 185,5M), la racha de salidas netas de ETFs de bitcoin se extiende a al menos diez sesiones consecutivas sin reversión visible -una señal de posicionamiento institucional más persistente que el movimiento de precio de un solo día.</p>
+      </div>
+    </div>
+    
+    <div class="card rec-card">
+      <span class="risk-pill medio">riesgo medio</span>
+      <div>
+        <div class="rec-title">No dar por buena ninguna versión de la situación de Nvidia/Jensen Huang sin una fuente primaria verificada</div>
+        <p class="rec-desc">Las búsquedas de hoy arrojaron dos narrativas contradictorias sobre Nvidia/Huang -una consistente con la renuncia ya reportada, otra con una investigación de espionaje y Huang aún en el cargo- sin que ninguna pueda confirmarse con una fuente primaria fechada de forma confiable. Cualquier decisión que dependa de ese hilo específico de contagio hacia bitcoin debería esperar una confirmación sólida antes de actuar.</p>
+      </div>
+    </div>
+    
+  </section>
+  
+
+  
+  <section id="fuentes">
+    <h2 class="section-title">Fuentes</h2>
+    <ul class="sources-list">
+      
+      <li><a href="https://www.tftc.io/bitcoin-etf-flows/" target="_blank" rel="noopener">Bitcoin ETF Flows (tftc.io, consultado en vivo -datos confirmados del 12 y 13 de noviembre)</a></li>
+      
+      <li><a href="https://alternative.me/crypto/fear-and-greed-index/" target="_blank" rel="noopener">Fear & Greed Index (alternative.me, consultado en vivo)</a></li>
+      
+      <li><a href="https://finance.yahoo.com/quote/BTC-USD" target="_blank" rel="noopener">Precio BTC-USD en vivo e histórico 7 días (Yahoo Finance, consultado en vivo)</a></li>
+      
+      <li><a href="https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/" target="_blank" rel="noopener">Bitcoin Rainbow Chart (BlockchainCenter.net, capturado en vivo)</a></li>
+      
+    </ul>
+  </section>
+  
+
+  <footer class="brand-footer">
+    <span>Yirafa Labs — reporte generado el 2026-11-15</span>
+    <span>Uso informativo, no constituye asesoría financiera</span>
+  </footer>
+</div>
+
+<script src="assets/vendor/chart.umd.min.js"></script>
+<script>
+  const INDICATORS = [{"as_of": "07:14 UTC", "change": "+0.49", "chart_type": "line", "current_value": "64,436.59", "data": {"labels": ["9 nov", "10 nov", "11 nov", "12 nov", "13 nov", "14 nov", "15 nov (en vivo)"], "values": [75223.15, 73720.12, 73964.47, 71342.97, 68249.27, 64128.05, 64436.59]}, "description": "Precio spot de Bitcoin en d\u00f3lares, \u00faltimos cierres diarios de Yahoo Finance. El \u00faltimo punto (15-nov) es la cotizaci\u00f3n en vivo. La serie muestra una ca\u00edda semanal que se profundiz\u00f3 respecto a la edici\u00f3n de ayer: de USD 75.223,15 (9-nov) a USD 64.436,59 en vivo hoy (15-nov), una baja acumulada de ~14,3% en la semana, con la mayor parte de la aceleraci\u00f3n entre el 13-nov y el 14-nov (-6,0% en un d\u00eda).", "name": "Precio BTC-USD (\u00faltima semana)", "unit": "USD"}, {"as_of": "15 nov 2026", "change": "-3 vs. 13 de ayer", "chart_type": "gauge", "current_value": "10 (Extreme Fear)", "data": {"labels": ["Hoy"], "values": [10]}, "description": "\u00cdndice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), fuente alternative.me. Cay\u00f3 a 10 (\u0027Extreme Fear\u0027), desde 13 ayer -un nuevo m\u00ednimo en este seguimiento diario, que ya ven\u00eda de marcar m\u00ednimos sucesivos en las dos ediciones anteriores-.", "name": "Fear \u0026 Greed Index", "unit": "\u00edndice (0-100)"}];
+  const PALETTE = ['#C87E28', '#2a78d6', '#1baf7a', '#8f5cd1', '#c0392b'];
+
+  Chart.defaults.font.family = "'Bricolage Grotesque', system-ui, sans-serif";
+  Chart.defaults.color = '#68687F';
+
+  INDICATORS.forEach((ind, i) => {
+    if (!ind.data || !ind.data.labels || !ind.data.values) return;
+    const canvas = document.getElementById('chart-' + i);
+    if (!canvas) return;
+    const color = PALETTE[i % PALETTE.length];
+
+    if (ind.chart_type === 'gauge') {
+      const max = Math.max(...ind.data.values, 100);
+      const value = ind.data.values[ind.data.values.length - 1];
+      new Chart(canvas, {
+        type: 'doughnut',
+        data: {
+          labels: [ind.name, 'resto'],
+          datasets: [{
+            data: [value, Math.max(max - value, 0)],
+            backgroundColor: [color, '#DCDCE8'],
+            borderWidth: 0,
+          }],
+        },
+        options: {
+          rotation: -90,
+          circumference: 180,
+          cutout: '75%',
+          plugins: { legend: { display: false }, tooltip: { enabled: true } },
+        },
+      });
+      return;
+    }
+
+    new Chart(canvas, {
+      type: ind.chart_type === 'bar' ? 'bar' : 'line',
+      data: {
+        labels: ind.data.labels,
+        datasets: [{
+          label: ind.name,
+          data: ind.data.values,
+          borderColor: color,
+          backgroundColor: ind.chart_type === 'bar' ? color : color + '33',
+          borderRadius: 4,
+          fill: ind.chart_type !== 'bar',
+          tension: 0.35,
+          pointRadius: 3,
+          pointHoverRadius: 5,
+          borderWidth: 2,
+        }],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: '#0F0F1E',
+            titleFont: { weight: '700' },
+            padding: 10,
+            cornerRadius: 8,
+            callbacks: {
+              label: (ctx) => ` ${ctx.formattedValue} ${ind.unit || ''}`.trim(),
+            },
+          },
+        },
+        scales: {
+          x: { grid: { display: false }, border: { color: '#DCDCE8' } },
+          y: { grid: { color: '#F0F0F8' }, border: { display: false } },
+        },
+      },
+    });
+  });
+
+  const FEAR_GREED = {"classification": "Extreme Fear", "color": "#d03b3b", "timestamp": "2026-11-15T00:00:00+00:00", "value": 10};
+  const fgCanvas = document.getElementById('chart-feargreed');
+  if (FEAR_GREED && fgCanvas) {
+    new Chart(fgCanvas, {
+      type: 'doughnut',
+      data: {
+        labels: [FEAR_GREED.classification, 'resto'],
+        datasets: [{
+          data: [FEAR_GREED.value, 100 - FEAR_GREED.value],
+          backgroundColor: [FEAR_GREED.color, '#DCDCE8'],
+          borderWidth: 0,
+        }],
+      },
+      options: {
+        rotation: -90,
+        circumference: 180,
+        cutout: '75%',
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: { label: () => ` ${FEAR_GREED.classification}: ${FEAR_GREED.value}/100` },
+          },
+        },
+      },
+    });
+  }
+</script>
+</body>
+</html>
