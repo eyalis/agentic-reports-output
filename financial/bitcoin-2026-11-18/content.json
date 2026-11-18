@@ -1,0 +1,113 @@
+{
+  "topic": "Bitcoin (BTC-USD)",
+  "date": "2026-11-18",
+  "generated_at": "18 de noviembre de 2026, 07:20 UTC",
+  "executive_summary": "BTC cotiza en vivo a USD 64.668,94 (07:20 UTC), -0,32% vs. el cierre previo de USD 64.875,81 -frente al precio en vivo de ayer (USD 64.550,22) el cambio es de +0,18%, cuarto día consecutivo sin un movimiento brusco-. El Fear & Greed Index se mantiene en 11 ('Extreme Fear', venía de 12 ayer). La novedad principal del día es que Nvidia reportó anoche (17-nov, después del cierre) sus resultados del tercer trimestre fiscal 2027, muy por encima de lo esperado: ingresos de USD 115.800M (+103% interanual, +20% trimestral) vs. un consenso de ~USD 108.700-109.100M; ingresos de centros de datos de USD 107.600M (+110% interanual) vs. ~USD 101.870M esperado; ganancia por acción GAAP de USD 2,70 y no-GAAP de USD 2,68 vs. ~USD 2,47-2,48 esperado; margen bruto de 74,8-74,9%; guía del cuarto trimestre de USD 130.000M +/-3% (vs. consenso de USD 125.100M), que excluye explícitamente ingresos de cómputo de centros de datos de China; la compañía además elevó su proyección de crecimiento para el año fiscal 2028 a 75% desde 70% previo. La acción subió +3-4% en after-hours tras un mes muy débil (-24% en lo que va de noviembre, mínimo desde julio de 2025 antes del reporte). En paralelo, la junta de Nvidia confirmó el mismo 17-nov que NO tiene intención de reinstalar a Jensen Huang como CEO -Huang dijo ese día que se sentiría 'honrado' de volver si se lo pidieran, citando un apoyo masivo de empleados, inversionistas, socios y clientes, pero la junta no cambió de postura-; la CFO Colette Kress continúa como CEO interina, y tres comités de la Cámara de Representantes de EE.UU. citaron a Huang a testificar en una entrevista a puerta cerrada el 1 de diciembre. Con la correlación de retornos diarios de 30 días entre BTC y el Nasdaq en 0,67, este catalizador es relevante para bitcoin, aunque el precio spot se mantuvo prácticamente plano tras el reporte -sin contagio inmediato fuerte en ninguna dirección-. Sobre ETFs de bitcoin: la racha de salidas netas que se extendía desde al menos el 10 de noviembre se rompió el lunes 16 con un flujo neto positivo de USD 8,0M -IBIT aportó +USD 76,5M, compensado por salidas en GBTC (-USD 34,6M), FBTC (-USD 11,3M) y fondos menores-; el dato de la sesión del martes 17 todavía no está disponible a esta hora. Sobre Strategy (MSTR): se confirmó una nueva compra de 485 BTC por USD 33,4M (precio promedio USD 68.887) según filing SEC del 16 de noviembre, financiada con venta ATM de 2,09M acciones MSTR (USD 244,7M recaudados, de los cuales USD 206,3M fueron a recompra de STRC) -esto resuelve el rumor no verificado mencionado en el reporte de ayer, que en realidad correspondía a una compra MENOR (no mayor) a la del 9 de noviembre-; las tenencias totales suben a 850.849 BTC. El filing llegó dos días antes de que MSCI publicara su lista de empresas afectadas por la nueva regla de concentración de activo único, por lo que el riesgo de exclusión de Strategy de índices MSCI sigue como tema abierto a monitorear. No hay novedades verificables sobre PPI/expectativa de la Fed (se mantiene el 89,7% de probabilidad de un recorte de 25pb el 9 de diciembre, dato del 13-nov) ni sobre la Clarity Act (sigue estancada en el Senado tras no alcanzar los 60 votos de cloture), BTCPay Server, la apelación del Reino Unido sobre los 61.000 BTC, Cantor Fitzgerald, ni el reclamo no verificado sobre Irán.",
+  "recent_context": [
+    {
+      "heading": "El precio se mantiene estable por cuarto día -el Fear & Greed Index sigue en 11, prácticamente sin cambio desde ayer",
+      "body": "El precio en vivo de BTC-USD (Yahoo Finance, 07:20 UTC) es de USD 64.668,94, -0,32% vs. el cierre previo de USD 64.875,81 (rango del día: USD 64.139,69 a USD 64.884,81). Frente al precio en vivo de ayer (USD 64.550,22), el cambio es de +0,18% -cuarta sesión seguida sin un movimiento brusco-. El Fear & Greed Index de alternative.me se mantiene en 11 hoy (venía de 12 ayer), sin salir de la categoría 'Extreme Fear' que acumula ya varias semanas.",
+      "source_url": "https://finance.yahoo.com/quote/BTC-USD"
+    },
+    {
+      "heading": "Nvidia reporta resultados del tercer trimestre muy por encima de lo esperado, pero la junta confirma que no reinstalará a Jensen Huang como CEO",
+      "body": "Nvidia reportó anoche (17-nov, después del cierre) ingresos de USD 115.800M (+103% interanual, +20% trimestral) vs. un consenso de ~USD 108.700-109.100M, con ingresos de centros de datos de USD 107.600M (+110% interanual) muy por encima de los ~USD 101.870M esperados. La ganancia por acción fue de USD 2,70 (GAAP) / USD 2,68 (no-GAAP) vs. ~USD 2,47-2,48 esperado, con margen bruto de 74,8-74,9%. La guía del cuarto trimestre es de USD 130.000M +/-3% (vs. USD 125.100M de consenso), excluyendo explícitamente ingresos de cómputo de centros de datos de China; la compañía elevó su proyección de crecimiento para el año fiscal 2028 a 75% desde 70%. La acción subió +3-4% en operaciones after-hours, tras un mes muy débil (-24% en lo que va de noviembre, mínimo desde julio de 2025 antes del reporte). La CFO e interina CEO Colette Kress dijo que 'lo más importante que hemos visto es el crecimiento de la demanda que existe' y que la relación con los clientes 'sigue siendo' sólida, calificando la operación como 'negocio normal'. En paralelo, la junta de Nvidia confirmó el mismo 17-nov que no tiene intención de reinstalar a Jensen Huang como CEO -Huang dijo ese día que se sentiría 'honrado' de volver si se lo pidieran, citando apoyo de empleados, inversionistas, socios y clientes, pero sin cambio de postura de la junta-, y tres comités de la Cámara de Representantes lo citaron a testificar el 1 de diciembre. Analistas se mantienen cautelosos pese al batazo: Morgan Stanley recortó ~10% sus estimados de ventas de centros de datos para 2027-2028 y Mizuho bajó su precio objetivo a USD 220 desde USD 250, en parte por la exclusión de ingresos de China de la guía y por señalamientos de Culper Research sobre la exposición a ese mercado (que Nvidia niega). Con una correlación de retornos diarios de 30 días de 0,67 entre BTC y el Nasdaq, este catalizador es relevante para el apetito de riesgo cripto, aunque el precio de bitcoin se mantuvo prácticamente plano tras el reporte.",
+      "source_url": "https://www.cnbc.com/2026/11/17/nvidia-nvda-earnings-report-q3-2027.html"
+    },
+    {
+      "heading": "La racha de salidas de ETFs de bitcoin se rompe el lunes 16 de noviembre con un flujo neto positivo",
+      "body": "Según datos de tftc.io, el lunes 16 de noviembre los ETFs spot de bitcoin en EE.UU. registraron un flujo neto positivo de USD 8,0M -la primera sesión con entradas netas tras al menos cuatro sesiones consecutivas de salidas (10 al 13 de noviembre, por USD 95,0M, 299,9M, 284,0M y 185,5M respectivamente)-. IBIT lideró con +USD 76,5M, compensado por salidas en GBTC (-USD 34,6M), FBTC (-USD 11,3M) y montos menores en BTCO, BTC, ARKB, EZBC y MSBT. El dato de la sesión del martes 17 de noviembre todavía no está disponible a esta hora.",
+      "source_url": "https://www.tftc.io/bitcoin-etf-flows/"
+    },
+    {
+      "heading": "Strategy confirma una nueva compra de bitcoin -se resuelve el rumor no verificado mencionado ayer, que en realidad era una compra menor",
+      "body": "Un filing SEC fechado el 16 de noviembre confirma que Strategy compró 485 BTC por USD 33,4M (precio promedio USD 68.887) en la semana previa, financiado con una venta ATM de 2,09M acciones MSTR que recaudó USD 244,7M (USD 206,3M destinados a recompra de acciones preferentes STRC, USD 5M a caja). Esto lleva las tenencias totales a 850.849 BTC -resolviendo el rumor no verificado citado en el reporte de ayer sobre una compra 'mayor': la compra real confirmada fue más pequeña que la del 9 de noviembre (1.036 BTC), no más grande-. El filing llegó dos días antes de que MSCI publicara su lista de empresas afectadas por la nueva regla de concentración de activo único, por lo que el riesgo de que Strategy sea excluida de índices MSCI sigue abierto. La acción MSTR cayó 6,5% la semana pasada, cerrando el viernes en USD 111,62, su nivel más bajo desde junio.",
+      "source_url": "https://theblock.co/news/business/2026-11-16-this-dip-could-use-a-little-orange-michael-saylor-strategy-bitcoin-tumbles-440886"
+    },
+    {
+      "heading": "Sin cambios verificados desde ayer en: PPI/expectativa de la Fed, Clarity Act, BTCPay Server, apelación del Reino Unido, Cantor Fitzgerald, reclamo sobre Irán",
+      "body": "No se encontró información nueva y confiable desde el reporte de ayer sobre la expectativa de la Fed (se mantiene el último dato verificado del 13-nov: PPI de octubre en +6,5% interanual y 89,7% de probabilidad de un alza -recorte- de 25pb el 9 de diciembre según CME FedWatch). La Clarity Act sigue estancada en el Senado -el intento más reciente de avanzarla no logró los 60 votos necesarios para cerrar el debate (cloture), con varios demócratas exigiendo salvaguardas de ética antes de respaldarla-. Tampoco hay novedad verificable sobre BTCPay Server, la apelación del Reino Unido sobre los 61.000 BTC, Cantor Fitzgerald, ni el reclamo no verificado sobre un ataque a un radar en Baréin mencionado en ediciones anteriores.",
+      "source_url": null
+    }
+  ],
+  "indicators": [
+    {
+      "name": "Precio BTC-USD (última semana)",
+      "description": "Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (18-nov) es la cotización en vivo. La serie muestra una variación semanal de -9,36% (12-nov a hoy) -el precio en vivo está prácticamente sin cambios frente al de ayer (+0,18%), reforzando la lectura de pausa sobre la caída de la semana anterior.",
+      "chart_type": "line",
+      "data": {
+        "labels": ["12 nov", "13 nov", "14 nov", "15 nov", "16 nov", "17 nov", "18 nov (en vivo)"],
+        "values": [71342.97, 68249.27, 64128.05, 65305.06, 64855.84, 64893.95, 64668.94]
+      },
+      "unit": "USD",
+      "current_value": "64,668.94",
+      "change": "-0.32",
+      "as_of": "07:20 UTC"
+    },
+    {
+      "name": "Fear & Greed Index",
+      "description": "Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), fuente alternative.me. Se mantiene en 11 ('Extreme Fear'), prácticamente sin cambio frente a 12 de ayer.",
+      "chart_type": "gauge",
+      "data": {
+        "labels": ["Hoy"],
+        "values": [11]
+      },
+      "unit": "índice (0-100)",
+      "current_value": "11 (Extreme Fear)",
+      "change": "-1 vs. 12 de ayer",
+      "as_of": "18 nov 2026"
+    }
+  ],
+  "expert_opinions": [
+    {
+      "expert": "Colette Kress",
+      "affiliation": "CFO y CEO interina de Nvidia",
+      "quote": "Lo más importante que hemos visto es el crecimiento de la demanda que existe.",
+      "source_url": "https://www.cnbc.com/2026/11/17/nvidia-nvda-earnings-report-q3-2027.html",
+      "stance": "bullish"
+    },
+    {
+      "expert": "Analistas de Morgan Stanley",
+      "affiliation": "Morgan Stanley Research",
+      "quote": "Recortamos nuestros estimados de ventas de centros de datos para los años calendario 2027 y 2028 en aproximadamente 10%, en parte por la exclusión de ingresos de cómputo de China de la guía de Nvidia.",
+      "source_url": "https://www.cnbc.com/2026/11/17/nvidia-nvda-earnings-report-q3-2027.html",
+      "stance": "bearish"
+    }
+  ],
+  "outlook": {
+    "short_term": "El precio sigue prácticamente estable frente a ayer (+0,18% en vivo) y el Fear & Greed Index apenas se movió (11 vs. 12), manteniendo la lectura de pausa de los últimos días. El catalizador de corto plazo más relevante fue el reporte de Nvidia de anoche -resultados muy por encima de lo esperado y guía sólida, pero sin contagio inmediato fuerte hacia bitcoin a pesar de la correlación de 0,67 con el Nasdaq-. La confirmación de la junta de Nvidia de que no reinstalará a Jensen Huang, junto con la citación de tres comités de la Cámara de Representantes para el 1 de diciembre, mantiene la incertidumbre de gobernanza corporativa como un factor de riesgo de sentimiento tecnológico a seguir, con posible contagio hacia bitcoin en cualquier dirección.",
+    "medium_term": "La racha de salidas de ETFs de bitcoin se rompió el lunes 16 de noviembre con un flujo neto positivo de apenas USD 8,0M -una señal débil de estabilización más que de reversión, a confirmar con los datos de los próximos días-. La expectativa de un recorte de tasas de la Fed en diciembre (89,7% según el último dato verificado del 13-nov) tampoco tiene actualización confiable hoy. Strategy confirmó una nueva compra de bitcoin (485 BTC), pero más pequeña que la de la semana anterior, y enfrenta el riesgo de exclusión de índices MSCI por la nueva regla de concentración de activo único -un tema a monitorear en las próximas semanas.",
+    "long_term": "Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong, piso de costo de producción de JPMorgan en USD 94.000). Con el precio spot actual en USD 64.668,94, BTC se mantiene muy por debajo de ese piso de costo de producción, en línea con la brecha ya señalada en ediciones anteriores."
+  },
+  "recommendations": [
+    {
+      "title": "No tratar el flujo positivo de ETFs del lunes (+USD 8,0M) como una reversión de tendencia confirmada",
+      "description": "Es la primera sesión positiva tras al menos cuatro días de salidas netas, pero la magnitud es pequeña frente a las salidas de la semana anterior (hasta -USD 299,9M en un solo día). Esperar más sesiones de datos antes de interpretarlo como un cambio de flujo institucional.",
+      "risk_level": "medio"
+    },
+    {
+      "title": "Monitorear la incertidumbre de gobernanza en Nvidia como fuente de volatilidad de sentimiento tecnológico",
+      "description": "La confirmación de la junta de que no reinstalará a Jensen Huang, sumada a la citación de tres comités de la Cámara de Representantes para el 1 de diciembre, mantiene abierto un foco de incertidumbre que, dada la correlación de 0,67 entre BTC y el Nasdaq en el último mes, puede trasladarse al apetito de riesgo cripto.",
+      "risk_level": "medio"
+    },
+    {
+      "title": "Seguir el riesgo de exclusión de Strategy (MSTR) de índices MSCI",
+      "description": "El filing de compra del 16 de noviembre llegó dos días antes de que MSCI publicara su lista de empresas afectadas por la nueva regla de concentración de activo único. Una eventual exclusión de índices podría generar ventas forzadas de MSTR por parte de fondos pasivos, con posible presión indirecta sobre bitcoin dado el tamaño de las tenencias de la compañía.",
+      "risk_level": "medio"
+    }
+  ],
+  "sources": [
+    {"title": "Bitcoin ETF Flows (tftc.io, consultado en vivo -racha de salidas rota el 16-nov)", "url": "https://www.tftc.io/bitcoin-etf-flows/"},
+    {"title": "Fear & Greed Index (alternative.me, consultado en vivo)", "url": "https://alternative.me/crypto/fear-and-greed-index/"},
+    {"title": "Precio BTC-USD en vivo e histórico 7 días (Yahoo Finance, consultado en vivo)", "url": "https://finance.yahoo.com/quote/BTC-USD"},
+    {"title": "Bitcoin Rainbow Chart (BlockchainCenter.net, capturado en vivo)", "url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/"},
+    {"title": "Nvidia (NVDA) Q3 FY2027 earnings report: live updates (CNBC)", "url": "https://www.cnbc.com/2026/11/17/nvidia-nvda-earnings-report-q3-2027.html"},
+    {"title": "Nvidia board says it does not intend to reinstate Jensen Huang as CEO (TechCrunch)", "url": "https://techcrunch.com/2026/11/17/nvidia-says-it-doesnt-plan-to-reappoint-jensen-huang-as-ceo"},
+    {"title": "Jensen Huang says he'd be 'honored' to return as Nvidia CEO (Axios)", "url": "https://www.axios.com/2026/11/17/jensen-huang-nvidia-ceo-return-earnings"},
+    {"title": "Strategy buys another 485 BTC for $33 million as bitcoin tumbles (The Block)", "url": "https://theblock.co/news/business/2026-11-16-this-dip-could-use-a-little-orange-michael-saylor-strategy-bitcoin-tumbles-440886"}
+  ],
+  "crypto_extras": {
+    "fear_greed": {"value": 11, "classification": "Extreme Fear", "color": "#d03b3b", "timestamp": "2026-11-18T00:00:00+00:00"},
+    "btc_rainbow": {"image": ".tmp/bitcoin-btc-rainbow.png", "source": "BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)", "source_url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/", "captured_at": "2026-11-18"}
+  }
+}
