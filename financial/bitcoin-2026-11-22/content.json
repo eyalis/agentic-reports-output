@@ -1,0 +1,106 @@
+{
+  "topic": "Bitcoin (BTC-USD)",
+  "date": "2026-11-22",
+  "generated_at": "22 de noviembre de 2026, 07:14 UTC",
+  "executive_summary": "BTC cotiza en vivo a USD 59.047,73 (07:14 UTC), -1,74% frente al cierre previo de USD 60.093,01 (rango del día: USD 58.680,22 a USD 60.205,00) -pero +1,75% frente al precio en vivo de ayer (USD 58.033,99)-. La novedad del día es un repunte parcial de fin de semana: tras tocar un mínimo de varios meses de USD 57.778,35 el viernes 20 de noviembre (bajo el mínimo del 1 de julio), BTC recuperó terreno durante el sábado 21 de noviembre (cierre de Yahoo Finance en USD 60.094,09) antes de retroceder levemente hoy domingo. El nivel de USD 58.000 que Mark Yusko señaló ayer como clave quedó recuperado, pero sin ninguna confirmación de respaldo institucional: al ser fin de semana, no hubo sesión de Wall Street (Nasdaq/S&P cerrados) ni flujo nuevo de ETFs de bitcoin que contrastar -el dato más reciente sigue siendo el del 19 de noviembre ya reportado ayer (-USD 582,2M, liderado por IBIT), sin cifra fiable aún para el 20 ni el 21 de noviembre, días en que los ETFs spot de EE.UU. no operan-. El Fear & Greed Index bajó marginalmente de 12 a 11 ('Extreme Fear'), un nuevo mínimo de esta racha de varias semanas, lo que sugiere que el mercado no está leyendo el repunte de precio como un cambio de tendencia. No se encontraron novedades verificables y fechadas con precisión para este fin de semana sobre la probabilidad de alza de la Fed del 9 de diciembre, la exclusión de Strategy (MSTR) de los índices MSCI (sigue efectiva al cierre del 30 de noviembre), la gobernanza de Nvidia, la Clarity Act, BTCPay Server, la apelación del Reino Unido sobre los 61.000 BTC, Cantor Fitzgerald, ni el reclamo no verificado sobre Irán -consistente con el menor flujo de cobertura especializada y la ausencia de sesión bursátil tradicional durante el fin de semana-. La recomendación de ayer de no tratar el mínimo de USD 57.778 como un piso confirmado sigue vigente: el rebote ocurrió en un entorno de bajo volumen, sin participación institucional medible todavía.",
+  "recent_context": [
+    {
+      "heading": "Repunte de fin de semana: BTC recupera el nivel de USD 58.000-60.000 tras el mínimo de varios meses del viernes, pero sin sesión de Wall Street ni dato de ETFs que lo confirme",
+      "body": "Tras tocar USD 57.778,35 en Binance el viernes 20 de noviembre (el nivel más bajo desde julio), bitcoin repuntó durante el sábado 21 de noviembre hasta un cierre de USD 60.094,09 según Yahoo Finance, antes de retroceder levemente hoy domingo a USD 59.047,73 en la cotización en vivo (-1,74% frente al cierre previo, pero +1,75% frente al precio en vivo de ayer). El nivel de USD 58.000 que el inversor Mark Yusko (Morgan Creek Capital) señaló ayer como clave a vigilar quedó recuperado. Sin embargo, el sábado y el domingo no tienen sesión de Wall Street (Nasdaq y S&P 500 cerrados), por lo que no hay información nueva sobre si la liquidación de acciones de IA del viernes se extendió o revirtió, y tampoco hay flujo de ETFs de bitcoin que contrastar para el fin de semana -los ETFs spot de EE.UU. no operan sábado ni domingo-. El repunte, por lo tanto, ocurrió en un entorno de bajo volumen típico de fin de semana, sin confirmación de participación institucional.",
+      "source_url": "https://finance.yahoo.com/quote/BTC-USD/history/"
+    },
+    {
+      "heading": "El Fear & Greed Index baja marginalmente a 11, un nuevo mínimo de la racha de miedo extremo, a pesar del repunte de precio",
+      "body": "El índice de sentimiento de alternative.me bajó de 12 (ayer) a 11 hoy, manteniéndose en la clasificación 'Extreme Fear' pero marcando el nivel más bajo de esta racha de varias semanas. El hecho de que el sentimiento se haya deteriorado marginalmente pese al repunte de precio del fin de semana sugiere que el mercado no está interpretando el rebote como un cambio de tendencia, sino como un movimiento técnico dentro de un contexto general de cautela extrema.",
+      "source_url": "https://alternative.me/crypto/fear-and-greed-index/"
+    },
+    {
+      "heading": "Sin dato nuevo de flujos de ETFs para el 20 y 21 de noviembre (fin de semana sin trading); el mínimo de USD 57.778 sigue sin confirmación institucional",
+      "body": "El reporte de ayer confirmó el flujo del 19 de noviembre (-USD 582,2M, liderado por IBIT con -USD 541,1M). Al revisar hoy la misma fuente (Farside vía tftc.io), el 19 de noviembre sigue siendo la fecha más reciente con datos: no hay cifra para el 20 ni el 21 de noviembre, ya que los ETFs spot de bitcoin en EE.UU. no operan en fin de semana (20-nov sí fue día hábil, pero la fuente no mostró actualización al momento de esta consulta). Esto significa que la recomendación de ayer -no tratar el mínimo de USD 57.778 como un piso confirmado hasta ver si la liquidación de acciones de IA se trasladó a salidas de ETFs- sigue sin poder evaluarse con datos duros. El repunte de este fin de semana, al no tener detrás un dato de flujo institucional, no cambia esa cautela.",
+      "source_url": "https://www.tftc.io/bitcoin-etf-flows/november-2026"
+    },
+    {
+      "heading": "Sin cambios verificables este fin de semana en MSCI/Strategy, probabilidad de alza de la Fed, la Clarity Act, BTCPay Server, la apelación del Reino Unido, Cantor Fitzgerald ni el reclamo sobre Irán",
+      "body": "No se encontraron fuentes fechadas con precisión para el sábado 21 o domingo 22 de noviembre que actualicen alguno de estos ejes. La exclusión de Strategy (MSTR) de los índices MSCI sigue efectiva al cierre del 30 de noviembre sin novedad adicional. La probabilidad de alza de 25pb el 9 de diciembre se mantiene en el rango ya reportado (89,6%-91% según distintas fuentes de los últimos días), sin una lectura fresca de CME FedWatch específica del fin de semana. Esto es consistente con la ausencia de sesión bursátil tradicional y el menor flujo de cobertura especializada típico de un fin de semana -se repite brevemente para que quede constancia de que se revisó, no porque haya cambiado.",
+      "source_url": null
+    }
+  ],
+  "indicators": [
+    {
+      "name": "Precio BTC-USD (última semana)",
+      "description": "Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (22-nov) es la cotización en vivo. La serie muestra una caída semanal de -8,96% (16-nov a hoy), con un mínimo de varios meses el 20-nov seguido de un repunte parcial de fin de semana.",
+      "chart_type": "line",
+      "data": {
+        "labels": ["16 nov", "17 nov", "18 nov", "19 nov", "20 nov", "21 nov", "22 nov (en vivo)"],
+        "values": [64855.84, 64893.95, 62987.27, 61901.82, 58798.98, 60094.09, 59047.73]
+      },
+      "unit": "USD",
+      "current_value": "59,047.73",
+      "change": "-1.74",
+      "as_of": "07:14 UTC"
+    },
+    {
+      "name": "Fear & Greed Index",
+      "description": "Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), fuente alternative.me. Bajó de 12 a 11 ('Extreme Fear'), un nuevo mínimo de esta racha de varias semanas, a pesar del repunte de precio del fin de semana.",
+      "chart_type": "gauge",
+      "data": {
+        "labels": ["Hoy"],
+        "values": [11]
+      },
+      "unit": "índice (0-100)",
+      "current_value": "11 (Extreme Fear)",
+      "change": "-1 vs. 12 de ayer",
+      "as_of": "22 nov 2026"
+    }
+  ],
+  "expert_opinions": [
+    {
+      "expert": "Mark Yusko",
+      "affiliation": "Fundador, Morgan Creek Capital Management",
+      "quote": "We are in a bad liquidation cycle right now.",
+      "source_url": "https://stocktwits.com/news-articles/markets/cryptocurrency/mark-yusko-warns-ai-valuations-thin-air-bitcoin-gets-caught-in-a-bad-liquidation-cycle/cNbXAWrR9hu",
+      "stance": "neutral"
+    },
+    {
+      "expert": "Christopher Waller",
+      "affiliation": "Gobernador, Junta de la Reserva Federal",
+      "quote": "If the Fed moves by a quarter point in December, officials should signal another hike is likely in January.",
+      "source_url": "https://cryptonews.net/news/analytics/33786748/",
+      "stance": "bearish"
+    }
+  ],
+  "outlook": {
+    "short_term": "BTC recuperó el nivel de USD 58.000-60.000 durante el fin de semana tras el mínimo de varios meses del viernes (USD 57.778,35), pero el rebote ocurrió en un entorno de bajo volumen -sin sesión de Wall Street ni flujo de ETFs que lo confirme-. El Fear & Greed Index tocó un nuevo mínimo de la racha (11), señal de que el mercado sigue escéptico. El lunes 23 de noviembre, con la reapertura de Wall Street y el primer dato de flujo de ETFs desde el viernes 20, será la primera prueba real de si este nivel se sostiene con respaldo institucional o se trata de un rebote técnico de fin de semana.",
+    "medium_term": "Sin cambios relevantes desde ayer: la inflación núcleo de octubre mantiene en niveles elevados (89,6%-91% según distintas fuentes de los últimos días) la probabilidad de un alza de 25pb el 9 de diciembre, con la condición de Waller de señalar explícitamente una alza adicional en enero si se opta por 25pb en vez de 50pb. Los flujos de ETFs, confirmados hasta el 19 de noviembre (-USD 582,2M, liderados por IBIT), siguen siendo el dato más reciente -sin información del fin de semana para evaluar si la liquidación de acciones de IA del 20 de noviembre se trasladó a salidas adicionales.",
+    "long_term": "Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong, piso de costo de producción de JPMorgan en USD 94.000). Con el precio spot actual en USD 59.047,73, la brecha frente a ese piso de costo de producción sigue siendo amplia. La lectura de Mark Yusko -que ubica el ciclo actual en su 'primavera' pese al dolor de corto plazo- sigue siendo la visión constructiva más reciente, sin matices nuevos este fin de semana."
+  },
+  "recommendations": [
+    {
+      "title": "Vigilar la reapertura de Wall Street del lunes 23 de noviembre y el primer dato de flujo de ETFs desde el viernes 20",
+      "description": "El repunte de este fin de semana ocurrió sin sesión bursátil tradicional ni flujo de ETFs que lo respalde. El lunes será la primera oportunidad real de confirmar si el nivel de USD 59.000-60.000 se sostiene con participación institucional, o si se trata de un movimiento técnico de bajo volumen que puede revertirse al reabrir los mercados.",
+      "risk_level": "medio"
+    },
+    {
+      "title": "No tratar el mínimo de USD 57.778 como un piso confirmado todavía",
+      "description": "El repunte de fin de semana recuperó el nivel de USD 58.000-59.000 señalado por Mark Yusko, pero sin ningún dato institucional (ETFs, sesión bursátil) que lo valide. La cautela de ayer sigue vigente hasta ver cómo reacciona el mercado el lunes.",
+      "risk_level": "alto"
+    },
+    {
+      "title": "Seguir la condición de Waller sobre un alza en enero, no solo el tamaño del movimiento de diciembre",
+      "description": "Sin cambios desde ayer: Waller condicionó su apoyo a un movimiento de 25pb en diciembre a que se señale explícitamente otra alza en enero. Esto sigue siendo el catalizador macro dominante de mediano plazo, sin novedad este fin de semana.",
+      "risk_level": "medio"
+    }
+  ],
+  "sources": [
+    {"title": "Precio BTC-USD en vivo e histórico 7 días (Yahoo Finance, consultado en vivo)", "url": "https://finance.yahoo.com/quote/BTC-USD"},
+    {"title": "Fear & Greed Index (alternative.me, consultado en vivo)", "url": "https://alternative.me/crypto/fear-and-greed-index/"},
+    {"title": "Bitcoin Rainbow Chart (BlockchainCenter.net, capturado en vivo)", "url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/"},
+    {"title": "Bitcoin ETF Flows, noviembre 2026 (tftc.io/Farside, sin actualización desde el 19-nov al momento de esta consulta)", "url": "https://www.tftc.io/bitcoin-etf-flows/november-2026"},
+    {"title": "Why Is Bitcoin Crashing Today? BTC Falls Below $58K as $1.5B-$1.9B in Crypto Positions Are Liquidated (Cryptonews.net, 20-nov-2026, contexto del viernes)", "url": "https://cryptonews.net/news/analytics/33786748/"},
+    {"title": "Mark Yusko: Leverage liquidation puts pressure on Bitcoin, $58,000 is the key level (RootData, nov-2026, contexto del viernes)", "url": "https://www.rootdata.com/news/834286"}
+  ],
+  "crypto_extras": {
+    "fear_greed": {"value": 11, "classification": "Extreme Fear", "color": "#d03b3b", "timestamp": "2026-11-22T00:00:00+00:00"},
+    "btc_rainbow": {"image": ".tmp/bitcoin-btc-rainbow.png", "source": "BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)", "source_url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/", "captured_at": "2026-11-22"}
+  }
+}
