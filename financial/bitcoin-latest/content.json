@@ -1,61 +1,61 @@
 {
   "topic": "Bitcoin (BTC-USD)",
-  "date": "2026-11-24",
-  "generated_at": "24 de noviembre de 2026, 07:14 UTC",
-  "executive_summary": "BTC cotiza en vivo a USD 60.339,89 (07:14 UTC), -1,42% frente al cierre previo de USD 61.211,15, revirtiendo de golpe el rebote de tres días reportado ayer y volviendo a caer por debajo de USD 61.000 -la serie semanal (18 al 24 de noviembre) marca ahora -4,20%. La novedad más concreta de hoy es que Farside/tftc.io finalmente actualizó su tabla y confirmó el dato del viernes 20 de noviembre que ayer solo podía citarse como una estimación no oficial de prensa (rango USD 124M-669M): la cifra oficial fue -USD 669,2M en salidas netas (IBIT de BlackRock: -USD 544,7M), en el extremo superior de ese rango y el peor día individual de la semana. Con ese dato ya confirmado, la semana del 16 al 20 de noviembre cierra en -USD 1.789,7M en salidas netas -la peor semana desde junio-, y noviembre acumula -USD 4.136,9M en 15 jornadas (13 de ellas negativas). Pese a esa actualización, Farside todavía no publica ningún dato para el lunes 23 de noviembre al momento de esta edición, por lo que la prueba de Wall Street señalada ayer como pendiente de resolver sigue sin poder evaluarse con esta fuente. El Fear & Greed Index se mantiene en 11 ('Extreme Fear') por tercer día consecutivo, sin mejorar ni empeorar. No se encontró comentario nuevo de Mark Yusko (su declaración más reciente ubicable sigue siendo del 18 de noviembre) ni de Christopher Waller, y tampoco novedades verificables sobre la exclusión de Strategy (MSTR) de los índices MSCI, la Clarity Act, BTCPay Server, la apelación del Reino Unido sobre los 61.000 BTC, Cantor Fitzgerald, ni el reclamo no verificado sobre Irán -se revisó cada uno y no hay cambios que reportar.",
+  "date": "2026-11-25",
+  "generated_at": "25 de noviembre de 2026, 07:13 UTC",
+  "executive_summary": "BTC cotiza en vivo a USD 59.230,77 (07:13 UTC), -0,86% frente al cierre previo de USD 59.745,65, profundizando la caída de ayer -la serie semanal (19 al 25 de noviembre) marca ahora -4,31%, con un nuevo mínimo de la ventana hoy. La novedad más relevante es que se resolvió, en sentido negativo, la 'prueba de Wall Street' del lunes 23 de noviembre que el reporte de ayer dejó pendiente: Farside/tftc.io confirmó -USD 569,7M en salidas netas de ETFs ese día (IBIT: -USD 509,3M), es decir que la reapertura bursátil no trajo ningún giro hacia flujos positivos. Con ese dato ya oficial, noviembre acumula -USD 4.706,6M en 16 jornadas (14 negativas, 2 positivas) según Farside, con el viernes 20-nov como el peor día individual (-USD 669,2M) y un promedio diario de -USD 294,2M. Farside todavía no publica el dato del martes 24-nov, pero prensa especializada (SoSoValue) reporta ese día como el sexto consecutivo en rojo, con -USD 231,56M netos (IBIT: -USD 175,30M) -una cifra preliminar de una fuente distinta a la de referencia de este reporte, no de Farside-, lo que llevaría el acumulado de noviembre cerca de -USD 4.900M si se combina con el dato oficial de Farside. El Fear & Greed Index subió levemente a 13 (vs. 11 de ayer), rompiendo la racha de tres días estancada en ese valor, pero se mantiene en 'Extreme Fear'. Sin comentario nuevo verificable de Mark Yusko (su declaración más reciente sigue siendo del 18 de noviembre) ni de Christopher Waller hoy; tampoco hay novedad en la exclusión de Strategy (MSTR) de los índices MSCI (sigue efectiva al cierre del 30 de noviembre, sin cambios desde el anuncio del 11-nov), la Clarity Act, BTCPay Server, la apelación del Reino Unido sobre los 61.000 BTC, Cantor Fitzgerald, ni el reclamo no verificado sobre Irán.",
   "recent_context": [
     {
-      "heading": "El rebote de tres días se revierte: BTC vuelve a caer bajo USD 61.000, -1,42% frente al cierre previo",
-      "body": "Tras encadenar tres días de recuperación hasta superar USD 61.400 en vivo ayer, bitcoin revierte hoy ese movimiento: cotización en vivo de USD 60.339,89 a las 07:14 UTC, -1,42% frente al cierre previo de USD 61.211,15. La serie de cierres diarios de Yahoo Finance de los últimos 7 días (18 al 24 de noviembre) muestra una caída semanal de -4,20%, con el máximo de la ventana en USD 62.987,27 (18-nov) y el mínimo en USD 58.798,98 (20-nov, el piso de varios meses ya reportado). El nivel de hoy queda a medio camino entre ese mínimo y el máximo de la semana, sin alejarse de forma decisiva de ninguno de los dos extremos.",
+      "heading": "BTC marca un nuevo mínimo semanal: USD 59.230,77 en vivo, -0,86% frente al cierre previo, y -4,31% en la ventana de 7 días",
+      "body": "Tras la reversión de ayer del rebote de tres días, bitcoin sigue cayendo hoy: cotización en vivo de USD 59.230,77 a las 07:13 UTC, -0,86% frente al cierre previo de USD 59.745,65. La serie de cierres diarios de Yahoo Finance de los últimos 7 días (19 al 25 de noviembre) muestra una caída semanal de -4,31%, con el máximo de la ventana en USD 61.901,82 (19-nov) y un nuevo mínimo hoy en el precio en vivo, por debajo incluso del piso de USD 58.798,98 marcado el 20-nov. El nivel actual queda otra vez bajo USD 60.000, confirmando que el rebote de los días 21-23 de noviembre no logró sostenerse.",
       "source_url": "https://finance.yahoo.com/quote/BTC-USD"
     },
     {
-      "heading": "Farside confirma el dato del viernes 20-nov en -USD 669,2M -el extremo superior del rango estimado ayer- y cierra la peor semana de ETFs desde junio",
-      "body": "La fuente de referencia de este reporte (Farside Investors, vía tftc.io), que ayer no mostraba ningún dato posterior al 19 de noviembre, actualizó hoy su tabla con la cifra oficial del viernes 20-nov: -USD 669,2M en salidas netas, con BlackRock (IBIT) aportando -USD 544,7M de ese total -el peor día individual de la semana, y en el extremo superior del rango de USD 124M-669M que ayer solo podía citarse como estimación no oficial de prensa secundaria-. Con los cinco días de esa semana ya confirmados (16-nov: +USD 8,0M; 17-nov: -USD 239,9M; 18-nov: -USD 306,4M; 19-nov: -USD 582,2M; 20-nov: -USD 669,2M), el total semanal queda en -USD 1.789,7M, la peor semana para los ETFs de bitcoin desde junio. El acumulado de noviembre (2 al 20, 15 jornadas) llega a -USD 4.136,9M, con 13 de esas 15 jornadas en rojo.",
+      "heading": "Se resuelve la 'prueba de Wall Street' del lunes 23-nov: Farside confirma -USD 569,7M en salidas, sin giro institucional hacia flujos positivos",
+      "body": "El reporte de ayer señaló la reapertura bursátil del lunes 23-nov como la primera oportunidad de ver participación institucional confirmada, sin datos aún disponibles. Hoy Farside/tftc.io publicó esa cifra: -USD 569,7M en salidas netas, con IBIT de BlackRock aportando -USD 509,3M de ese total (FBTC +USD 13,3M, BITB -USD 12,6M, BTC -USD 61,1M). El resultado es negativo e inequívoco: no hubo ninguna reversión hacia flujos positivos al reabrir Wall Street, extendiendo la racha de salidas que ya lleva 14 de las últimas 16 jornadas de noviembre en rojo según esta misma fuente.",
       "source_url": "https://www.tftc.io/bitcoin-etf-flows/november-2026"
     },
     {
-      "heading": "Farside todavía no publica ningún dato para el lunes 23 de noviembre: la prueba de Wall Street señalada ayer sigue sin poder evaluarse con esta fuente",
-      "body": "El reporte de ayer señaló la reapertura bursátil de EE.UU. del lunes 23-nov como la primera oportunidad real de ver participación institucional confirmada. Al momento de esta edición (07:14 UTC del martes 24-nov), la tabla de Farside/tftc.io sigue mostrando el 20 de noviembre como su entrada más reciente -sin dato para el lunes 23 (el sábado 21 no es jornada bursátil, por lo que no se espera dato ahí)-. No se encontró tampoco cobertura de prensa con fecha del cierre bursátil del lunes 23 que permita evaluar esa prueba de otra forma; se mantiene como un punto pendiente de confirmar, no como algo resuelto en ningún sentido.",
-      "source_url": "https://www.tftc.io/bitcoin-etf-flows/november-2026"
+      "heading": "Prensa especializada reporta un sexto día consecutivo de salidas el martes 24-nov (-USD 231,56M vía SoSoValue), aún sin confirmar por Farside",
+      "body": "Para el martes 24 de noviembre, Farside/tftc.io todavía no publica ningún dato al momento de esta edición. Sin embargo, cobertura de prensa (The Block, Kucoin) citando datos de SoSoValue -una fuente distinta a la de referencia de este reporte- reporta ese día como el sexto consecutivo de salidas netas, con -USD 231,56M en total y -USD 175,30M atribuidos a IBIT. Si esa cifra se confirma y se suma al acumulado oficial de Farside (-USD 4.706,6M hasta el 23-nov), noviembre quedaría cerca de -USD 4.900M en 17 jornadas, acercándose al umbral de -USD 5.000M que ya mencionan algunos medios. Se trata de una cifra preliminar de otra fuente, no de Farside, por lo que se señala como pendiente de confirmación oficial, no como dato cerrado.",
+      "source_url": "https://www.theblock.co/news/markets/2026-11-24-bitcoin-etfs-another-570-million-net-outflows-november-total-nears-5-billion-btc-dips-below-60k-445548"
     },
     {
-      "heading": "El Fear & Greed Index se mantiene en 11 ('Extreme Fear') por tercer día consecutivo",
-      "body": "El índice de alternative.me repite hoy el valor de 11, el mismo de ayer y de anteayer -tercer día consecutivo sin cambios, tras haber roto ayer la racha previa de mínimos marginales sucesivos-. La clasificación sigue siendo 'Extreme Fear'. Que el indicador permanezca inmóvil mientras el precio revierte su rebote de tres días sugiere que el mercado ya no estaba convencido del cambio de tendencia incluso antes de que ese rebote se revirtiera.",
+      "heading": "El Fear & Greed Index sube levemente a 13, rompiendo la racha de tres días en 11, pero sigue en 'Extreme Fear'",
+      "body": "El índice de alternative.me pasa hoy de 11 (su valor de los tres días previos) a 13 -una mejora marginal que rompe el estancamiento reportado ayer, pero sin salir de la zona de 'Extreme Fear'-. El movimiento es demasiado pequeño para leerse como un cambio de sentimiento de fondo, especialmente frente a una nueva caída de precio y la confirmación de salidas de ETFs del lunes.",
       "source_url": "https://alternative.me/crypto/fear-and-greed-index/"
     },
     {
       "heading": "Sin novedades verificables en Mark Yusko, Christopher Waller, MSCI/Strategy, la Clarity Act, BTCPay Server, la apelación del Reino Unido, Cantor Fitzgerald ni el reclamo sobre Irán",
-      "body": "El comentario más reciente ubicable de Mark Yusko sigue siendo del 18 de noviembre (ciclo de liquidación apalancada, USD 58.000 como nivel clave, distribución de grandes tenedores desde octubre), sin matices nuevos hoy. No se encontraron fuentes fechadas para hoy que actualicen la condición de Waller sobre la Fed, la exclusión de Strategy (MSTR) de los índices MSCI (sigue efectiva al cierre del 30 de noviembre), la Clarity Act, BTCPay Server, la apelación del Reino Unido sobre los 61.000 BTC, Cantor Fitzgerald, ni el reclamo no verificado sobre Irán -se repite brevemente para que quede constancia de que se revisó, no porque haya cambiado.",
+      "body": "El comentario más reciente ubicable de Mark Yusko sigue siendo del 18 de noviembre, sin matices nuevos hoy. No se encontró un comentario nuevo verificable de Christopher Waller sobre la reunión de diciembre de la Fed -las búsquedas de hoy arrojaron resultados mayormente desactualizados o de 2025, sin una fuente fechada y confiable para noviembre de 2026-, por lo que su condición reportada en ediciones anteriores (apoyar 25pb en diciembre solo si se señala otra alza en enero) se mantiene sin cambios reportables. La exclusión de Strategy (MSTR) de los índices MSCI sigue efectiva al cierre del 30 de noviembre, sin novedad desde el anuncio original del 11-nov. Tampoco hay novedades en la Clarity Act, BTCPay Server, la apelación del Reino Unido sobre los 61.000 BTC, Cantor Fitzgerald, ni el reclamo no verificado sobre Irán -se repite brevemente para que quede constancia de que se revisó, no porque haya cambiado.",
       "source_url": null
     }
   ],
   "indicators": [
     {
       "name": "Precio BTC-USD (última semana)",
-      "description": "Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (24-nov) es la cotización en vivo. La serie muestra una caída semanal de -4,20% (18-nov a hoy), con el rebote de los últimos tres días revertido hoy tras el máximo local del 22-nov.",
+      "description": "Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (25-nov) es la cotización en vivo. La serie muestra una caída semanal de -4,31% (19-nov a hoy), con un nuevo mínimo de la ventana marcado hoy, por debajo incluso del piso del 20-nov.",
       "chart_type": "line",
       "data": {
-        "labels": ["18 nov", "19 nov", "20 nov", "21 nov", "22 nov", "23 nov", "24 nov (en vivo)"],
-        "values": [62987.27, 61901.82, 58798.98, 60094.09, 61161.91, 61210.98, 60339.89]
+        "labels": ["19 nov", "20 nov", "21 nov", "22 nov", "23 nov", "24 nov", "25 nov (en vivo)"],
+        "values": [61901.82, 58798.98, 60094.09, 61161.91, 61210.98, 59747.77, 59230.77]
       },
       "unit": "USD",
-      "current_value": "60,339.89",
-      "change": "-1.42",
-      "as_of": "07:14 UTC"
+      "current_value": "59,230.77",
+      "change": "-0.86",
+      "as_of": "07:13 UTC"
     },
     {
       "name": "Fear & Greed Index",
-      "description": "Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), fuente alternative.me. Se mantiene en 11 ('Extreme Fear') por tercer día consecutivo, sin cambios desde ayer ni anteayer.",
+      "description": "Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), fuente alternative.me. Sube levemente a 13 hoy, rompiendo la racha de tres días en 11, pero se mantiene en 'Extreme Fear'.",
       "chart_type": "gauge",
       "data": {
         "labels": ["Hoy"],
-        "values": [11]
+        "values": [13]
       },
       "unit": "índice (0-100)",
-      "current_value": "11 (Extreme Fear)",
-      "change": "0 vs. 11 de ayer",
-      "as_of": "24 nov 2026"
+      "current_value": "13 (Extreme Fear)",
+      "change": "+2 vs. 11 de ayer",
+      "as_of": "25 nov 2026"
     }
   ],
   "expert_opinions": [
@@ -75,24 +75,24 @@
     }
   ],
   "outlook": {
-    "short_term": "El rebote de tres días se revirtió hoy: BTC vuelve a cotizar bajo USD 61.000 (-1,42% en vivo), con el Fear & Greed Index inmóvil en 11 ('Extreme Fear') por tercer día. La confirmación oficial de -USD 669,2M en salidas de ETFs para el viernes 20-nov -en el extremo alto del rango que ayer era solo una estimación- refuerza la lectura de que el rebote carecía de respaldo de flujos institucionales. La prueba de Wall Street del lunes 23-nov sigue sin poder confirmarse: Farside no ha publicado ese dato al momento de esta edición.",
-    "medium_term": "Con la semana del 16-20 de noviembre ya cerrada en -USD 1.789,7M (peor semana desde junio) y noviembre acumulando -USD 4.136,9M en 15 jornadas (13 negativas), el patrón de salidas sostenidas de ETFs que se insinuaba ayer como no confirmado queda ahora establecido con datos oficiales. La condición de Waller sobre señalar una alza adicional en enero si se opta por 25pb en diciembre sigue vigente, sin cambios desde ediciones anteriores.",
+    "short_term": "El precio profundizó hoy la caída de ayer, marcando un nuevo mínimo de la ventana semanal (-4,31%) y volviendo a cotizar bajo USD 60.000. La 'prueba de Wall Street' del lunes 23-nov, pendiente en el reporte de ayer, se resolvió en sentido negativo: -USD 569,7M en salidas confirmadas por Farside, sin señal de reversión institucional. El Fear & Greed Index mejoró apenas de 11 a 13, insuficiente para hablar de un cambio de sentimiento.",
+    "medium_term": "Con el dato oficial de Farside ya en -USD 4.706,6M para noviembre (16 jornadas, 14 negativas) y prensa reportando un sexto día consecutivo de salidas el 24-nov (pendiente de confirmación oficial), el patrón de salidas sostenidas que cerró la semana pasada en su peor nivel desde junio no muestra señales de revertirse. La condición de Waller sobre señalar una alza adicional en enero si se opta por 25pb en diciembre sigue vigente, sin comentario nuevo verificable hoy.",
     "long_term": "Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong, piso de costo de producción de JPMorgan en USD 94.000). La lectura de Mark Yusko -ciclo en su 'primavera' pese al dolor de corto plazo, sin matices nuevos desde el 18 de noviembre- sigue siendo la visión constructiva más reciente disponible."
   },
   "recommendations": [
     {
-      "title": "Vigilar la próxima actualización de Farside/tftc.io para el lunes 23-nov, todavía pendiente de publicarse",
-      "description": "Esta edición se genera sin que la fuente de referencia de ETFs haya publicado el dato del lunes 23-nov, por lo que la prueba de participación institucional señalada ayer sigue abierta. La confirmación de hoy del dato del viernes 20-nov (-USD 669,2M, en el extremo alto del rango estimado) sugiere que conviene esperar el dato oficial antes de interpretar cifras de prensa secundaria como definitivas.",
+      "title": "Tratar el dato de SoSoValue del 24-nov como preliminar hasta que Farside lo confirme",
+      "description": "La cifra de -USD 231,56M para el 24-nov citada por prensa proviene de SoSoValue, no de Farside (la fuente de referencia de este reporte), y Farside aún no publica ese día. Conviene esperar la confirmación oficial antes de dar por cerrado el acumulado de noviembre cerca de -USD 5.000M que ya circula en medios.",
       "risk_level": "medio"
     },
     {
-      "title": "No tratar el rebote de los últimos días como un cambio de tendencia confirmado",
-      "description": "El rebote de tres días que motivó cautela moderada ayer se revirtió hoy en una sola sesión, mientras los datos de ETFs ya confirmados muestran la peor semana desde junio y un noviembre con 13 de 15 jornadas en salidas netas. El Fear & Greed Index tampoco mejoró en ningún momento del rebote, lo que es consistente con un mercado que no se convenció del giro.",
+      "title": "No esperar un piso solo porque el Fear & Greed Index mejoró marginalmente",
+      "description": "El salto de 11 a 13 en el índice es demasiado pequeño para leerse como cambio de sentimiento, más aún cuando ocurre el mismo día en que el precio marca un nuevo mínimo semanal y se confirma la peor salida de ETFs de la 'prueba de Wall Street'. Mantener la cautela hasta ver una mejora sostenida de varios días.",
       "risk_level": "alto"
     },
     {
       "title": "Seguir la condición de Waller sobre un alza en enero, no solo el tamaño del movimiento de diciembre",
-      "description": "Sin cambios desde ediciones anteriores: Waller condicionó su apoyo a un movimiento de 25pb en diciembre a que se señale explícitamente otra alza en enero. Sigue siendo el catalizador macro dominante de mediano plazo, sin novedad hoy.",
+      "description": "Sin comentario nuevo verificable hoy: Waller condicionó su apoyo a un movimiento de 25pb en diciembre a que se señale explícitamente otra alza en enero. Sigue siendo el catalizador macro dominante de mediano plazo.",
       "risk_level": "medio"
     }
   ],
@@ -100,11 +100,12 @@
     {"title": "Precio BTC-USD en vivo e histórico 7 días (Yahoo Finance, consultado en vivo)", "url": "https://finance.yahoo.com/quote/BTC-USD"},
     {"title": "Fear & Greed Index (alternative.me, consultado en vivo)", "url": "https://alternative.me/crypto/fear-and-greed-index/"},
     {"title": "Bitcoin Rainbow Chart (BlockchainCenter.net, capturado en vivo)", "url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/"},
-    {"title": "Bitcoin ETF Flows, noviembre 2026 (tftc.io/Farside, dato del 20-nov confirmado hoy; sin dato aún para el 23-nov al momento de esta consulta)", "url": "https://www.tftc.io/bitcoin-etf-flows/november-2026"},
+    {"title": "Bitcoin ETF Flows, noviembre 2026 (tftc.io/Farside, dato oficial hasta el 23-nov; sin dato aún para el 24-nov al momento de esta consulta)", "url": "https://www.tftc.io/bitcoin-etf-flows/november-2026"},
+    {"title": "Bitcoin ETFs see another $570 million in net outflows as November total nears $5 billion and BTC dips below $60K (The Block, 24-nov-2026, dato de SoSoValue sin confirmar por Farside)", "url": "https://www.theblock.co/news/markets/2026-11-24-bitcoin-etfs-another-570-million-net-outflows-november-total-nears-5-billion-btc-dips-below-60k-445548"},
     {"title": "Mark Yusko: Why Bitcoin Is Falling - $58k Is the Key Level to Watch (Bitcoin Magazine, 18-nov-2026, sin novedad desde entonces)", "url": "https://bitcoinmagazine.com/videos/mark-yusko-why-bitcoin-is-falling-58k-is-the-key-level-to-watch"}
   ],
   "crypto_extras": {
-    "fear_greed": {"value": 11, "classification": "Extreme Fear", "color": "#d03b3b", "timestamp": "2026-11-24T00:00:00+00:00"},
-    "btc_rainbow": {"image": ".tmp/bitcoin-btc-rainbow.png", "source": "BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)", "source_url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/", "captured_at": "2026-11-24"}
+    "fear_greed": {"value": 13, "classification": "Extreme Fear", "color": "#d03b3b", "timestamp": "2026-11-25T00:00:00+00:00"},
+    "btc_rainbow": {"image": ".tmp/bitcoin-btc-rainbow.png", "source": "BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)", "source_url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/", "captured_at": "2026-11-25"}
   }
 }
