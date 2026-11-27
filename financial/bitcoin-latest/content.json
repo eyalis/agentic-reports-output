@@ -1,103 +1,96 @@
 {
   "topic": "Bitcoin (BTC-USD)",
-  "date": "2026-11-26",
-  "generated_at": "26 de noviembre de 2026, 07:13 UTC",
-  "executive_summary": "BTC cotiza en vivo a USD 60.414,96 (07:13 UTC), +0,06% frente al cierre previo de USD 60.378,57, consolidando la recuperación sobre USD 60.000 -la serie semanal (20 al 26 de noviembre) marca ahora +2,75%-. La novedad principal es que el tramo 24-25 de noviembre fue más volátil de lo que el reporte de ayer alcanzó a capturar: el 25-nov el precio llegó a perforar brevemente la zona de USD 55.000-57.500 intradía (nuevos mínimos desde septiembre de 2024, por debajo del piso de USD 58.798,98 del 20-nov) tras nuevas propuestas arancelarias de EE.UU. contra 14 socios comerciales, antes de rebotar con fuerza sobre USD 60.000 impulsado por liquidaciones de posiciones cortas apalancadas (~USD 90M en la primera hora del rebote, hasta USD 230M en cuatro horas según CoinGlass). En el frente de ETFs, Farside ya confirma de forma oficial la cifra del 24-nov que ayer solo circulaba como preliminar de SoSoValue: -USD 231,6M (IBIT -USD 175,3M), prácticamente idéntica a la citada ayer, llevando el acumulado de noviembre a -USD 4,9MM en 17 jornadas (15 negativas, 2 positivas, promedio diario -USD 290,5M, peor día el 20-nov con -USD 669,2M). Para el 25-nov, aún sin confirmar por Farside, prensa especializada (SoSoValue) reporta -USD 453,12M adicionales -combinado de dos días: -USD 684,68M-, con IBIT acumulando -USD 1.248M entre el 23 y 25 de noviembre pero con el ritmo diario moderándose de -USD 573M a -USD 174M. El Fear & Greed Index retrocedió hoy a 11, revirtiendo la mejora marginal de ayer (13) y volviendo al piso de la semana, en 'Extreme Fear'. Como contrapunto a la narrativa de rebote, surgen dos voces nuevas con lecturas opuestas: Doctor Profit ve la zona USD 52.000-62.000 como 'región de piso' y compra en toda esa banda, mientras Ali Martinez advierte que un cierre sostenido bajo USD 56.800 expondría soportes más débiles en USD 46.700 y 37.867 -sin cambios verificables hoy en Mark Yusko (su comentario más reciente sigue siendo del 18 de noviembre), Christopher Waller, la exclusión de Strategy de los índices MSCI (sigue efectiva al cierre del 30 de noviembre), la Clarity Act, la apelación del Reino Unido sobre los 61.000 BTC, BTCPay Server, Cantor Fitzgerald ni el reclamo sobre Irán.",
+  "date": "2026-11-27",
+  "generated_at": "27 de noviembre de 2026, 07:14 UTC",
+  "executive_summary": "BTC cotiza en vivo a USD 61.701,55 (07:14 UTC), +1,99% frente al cierre previo de USD 60.495,95, extendiendo el rebote reportado ayer -la serie semanal (21 al 27 de noviembre) marca ahora +2,67%, con el mínimo de la ventana en USD 59.747,77 (24-nov) y el máximo en USD 61.701,55 (hoy, en vivo)-. La novedad principal es que Farside ya confirma oficialmente el dato del 25-nov, y resulta sensiblemente peor que la estimación preliminar de SoSoValue citada ayer: -USD 453,1M en salidas netas totales (IBIT -USD 329,7M, no los -USD 174M preliminares), llevando el acumulado oficial de noviembre a -USD 5,39MM en 18 jornadas (16 negativas, 2 positivas; promedio diario -USD 299,5M) -un análisis (vía particle.news) describe estas salidas como la pérdida de 'un comprador marginal clave' justo antes del vencimiento de opciones de hoy (27-nov, 08:00 UTC)-. En paralelo, el CEO de CryptoQuant, Ki Young Ju, publicó el 26-nov un mapa de liquidaciones que estima ~USD 16MM en cortos apalancados en riesgo entre USD 60.000 y 100.000, frente a menos de USD 5MM en largos por debajo de USD 60.000 ('The squeeze risk is on the short side'); consistente con eso, el open interest de futuros subió ~13.200 BTC con el funding volviendo a terreno positivo -señal de que el rebote lo compran traders apalancados, no demanda espot genuina-, mientras ~42.000 BTC salieron de las reservas rastreadas en exchanges durante el último mes, indicando liquidez más ajustada. En el plano técnico, el RSI diario profundiza a 27,21 (más sobrevendido que el 29,14 de ayer) y el histograma MACD se vuelve más negativo (-80,43 vs. -62,94 ayer) a pesar de la suba de precio -calificación técnica general 'Sell' en CoinLore (ADX 49,61, tendencia fuerte; SuperTrend bajista en USD 66.832; EMA50 en 'Sell' sobre USD 71.565)-, aunque la misma fuente marca una divergencia alcista en el MACD. El Fear & Greed Index se mantiene prácticamente plano en 12 (vs. 11 ayer), sin salir de 'Extreme Fear'. Sin cambios verificables hoy en Doctor Profit, Ali Martinez, Mark Yusko, Christopher Waller (fuentes sobre su postura más reciente resultan contradictorias en fecha/dirección, no se usan), la exclusión de Strategy de los índices MSCI (sigue efectiva al cierre del 30 de noviembre), la Clarity Act, la apelación del Reino Unido sobre los 61.000 BTC, BTCPay Server, Cantor Fitzgerald ni el reclamo sobre Irán.",
   "recent_context": [
     {
-      "heading": "El tramo 24-25 de noviembre fue más volátil de lo reportado ayer: BTC perforó USD 55.000-57.500 intradía antes de rebotar sobre USD 60.000",
-      "body": "El reporte de ayer cerraba con BTC en USD 59.230,77 marcando un mínimo de la ventana semanal. Lo que no se alcanzó a capturar es que, horas después, el precio profundizó mucho más: cobertura de prensa (Crypto Briefing, crypto.news) ubica el piso intradía del 25-nov entre USD 55.130 y USD 57.240 según la fuente -el nivel más bajo desde septiembre de 2024-, gatillado por nuevas propuestas arancelarias de EE.UU. contra 14 socios comerciales. La reversión fue igual de abrupta: liquidaciones de posiciones cortas apalancadas (~USD 68-90M en la primera hora, hasta USD 230M en cuatro horas según CoinGlass) impulsaron un rebote de más de 9% desde el mínimo, devolviendo el precio sobre USD 60.000 para hoy 26-nov (USD 60.414,96 en vivo, +0,06% vs. cierre previo). La serie de cierres diarios de Yahoo Finance (20 al 26 de noviembre) muestra ahora una ganancia semanal de +2,75%, con el máximo de la ventana en USD 61.210,98 (23-nov) y el mínimo en USD 58.798,98 (20-nov).",
-      "source_url": "https://cryptobriefing.com/bitcoin-reclaims-60000-short-liquidations/"
-    },
-    {
-      "heading": "Farside confirma oficialmente el dato del 24-nov (-USD 231,6M); SoSoValue reporta -USD 453,12M adicionales el 25-nov, aún sin confirmación oficial",
-      "body": "El reporte de ayer citó -USD 231,56M del 24-nov como cifra preliminar de SoSoValue, pendiente de confirmación de Farside. Hoy Farside/tftc.io ya publica ese dato como oficial: -USD 231,6M en salidas netas totales, con IBIT aportando -USD 175,3M -prácticamente idéntico a lo reportado ayer-, llevando el acumulado oficial de noviembre a -USD 4,9MM en 17 jornadas (15 negativas, 2 positivas), con promedio diario de -USD 290,5M y el 20-nov como peor día individual (-USD 669,2M). Para el 25-nov, Farside todavía no publica cifra, pero SoSoValue (vía crypto.news) reporta -USD 453,12M adicionales, lo que sumado al 24-nov confirmado da un combinado de dos días de -USD 684,68M. IBIT de BlackRock acumula -USD 1.248M entre el 23 y el 25 de noviembre, aunque el ritmo diario se modera de -USD 573M (23-nov) a -USD 174M (25-nov) -la primera señal de desaceleración en varios días-. Los activos netos totales de los ETFs de BTC caen a USD 72.030M, con entradas netas acumuladas de USD 51.590M desde el lanzamiento.",
+      "heading": "Farside confirma oficialmente el 25-nov: -USD 453,1M (IBIT -USD 329,7M), peor que la estimación preliminar de SoSoValue citada ayer",
+      "body": "El reporte de ayer citó -USD 453,12M como estimación preliminar de SoSoValue para el 25-nov, con IBIT moderándose a -USD 174M frente al -USD 573M del 23-nov, pendiente de confirmación de Farside. Hoy Farside/tftc.io ya publica ese dato como oficial: -USD 453,1M en salidas netas totales, con IBIT aportando -USD 329,7M -casi el doble de lo que sugería la cifra preliminar de SoSoValue, no la desaceleración que parecía insinuarse ayer-. Con esto, el acumulado oficial de noviembre sube a -USD 5,39MM en 18 jornadas (16 negativas, 2 positivas), con un promedio diario de -USD 299,5M. Farside todavía no publica cifra para el 26-nov.",
       "source_url": "https://www.tftc.io/bitcoin-etf-flows/november-2026"
     },
     {
-      "heading": "Técnicos y on-chain: RSI cerca de sobreventa, MACD perdiendo fuerza bajista, pero señales mixtas en depósitos a exchanges",
-      "body": "El RSI diario se ubica en 29,14 -justo bajo el umbral de sobreventa de 30-, y el histograma MACD en -62,94 muestra momentum bajista perdiendo fuerza, aunque sin un cruce alcista confirmado todavía; el gráfico sigue marcando máximos y mínimos descendentes, sin reversión de tendencia confirmada. En el plano on-chain, el analista de CryptoQuant Amr Taha señala señales mixtas: los depósitos de tamaño medio a Coinbase Prime promedian 10.400 BTC en 7 días -el nivel más alto desde noviembre de 2025-, y los depósitos a Binance subieron 183% (de 728 a 2.060 BTC) -movimientos que, históricamente, pueden anteceder presión vendedora, aunque no son concluyentes por sí solos. Las liquidaciones totales en 24 horas se reportan de forma distinta según la fuente: crypto.news (vía CoinGlass) cuenta ~144.000 traders liquidados por USD 692M (BTC: USD 264M, de los cuales USD 143M en cortos y USD 120M en largos), mientras Crypto Briefing cita un rango de USD 1.800-2.400M -se deja constancia de la discrepancia entre fuentes en vez de promediar una cifra.",
-      "source_url": "https://crypto.news/bitcoin-price-prediction-btc-recovery-etf-outflows/"
+      "heading": "El rebote sobre USD 60.000 lo compran traders apalancados, no demanda espot: sube el open interest de futuros, el funding vuelve a positivo y caen las reservas en exchanges",
+      "body": "Un análisis de mercado enmarca las salidas récord de ETFs (USD 4,94MM acumulados a través del 24-nov, con IBIT representando ~83-84% del total) como la pérdida de 'un comprador marginal clave' justo antes del vencimiento de opciones del 27-nov (08:00 UTC). El open interest de futuros subió ~13.200 BTC con el funding rate volviendo a terreno positivo tras el rebote -lectura de que son traders apalancados comprando la caída, no compradores espot sin apalancamiento-. En paralelo, ~42.000 BTC salieron de las reservas de exchanges rastreadas en el último mes, señal de liquidez más ajustada aunque las tenencias de los ETFs se mantienen elevadas.",
+      "source_url": "https://particle.news/story/bitcoin-reclaims-60000-after-leverage-driven-short-squeeze"
     },
     {
-      "heading": "El Fear & Greed Index retrocede a 11, revirtiendo la mejora marginal de ayer",
-      "body": "El índice de alternative.me vuelve hoy a 11, después de la mejora marginal a 13 reportada ayer -que ya se señaló como insuficiente para hablar de cambio de sentimiento-. El retroceso confirma esa lectura: el mercado permanece anclado en 'Extreme Fear' sin una mejora sostenida, coincidiendo con la ventana más volátil de la semana (el mínimo intradía del 25-nov y el rebote posterior).",
-      "source_url": "https://alternative.me/crypto/fear-and-greed-index/"
+      "heading": "CryptoQuant: 'el riesgo de squeeze está del lado de los cortos' -~USD 16MM en liquidaciones potenciales entre USD 60.000 y 100.000",
+      "body": "El CEO de CryptoQuant, Ki Young Ju, publicó el 26-nov en X un mapa de liquidaciones que estima unos USD 16.000M en posiciones cortas en riesgo si el precio avanza entre USD 60.000 y USD 100.000, frente a menos de USD 5.000M en posiciones largas en riesgo por debajo de USD 60.000. La metodología de CryptoQuant sigue cambios horarios de open interest en siete exchanges, descarta niveles ya cruzados y estima liquidaciones en intervalos de USD 500. El mismo análisis señala como catalizadores próximos el vencimiento de opciones de hoy (27-nov, 08:00 UTC) y la decisión de la Fed del 9 de diciembre.",
+      "source_url": "https://www.gncrypto.news/news/bitcoin-rebounds-16-billion-shorts-liquidation-risk/"
     },
     {
-      "heading": "Nuevas voces con lecturas opuestas sobre si el piso ya se formó: Doctor Profit (constructivo) vs. Ali Martinez (cauteloso)",
-      "body": "Dos analistas no citados en ediciones anteriores entregan hoy lecturas contrapuestas sobre la zona actual de precio. Doctor Profit define USD 52.000-62.000 como su 'región de piso' y compra en toda esa banda, rechazando explícitamente los llamados a USD 30.000 o 40.000 que circulan en redes. Ali Martinez (@alicharts, trader independiente y fundador de la comunidad AliCharts) marca un nivel de costo base cercano a USD 59.324 (con base en ~400.000 BTC transados) y advierte que un cierre sostenido bajo USD 56.800 dejaría expuestos soportes más débiles en USD 46.700 y USD 37.867. Se presentan ambas posturas sin promediarlas, siguiendo el criterio de este reporte ante opiniones contradictorias. Sin novedad verificable hoy de Mark Yusko (su comentario más reciente sigue siendo del 18-nov, 'bad liquidation cycle' con USD 58.000 como nivel clave) ni de Christopher Waller sobre la reunión de la Fed de diciembre.",
-      "source_url": "https://crypto.news/bitcoin-price-prediction-btc-recovery-etf-outflows/"
+      "heading": "Técnicos: el RSI profundiza y el MACD se vuelve más negativo pese a la suba de precio; calificación general 'Sell' pero con divergencia alcista en el MACD",
+      "body": "El RSI diario (CoinLore) cae a 27,21 -más sobrevendido que el 29,14 de ayer-, y el histograma MACD se vuelve más negativo (-80,43, MACD -4.534,08 vs. señal -4.453,65) frente a -62,94 ayer, lo que indica que el momentum bajista se profundiza incluso mientras el precio rebota. La calificación técnica general es 'Sell' (score -20,29), con ADX en 49,61 (tendencia fuerte), SuperTrend bajista en USD 66.832 y EMA de 50 días en 'Sell' sobre USD 71.565. La misma fuente marca, no obstante, una divergencia alcista en el MACD -una señal a monitorear, no una reversión confirmada-.",
+      "source_url": "https://www.coinlore.com/coin/90/technical-analysis"
     },
     {
-      "heading": "Sin novedades en MSCI/Strategy, la Clarity Act, la apelación del Reino Unido, BTCPay Server, Cantor Fitzgerald ni el reclamo sobre Irán",
-      "body": "La exclusión de Strategy (MSTR) de los índices MSCI sigue efectiva al cierre del 30 de noviembre, sin cambios desde el anuncio original del 11-nov. No se encontró avance legislativo de la Clarity Act desde la versión combinada del Senado de julio de 2026, ni novedad en la apelación de los afectados sobre los 61.000 BTC retenidos por el Reino Unido desde la cobertura de julio de 2026. Tampoco hay noticia nueva específica de noviembre sobre BTCPay Server o la posición de Cantor Fitzgerald en Strategy (su 13F más reciente, del 16-nov, ya fue cubierto), ni sobre el reclamo no verificado vinculado a Irán -se señala brevemente para dejar constancia de que se revisó, no porque haya novedad.",
+      "heading": "Fear & Greed prácticamente sin cambios en 12 (Extreme Fear); nueva lectura de mediano plazo de Crypto Rover sobre un posible rally post-Navidad",
+      "body": "El índice de alternative.me sube apenas un punto, a 12 (vs. 11 ayer), sin salir de 'Extreme Fear' -el sentimiento sigue sin acompañar el rebote de precio-. Entre las voces nuevas, el analista Crypto Rover señala a diciembre/Navidad como posible punto de inflexión hacia el próximo ciclo alcista, citando como paralelo histórico un rally de cerca de 90% en los cuatro meses posteriores a la Navidad del ciclo bajista anterior -un antecedente histórico, no un objetivo de precio concreto para este ciclo-.",
+      "source_url": "https://www.gncrypto.news/news/bitcoin-rebounds-16-billion-shorts-liquidation-risk/"
+    },
+    {
+      "heading": "Sin novedades en Doctor Profit, Ali Martinez, Mark Yusko, Christopher Waller, MSCI/Strategy, la Clarity Act, la apelación del Reino Unido, BTCPay Server, Cantor Fitzgerald ni el reclamo sobre Irán",
+      "body": "No se encontró declaración nueva y verificable hoy de Doctor Profit ni de Ali Martinez desde sus comentarios de ayer. Las fuentes sobre la postura más reciente de Christopher Waller sobre la reunión de la Fed de diciembre resultan contradictorias en fecha y dirección (hike vs. cut según la fuente), por lo que no se usan hasta poder confirmarlas contra una fuente primaria; tampoco hay novedad de Mark Yusko desde su comentario del 18-nov. La exclusión de Strategy (MSTR) de los índices MSCI sigue efectiva al cierre del 30 de noviembre, sin cambios desde el anuncio original. No hay avance nuevo en la Clarity Act, la apelación del Reino Unido sobre los 61.000 BTC, BTCPay Server, la posición de Cantor Fitzgerald en Strategy ni el reclamo no verificado vinculado a Irán.",
       "source_url": null
     }
   ],
   "indicators": [
     {
       "name": "Precio BTC-USD (última semana)",
-      "description": "Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (26-nov) es la cotización en vivo. La serie muestra una recuperación semanal de +2,75% (20-nov a hoy), tras el mínimo intradía más profundo del 25-nov (no capturado en el cierre diario) y el rebote posterior por liquidaciones de cortos.",
+      "description": "Precio spot de Bitcoin en dólares, últimos cierres diarios de Yahoo Finance. El último punto (27-nov) es la cotización en vivo. La serie muestra una ganancia semanal de +2,67% (21-nov a hoy), extendiendo el rebote del 25/26-nov tras el mínimo intradía profundo del 25-nov.",
       "chart_type": "line",
       "data": {
-        "labels": ["20 nov", "21 nov", "22 nov", "23 nov", "24 nov", "25 nov", "26 nov (en vivo)"],
-        "values": [58798.98, 60094.09, 61161.91, 61210.98, 59747.77, 59747.77, 60414.96]
+        "labels": ["21 nov", "22 nov", "23 nov", "24 nov", "25 nov", "26 nov", "27 nov (en vivo)"],
+        "values": [60094.09, 61161.91, 61210.98, 59747.77, 60378.20, 60494.71, 61701.55]
       },
       "unit": "USD",
-      "current_value": "60,414.96",
-      "change": "+0.06",
-      "as_of": "07:13 UTC"
+      "current_value": "61,701.55",
+      "change": "+1.99",
+      "as_of": "07:14 UTC"
     },
     {
       "name": "Fear & Greed Index",
-      "description": "Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), fuente alternative.me. Retrocede a 11 hoy, revirtiendo la mejora marginal de ayer (13), de vuelta en 'Extreme Fear'.",
+      "description": "Índice de sentimiento del mercado cripto (0 = miedo extremo, 100 = codicia extrema), fuente alternative.me. Prácticamente sin cambios en 12 hoy (vs. 11 ayer), sin salir de 'Extreme Fear' pese al rebote de precio.",
       "chart_type": "gauge",
       "data": {
         "labels": ["Hoy"],
-        "values": [11]
+        "values": [12]
       },
       "unit": "índice (0-100)",
-      "current_value": "11 (Extreme Fear)",
-      "change": "-2 vs. 13 de ayer",
-      "as_of": "26 nov 2026"
+      "current_value": "12 (Extreme Fear)",
+      "change": "+1 vs. 11 de ayer",
+      "as_of": "27 nov 2026"
     }
   ],
   "expert_opinions": [
     {
-      "expert": "Doctor Profit",
-      "affiliation": "Analista independiente de mercado cripto",
-      "quote": "52k to 62k is my bottom region, and any volatility inside that range is a buy for me.",
-      "source_url": "https://crypto.news/bitcoin-price-prediction-btc-recovery-etf-outflows/",
+      "expert": "Ki Young Ju",
+      "affiliation": "CEO de CryptoQuant",
+      "quote": "The squeeze risk is on the short side.",
+      "source_url": "https://www.gncrypto.news/news/bitcoin-rebounds-16-billion-shorts-liquidation-risk/",
       "stance": "bullish"
-    },
-    {
-      "expert": "Ali Martinez",
-      "affiliation": "Trader independiente y fundador de la comunidad AliCharts (@alicharts)",
-      "quote": "A sustained close below $56,800 could expose thinner support at $46,700 and $37,867.",
-      "source_url": "https://crypto.news/bitcoin-price-prediction-btc-recovery-etf-outflows/",
-      "stance": "bearish"
     }
   ],
   "outlook": {
-    "short_term": "El rebote de hoy sobre USD 60.000 -impulsado por liquidaciones de cortos, no por demanda nueva según los análisis citados- revierte el mínimo intradía más profundo de la semana (25-nov, USD 55.000-57.500 según fuente). El RSI cerca de sobreventa (29,14) y el MACD perdiendo fuerza bajista sugieren que la presión vendedora se modera, pero sin confirmación de reversión de tendencia. El Fear & Greed Index volvió a 11, mostrando que el sentimiento no acompaña todavía la recuperación de precio.",
-    "medium_term": "El ritmo de salidas de ETFs muestra la primera señal de desaceleración en varios días (IBIT de -USD 573M a -USD 174M diarios entre el 23 y 25-nov), aunque el acumulado de noviembre ya supera los USD 4,9MM confirmados por Farside (17 jornadas) y podría acercarse a USD 5.600M si se confirma el dato preliminar del 25-nov. Señales on-chain mixtas (depósitos a exchanges al alza según CryptoQuant) añaden cautela sobre si la desaceleración de salidas es sostenible.",
-    "long_term": "Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong, piso de costo de producción de JPMorgan en USD 94.000). Las dos lecturas nuevas de esta edición -Doctor Profit viendo USD 52.000-62.000 como zona de piso definitiva, Ali Martinez advirtiendo soportes más débiles en USD 46.700/37.867 si se pierde USD 56.800- amplían el rango de escenarios de mediano-largo plazo que vale la pena monitorear."
+    "short_term": "El rebote sobre USD 60.000 sigue sin confirmación de demanda espot genuina: el open interest de futuros y el funding positivo apuntan a cobertura de cortos y compra apalancada, en un contexto donde CryptoQuant estima USD 16.000M en cortos en riesgo entre USD 60.000 y 100.000 (vs. menos de USD 5.000M en largos por debajo de USD 60.000). El vencimiento de opciones de hoy (27-nov, 08:00 UTC) es el catalizador inmediato a monitorear.",
+      "medium_term": "La confirmación oficial de Farside del 25-nov resultó peor que la estimación preliminar que ayer sugería una posible desaceleración (IBIT -USD 329,7M confirmado vs. -USD 174M preliminar), lo que eleva el acumulado de noviembre a -USD 5,39MM en 18 jornadas. La próxima decisión de la Fed (9-dic) se suma como catalizador de mediano plazo junto con la confirmación pendiente del dato de ETFs del 26-nov.",
+    "long_term": "Sin cambios en los objetivos de precio de largo plazo ya reportados en ediciones anteriores (Citigroup, Bernstein, Standard Chartered, Tom Lee, NYDIG, Armstrong, piso de costo de producción de JPMorgan en USD 94.000, y las lecturas de Doctor Profit/Ali Martinez de ayer). La única lectura nueva de esta edición es la de Crypto Rover, que marca diciembre/Navidad como posible punto de inflexión de ciclo citando un paralelo histórico (~90% de rally en los 4 meses posteriores a Navidad del ciclo bajista anterior) -un antecedente a monitorear, no un objetivo de precio verificado para este ciclo."
   },
   "recommendations": [
     {
-      "title": "No confundir el rebote por liquidación de cortos con un cambio de tendencia",
-      "description": "Múltiples fuentes coinciden en que el salto sobre USD 60.000 fue impulsado por el cierre forzado de posiciones cortas apalancadas, no por nueva demanda institucional -de hecho, las salidas de ETFs continúan, aunque a menor ritmo-. Conviene esperar confirmación con volumen spot genuino antes de leer esto como un piso.",
+      "title": "No confundir el rebote impulsado por apalancamiento con una vuelta de demanda genuina",
+      "description": "El open interest de futuros subió y el funding volvió a positivo junto con el repunte de precio, mientras las salidas de ETFs continúan (y se confirmaron peores de lo estimado para el 25-nov) -el patrón sugiere cobertura de cortos y compra apalancada, no demanda espot nueva-. Conviene esperar confirmación con volumen spot genuino y/o flujos de ETF positivos antes de leer esto como cambio de tendencia.",
       "risk_level": "alto"
     },
     {
-      "title": "Vigilar el nivel de USD 56.800 como referencia de riesgo a la baja",
-      "description": "Ali Martinez señala que un cierre sostenido bajo ese nivel abriría la puerta a soportes mucho más débiles (USD 46.700 y 37.867). Es el nivel más concreto y verificable entre las lecturas técnicas nuevas de hoy para gestionar riesgo de cola.",
+      "title": "Vigilar el vencimiento de opciones de hoy (27-nov, 08:00 UTC) y la decisión de la Fed del 9 de diciembre",
+      "description": "Son los dos catalizadores de corto/mediano plazo más concretos señalados hoy. El mapa de liquidaciones de CryptoQuant sugiere que un movimiento por encima de USD 60.000 podría forzar liquidaciones de cortos adicionales (~USD 16.000M en riesgo hasta USD 100.000), lo que podría amplificar la volatilidad en cualquier dirección alrededor de estas fechas.",
       "risk_level": "alto"
     },
     {
-      "title": "Tratar el dato de SoSoValue del 25-nov como preliminar hasta que Farside lo confirme",
-      "description": "La cifra de -USD 453,12M para el 25-nov proviene de SoSoValue, no de Farside (la fuente de referencia de este reporte), y Farside aún no publica ese día al momento de esta edición -el patrón de confirmación con ~1 día de rezago ya se repitió con el dato del 24-nov-.",
+      "title": "Tratar las cifras preliminares de SoSoValue como solo direccionales hasta la confirmación de Farside",
+      "description": "Por segunda vez consecutiva (24-nov y ahora 25-nov), la cifra oficial de Farside llegó sensiblemente distinta -y en este caso peor- que la estimación preliminar de SoSoValue citada un día antes. El patrón de confirmación con ~1 día de rezago y revisión al alza (en magnitud de salida) ya es consistente en las últimas dos ediciones.",
       "risk_level": "medio"
     }
   ],
@@ -106,13 +99,13 @@
     {"title": "Fear & Greed Index (alternative.me, consultado en vivo)", "url": "https://alternative.me/crypto/fear-and-greed-index/"},
     {"title": "Bitcoin Rainbow Chart (BlockchainCenter.net, capturado hoy)", "url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/"},
     {"title": "Farside Investors - Bitcoin ETF Flows, noviembre 2026 (vía tftc.io)", "url": "https://www.tftc.io/bitcoin-etf-flows/november-2026"},
-    {"title": "Bitcoin reclaims $60,000 as $90M in leveraged shorts get liquidated (Crypto Briefing)", "url": "https://cryptobriefing.com/bitcoin-reclaims-60000-short-liquidations/"},
-    {"title": "Bitcoin price reclaims $60K, but is the bottom really in? (crypto.news)", "url": "https://crypto.news/bitcoin-price-prediction-btc-recovery-etf-outflows/"},
-    {"title": "MSCI confirms Strategy's removal from indexes end November (Cointelegraph)", "url": "https://cointelegraph.com/news/msci-confirms-strategys-removal-from-indexes-end-november"},
-    {"title": "Mark Yusko warns AI valuations thin air, bitcoin bad liquidation cycle (Stocktwits, 18-nov)", "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/mark-yusko-warns-ai-valuations-thin-air-bitcoin-gets-caught-in-a-bad-liquidation-cycle/cNbXAWrR9hu"}
+    {"title": "Bitcoin Reclaims $60,000 After Leverage-Driven Short Squeeze (Particle News)", "url": "https://particle.news/story/bitcoin-reclaims-60000-after-leverage-driven-short-squeeze"},
+    {"title": "Bitcoin Rebounds as $16B in Shorts Face Liquidation Risk (GNcrypto News)", "url": "https://www.gncrypto.news/news/bitcoin-rebounds-16-billion-shorts-liquidation-risk/"},
+    {"title": "Bitcoin (BTC) Technical Analysis (CoinLore)", "url": "https://www.coinlore.com/coin/90/technical-analysis"},
+    {"title": "MSCI confirms Strategy's removal from indexes end November (Cointelegraph)", "url": "https://cointelegraph.com/news/msci-confirms-strategys-removal-from-indexes-end-november"}
   ],
   "crypto_extras": {
-    "fear_greed": {"value": 11, "classification": "Extreme Fear", "color": "#d03b3b", "timestamp": "2026-11-26T00:00:00+00:00"},
-    "btc_rainbow": {"image": ".tmp/bitcoin-btc-rainbow.png", "source": "BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)", "source_url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/", "captured_at": "2026-11-26"}
+    "fear_greed": {"value": 12, "classification": "Extreme Fear", "color": "#d03b3b", "timestamp": "2026-11-27T00:00:00+00:00"},
+    "btc_rainbow": {"image": ".tmp/bitcoin-btc-rainbow.png", "source": "BlockchainCenter.net (Dynamic Bitcoin Rainbow Chart)", "source_url": "https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/", "captured_at": "2026-11-27"}
   }
 }
